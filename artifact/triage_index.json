@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "question": "What is the paper's contribution?",
+      "surface": "paper/main.pdf Sections I, III, VI-VIII; contribution trace audit"
+    },
+    {
+      "question": "Where is the locked denominator?",
+      "surface": "artifact/results/denominator_lock_summary.json and artifact/data/deep_locked_fixtures.json"
+    },
+    {
+      "question": "How are overfitting and label leakage prevented?",
+      "surface": "identifier-blind replay, label-flow, decision-purity, leakage, and benchmark-disjointness audits"
+    },
+    {
+      "question": "How can a positive finding be inspected?",
+      "surface": "418 evidence-facing evidence cards and evidence graph paths"
+    },
+    {
+      "question": "How are repairs validated?",
+      "surface": "paired repair controls, repair-delta replay, repair compactness, repair locality, and BEP-Max repair-frontier metrics"
+    },
+    {
+      "question": "How are external tools used?",
+      "surface": "external public-package comparator full run, package lock, provenance audit, and contrast-specificity audit"
+    },
+    {
+      "question": "How is the paper/metadata surface synchronized?",
+      "surface": "paper metadata alignment, stale numeric surface, paper-claim consistency, and figure-reference closure audits"
+    },
+    {
+      "question": "What can be run first?",
+      "surface": "quickstart.md and reproduction_ladder.json"
+    }
+  ],
+  "entry_count": 8,
+  "purpose": "Concise map from common assessor questions to artifact evidence surfaces.",
+  "status": "pass"
+}

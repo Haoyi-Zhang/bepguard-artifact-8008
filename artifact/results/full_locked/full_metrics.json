@@ -1,0 +1,89 @@
+{
+  "execution_profile": "deterministic-counts-only",
+  "expected_findings_detected": 88,
+  "expected_positive_fixtures": 88,
+  "family_counts": {
+    "COEP/CORP/CORS": {
+      "detected": 6,
+      "fixtures": 10,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 6
+    },
+    "COOP/COEP/Permissions-Policy": {
+      "detected": 6,
+      "fixtures": 8,
+      "negative_clean": 2,
+      "negative_controls": 2,
+      "positives": 6
+    },
+    "CORS": {
+      "detected": 6,
+      "fixtures": 10,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 6
+    },
+    "CORS/cache": {
+      "detected": 6,
+      "fixtures": 8,
+      "negative_clean": 2,
+      "negative_controls": 2,
+      "positives": 6
+    },
+    "CORS/framework": {
+      "detected": 6,
+      "fixtures": 6,
+      "negative_clean": 0,
+      "negative_controls": 0,
+      "positives": 6
+    },
+    "CSP": {
+      "detected": 14,
+      "fixtures": 18,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 14
+    },
+    "CSP/framework": {
+      "detected": 6,
+      "fixtures": 6,
+      "negative_clean": 0,
+      "negative_controls": 0,
+      "positives": 6
+    },
+    "HSTS": {
+      "detected": 12,
+      "fixtures": 16,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 12
+    },
+    "HSTS/framework": {
+      "detected": 6,
+      "fixtures": 8,
+      "negative_clean": 2,
+      "negative_controls": 2,
+      "positives": 6
+    },
+    "Layered policy composition": {
+      "detected": 14,
+      "fixtures": 18,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 14
+    },
+    "Permissions-Policy": {
+      "detected": 6,
+      "fixtures": 8,
+      "negative_clean": 2,
+      "negative_controls": 2,
+      "positives": 6
+    }
+  },
+  "findings": 88,
+  "fixtures": 116,
+  "interpretation": "Locked local full-corpus oracle run; not a public-web prevalence claim.",
+  "negative_controls": 28,
+  "negative_controls_clean": 28
+}

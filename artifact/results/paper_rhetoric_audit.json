@@ -1,0 +1,10 @@
+{
+  "abstract_sentences": 8,
+  "interpretation": "Checks that the main paper exposes a research argument, not a repository transcript, artifact README, or paper-process note.",
+  "problem_count": 0,
+  "problems": [],
+  "required_surface_terms": 10,
+  "sections": 8,
+  "status": "pass",
+  "subsections": 0
+}

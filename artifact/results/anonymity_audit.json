@@ -1,0 +1,15 @@
+{
+  "checked_pdfs": [
+    "paper/main.pdf",
+    "paper/supplement.pdf"
+  ],
+  "checked_text_files": 615,
+  "interpretation": "Anonymous paper delivery hygiene audit over repository structure, LaTeX author block, PDF-visible text, and common trace patterns.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "top_level": [
+    "artifact",
+    "paper"
+  ]
+}

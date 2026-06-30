@@ -1,0 +1,5488 @@
+[
+  {
+    "fixture_id": "LF_CSP_RO_01",
+    "issue": "csp_report_only_not_enforced",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_report_only_not_enforced",
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "report-uri /csp"
+        }
+      ],
+      "id": "LF_CSP_RO_01",
+      "intent": {
+        "claim": "Block untrusted third-party script execution.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_01",
+      "source_claim_ids": [
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 77,
+    "minimized_header_count": 1,
+    "original_header_bytes": 96,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+        "fixture_id": "LF_CSP_RO_01",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_report_only_not_enforced",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "resource_kind": "script",
+            "resource_origin": "https://evil.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "report-uri /csp"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_RO_02",
+    "issue": "csp_report_only_not_enforced",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://cdn.bad",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_report_only_not_enforced",
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "report-uri /csp"
+        }
+      ],
+      "id": "LF_CSP_RO_02",
+      "intent": {
+        "claim": "Block untrusted third-party script execution.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_01",
+      "source_claim_ids": [
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 77,
+    "minimized_header_count": 1,
+    "original_header_bytes": 96,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+        "fixture_id": "LF_CSP_RO_02",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_report_only_not_enforced",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "resource_kind": "script",
+            "resource_origin": "https://cdn.bad"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "report-uri /csp"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_RO_03",
+    "issue": "csp_report_only_not_enforced",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://tracker.invalid",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_report_only_not_enforced",
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "report-uri /csp"
+        }
+      ],
+      "id": "LF_CSP_RO_03",
+      "intent": {
+        "claim": "Block untrusted third-party script execution.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_01",
+      "source_claim_ids": [
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 77,
+    "minimized_header_count": 1,
+    "original_header_bytes": 96,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+        "fixture_id": "LF_CSP_RO_03",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_report_only_not_enforced",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "resource_kind": "script",
+            "resource_origin": "https://tracker.invalid"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "report-uri /csp"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_RO_04",
+    "issue": "csp_report_only_not_enforced",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://assets.other",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_report_only_not_enforced",
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "report-uri /csp"
+        }
+      ],
+      "id": "LF_CSP_RO_04",
+      "intent": {
+        "claim": "Block untrusted third-party script execution.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_01",
+      "source_claim_ids": [
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 77,
+    "minimized_header_count": 1,
+    "original_header_bytes": 96,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+        "fixture_id": "LF_CSP_RO_04",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_report_only_not_enforced",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "resource_kind": "script",
+            "resource_origin": "https://assets.other"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "report-uri /csp"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_RO_05",
+    "issue": "csp_report_only_not_enforced",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://x.test",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_report_only_not_enforced",
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "report-uri /csp"
+        }
+      ],
+      "id": "LF_CSP_RO_05",
+      "intent": {
+        "claim": "Block untrusted third-party script execution.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_01",
+      "source_claim_ids": [
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 77,
+    "minimized_header_count": 1,
+    "original_header_bytes": 96,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+        "fixture_id": "LF_CSP_RO_05",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_report_only_not_enforced",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "resource_kind": "script",
+            "resource_origin": "https://x.test"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "report-uri /csp"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_RO_06",
+    "issue": "csp_report_only_not_enforced",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://untrusted.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_report_only_not_enforced",
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "report-uri /csp"
+        }
+      ],
+      "id": "LF_CSP_RO_06",
+      "intent": {
+        "claim": "Block untrusted third-party script execution.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_01",
+      "source_claim_ids": [
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 77,
+    "minimized_header_count": 1,
+    "original_header_bytes": 96,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+        "fixture_id": "LF_CSP_RO_06",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_report_only_not_enforced",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "resource_kind": "script",
+            "resource_origin": "https://untrusted.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "report-uri /csp"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_01",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "object-src 'none'"
+        }
+      ],
+      "id": "LF_CSP_FB_01",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 82,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_01",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "object-src 'none'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_02",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "object-src 'none'"
+        }
+      ],
+      "id": "LF_CSP_FB_02",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_02",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "object-src 'none'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_03",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "img-src 'self'"
+        }
+      ],
+      "id": "LF_CSP_FB_03",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 64,
+    "minimized_header_count": 1,
+    "original_header_bytes": 79,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_03",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "img-src 'self'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_04",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "object-src 'none'"
+        }
+      ],
+      "id": "LF_CSP_FB_04",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 101,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_04",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "object-src 'none'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_05",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "frame-ancestors 'none'"
+        }
+      ],
+      "id": "LF_CSP_FB_05",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 72,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_05",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "frame-ancestors 'none'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_06",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "object-src 'none'"
+        }
+      ],
+      "id": "LF_CSP_FB_06",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 93,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_06",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "object-src 'none'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_07",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "base-uri 'self'"
+        }
+      ],
+      "id": "LF_CSP_FB_07",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 65,
+    "minimized_header_count": 1,
+    "original_header_bytes": 80,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_07",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "base-uri 'self'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_FB_08",
+    "issue": "csp_effective_script_allowance",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_effective_script_allowance",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "object-src 'none'"
+        }
+      ],
+      "id": "LF_CSP_FB_08",
+      "intent": {
+        "claim": "Restrict executable script to trusted origins.",
+        "class": "enforce_script_restriction"
+      },
+      "layers": [],
+      "policy_family": "CSP",
+      "public_source_id": "CL_CSP_02",
+      "source_claim_ids": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 93,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+        "fixture_id": "LF_CSP_FB_08",
+        "intent_class": "enforce_script_restriction",
+        "issue": "csp_effective_script_allowance",
+        "policy_family": "CSP",
+        "severity": "high",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://evil.example"
+          },
+          "effective_sources": [
+            [
+              "*"
+            ]
+          ],
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "object-src 'none'"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_NONCE_01",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "rendering_variant": "static_export",
+        "resource_kind": "script",
+        "resource_origin": "https://app.example",
+        "scheme": "https",
+        "static_render": true
+      },
+      "expected_issue": "nonce_csp_static_render_incompatibility",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'nonce-abc123'"
+        }
+      ],
+      "id": "LF_CSP_NONCE_01",
+      "intent": {
+        "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+        "class": "nonce_based_strict_csp"
+      },
+      "layers": [],
+      "policy_family": "CSP/framework",
+      "public_source_id": "CL_CSP_06",
+      "source_claim_ids": [
+        "CL_CSP_06",
+        "CL_NEXT_01",
+        "CL_NEXT_02"
+      ]
+    },
+    "minimized_header_bytes": 75,
+    "minimized_header_count": 1,
+    "original_header_bytes": 135,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+        "fixture_id": "LF_CSP_NONCE_01",
+        "intent_class": "nonce_based_strict_csp",
+        "issue": "nonce_csp_static_render_incompatibility",
+        "policy_family": "CSP/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'nonce-abc123'"
+            }
+          ],
+          "rendering": "static_export",
+          "required_value": "per-request nonce"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_NONCE_02",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "rendering_variant": "static_optimization",
+        "resource_kind": "script",
+        "resource_origin": "https://app.example",
+        "scheme": "https",
+        "static_render": true
+      },
+      "expected_issue": "nonce_csp_static_render_incompatibility",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'nonce-abc123'"
+        }
+      ],
+      "id": "LF_CSP_NONCE_02",
+      "intent": {
+        "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+        "class": "nonce_based_strict_csp"
+      },
+      "layers": [],
+      "policy_family": "CSP/framework",
+      "public_source_id": "CL_CSP_06",
+      "source_claim_ids": [
+        "CL_CSP_06",
+        "CL_NEXT_01",
+        "CL_NEXT_02"
+      ]
+    },
+    "minimized_header_bytes": 75,
+    "minimized_header_count": 1,
+    "original_header_bytes": 135,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+        "fixture_id": "LF_CSP_NONCE_02",
+        "intent_class": "nonce_based_strict_csp",
+        "issue": "nonce_csp_static_render_incompatibility",
+        "policy_family": "CSP/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'nonce-abc123'"
+            }
+          ],
+          "rendering": "static_optimization",
+          "required_value": "per-request nonce"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_NONCE_03",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "rendering_variant": "ISR",
+        "resource_kind": "script",
+        "resource_origin": "https://app.example",
+        "scheme": "https",
+        "static_render": true
+      },
+      "expected_issue": "nonce_csp_static_render_incompatibility",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'nonce-abc123'"
+        }
+      ],
+      "id": "LF_CSP_NONCE_03",
+      "intent": {
+        "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+        "class": "nonce_based_strict_csp"
+      },
+      "layers": [],
+      "policy_family": "CSP/framework",
+      "public_source_id": "CL_CSP_06",
+      "source_claim_ids": [
+        "CL_CSP_06",
+        "CL_NEXT_01",
+        "CL_NEXT_02"
+      ]
+    },
+    "minimized_header_bytes": 75,
+    "minimized_header_count": 1,
+    "original_header_bytes": 135,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+        "fixture_id": "LF_CSP_NONCE_03",
+        "intent_class": "nonce_based_strict_csp",
+        "issue": "nonce_csp_static_render_incompatibility",
+        "policy_family": "CSP/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'nonce-abc123'"
+            }
+          ],
+          "rendering": "ISR",
+          "required_value": "per-request nonce"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_NONCE_04",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "rendering_variant": "CDN_cached_static",
+        "resource_kind": "script",
+        "resource_origin": "https://app.example",
+        "scheme": "https",
+        "static_render": true
+      },
+      "expected_issue": "nonce_csp_static_render_incompatibility",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'nonce-abc123'"
+        }
+      ],
+      "id": "LF_CSP_NONCE_04",
+      "intent": {
+        "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+        "class": "nonce_based_strict_csp"
+      },
+      "layers": [],
+      "policy_family": "CSP/framework",
+      "public_source_id": "CL_CSP_06",
+      "source_claim_ids": [
+        "CL_CSP_06",
+        "CL_NEXT_01",
+        "CL_NEXT_02"
+      ]
+    },
+    "minimized_header_bytes": 75,
+    "minimized_header_count": 1,
+    "original_header_bytes": 135,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+        "fixture_id": "LF_CSP_NONCE_04",
+        "intent_class": "nonce_based_strict_csp",
+        "issue": "nonce_csp_static_render_incompatibility",
+        "policy_family": "CSP/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'nonce-abc123'"
+            }
+          ],
+          "rendering": "CDN_cached_static",
+          "required_value": "per-request nonce"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_NONCE_05",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "rendering_variant": "partial_prerendering",
+        "resource_kind": "script",
+        "resource_origin": "https://app.example",
+        "scheme": "https",
+        "static_render": true
+      },
+      "expected_issue": "nonce_csp_static_render_incompatibility",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'nonce-abc123'"
+        }
+      ],
+      "id": "LF_CSP_NONCE_05",
+      "intent": {
+        "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+        "class": "nonce_based_strict_csp"
+      },
+      "layers": [],
+      "policy_family": "CSP/framework",
+      "public_source_id": "CL_CSP_06",
+      "source_claim_ids": [
+        "CL_CSP_06",
+        "CL_NEXT_01",
+        "CL_NEXT_02"
+      ]
+    },
+    "minimized_header_bytes": 75,
+    "minimized_header_count": 1,
+    "original_header_bytes": 135,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+        "fixture_id": "LF_CSP_NONCE_05",
+        "intent_class": "nonce_based_strict_csp",
+        "issue": "nonce_csp_static_render_incompatibility",
+        "policy_family": "CSP/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'nonce-abc123'"
+            }
+          ],
+          "rendering": "partial_prerendering",
+          "required_value": "per-request nonce"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_NONCE_06",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "rendering_variant": "build_time_render",
+        "resource_kind": "script",
+        "resource_origin": "https://app.example",
+        "scheme": "https",
+        "static_render": true
+      },
+      "expected_issue": "nonce_csp_static_render_incompatibility",
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'nonce-abc123'"
+        }
+      ],
+      "id": "LF_CSP_NONCE_06",
+      "intent": {
+        "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+        "class": "nonce_based_strict_csp"
+      },
+      "layers": [],
+      "policy_family": "CSP/framework",
+      "public_source_id": "CL_CSP_06",
+      "source_claim_ids": [
+        "CL_CSP_06",
+        "CL_NEXT_01",
+        "CL_NEXT_02"
+      ]
+    },
+    "minimized_header_bytes": 75,
+    "minimized_header_count": 1,
+    "original_header_bytes": 135,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+        "fixture_id": "LF_CSP_NONCE_06",
+        "intent_class": "nonce_based_strict_csp",
+        "issue": "nonce_csp_static_render_incompatibility",
+        "policy_family": "CSP/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'nonce-abc123'"
+            }
+          ],
+          "rendering": "build_time_render",
+          "required_value": "per-request nonce"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_WC_01",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://frontend.example",
+        "request_origin": "https://frontend.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_intended_credentialed_share_blocked",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_WC_01",
+      "intent": {
+        "claim": "Allow the credentialed frontend request to read the API response.",
+        "class": "allow_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS",
+      "public_source_id": "CL_CORS_01",
+      "source_claim_ids": [
+        "CL_CORS_01"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 118,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+        "fixture_id": "LF_CORS_WC_01",
+        "intent_class": "allow_credentialed_cors",
+        "issue": "cors_intended_credentialed_share_blocked",
+        "policy_family": "CORS",
+        "severity": "medium",
+        "witness": {
+          "credentials_mode": "include",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://frontend.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_WC_02",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://console.example",
+        "request_origin": "https://console.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_intended_credentialed_share_blocked",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_WC_02",
+      "intent": {
+        "claim": "Allow the credentialed frontend request to read the API response.",
+        "class": "allow_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS",
+      "public_source_id": "CL_CORS_01",
+      "source_claim_ids": [
+        "CL_CORS_01"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 118,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+        "fixture_id": "LF_CORS_WC_02",
+        "intent_class": "allow_credentialed_cors",
+        "issue": "cors_intended_credentialed_share_blocked",
+        "policy_family": "CORS",
+        "severity": "medium",
+        "witness": {
+          "credentials_mode": "include",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://console.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_WC_03",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://admin.example",
+        "request_origin": "https://admin.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_intended_credentialed_share_blocked",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_WC_03",
+      "intent": {
+        "claim": "Allow the credentialed frontend request to read the API response.",
+        "class": "allow_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS",
+      "public_source_id": "CL_CORS_01",
+      "source_claim_ids": [
+        "CL_CORS_01"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 118,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+        "fixture_id": "LF_CORS_WC_03",
+        "intent_class": "allow_credentialed_cors",
+        "issue": "cors_intended_credentialed_share_blocked",
+        "policy_family": "CORS",
+        "severity": "medium",
+        "witness": {
+          "credentials_mode": "include",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://admin.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_WC_04",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://partner.example",
+        "request_origin": "https://partner.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_intended_credentialed_share_blocked",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_WC_04",
+      "intent": {
+        "claim": "Allow the credentialed frontend request to read the API response.",
+        "class": "allow_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS",
+      "public_source_id": "CL_CORS_01",
+      "source_claim_ids": [
+        "CL_CORS_01"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 118,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+        "fixture_id": "LF_CORS_WC_04",
+        "intent_class": "allow_credentialed_cors",
+        "issue": "cors_intended_credentialed_share_blocked",
+        "policy_family": "CORS",
+        "severity": "medium",
+        "witness": {
+          "credentials_mode": "include",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://partner.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_WC_05",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://app.test",
+        "request_origin": "https://app.test",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_intended_credentialed_share_blocked",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_WC_05",
+      "intent": {
+        "claim": "Allow the credentialed frontend request to read the API response.",
+        "class": "allow_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS",
+      "public_source_id": "CL_CORS_01",
+      "source_claim_ids": [
+        "CL_CORS_01"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 118,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+        "fixture_id": "LF_CORS_WC_05",
+        "intent_class": "allow_credentialed_cors",
+        "issue": "cors_intended_credentialed_share_blocked",
+        "policy_family": "CORS",
+        "severity": "medium",
+        "witness": {
+          "credentials_mode": "include",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://app.test"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_WC_06",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://tenant.example",
+        "request_origin": "https://tenant.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_intended_credentialed_share_blocked",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_WC_06",
+      "intent": {
+        "claim": "Allow the credentialed frontend request to read the API response.",
+        "class": "allow_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS",
+      "public_source_id": "CL_CORS_01",
+      "source_claim_ids": [
+        "CL_CORS_01"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 118,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+        "fixture_id": "LF_CORS_WC_06",
+        "intent_class": "allow_credentialed_cors",
+        "issue": "cors_intended_credentialed_share_blocked",
+        "policy_family": "CORS",
+        "severity": "medium",
+        "witness": {
+          "credentials_mode": "include",
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://tenant.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_REFLECT_01",
+    "issue": "cors_reflected_origin_with_credentials",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://attacker.example",
+        "request_origin": "https://attacker.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_reflected_origin_with_credentials",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_REFLECT_01",
+      "intent": {
+        "claim": "Do not expose credentialed API responses to arbitrary origins.",
+        "class": "deny_public_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS/framework",
+      "public_source_id": "CL_EXPRESS_01",
+      "source_claim_ids": [
+        "CL_EXPRESS_01",
+        "CL_EXPRESS_02"
+      ]
+    },
+    "minimized_header_bytes": 124,
+    "minimized_header_count": 2,
+    "original_header_bytes": 124,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+        "fixture_id": "LF_CORS_REFLECT_01",
+        "intent_class": "deny_public_credentialed_cors",
+        "issue": "cors_reflected_origin_with_credentials",
+        "policy_family": "CORS/framework",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "$ORIGIN"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://attacker.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_REFLECT_02",
+    "issue": "cors_reflected_origin_with_credentials",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://evil.example",
+        "request_origin": "https://evil.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_reflected_origin_with_credentials",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_REFLECT_02",
+      "intent": {
+        "claim": "Do not expose credentialed API responses to arbitrary origins.",
+        "class": "deny_public_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS/framework",
+      "public_source_id": "CL_EXPRESS_01",
+      "source_claim_ids": [
+        "CL_EXPRESS_01",
+        "CL_EXPRESS_02"
+      ]
+    },
+    "minimized_header_bytes": 124,
+    "minimized_header_count": 2,
+    "original_header_bytes": 124,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+        "fixture_id": "LF_CORS_REFLECT_02",
+        "intent_class": "deny_public_credentialed_cors",
+        "issue": "cors_reflected_origin_with_credentials",
+        "policy_family": "CORS/framework",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "$ORIGIN"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://evil.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_REFLECT_03",
+    "issue": "cors_reflected_origin_with_credentials",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://untrusted.example",
+        "request_origin": "https://untrusted.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_reflected_origin_with_credentials",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_REFLECT_03",
+      "intent": {
+        "claim": "Do not expose credentialed API responses to arbitrary origins.",
+        "class": "deny_public_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS/framework",
+      "public_source_id": "CL_EXPRESS_01",
+      "source_claim_ids": [
+        "CL_EXPRESS_01",
+        "CL_EXPRESS_02"
+      ]
+    },
+    "minimized_header_bytes": 124,
+    "minimized_header_count": 2,
+    "original_header_bytes": 124,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+        "fixture_id": "LF_CORS_REFLECT_03",
+        "intent_class": "deny_public_credentialed_cors",
+        "issue": "cors_reflected_origin_with_credentials",
+        "policy_family": "CORS/framework",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "$ORIGIN"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://untrusted.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_REFLECT_04",
+    "issue": "cors_reflected_origin_with_credentials",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://random.test",
+        "request_origin": "https://random.test",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_reflected_origin_with_credentials",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_REFLECT_04",
+      "intent": {
+        "claim": "Do not expose credentialed API responses to arbitrary origins.",
+        "class": "deny_public_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS/framework",
+      "public_source_id": "CL_EXPRESS_01",
+      "source_claim_ids": [
+        "CL_EXPRESS_01",
+        "CL_EXPRESS_02"
+      ]
+    },
+    "minimized_header_bytes": 124,
+    "minimized_header_count": 2,
+    "original_header_bytes": 124,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+        "fixture_id": "LF_CORS_REFLECT_04",
+        "intent_class": "deny_public_credentialed_cors",
+        "issue": "cors_reflected_origin_with_credentials",
+        "policy_family": "CORS/framework",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "$ORIGIN"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://random.test"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_REFLECT_05",
+    "issue": "cors_reflected_origin_with_credentials",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://tenant.bad",
+        "request_origin": "https://tenant.bad",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_reflected_origin_with_credentials",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_REFLECT_05",
+      "intent": {
+        "claim": "Do not expose credentialed API responses to arbitrary origins.",
+        "class": "deny_public_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS/framework",
+      "public_source_id": "CL_EXPRESS_01",
+      "source_claim_ids": [
+        "CL_EXPRESS_01",
+        "CL_EXPRESS_02"
+      ]
+    },
+    "minimized_header_bytes": 124,
+    "minimized_header_count": 2,
+    "original_header_bytes": 124,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+        "fixture_id": "LF_CORS_REFLECT_05",
+        "intent_class": "deny_public_credentialed_cors",
+        "issue": "cors_reflected_origin_with_credentials",
+        "policy_family": "CORS/framework",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "$ORIGIN"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://tenant.bad"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_REFLECT_06",
+    "issue": "cors_reflected_origin_with_credentials",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://origin.invalid",
+        "request_origin": "https://origin.invalid",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_reflected_origin_with_credentials",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_REFLECT_06",
+      "intent": {
+        "claim": "Do not expose credentialed API responses to arbitrary origins.",
+        "class": "deny_public_credentialed_cors"
+      },
+      "layers": [],
+      "policy_family": "CORS/framework",
+      "public_source_id": "CL_EXPRESS_01",
+      "source_claim_ids": [
+        "CL_EXPRESS_01",
+        "CL_EXPRESS_02"
+      ]
+    },
+    "minimized_header_bytes": 124,
+    "minimized_header_count": 2,
+    "original_header_bytes": 124,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+        "fixture_id": "LF_CORS_REFLECT_06",
+        "intent_class": "deny_public_credentialed_cors",
+        "issue": "cors_reflected_origin_with_credentials",
+        "policy_family": "CORS/framework",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Origin",
+              "value": "$ORIGIN"
+            },
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "request_origin": "https://origin.invalid"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_HTTP_01",
+    "issue": "hsts_header_not_honored_over_http",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "http://app.example",
+        "scheme": "http"
+      },
+      "expected_issue": "hsts_header_not_honored_over_http",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "includeSubDomains"
+        }
+      ],
+      "id": "LF_HSTS_HTTP_01",
+      "intent": {
+        "claim": "Establish HSTS state for future visits.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_01",
+      "source_claim_ids": [
+        "CL_HSTS_01"
+      ]
+    },
+    "minimized_header_bytes": 69,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+        "fixture_id": "LF_HSTS_HTTP_01",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_header_not_honored_over_http",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "includeSubDomains"
+            }
+          ],
+          "scheme": "http"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_HTTP_02",
+    "issue": "hsts_header_not_honored_over_http",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "http://secure.example",
+        "scheme": "http"
+      },
+      "expected_issue": "hsts_header_not_honored_over_http",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "includeSubDomains"
+        }
+      ],
+      "id": "LF_HSTS_HTTP_02",
+      "intent": {
+        "claim": "Establish HSTS state for future visits.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_01",
+      "source_claim_ids": [
+        "CL_HSTS_01"
+      ]
+    },
+    "minimized_header_bytes": 69,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+        "fixture_id": "LF_HSTS_HTTP_02",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_header_not_honored_over_http",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "includeSubDomains"
+            }
+          ],
+          "scheme": "http"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_HTTP_03",
+    "issue": "hsts_header_not_honored_over_http",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "http://login.example",
+        "scheme": "http"
+      },
+      "expected_issue": "hsts_header_not_honored_over_http",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "includeSubDomains"
+        }
+      ],
+      "id": "LF_HSTS_HTTP_03",
+      "intent": {
+        "claim": "Establish HSTS state for future visits.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_01",
+      "source_claim_ids": [
+        "CL_HSTS_01"
+      ]
+    },
+    "minimized_header_bytes": 69,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+        "fixture_id": "LF_HSTS_HTTP_03",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_header_not_honored_over_http",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "includeSubDomains"
+            }
+          ],
+          "scheme": "http"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_HTTP_04",
+    "issue": "hsts_header_not_honored_over_http",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "http://admin.example",
+        "scheme": "http"
+      },
+      "expected_issue": "hsts_header_not_honored_over_http",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "includeSubDomains"
+        }
+      ],
+      "id": "LF_HSTS_HTTP_04",
+      "intent": {
+        "claim": "Establish HSTS state for future visits.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_01",
+      "source_claim_ids": [
+        "CL_HSTS_01"
+      ]
+    },
+    "minimized_header_bytes": 69,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+        "fixture_id": "LF_HSTS_HTTP_04",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_header_not_honored_over_http",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "includeSubDomains"
+            }
+          ],
+          "scheme": "http"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_HTTP_05",
+    "issue": "hsts_header_not_honored_over_http",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "http://tenant.example",
+        "scheme": "http"
+      },
+      "expected_issue": "hsts_header_not_honored_over_http",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "includeSubDomains"
+        }
+      ],
+      "id": "LF_HSTS_HTTP_05",
+      "intent": {
+        "claim": "Establish HSTS state for future visits.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_01",
+      "source_claim_ids": [
+        "CL_HSTS_01"
+      ]
+    },
+    "minimized_header_bytes": 69,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+        "fixture_id": "LF_HSTS_HTTP_05",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_header_not_honored_over_http",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "includeSubDomains"
+            }
+          ],
+          "scheme": "http"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_HTTP_06",
+    "issue": "hsts_header_not_honored_over_http",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "http://service.example",
+        "scheme": "http"
+      },
+      "expected_issue": "hsts_header_not_honored_over_http",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "includeSubDomains"
+        }
+      ],
+      "id": "LF_HSTS_HTTP_06",
+      "intent": {
+        "claim": "Establish HSTS state for future visits.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_01",
+      "source_claim_ids": [
+        "CL_HSTS_01"
+      ]
+    },
+    "minimized_header_bytes": 69,
+    "minimized_header_count": 1,
+    "original_header_bytes": 87,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+        "fixture_id": "LF_HSTS_HTTP_06",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_header_not_honored_over_http",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "includeSubDomains"
+            }
+          ],
+          "scheme": "http"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_ZERO_01",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "scheme": "https"
+      },
+      "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0"
+        }
+      ],
+      "id": "LF_HSTS_ZERO_01",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_02",
+      "source_claim_ids": [
+        "CL_HSTS_02"
+      ]
+    },
+    "minimized_header_bytes": 61,
+    "minimized_header_count": 1,
+    "original_header_bytes": 80,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+        "fixture_id": "LF_HSTS_ZERO_01",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_policy_cleared_by_zero_max_age",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=0"
+            }
+          ],
+          "transition": "delete-known-hsts-host"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_ZERO_02",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://secure.example",
+        "scheme": "https"
+      },
+      "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0"
+        }
+      ],
+      "id": "LF_HSTS_ZERO_02",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_02",
+      "source_claim_ids": [
+        "CL_HSTS_02"
+      ]
+    },
+    "minimized_header_bytes": 61,
+    "minimized_header_count": 1,
+    "original_header_bytes": 80,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+        "fixture_id": "LF_HSTS_ZERO_02",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_policy_cleared_by_zero_max_age",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=0"
+            }
+          ],
+          "transition": "delete-known-hsts-host"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_ZERO_03",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://login.example",
+        "scheme": "https"
+      },
+      "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0"
+        }
+      ],
+      "id": "LF_HSTS_ZERO_03",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_02",
+      "source_claim_ids": [
+        "CL_HSTS_02"
+      ]
+    },
+    "minimized_header_bytes": 61,
+    "minimized_header_count": 1,
+    "original_header_bytes": 80,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+        "fixture_id": "LF_HSTS_ZERO_03",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_policy_cleared_by_zero_max_age",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=0"
+            }
+          ],
+          "transition": "delete-known-hsts-host"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_ZERO_04",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://admin.example",
+        "scheme": "https"
+      },
+      "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0"
+        }
+      ],
+      "id": "LF_HSTS_ZERO_04",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_02",
+      "source_claim_ids": [
+        "CL_HSTS_02"
+      ]
+    },
+    "minimized_header_bytes": 61,
+    "minimized_header_count": 1,
+    "original_header_bytes": 80,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+        "fixture_id": "LF_HSTS_ZERO_04",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_policy_cleared_by_zero_max_age",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=0"
+            }
+          ],
+          "transition": "delete-known-hsts-host"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_ZERO_05",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://tenant.example",
+        "scheme": "https"
+      },
+      "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0"
+        }
+      ],
+      "id": "LF_HSTS_ZERO_05",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_02",
+      "source_claim_ids": [
+        "CL_HSTS_02"
+      ]
+    },
+    "minimized_header_bytes": 61,
+    "minimized_header_count": 1,
+    "original_header_bytes": 80,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+        "fixture_id": "LF_HSTS_ZERO_05",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_policy_cleared_by_zero_max_age",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=0"
+            }
+          ],
+          "transition": "delete-known-hsts-host"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_ZERO_06",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://service.example",
+        "scheme": "https"
+      },
+      "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0"
+        }
+      ],
+      "id": "LF_HSTS_ZERO_06",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active.",
+        "class": "enforce_https_only"
+      },
+      "layers": [],
+      "policy_family": "HSTS",
+      "public_source_id": "CL_HSTS_02",
+      "source_claim_ids": [
+        "CL_HSTS_02"
+      ]
+    },
+    "minimized_header_bytes": 61,
+    "minimized_header_count": 1,
+    "original_header_bytes": 80,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+        "fixture_id": "LF_HSTS_ZERO_06",
+        "intent_class": "enforce_https_only",
+        "issue": "hsts_policy_cleared_by_zero_max_age",
+        "policy_family": "HSTS",
+        "severity": "high",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=0"
+            }
+          ],
+          "transition": "delete-known-hsts-host"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COEP_01",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "omit",
+        "document_origin": "https://app.example",
+        "request_mode": "no-cors",
+        "resource_origin": "https://cdn.other",
+        "scheme": "https"
+      },
+      "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COEP_01",
+      "intent": {
+        "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+        "class": "cross_origin_isolation_without_embed_breakage"
+      },
+      "layers": [],
+      "policy_family": "COEP/CORP/CORS",
+      "public_source_id": "CL_COEP_01",
+      "source_claim_ids": [
+        "CL_COEP_01"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 67,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+        "fixture_id": "LF_COEP_01",
+        "intent_class": "cross_origin_isolation_without_embed_breakage",
+        "issue": "coep_require_corp_blocks_cross_origin_resource",
+        "policy_family": "COEP/CORP/CORS",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Cross-Origin-Embedder-Policy",
+              "value": "require-corp"
+            }
+          ],
+          "request_mode": "no-cors",
+          "resource_origin": "https://cdn.other"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COEP_02",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "omit",
+        "document_origin": "https://app.example",
+        "request_mode": "no-cors",
+        "resource_origin": "https://images.partner",
+        "scheme": "https"
+      },
+      "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COEP_02",
+      "intent": {
+        "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+        "class": "cross_origin_isolation_without_embed_breakage"
+      },
+      "layers": [],
+      "policy_family": "COEP/CORP/CORS",
+      "public_source_id": "CL_COEP_01",
+      "source_claim_ids": [
+        "CL_COEP_01"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 67,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+        "fixture_id": "LF_COEP_02",
+        "intent_class": "cross_origin_isolation_without_embed_breakage",
+        "issue": "coep_require_corp_blocks_cross_origin_resource",
+        "policy_family": "COEP/CORP/CORS",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Cross-Origin-Embedder-Policy",
+              "value": "require-corp"
+            }
+          ],
+          "request_mode": "no-cors",
+          "resource_origin": "https://images.partner"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COEP_03",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "omit",
+        "document_origin": "https://app.example",
+        "request_mode": "no-cors",
+        "resource_origin": "https://fonts.third",
+        "scheme": "https"
+      },
+      "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COEP_03",
+      "intent": {
+        "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+        "class": "cross_origin_isolation_without_embed_breakage"
+      },
+      "layers": [],
+      "policy_family": "COEP/CORP/CORS",
+      "public_source_id": "CL_COEP_01",
+      "source_claim_ids": [
+        "CL_COEP_01"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 67,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+        "fixture_id": "LF_COEP_03",
+        "intent_class": "cross_origin_isolation_without_embed_breakage",
+        "issue": "coep_require_corp_blocks_cross_origin_resource",
+        "policy_family": "COEP/CORP/CORS",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Cross-Origin-Embedder-Policy",
+              "value": "require-corp"
+            }
+          ],
+          "request_mode": "no-cors",
+          "resource_origin": "https://fonts.third"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COEP_04",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "omit",
+        "document_origin": "https://app.example",
+        "request_mode": "no-cors",
+        "resource_origin": "https://video.other",
+        "scheme": "https"
+      },
+      "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COEP_04",
+      "intent": {
+        "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+        "class": "cross_origin_isolation_without_embed_breakage"
+      },
+      "layers": [],
+      "policy_family": "COEP/CORP/CORS",
+      "public_source_id": "CL_COEP_01",
+      "source_claim_ids": [
+        "CL_COEP_01"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 67,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+        "fixture_id": "LF_COEP_04",
+        "intent_class": "cross_origin_isolation_without_embed_breakage",
+        "issue": "coep_require_corp_blocks_cross_origin_resource",
+        "policy_family": "COEP/CORP/CORS",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Cross-Origin-Embedder-Policy",
+              "value": "require-corp"
+            }
+          ],
+          "request_mode": "no-cors",
+          "resource_origin": "https://video.other"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COEP_05",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "omit",
+        "document_origin": "https://app.example",
+        "request_mode": "no-cors",
+        "resource_origin": "https://assets.invalid",
+        "scheme": "https"
+      },
+      "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COEP_05",
+      "intent": {
+        "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+        "class": "cross_origin_isolation_without_embed_breakage"
+      },
+      "layers": [],
+      "policy_family": "COEP/CORP/CORS",
+      "public_source_id": "CL_COEP_01",
+      "source_claim_ids": [
+        "CL_COEP_01"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 67,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+        "fixture_id": "LF_COEP_05",
+        "intent_class": "cross_origin_isolation_without_embed_breakage",
+        "issue": "coep_require_corp_blocks_cross_origin_resource",
+        "policy_family": "COEP/CORP/CORS",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Cross-Origin-Embedder-Policy",
+              "value": "require-corp"
+            }
+          ],
+          "request_mode": "no-cors",
+          "resource_origin": "https://assets.invalid"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COEP_06",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "omit",
+        "document_origin": "https://app.example",
+        "request_mode": "no-cors",
+        "resource_origin": "https://cdn2.example.net",
+        "scheme": "https"
+      },
+      "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COEP_06",
+      "intent": {
+        "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+        "class": "cross_origin_isolation_without_embed_breakage"
+      },
+      "layers": [],
+      "policy_family": "COEP/CORP/CORS",
+      "public_source_id": "CL_COEP_01",
+      "source_claim_ids": [
+        "CL_COEP_01"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 67,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+        "fixture_id": "LF_COEP_06",
+        "intent_class": "cross_origin_isolation_without_embed_breakage",
+        "issue": "coep_require_corp_blocks_cross_origin_resource",
+        "policy_family": "COEP/CORP/CORS",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Cross-Origin-Embedder-Policy",
+              "value": "require-corp"
+            }
+          ],
+          "request_mode": "no-cors",
+          "resource_origin": "https://cdn2.example.net"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COOP_ISO_01",
+    "issue": "cross_origin_isolation_incomplete",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "cross-origin-isolated",
+        "scheme": "https"
+      },
+      "expected_issue": "cross_origin_isolation_incomplete",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COOP_ISO_01",
+      "intent": {
+        "claim": "Enable cross-origin isolation for APIs that require it.",
+        "class": "enable_cross_origin_isolation"
+      },
+      "layers": [],
+      "policy_family": "COOP/COEP/Permissions-Policy",
+      "public_source_id": "CL_COOP_01",
+      "source_claim_ids": [
+        "CL_COOP_01",
+        "CL_COOP_02",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 67,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+        "fixture_id": "LF_COOP_ISO_01",
+        "intent_class": "enable_cross_origin_isolation",
+        "issue": "cross_origin_isolation_incomplete",
+        "policy_family": "COOP/COEP/Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "coep": [
+            "require-corp"
+          ],
+          "coop": [],
+          "permissions_policy": []
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COOP_ISO_02",
+    "issue": "cross_origin_isolation_incomplete",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "cross-origin-isolated",
+        "scheme": "https"
+      },
+      "expected_issue": "cross_origin_isolation_incomplete",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COOP_ISO_02",
+      "intent": {
+        "claim": "Enable cross-origin isolation for APIs that require it.",
+        "class": "enable_cross_origin_isolation"
+      },
+      "layers": [],
+      "policy_family": "COOP/COEP/Permissions-Policy",
+      "public_source_id": "CL_COOP_01",
+      "source_claim_ids": [
+        "CL_COOP_01",
+        "CL_COOP_02",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 131,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+        "fixture_id": "LF_COOP_ISO_02",
+        "intent_class": "enable_cross_origin_isolation",
+        "issue": "cross_origin_isolation_incomplete",
+        "policy_family": "COOP/COEP/Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "coep": [
+            "require-corp"
+          ],
+          "coop": [],
+          "permissions_policy": []
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COOP_ISO_03",
+    "issue": "cross_origin_isolation_incomplete",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "cross-origin-isolated",
+        "scheme": "https"
+      },
+      "expected_issue": "cross_origin_isolation_incomplete",
+      "headers": [
+        {
+          "name": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        }
+      ],
+      "id": "LF_COOP_ISO_03",
+      "intent": {
+        "claim": "Enable cross-origin isolation for APIs that require it.",
+        "class": "enable_cross_origin_isolation"
+      },
+      "layers": [],
+      "policy_family": "COOP/COEP/Permissions-Policy",
+      "public_source_id": "CL_COOP_01",
+      "source_claim_ids": [
+        "CL_COOP_01",
+        "CL_COOP_02",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 64,
+    "minimized_header_count": 1,
+    "original_header_bytes": 64,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+        "fixture_id": "LF_COOP_ISO_03",
+        "intent_class": "enable_cross_origin_isolation",
+        "issue": "cross_origin_isolation_incomplete",
+        "policy_family": "COOP/COEP/Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "coep": [],
+          "coop": [
+            "same-origin"
+          ],
+          "permissions_policy": []
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COOP_ISO_04",
+    "issue": "cross_origin_isolation_incomplete",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "cross-origin-isolated",
+        "scheme": "https"
+      },
+      "expected_issue": "cross_origin_isolation_incomplete",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "id": "LF_COOP_ISO_04",
+      "intent": {
+        "claim": "Enable cross-origin isolation for APIs that require it.",
+        "class": "enable_cross_origin_isolation"
+      },
+      "layers": [],
+      "policy_family": "COOP/COEP/Permissions-Policy",
+      "public_source_id": "CL_COOP_01",
+      "source_claim_ids": [
+        "CL_COOP_01",
+        "CL_COOP_02",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 67,
+    "minimized_header_count": 1,
+    "original_header_bytes": 144,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+        "fixture_id": "LF_COOP_ISO_04",
+        "intent_class": "enable_cross_origin_isolation",
+        "issue": "cross_origin_isolation_incomplete",
+        "policy_family": "COOP/COEP/Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "coep": [
+            "require-corp"
+          ],
+          "coop": [],
+          "permissions_policy": []
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COOP_ISO_05",
+    "issue": "cross_origin_isolation_incomplete",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "cross-origin-isolated",
+        "scheme": "https"
+      },
+      "expected_issue": "cross_origin_isolation_incomplete",
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "unsafe-none"
+        }
+      ],
+      "id": "LF_COOP_ISO_05",
+      "intent": {
+        "claim": "Enable cross-origin isolation for APIs that require it.",
+        "class": "enable_cross_origin_isolation"
+      },
+      "layers": [],
+      "policy_family": "COOP/COEP/Permissions-Policy",
+      "public_source_id": "CL_COOP_01",
+      "source_claim_ids": [
+        "CL_COOP_01",
+        "CL_COOP_02",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 66,
+    "minimized_header_count": 1,
+    "original_header_bytes": 130,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+        "fixture_id": "LF_COOP_ISO_05",
+        "intent_class": "enable_cross_origin_isolation",
+        "issue": "cross_origin_isolation_incomplete",
+        "policy_family": "COOP/COEP/Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "coep": [
+            "unsafe-none"
+          ],
+          "coop": [],
+          "permissions_policy": []
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_COOP_ISO_06",
+    "issue": "cross_origin_isolation_incomplete",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "cross-origin-isolated",
+        "scheme": "https"
+      },
+      "expected_issue": "cross_origin_isolation_incomplete",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "cross-origin-isolated=()"
+        }
+      ],
+      "id": "LF_COOP_ISO_06",
+      "intent": {
+        "claim": "Enable cross-origin isolation for APIs that require it.",
+        "class": "enable_cross_origin_isolation"
+      },
+      "layers": [],
+      "policy_family": "COOP/COEP/Permissions-Policy",
+      "public_source_id": "CL_COOP_01",
+      "source_claim_ids": [
+        "CL_COOP_01",
+        "CL_COOP_02",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 69,
+    "minimized_header_count": 1,
+    "original_header_bytes": 200,
+    "original_header_count": 3,
+    "remaining_issues": [
+      {
+        "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+        "fixture_id": "LF_COOP_ISO_06",
+        "intent_class": "enable_cross_origin_isolation",
+        "issue": "cross_origin_isolation_incomplete",
+        "policy_family": "COOP/COEP/Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "coep": [],
+          "coop": [],
+          "permissions_policy": [
+            "cross-origin-isolated=()"
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_PERM_DISABLED_01",
+    "issue": "permissions_policy_feature_disabled",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "geolocation",
+        "scheme": "https"
+      },
+      "expected_issue": "permissions_policy_feature_disabled",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "geolocation=()"
+        }
+      ],
+      "id": "LF_PERM_DISABLED_01",
+      "intent": {
+        "claim": "Allow the application to use geolocation in the current document.",
+        "class": "allow_browser_feature"
+      },
+      "layers": [],
+      "policy_family": "Permissions-Policy",
+      "public_source_id": "CL_PERM_01",
+      "source_claim_ids": [
+        "CL_PERM_01",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 59,
+    "minimized_header_count": 1,
+    "original_header_bytes": 59,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+        "fixture_id": "LF_PERM_DISABLED_01",
+        "intent_class": "allow_browser_feature",
+        "issue": "permissions_policy_feature_disabled",
+        "policy_family": "Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "feature": "geolocation",
+          "headers": [
+            {
+              "name": "Permissions-Policy",
+              "value": "geolocation=()"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_PERM_DISABLED_02",
+    "issue": "permissions_policy_feature_disabled",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "camera",
+        "scheme": "https"
+      },
+      "expected_issue": "permissions_policy_feature_disabled",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "camera=()"
+        }
+      ],
+      "id": "LF_PERM_DISABLED_02",
+      "intent": {
+        "claim": "Allow the application to use camera in the current document.",
+        "class": "allow_browser_feature"
+      },
+      "layers": [],
+      "policy_family": "Permissions-Policy",
+      "public_source_id": "CL_PERM_01",
+      "source_claim_ids": [
+        "CL_PERM_01",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 54,
+    "minimized_header_count": 1,
+    "original_header_bytes": 54,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+        "fixture_id": "LF_PERM_DISABLED_02",
+        "intent_class": "allow_browser_feature",
+        "issue": "permissions_policy_feature_disabled",
+        "policy_family": "Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "feature": "camera",
+          "headers": [
+            {
+              "name": "Permissions-Policy",
+              "value": "camera=()"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_PERM_DISABLED_03",
+    "issue": "permissions_policy_feature_disabled",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "microphone",
+        "scheme": "https"
+      },
+      "expected_issue": "permissions_policy_feature_disabled",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "microphone=()"
+        }
+      ],
+      "id": "LF_PERM_DISABLED_03",
+      "intent": {
+        "claim": "Allow the application to use microphone in the current document.",
+        "class": "allow_browser_feature"
+      },
+      "layers": [],
+      "policy_family": "Permissions-Policy",
+      "public_source_id": "CL_PERM_01",
+      "source_claim_ids": [
+        "CL_PERM_01",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 58,
+    "minimized_header_count": 1,
+    "original_header_bytes": 58,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+        "fixture_id": "LF_PERM_DISABLED_03",
+        "intent_class": "allow_browser_feature",
+        "issue": "permissions_policy_feature_disabled",
+        "policy_family": "Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "feature": "microphone",
+          "headers": [
+            {
+              "name": "Permissions-Policy",
+              "value": "microphone=()"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_PERM_DISABLED_04",
+    "issue": "permissions_policy_feature_disabled",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "fullscreen",
+        "scheme": "https"
+      },
+      "expected_issue": "permissions_policy_feature_disabled",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "fullscreen=()"
+        }
+      ],
+      "id": "LF_PERM_DISABLED_04",
+      "intent": {
+        "claim": "Allow the application to use fullscreen in the current document.",
+        "class": "allow_browser_feature"
+      },
+      "layers": [],
+      "policy_family": "Permissions-Policy",
+      "public_source_id": "CL_PERM_01",
+      "source_claim_ids": [
+        "CL_PERM_01",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 58,
+    "minimized_header_count": 1,
+    "original_header_bytes": 58,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+        "fixture_id": "LF_PERM_DISABLED_04",
+        "intent_class": "allow_browser_feature",
+        "issue": "permissions_policy_feature_disabled",
+        "policy_family": "Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "feature": "fullscreen",
+          "headers": [
+            {
+              "name": "Permissions-Policy",
+              "value": "fullscreen=()"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_PERM_DISABLED_05",
+    "issue": "permissions_policy_feature_disabled",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "payment",
+        "scheme": "https"
+      },
+      "expected_issue": "permissions_policy_feature_disabled",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "payment=()"
+        }
+      ],
+      "id": "LF_PERM_DISABLED_05",
+      "intent": {
+        "claim": "Allow the application to use payment in the current document.",
+        "class": "allow_browser_feature"
+      },
+      "layers": [],
+      "policy_family": "Permissions-Policy",
+      "public_source_id": "CL_PERM_01",
+      "source_claim_ids": [
+        "CL_PERM_01",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 55,
+    "minimized_header_count": 1,
+    "original_header_bytes": 55,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+        "fixture_id": "LF_PERM_DISABLED_05",
+        "intent_class": "allow_browser_feature",
+        "issue": "permissions_policy_feature_disabled",
+        "policy_family": "Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "feature": "payment",
+          "headers": [
+            {
+              "name": "Permissions-Policy",
+              "value": "payment=()"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_PERM_DISABLED_06",
+    "issue": "permissions_policy_feature_disabled",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "feature": "usb",
+        "scheme": "https"
+      },
+      "expected_issue": "permissions_policy_feature_disabled",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "usb=()"
+        }
+      ],
+      "id": "LF_PERM_DISABLED_06",
+      "intent": {
+        "claim": "Allow the application to use usb in the current document.",
+        "class": "allow_browser_feature"
+      },
+      "layers": [],
+      "policy_family": "Permissions-Policy",
+      "public_source_id": "CL_PERM_01",
+      "source_claim_ids": [
+        "CL_PERM_01",
+        "CL_PERM_02"
+      ]
+    },
+    "minimized_header_bytes": 51,
+    "minimized_header_count": 1,
+    "original_header_bytes": 51,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+        "fixture_id": "LF_PERM_DISABLED_06",
+        "intent_class": "allow_browser_feature",
+        "issue": "permissions_policy_feature_disabled",
+        "policy_family": "Permissions-Policy",
+        "severity": "medium",
+        "witness": {
+          "feature": "usb",
+          "headers": [
+            {
+              "name": "Permissions-Policy",
+              "value": "usb=()"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_01",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://cdn.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_01",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://cdn.example; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_01",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://cdn.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://cdn.example; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_02",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://static.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_02",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://static.example; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_02",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://static.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://static.example; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_03",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://assets.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_03",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://assets.example; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_03",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://assets.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://assets.example; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_04",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://scripts.partner",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_04",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://scripts.partner; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_04",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://scripts.partner"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://scripts.partner; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_05",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://widgets.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_05",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://widgets.example; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_05",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://widgets.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://widgets.example; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_06",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://media.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_06",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://media.example; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_06",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://media.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://media.example; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_07",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://cdn2.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_07",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://cdn2.example; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_07",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://cdn2.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://cdn2.example; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CSP_COMPOSE_08",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "resource_kind": "script",
+        "resource_origin": "https://bundle.example",
+        "scheme": "https"
+      },
+      "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+      "headers": [],
+      "id": "LF_CSP_COMPOSE_08",
+      "intent": {
+        "claim": "Allow a required script after combining framework and deployment CSP layers.",
+        "class": "allow_required_script_after_policy_composition"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://bundle.example; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "proxy_default",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_CSP_08",
+      "source_claim_ids": [
+        "CL_CSP_08"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+        "fixture_id": "LF_CSP_COMPOSE_08",
+        "intent_class": "allow_required_script_after_policy_composition",
+        "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+        "policy_family": "Layered policy composition",
+        "severity": "medium",
+        "witness": {
+          "attempt": {
+            "document_origin": "https://app.example",
+            "resource_origin": "https://bundle.example"
+          },
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self' https://bundle.example; object-src 'none'"
+            },
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "proxy_default",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_LAYER_DROP_01",
+    "issue": "layered_header_override_drops_enforcement",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "expected_enforced_csp": true,
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "layered_header_override_drops_enforcement",
+      "headers": [],
+      "id": "LF_LAYER_DROP_01",
+      "intent": {
+        "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+        "class": "preserve_enforced_policy_across_layers"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": ""
+            }
+          ],
+          "layer": "legacy_middleware",
+          "op": "remove"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "script-src 'self'; report-uri /csp"
+            }
+          ],
+          "layer": "legacy_middleware",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_LAYER_01",
+      "source_claim_ids": [
+        "CL_LAYER_01",
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+        "fixture_id": "LF_LAYER_DROP_01",
+        "intent_class": "preserve_enforced_policy_across_layers",
+        "issue": "layered_header_override_drops_enforcement",
+        "policy_family": "Layered policy composition",
+        "severity": "high",
+        "witness": {
+          "headers": [],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "legacy_middleware",
+              "op": "remove"
+            },
+            {
+              "header": "Content-Security-Policy-Report-Only",
+              "layer_index": 2,
+              "layer_name": "legacy_middleware",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_LAYER_DROP_02",
+    "issue": "layered_header_override_drops_enforcement",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "expected_enforced_csp": true,
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "layered_header_override_drops_enforcement",
+      "headers": [],
+      "id": "LF_LAYER_DROP_02",
+      "intent": {
+        "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+        "class": "preserve_enforced_policy_across_layers"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": ""
+            }
+          ],
+          "layer": "reverse_proxy",
+          "op": "remove"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "script-src 'self'; report-uri /csp"
+            }
+          ],
+          "layer": "reverse_proxy",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_LAYER_01",
+      "source_claim_ids": [
+        "CL_LAYER_01",
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+        "fixture_id": "LF_LAYER_DROP_02",
+        "intent_class": "preserve_enforced_policy_across_layers",
+        "issue": "layered_header_override_drops_enforcement",
+        "policy_family": "Layered policy composition",
+        "severity": "high",
+        "witness": {
+          "headers": [],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "reverse_proxy",
+              "op": "remove"
+            },
+            {
+              "header": "Content-Security-Policy-Report-Only",
+              "layer_index": 2,
+              "layer_name": "reverse_proxy",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_LAYER_DROP_03",
+    "issue": "layered_header_override_drops_enforcement",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "expected_enforced_csp": true,
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "layered_header_override_drops_enforcement",
+      "headers": [],
+      "id": "LF_LAYER_DROP_03",
+      "intent": {
+        "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+        "class": "preserve_enforced_policy_across_layers"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": ""
+            }
+          ],
+          "layer": "edge_function",
+          "op": "remove"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "script-src 'self'; report-uri /csp"
+            }
+          ],
+          "layer": "edge_function",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_LAYER_01",
+      "source_claim_ids": [
+        "CL_LAYER_01",
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+        "fixture_id": "LF_LAYER_DROP_03",
+        "intent_class": "preserve_enforced_policy_across_layers",
+        "issue": "layered_header_override_drops_enforcement",
+        "policy_family": "Layered policy composition",
+        "severity": "high",
+        "witness": {
+          "headers": [],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "edge_function",
+              "op": "remove"
+            },
+            {
+              "header": "Content-Security-Policy-Report-Only",
+              "layer_index": 2,
+              "layer_name": "edge_function",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_LAYER_DROP_04",
+    "issue": "layered_header_override_drops_enforcement",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "expected_enforced_csp": true,
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "layered_header_override_drops_enforcement",
+      "headers": [],
+      "id": "LF_LAYER_DROP_04",
+      "intent": {
+        "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+        "class": "preserve_enforced_policy_across_layers"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": ""
+            }
+          ],
+          "layer": "route_override",
+          "op": "remove"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "script-src 'self'; report-uri /csp"
+            }
+          ],
+          "layer": "route_override",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_LAYER_01",
+      "source_claim_ids": [
+        "CL_LAYER_01",
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+        "fixture_id": "LF_LAYER_DROP_04",
+        "intent_class": "preserve_enforced_policy_across_layers",
+        "issue": "layered_header_override_drops_enforcement",
+        "policy_family": "Layered policy composition",
+        "severity": "high",
+        "witness": {
+          "headers": [],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "route_override",
+              "op": "remove"
+            },
+            {
+              "header": "Content-Security-Policy-Report-Only",
+              "layer_index": 2,
+              "layer_name": "route_override",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_LAYER_DROP_05",
+    "issue": "layered_header_override_drops_enforcement",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "expected_enforced_csp": true,
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "layered_header_override_drops_enforcement",
+      "headers": [],
+      "id": "LF_LAYER_DROP_05",
+      "intent": {
+        "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+        "class": "preserve_enforced_policy_across_layers"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": ""
+            }
+          ],
+          "layer": "compatibility_filter",
+          "op": "remove"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "script-src 'self'; report-uri /csp"
+            }
+          ],
+          "layer": "compatibility_filter",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_LAYER_01",
+      "source_claim_ids": [
+        "CL_LAYER_01",
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+        "fixture_id": "LF_LAYER_DROP_05",
+        "intent_class": "preserve_enforced_policy_across_layers",
+        "issue": "layered_header_override_drops_enforcement",
+        "policy_family": "Layered policy composition",
+        "severity": "high",
+        "witness": {
+          "headers": [],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "compatibility_filter",
+              "op": "remove"
+            },
+            {
+              "header": "Content-Security-Policy-Report-Only",
+              "layer_index": 2,
+              "layer_name": "compatibility_filter",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_LAYER_DROP_06",
+    "issue": "layered_header_override_drops_enforcement",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "expected_enforced_csp": true,
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example",
+        "scheme": "https"
+      },
+      "expected_issue": "layered_header_override_drops_enforcement",
+      "headers": [],
+      "id": "LF_LAYER_DROP_06",
+      "intent": {
+        "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+        "class": "preserve_enforced_policy_across_layers"
+      },
+      "layers": [
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": "script-src 'self'; object-src 'none'"
+            }
+          ],
+          "layer": "framework",
+          "op": "append"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy",
+              "value": ""
+            }
+          ],
+          "layer": "cdn_rule",
+          "op": "remove"
+        },
+        {
+          "headers": [
+            {
+              "name": "Content-Security-Policy-Report-Only",
+              "value": "script-src 'self'; report-uri /csp"
+            }
+          ],
+          "layer": "cdn_rule",
+          "op": "append"
+        }
+      ],
+      "policy_family": "Layered policy composition",
+      "public_source_id": "CL_LAYER_01",
+      "source_claim_ids": [
+        "CL_LAYER_01",
+        "CL_CSP_01"
+      ]
+    },
+    "minimized_header_bytes": 2,
+    "minimized_header_count": 0,
+    "original_header_bytes": 2,
+    "original_header_count": 0,
+    "remaining_issues": [
+      {
+        "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+        "fixture_id": "LF_LAYER_DROP_06",
+        "intent_class": "preserve_enforced_policy_across_layers",
+        "issue": "layered_header_override_drops_enforcement",
+        "policy_family": "Layered policy composition",
+        "severity": "high",
+        "witness": {
+          "headers": [],
+          "layer_trace": [
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 0,
+              "layer_name": "framework",
+              "op": "append"
+            },
+            {
+              "header": "Content-Security-Policy",
+              "layer_index": 1,
+              "layer_name": "cdn_rule",
+              "op": "remove"
+            },
+            {
+              "header": "Content-Security-Policy-Report-Only",
+              "layer_index": 2,
+              "layer_name": "cdn_rule",
+              "op": "append"
+            }
+          ]
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_VARY_01",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://tenant1.example",
+        "dynamic_origin": true,
+        "request_origin": "https://tenant1.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_dynamic_origin_missing_vary",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_VARY_01",
+      "intent": {
+        "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+        "class": "allow_credentialed_cors_cache_safe"
+      },
+      "layers": [],
+      "policy_family": "CORS/cache",
+      "public_source_id": "CL_CORS_05",
+      "source_claim_ids": [
+        "CL_CORS_05"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 140,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+        "fixture_id": "LF_CORS_VARY_01",
+        "intent_class": "allow_credentialed_cors_cache_safe",
+        "issue": "cors_dynamic_origin_missing_vary",
+        "policy_family": "CORS/cache",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "missing": "Vary: Origin",
+          "request_origin": "https://tenant1.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_VARY_02",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://tenant2.example",
+        "dynamic_origin": true,
+        "request_origin": "https://tenant2.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_dynamic_origin_missing_vary",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_VARY_02",
+      "intent": {
+        "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+        "class": "allow_credentialed_cors_cache_safe"
+      },
+      "layers": [],
+      "policy_family": "CORS/cache",
+      "public_source_id": "CL_CORS_05",
+      "source_claim_ids": [
+        "CL_CORS_05"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 140,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+        "fixture_id": "LF_CORS_VARY_02",
+        "intent_class": "allow_credentialed_cors_cache_safe",
+        "issue": "cors_dynamic_origin_missing_vary",
+        "policy_family": "CORS/cache",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "missing": "Vary: Origin",
+          "request_origin": "https://tenant2.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_VARY_03",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://console.example",
+        "dynamic_origin": true,
+        "request_origin": "https://console.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_dynamic_origin_missing_vary",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_VARY_03",
+      "intent": {
+        "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+        "class": "allow_credentialed_cors_cache_safe"
+      },
+      "layers": [],
+      "policy_family": "CORS/cache",
+      "public_source_id": "CL_CORS_05",
+      "source_claim_ids": [
+        "CL_CORS_05"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 140,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+        "fixture_id": "LF_CORS_VARY_03",
+        "intent_class": "allow_credentialed_cors_cache_safe",
+        "issue": "cors_dynamic_origin_missing_vary",
+        "policy_family": "CORS/cache",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "missing": "Vary: Origin",
+          "request_origin": "https://console.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_VARY_04",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://admin.example",
+        "dynamic_origin": true,
+        "request_origin": "https://admin.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_dynamic_origin_missing_vary",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_VARY_04",
+      "intent": {
+        "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+        "class": "allow_credentialed_cors_cache_safe"
+      },
+      "layers": [],
+      "policy_family": "CORS/cache",
+      "public_source_id": "CL_CORS_05",
+      "source_claim_ids": [
+        "CL_CORS_05"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 138,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+        "fixture_id": "LF_CORS_VARY_04",
+        "intent_class": "allow_credentialed_cors_cache_safe",
+        "issue": "cors_dynamic_origin_missing_vary",
+        "policy_family": "CORS/cache",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "missing": "Vary: Origin",
+          "request_origin": "https://admin.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_VARY_05",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://partner.example",
+        "dynamic_origin": true,
+        "request_origin": "https://partner.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_dynamic_origin_missing_vary",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_VARY_05",
+      "intent": {
+        "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+        "class": "allow_credentialed_cors_cache_safe"
+      },
+      "layers": [],
+      "policy_family": "CORS/cache",
+      "public_source_id": "CL_CORS_05",
+      "source_claim_ids": [
+        "CL_CORS_05"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 140,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+        "fixture_id": "LF_CORS_VARY_05",
+        "intent_class": "allow_credentialed_cors_cache_safe",
+        "issue": "cors_dynamic_origin_missing_vary",
+        "policy_family": "CORS/cache",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "missing": "Vary: Origin",
+          "request_origin": "https://partner.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_CORS_VARY_06",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "minimized_fixture": {
+      "context": {
+        "credentials_mode": "include",
+        "document_origin": "https://embedder.example",
+        "dynamic_origin": true,
+        "request_origin": "https://embedder.example",
+        "resource_origin": "https://api.example",
+        "scheme": "https"
+      },
+      "expected_issue": "cors_dynamic_origin_missing_vary",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "id": "LF_CORS_VARY_06",
+      "intent": {
+        "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+        "class": "allow_credentialed_cors_cache_safe"
+      },
+      "layers": [],
+      "policy_family": "CORS/cache",
+      "public_source_id": "CL_CORS_05",
+      "source_claim_ids": [
+        "CL_CORS_05"
+      ]
+    },
+    "minimized_header_bytes": 63,
+    "minimized_header_count": 1,
+    "original_header_bytes": 141,
+    "original_header_count": 2,
+    "remaining_issues": [
+      {
+        "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+        "fixture_id": "LF_CORS_VARY_06",
+        "intent_class": "allow_credentialed_cors_cache_safe",
+        "issue": "cors_dynamic_origin_missing_vary",
+        "policy_family": "CORS/cache",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Access-Control-Allow-Credentials",
+              "value": "true"
+            }
+          ],
+          "missing": "Vary: Origin",
+          "request_origin": "https://embedder.example"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_SUBDOMAIN_01",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://app.example",
+        "scheme": "https",
+        "subdomain_scope_required": true
+      },
+      "expected_issue": "hsts_subdomain_scope_not_covered",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "id": "LF_HSTS_SUBDOMAIN_01",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+        "class": "enforce_https_only_subdomains"
+      },
+      "layers": [],
+      "policy_family": "HSTS/framework",
+      "public_source_id": "CL_HSTS_04",
+      "source_claim_ids": [
+        "CL_HSTS_04"
+      ]
+    },
+    "minimized_header_bytes": 68,
+    "minimized_header_count": 1,
+    "original_header_bytes": 68,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+        "fixture_id": "LF_HSTS_SUBDOMAIN_01",
+        "intent_class": "enforce_https_only_subdomains",
+        "issue": "hsts_subdomain_scope_not_covered",
+        "policy_family": "HSTS/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "required_scope": "includeSubDomains"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_SUBDOMAIN_02",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://login.example",
+        "scheme": "https",
+        "subdomain_scope_required": true
+      },
+      "expected_issue": "hsts_subdomain_scope_not_covered",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "id": "LF_HSTS_SUBDOMAIN_02",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+        "class": "enforce_https_only_subdomains"
+      },
+      "layers": [],
+      "policy_family": "HSTS/framework",
+      "public_source_id": "CL_HSTS_04",
+      "source_claim_ids": [
+        "CL_HSTS_04"
+      ]
+    },
+    "minimized_header_bytes": 68,
+    "minimized_header_count": 1,
+    "original_header_bytes": 68,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+        "fixture_id": "LF_HSTS_SUBDOMAIN_02",
+        "intent_class": "enforce_https_only_subdomains",
+        "issue": "hsts_subdomain_scope_not_covered",
+        "policy_family": "HSTS/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "required_scope": "includeSubDomains"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_SUBDOMAIN_03",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://admin.example",
+        "scheme": "https",
+        "subdomain_scope_required": true
+      },
+      "expected_issue": "hsts_subdomain_scope_not_covered",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "id": "LF_HSTS_SUBDOMAIN_03",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+        "class": "enforce_https_only_subdomains"
+      },
+      "layers": [],
+      "policy_family": "HSTS/framework",
+      "public_source_id": "CL_HSTS_04",
+      "source_claim_ids": [
+        "CL_HSTS_04"
+      ]
+    },
+    "minimized_header_bytes": 68,
+    "minimized_header_count": 1,
+    "original_header_bytes": 68,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+        "fixture_id": "LF_HSTS_SUBDOMAIN_03",
+        "intent_class": "enforce_https_only_subdomains",
+        "issue": "hsts_subdomain_scope_not_covered",
+        "policy_family": "HSTS/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "required_scope": "includeSubDomains"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_SUBDOMAIN_04",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://tenant.example",
+        "scheme": "https",
+        "subdomain_scope_required": true
+      },
+      "expected_issue": "hsts_subdomain_scope_not_covered",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "id": "LF_HSTS_SUBDOMAIN_04",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+        "class": "enforce_https_only_subdomains"
+      },
+      "layers": [],
+      "policy_family": "HSTS/framework",
+      "public_source_id": "CL_HSTS_04",
+      "source_claim_ids": [
+        "CL_HSTS_04"
+      ]
+    },
+    "minimized_header_bytes": 68,
+    "minimized_header_count": 1,
+    "original_header_bytes": 68,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+        "fixture_id": "LF_HSTS_SUBDOMAIN_04",
+        "intent_class": "enforce_https_only_subdomains",
+        "issue": "hsts_subdomain_scope_not_covered",
+        "policy_family": "HSTS/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "required_scope": "includeSubDomains"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_SUBDOMAIN_05",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://shop.example",
+        "scheme": "https",
+        "subdomain_scope_required": true
+      },
+      "expected_issue": "hsts_subdomain_scope_not_covered",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "id": "LF_HSTS_SUBDOMAIN_05",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+        "class": "enforce_https_only_subdomains"
+      },
+      "layers": [],
+      "policy_family": "HSTS/framework",
+      "public_source_id": "CL_HSTS_04",
+      "source_claim_ids": [
+        "CL_HSTS_04"
+      ]
+    },
+    "minimized_header_bytes": 68,
+    "minimized_header_count": 1,
+    "original_header_bytes": 68,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+        "fixture_id": "LF_HSTS_SUBDOMAIN_05",
+        "intent_class": "enforce_https_only_subdomains",
+        "issue": "hsts_subdomain_scope_not_covered",
+        "policy_family": "HSTS/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "required_scope": "includeSubDomains"
+        }
+      }
+    ],
+    "status": "minimized"
+  },
+  {
+    "fixture_id": "LF_HSTS_SUBDOMAIN_06",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "minimized_fixture": {
+      "context": {
+        "document_origin": "https://pay.example",
+        "scheme": "https",
+        "subdomain_scope_required": true
+      },
+      "expected_issue": "hsts_subdomain_scope_not_covered",
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "id": "LF_HSTS_SUBDOMAIN_06",
+      "intent": {
+        "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+        "class": "enforce_https_only_subdomains"
+      },
+      "layers": [],
+      "policy_family": "HSTS/framework",
+      "public_source_id": "CL_HSTS_04",
+      "source_claim_ids": [
+        "CL_HSTS_04"
+      ]
+    },
+    "minimized_header_bytes": 68,
+    "minimized_header_count": 1,
+    "original_header_bytes": 68,
+    "original_header_count": 1,
+    "remaining_issues": [
+      {
+        "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+        "fixture_id": "LF_HSTS_SUBDOMAIN_06",
+        "intent_class": "enforce_https_only_subdomains",
+        "issue": "hsts_subdomain_scope_not_covered",
+        "policy_family": "HSTS/framework",
+        "severity": "medium",
+        "witness": {
+          "headers": [
+            {
+              "name": "Strict-Transport-Security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "required_scope": "includeSubDomains"
+        }
+      }
+    ],
+    "status": "minimized"
+  }
+]

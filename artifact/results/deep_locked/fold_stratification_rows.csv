@@ -1,0 +1,6 @@
+fold,fixtures,positives,controls,issue_classes,policy_families,source_claims,status
+0,191,82,109,23,16,26,pass
+1,187,81,106,20,16,26,pass
+2,200,86,114,22,16,26,pass
+3,197,91,106,24,16,26,pass
+4,197,78,119,21,15,26,pass

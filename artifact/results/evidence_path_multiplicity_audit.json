@@ -1,0 +1,10 @@
+{
+  "cards_checked": 418,
+  "channels_required": 8,
+  "interpretation": "Every positive witness evidence card must expose all assessor-relevant channels: source claim, rule, witness surface, certificate, repair, graph path, explanation, and certificate obligation status.",
+  "minimum_channels_present": 8,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "total_channel_obligations": 3344
+}

@@ -1,0 +1,25 @@
+{
+  "packages": {
+    "chromium_hstspreload": {
+      "available": false,
+      "returncode": null
+    },
+    "csp_evaluator": {
+      "available": false,
+      "returncode": 2
+    },
+    "mdn_http_observatory": {
+      "available": false,
+      "note": "local CLI not found; npx intentionally not invoked in smoke tests",
+      "returncode": null
+    }
+  },
+  "tools_available": {
+    "go": true,
+    "hstspreload_header_helper": false,
+    "mdn-http-observatory-scan": false,
+    "node": true,
+    "npm": true,
+    "python3": true
+  }
+}

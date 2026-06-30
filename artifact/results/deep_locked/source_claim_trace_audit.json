@@ -1,0 +1,14 @@
+{
+  "claim_cards": 45,
+  "claims_checked": 45,
+  "fixture_bearing_claims": 26,
+  "fixture_edges_checked": 1372,
+  "interpretation": "Every admitted public claim is materialized as a trace card. Fixture-bearing claims are tied to denominator fixtures, source spans, semantic rules, evidence cards, and SpecBench pressure; source-support-only claims remain explicit instead of being silently dropped.",
+  "positive_fixture_claims_with_evidence_cards": 26,
+  "problem_count": 0,
+  "problems": [],
+  "rule_rows_present": 45,
+  "source_spans_present": 45,
+  "source_support_only_claims": 19,
+  "status": "pass"
+}

@@ -1,0 +1,24 @@
+{
+  "checks": 3954,
+  "checks_by_kind": {
+    "preservation": 3888,
+    "repair": 66
+  },
+  "checks_by_relation": {
+    "MR_PRESERVE_CONTEXT_KEY_ORDER": 972,
+    "MR_PRESERVE_HEADER_NAME_CASE": 972,
+    "MR_PRESERVE_IRRELEVANT_HEADER": 972,
+    "MR_PRESERVE_REPORTING_HEADER": 972,
+    "MR_REPAIR_COEP_CORP": 24,
+    "MR_REPAIR_CORS_CACHE_VARY": 6,
+    "MR_REPAIR_HSTS_PRELOAD": 6,
+    "MR_REPAIR_PERMISSIONS_SPECIFIC": 6,
+    "MR_REPAIR_REPORT_ONLY_TO_ENFORCED": 24
+  },
+  "failures": [],
+  "interpretation": "Metamorphic validation over released BEP-Deep fixtures. Preservation relations check oracle invariances; repair relations check targeted semantic counterfactuals without changing the locked denominator.",
+  "passed_checks": 3954,
+  "problem_count": 0,
+  "relations": 9,
+  "status": "pass"
+}

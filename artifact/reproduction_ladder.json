@@ -1,0 +1,1066 @@
+{
+  "command_count": 101,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_ir_schema.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/typed_ir_schema_audit.json"
+      ],
+      "id": "typed_ir_schema"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_lattice_proofs.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/semantic_lattice_proofs.json",
+        "artifact/results/deep_locked/semantic_lattice_proof_cases.csv"
+      ],
+      "id": "semantic_lattice_proofs"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_specbench.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/specbench_summary.json",
+        "artifact/results/deep_locked/specbench_cases.json",
+        "artifact/results/deep_locked/specbench_results.csv"
+      ],
+      "id": "specbench"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_metamorphic_relations.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/metamorphic_relation_audit.json",
+        "artifact/results/deep_locked/metamorphic_relation_cases.csv"
+      ],
+      "id": "metamorphic_relations"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/recheck_witness_certificates.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/certificate_recheck_audit.json",
+        "artifact/results/deep_locked/certificate_recheck_cases.csv"
+      ],
+      "id": "certificate_recheck"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_benchmark_contracts.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/external_benchmark_contract_audit.json"
+      ],
+      "id": "external_benchmark_contract"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_baseline_full.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/external_baseline_full_run_audit.json",
+        "artifact/results/deep_locked/external_baseline_full_run.json",
+        "artifact/external_baseline_package_lock.json"
+      ],
+      "id": "external_baseline_full_run"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_generated_oracle_tests.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/generated_oracle_tests.json"
+      ],
+      "id": "generated_oracle_tests"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repository_quality.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/repository_quality_audit.json"
+      ],
+      "id": "repository_quality"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_cross_policy_contracts.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/cross_policy_contracts.json",
+        "artifact/results/deep_locked/cross_policy_contract_cases.csv"
+      ],
+      "id": "cross_policy_contracts"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_baseline_contract.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/baseline_contract_audit.json"
+      ],
+      "id": "baseline_contract"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_directive_fallback_conformance.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/directive_fallback_conformance.json"
+      ],
+      "id": "directive_fallback_conformance"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/decision_table_oracle.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/decision_table_oracle_metrics.json",
+        "artifact/results/deep_locked/decision_table_oracle_audit.csv"
+      ],
+      "id": "decision_table_oracle"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/mutation_adequacy_audit.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/semantic_mutation_adequacy.json",
+        "artifact/results/deep_locked/semantic_mutation_adequacy.csv"
+      ],
+      "id": "semantic_mutation_adequacy"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/certify_proof_carrying_witnesses.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/proof_carrying_witness_metrics.json",
+        "artifact/results/deep_locked/proof_carrying_witness_audit.csv",
+        "artifact/results/deep_locked/proof_carrying_witness_certificates.json"
+      ],
+      "id": "positive_certificates"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/certify_control_witnesses.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/control_certificate_metrics.json",
+        "artifact/results/deep_locked/control_certificate_audit.csv"
+      ],
+      "id": "negative_control_certificates"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_semantic_recomputation.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/semantic_recomputation_audit.json"
+      ],
+      "id": "semantic_recomputation"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_reference_integrity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/reference_integrity_audit.json",
+        "artifact/results/reference_ledger_status.json"
+      ],
+      "id": "reference_integrity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_anonymity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/anonymity_audit.json"
+      ],
+      "id": "anonymity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_latex_source_integrity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/latex_source_integrity_audit.json"
+      ],
+      "id": "latex_source_integrity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_source_compile.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/pdf_source_compile_audit.json"
+      ],
+      "id": "pdf_source_compile"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_release_language_integrity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/release_language_integrity_audit.json"
+      ],
+      "id": "release_language_integrity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_protocol_amendment_integrity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/protocol_amendment_integrity_audit.json"
+      ],
+      "id": "protocol_amendment_integrity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_validation_report_consistency.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/validation_report_consistency_audit.json"
+      ],
+      "id": "validation_report_consistency"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_bibliographic_metadata.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/bibliographic_metadata_audit.json"
+      ],
+      "id": "bibliographic_metadata"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_validation_orchestration.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/validation_orchestration_audit.json"
+      ],
+      "id": "validation_orchestration"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_graph.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/evidence_graph.json",
+        "artifact/results/evidence_graph_metrics.json",
+        "artifact/results/evidence_graph_paths.csv"
+      ],
+      "id": "evidence_graph"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_anti_overfit_leakage.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/anti_overfit_leakage_audit.json"
+      ],
+      "id": "anti_overfit_leakage"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_theory_kernel.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/theory_kernel_audit.json"
+      ],
+      "id": "theory_kernel"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_mutation_farm.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/mutation_farm_summary.json",
+        "artifact/results/deep_locked/mutation_farm_cases.csv"
+      ],
+      "id": "mutation_farm"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_rule_maturity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/rule_maturity_audit.json"
+      ],
+      "id": "rule_maturity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_visual_density.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/pdf_visual_density_audit.json"
+      ],
+      "id": "pdf_visual_density"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_strict_reproducibility_smoke.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/strict_reproducibility_smoke.json"
+      ],
+      "id": "strict_reproducibility_smoke"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_shadow_generalization.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/shadow_generalization_audit.json",
+        "artifact/results/deep_locked/shadow_generalization_rows.csv"
+      ],
+      "id": "shadow_generalization"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_provenance.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/external_provenance_audit.json"
+      ],
+      "id": "external_provenance"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_scale_stress.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/scale_stress_audit.json"
+      ],
+      "id": "scale_stress"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_redundancy.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/evidence_redundancy_audit.json"
+      ],
+      "id": "evidence_redundancy"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_figure_layout.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/figure_layout_audit.json"
+      ],
+      "id": "figure_layout"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_identifier_blind_replay.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/identifier_blind_replay_audit.json",
+        "artifact/results/deep_locked/identifier_blind_replay_rows.csv"
+      ],
+      "id": "identifier_blind_replay"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repair_delta_replay.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/repair_delta_replay_audit.json",
+        "artifact/results/deep_locked/repair_delta_replay_rows.csv"
+      ],
+      "id": "repair_delta_replay"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_theory_proof_cards.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/theory_proof_cards.json"
+      ],
+      "id": "theory_proof_cards"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_causal_counterfactual_activation.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/causal_counterfactual_activation_audit.json",
+        "artifact/results/deep_locked/causal_counterfactual_activation_rows.csv"
+      ],
+      "id": "causal_counterfactual_activation"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_contrast_specificity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/external_contrast_specificity_audit.json",
+        "artifact/results/deep_locked/external_contrast_specificity_rows.csv"
+      ],
+      "id": "external_contrast_specificity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_benchmark_fingerprint_disjointness.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/benchmark_fingerprint_disjointness_audit.json",
+        "artifact/results/deep_locked/benchmark_fingerprint_disjointness_rows.csv"
+      ],
+      "id": "benchmark_fingerprint_disjointness"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_claim_consistency.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/paper_claim_consistency_audit.json"
+      ],
+      "id": "paper_claim_consistency"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_runtime_boundary.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/runtime_boundary_audit.json"
+      ],
+      "id": "runtime_boundary"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_relational_oracle.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/declarative_oracle_audit.json",
+        "artifact/results/deep_locked/declarative_oracle_rows.csv"
+      ],
+      "id": "declarative_oracle"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_label_flow.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/label_flow_audit.json"
+      ],
+      "id": "label_flow"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_issue_evidence_depth.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/issue_evidence_depth_audit.json",
+        "artifact/results/deep_locked/issue_evidence_depth_rows.csv"
+      ],
+      "id": "issue_evidence_depth"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_reference_boundary.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/pdf_reference_boundary_audit.json"
+      ],
+      "id": "pdf_reference_boundary"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_corpus_stability.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/corpus_stability_audit.json",
+        "artifact/results/deep_locked/corpus_stability_rows.csv"
+      ],
+      "id": "corpus_stability"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_cards.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/evidence_cards_audit.json",
+        "artifact/results/deep_locked/evidence_cards.json"
+      ],
+      "id": "evidence_cards"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_decision_purity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/decision_purity_audit.json"
+      ],
+      "id": "decision_purity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_package_identity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/package_identity_audit.json"
+      ],
+      "id": "package_identity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_counterfactual_roundtrip.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/counterfactual_roundtrip_audit.json",
+        "artifact/results/deep_locked/counterfactual_roundtrip_rows.csv"
+      ],
+      "id": "counterfactual_roundtrip"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_oracle_equivalence.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/oracle_equivalence_audit.json",
+        "artifact/results/deep_locked/oracle_equivalence_rows.csv"
+      ],
+      "id": "oracle_explanation_equivalence"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_rule_trace_matrix.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/rule_trace_matrix_audit.json",
+        "artifact/results/rule_trace_matrix_rows.csv"
+      ],
+      "id": "rule_trace_matrix"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_oracle_triangulation.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/oracle_triangulation_audit.json",
+        "artifact/results/deep_locked/oracle_triangulation_rows.csv"
+      ],
+      "id": "oracle_triangulation"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_static_code_health.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/static_code_health_audit.json"
+      ],
+      "id": "static_code_health"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repair_locality.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/repair_locality_audit.json"
+      ],
+      "id": "repair_locality"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_rq_traceability.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/rq_traceability_audit.json"
+      ],
+      "id": "rq_traceability"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_release_claim_drift.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/release_claim_drift_audit.json"
+      ],
+      "id": "release_claim_drift"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_documentation_consistency.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/documentation_consistency_audit.json"
+      ],
+      "id": "documentation_consistency"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_claim_impact.py"
+      ],
+      "description": "Audit admitted-claim impact closure and materialize the claim-impact matrix.",
+      "expected_outputs": [
+        "artifact/results/claim_impact_audit.json",
+        "artifact/results/deep_locked/claim_impact_matrix.csv"
+      ],
+      "id": "claim_impact"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_witness_hash_chain.py"
+      ],
+      "description": "Audit tamper-evident witness-to-certificate-to-repair hash chains for positive witnesses.",
+      "expected_outputs": [
+        "artifact/results/witness_hash_chain_audit.json",
+        "artifact/results/deep_locked/witness_hash_chains.csv"
+      ],
+      "id": "witness_hash_chain"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_gate_sensitivity.py"
+      ],
+      "description": "Run seeded-failure validation sensitivity checks.",
+      "expected_outputs": [
+        "artifact/results/gate_sensitivity_audit.json"
+      ],
+      "id": "gate_sensitivity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_idempotence_replay.py"
+      ],
+      "description": "Re-execute lightweight gates to check deterministic idempotence after release synchronization.",
+      "expected_outputs": [
+        "artifact/results/idempotence_replay_audit.json"
+      ],
+      "id": "idempotence_replay"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_claim_trace_saturation.py"
+      ],
+      "description": "Audit source-claim trace saturation and materialize claim-level trace cards.",
+      "expected_outputs": [
+        "artifact/results/deep_locked/source_claim_trace_audit.json",
+        "artifact/results/deep_locked/source_claim_trace_cards.json"
+      ],
+      "id": "claim_trace_saturation"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repair_compactness.py"
+      ],
+      "description": "Audit compactness of paired repairs and materialize semantic edit-distance rows.",
+      "expected_outputs": [
+        "artifact/results/deep_locked/repair_compactness_audit.json",
+        "artifact/results/deep_locked/repair_compactness_rows.csv"
+      ],
+      "id": "repair_compactness"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_deterministic_reexecution.py"
+      ],
+      "description": "Re-run selected evidence-facing gates twice and compare result digests.",
+      "expected_outputs": [
+        "artifact/results/deterministic_reexecution_audit.json",
+        "artifact/results/deterministic_reexecution_rows.csv"
+      ],
+      "id": "deterministic_reexecution"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_interaction_coverage.py"
+      ],
+      "description": "Audit policy-family strata and multi-policy signature coverage.",
+      "expected_outputs": [
+        "artifact/results/deep_locked/interaction_coverage_audit.json",
+        "artifact/results/deep_locked/interaction_coverage_rows.csv"
+      ],
+      "id": "interaction_coverage"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_process_trace_hygiene.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/process_trace_hygiene_audit.json"
+      ],
+      "id": "process_trace_hygiene"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_threat_closure.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/threat_closure_audit.json",
+        "artifact/results/threat_closure_rows.csv"
+      ],
+      "id": "threat_closure"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_path_multiplicity.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/evidence_path_multiplicity_audit.json",
+        "artifact/results/evidence_path_multiplicity_rows.csv"
+      ],
+      "id": "evidence_path_multiplicity"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_minimal_pair_closure.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/minimal_pair_closure_audit.json",
+        "artifact/results/deep_locked/minimal_pair_closure_rows.csv"
+      ],
+      "id": "minimal_pair_closure"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_fold_stratification.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deep_locked/fold_stratification_audit.json",
+        "artifact/results/deep_locked/fold_stratification_rows.csv"
+      ],
+      "id": "fold_stratification"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_delivery_capsule.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/delivery_capsule_audit.json"
+      ],
+      "id": "delivery_capsule"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_argument_surface.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/paper_argument_surface_audit.json"
+      ],
+      "id": "paper_argument_surface"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_release_hygiene.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/release_hygiene_audit.json"
+      ],
+      "id": "release_hygiene"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_stale_numeric_surface.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/stale_numeric_surface_audit.json"
+      ],
+      "id": "stale_numeric_surface"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_icse_criteria_closure.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/icse_criteria_closure_audit.json"
+      ],
+      "id": "icse_criteria_closure"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_contribution_trace.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/contribution_trace_audit.json"
+      ],
+      "id": "contribution_trace"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_reference_role_balance.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/reference_role_balance_audit.json"
+      ],
+      "id": "reference_role_balance"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_oracle_structural_independence.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/oracle_structural_independence_audit.json"
+      ],
+      "id": "oracle_structural_independence"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_deliverable_trio_readiness.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/deliverable_trio_readiness_audit.json"
+      ],
+      "id": "deliverable_trio_readiness"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_rhetoric.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/paper_rhetoric_audit.json"
+      ],
+      "id": "paper_rhetoric"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repository_entrypoints.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/repository_entrypoint_audit.json"
+      ],
+      "id": "repository_entrypoint"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_scorecard.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/scorecard.json"
+      ],
+      "id": "scorecard"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_validation.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/validation_summary.json"
+      ],
+      "id": "release_validation_release"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_metadata_alignment.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/paper_metadata_alignment_audit.json"
+      ],
+      "id": "paper_metadata_alignment"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_quickstart_readiness.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/quickstart_readiness_audit.json"
+      ],
+      "id": "quickstart_readiness"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_figure_reference_closure.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/figure_reference_closure_audit.json"
+      ],
+      "id": "figure_reference_closure"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_supplement_alignment.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/supplement_alignment_audit.json"
+      ],
+      "id": "supplement_alignment"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_artifact_manifest_reachability.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/artifact_manifest_reachability_audit.json"
+      ],
+      "id": "artifact_manifest_reachability"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_digest.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/evidence_digest_audit.json"
+      ],
+      "id": "evidence_digest"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_triage_index.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/triage_index_audit.json"
+      ],
+      "id": "triage_index"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_delivery_packet.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/delivery_packet_audit.json"
+      ],
+      "id": "delivery_packet"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_overclaim_boundary.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/overclaim_boundary_audit.json"
+      ],
+      "id": "overclaim_boundary"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_text_surface.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/pdf_text_surface_audit.json"
+      ],
+      "id": "pdf_text_surface"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_public_provenance.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/public_provenance_audit.json"
+      ],
+      "id": "public_provenance"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repository_upload.py"
+      ],
+      "expected_outputs": [
+        "artifact/results/repository_upload_audit.json"
+      ],
+      "id": "repository_upload"
+    }
+  ],
+  "interpretation": "Deterministic reproduction ladder for the release BEPGuard delivery; includes semantic replay, proof/certificate checks, PDF/source hygiene, public-provenance closure, and manual repository-upload readiness.",
+  "profile": "release-local-deterministic-101-command-ladder"
+}

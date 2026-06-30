@@ -1,0 +1,23 @@
+{
+  "allowed_count_constant_files": [
+    "artifact/bepguard/leakage.py",
+    "artifact/bepguard/repository.py",
+    "artifact/scripts/audit_release_consistency.py",
+    "artifact/scripts/audit_semantic_recomputation.py",
+    "artifact/scripts/run_validation.py",
+    "artifact/scripts/validate_locked_artifacts.py"
+  ],
+  "allowed_fixture_id_files": [
+    "artifact/bepguard/generated_oracles.py",
+    "artifact/scripts/materialize_locked_inputs.py",
+    "artifact/tests/test_locked_fixtures_generated.py",
+    "artifact/tests/test_witness_certificates_generated.py"
+  ],
+  "certificate_ids_guarded": 418,
+  "interpretation": "Anti-overfitting audit: method code must not memorize exact locked fixture/certificate identifiers outside generated artifacts, SpecBench must remain identifier-disjoint from BEP-Deep, and unavailable baselines must not carry substituted internal outputs.",
+  "locked_fixture_ids_guarded": 972,
+  "method_files_scanned": 246,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

@@ -1,0 +1,17 @@
+{
+  "checks_by_contract": {
+    "C1_csp_meet_nonexpansion": 75,
+    "C2_coep_requires_resource_opt_in": 5,
+    "C3_isolation_requires_joint_headers": 18,
+    "C4_hsts_preload_stronger_than_state": 5,
+    "C4b_valid_hsts_not_preload_equivalent": 2,
+    "C5_csp_cannot_authorize_credentialed_cors": 3,
+    "C6_permissions_feature_specificity": 3
+  },
+  "contracts": 7,
+  "failed_contracts": [],
+  "failures": 0,
+  "interpretation": "Executable cross-policy proof obligations for the encoded BEP-IR fragments; not a complete browser conformance theorem.",
+  "states_checked": 111,
+  "status": "pass"
+}

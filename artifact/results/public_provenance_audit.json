@@ -1,0 +1,9 @@
+{
+  "csv_files_checked": 3,
+  "interpretation": "Checks that the source and external-resource ledgers are public-source grounded and do not rely on private data or opaque credentials.",
+  "private_markers_checked": 5,
+  "problem_count": 0,
+  "problems": [],
+  "provenance_rows_checked": 52,
+  "status": "pass"
+}

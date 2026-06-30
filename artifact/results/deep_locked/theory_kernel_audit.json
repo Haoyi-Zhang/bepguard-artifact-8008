@@ -1,0 +1,281 @@
+{
+  "counterexamples": 0,
+  "finite_states_checked": 33513,
+  "interpretation": "Finite proof kernel over the executable BEP semantic fragment; these checks are separate from locked fixture labels and do not change the denominator.",
+  "obligations": [
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "csp_policy_meet_nonexpansion",
+      "proof_kind": "finite-product enumeration",
+      "states_checked": 16000,
+      "status": "pass",
+      "theorem": "Adding an enforced CSP policy cannot authorize a script edge that one enforced member blocks."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "csp_meet_commutativity_idempotence",
+      "proof_kind": "finite algebraic enumeration",
+      "states_checked": 16800,
+      "status": "pass",
+      "theorem": "Enforced CSP-policy conjunction is commutative and idempotent over the encoded source-list fragment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "csp_source_list_extension_monotonicity",
+      "proof_kind": "finite source-list enumeration",
+      "states_checked": 120,
+      "status": "pass",
+      "theorem": "Adding a source expression to one source list cannot remove an allowed script edge before policy meet is applied."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "csp_directive_specificity",
+      "proof_kind": "case enumeration",
+      "states_checked": 6,
+      "status": "pass",
+      "theorem": "Script-element source selection follows script-src-elem, then script-src, then default-src, then the uncovered default."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "csp_report_only_monitor_only",
+      "proof_kind": "executable witness enumeration",
+      "states_checked": 6,
+      "status": "pass",
+      "theorem": "A report-only CSP surface yields monitoring conflict under an enforcement intent but no enforced block judgment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "cors_credentialed_shareability_table",
+      "proof_kind": "truth-table enumeration",
+      "states_checked": 40,
+      "status": "pass",
+      "theorem": "Credentialed CORS shareability is exact-origin plus byte-case-sensitive ACAC, and wildcard excludes credentials."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "cors_duplicate_acao_rejection",
+      "proof_kind": "truth-table enumeration",
+      "states_checked": 64,
+      "status": "pass",
+      "theorem": "A response with multiple ACAO values is not shareable in the encoded CORS fragment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "cors_dynamic_origin_cache_partition",
+      "proof_kind": "truth-table enumeration",
+      "states_checked": 15,
+      "status": "pass",
+      "theorem": "Dynamic ACAO requires an Origin discriminator; unrelated Vary fields do not repair the cache obligation."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "cors_vary_origin_tokenization",
+      "proof_kind": "token enumeration",
+      "states_checked": 18,
+      "status": "pass",
+      "theorem": "Only an Origin token, not a substring, repairs dynamic ACAO cache partitioning."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "hsts_state_transition_partition",
+      "proof_kind": "executable state partition",
+      "states_checked": 10,
+      "status": "pass",
+      "theorem": "HSTS processing partitions into insecure-delivery ignore, invalid-header ignore, zero-age clear, and valid-state cases."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "hsts_preload_criterion_boundary",
+      "proof_kind": "boundary enumeration",
+      "states_checked": 28,
+      "status": "pass",
+      "theorem": "The documented preload-control predicate is exactly max-age>=31536000 plus includeSubDomains plus preload in the encoded fragment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "coep_cors_mode_separation",
+      "proof_kind": "request-mode enumeration",
+      "states_checked": 16,
+      "status": "pass",
+      "theorem": "CORS response headers alone do not repair a no-cors COEP resource edge; compatible CORP repairs the no-cors edge."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "coop_coep_isolation_partition",
+      "proof_kind": "finite product enumeration",
+      "states_checked": 48,
+      "status": "pass",
+      "theorem": "Cross-origin isolation preconditions require the encoded COOP/COEP pair and are disabled by an explicit Permissions-Policy denial."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "corp_scope_lattice",
+      "proof_kind": "finite scope enumeration",
+      "states_checked": 12,
+      "status": "pass",
+      "theorem": "CORP scope is ordered same-origin <= same-site <= cross-origin over the fixture origin approximation."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "corp_same_site_consistency",
+      "proof_kind": "origin-pair enumeration",
+      "states_checked": 20,
+      "status": "pass",
+      "theorem": "CORP same-site delegates exactly to the fixture same-site approximation."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "permissions_allowlist_boundary",
+      "proof_kind": "allowlist enumeration",
+      "states_checked": 5,
+      "status": "pass",
+      "theorem": "Empty allowlists deny a feature and wildcard/explicit external entries over-allow a denied origin in the encoded fragment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "permissions_feature_independence",
+      "proof_kind": "feature-product enumeration",
+      "states_checked": 64,
+      "status": "pass",
+      "theorem": "A Permissions-Policy directive affects only its named feature in the encoded fragment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "ordered_generation_layer_contract",
+      "proof_kind": "operator enumeration",
+      "states_checked": 3,
+      "status": "pass",
+      "theorem": "Append preserves fields, set replaces same-name fields, and remove deletes same-name fields before semantic evaluation."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "ordered_layer_remove_set_absorption",
+      "proof_kind": "operator-product enumeration",
+      "states_checked": 27,
+      "status": "pass",
+      "theorem": "A release remove absorbs same-name fields, a release set replaces same-name fields, and unrelated fields are preserved."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "known_fragment_totality",
+      "proof_kind": "execution-totality enumeration",
+      "states_checked": 15,
+      "status": "pass",
+      "theorem": "Known encoded fragments execute without exception under irrelevant context extensions."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "header_name_canonicalization_idempotence",
+      "proof_kind": "header-product enumeration",
+      "states_checked": 6,
+      "status": "pass",
+      "theorem": "Header-name canonicalization is idempotent over encoded policy fields."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "header_lookup_case_insensitivity",
+      "proof_kind": "header-product enumeration",
+      "states_checked": 9,
+      "status": "pass",
+      "theorem": "Policy header lookup is case-insensitive while preserving values."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "csp_source_expression_boundaries",
+      "proof_kind": "source-expression product enumeration",
+      "states_checked": 120,
+      "status": "pass",
+      "theorem": "Encoded CSP source expressions have exact wildcard, none, self, scheme, host, and subdomain boundaries."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "report_only_does_not_weaken_enforced_csp",
+      "proof_kind": "field-composition enumeration",
+      "states_checked": 12,
+      "status": "pass",
+      "theorem": "Report-only CSP fields neither enforce nor weaken an enforced CSP field in the encoded script-load fragment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "cors_wildcard_noncredentialed_shareability",
+      "proof_kind": "truth-table enumeration",
+      "states_checked": 8,
+      "status": "pass",
+      "theorem": "Wildcard ACAO remains shareable for non-credentialed modeled requests regardless of ACAC noise."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "cors_duplicate_acao_order_invariance",
+      "proof_kind": "permutation enumeration",
+      "states_checked": 6,
+      "status": "pass",
+      "theorem": "Duplicate ACAO rejection is invariant to header order."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "hsts_parser_case_spacing_boundary",
+      "proof_kind": "parser-boundary enumeration",
+      "states_checked": 4,
+      "status": "pass",
+      "theorem": "The HSTS preload predicate is robust to directive case/spacing and rejects below-threshold age."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "corp_cross_origin_top_allows_all",
+      "proof_kind": "origin-pair enumeration",
+      "states_checked": 12,
+      "status": "pass",
+      "theorem": "CORP cross-origin is the top element of the encoded CORP scope lattice."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "permissions_directive_order_commutativity",
+      "proof_kind": "directive-order enumeration",
+      "states_checked": 4,
+      "status": "pass",
+      "theorem": "Ordering independent Permissions-Policy directives does not change the queried feature judgment."
+    },
+    {
+      "counterexample_count": 0,
+      "counterexamples": [],
+      "name": "unknown_header_noninterference",
+      "proof_kind": "noninterference enumeration",
+      "states_checked": 15,
+      "status": "pass",
+      "theorem": "Headers outside the encoded policy vocabulary do not affect known fragment judgments."
+    }
+  ],
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "theorems_checked": 30
+}

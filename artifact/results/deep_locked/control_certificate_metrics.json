@@ -1,0 +1,11 @@
+{
+  "all_control_certificates": 554,
+  "failures": [],
+  "interpretation": "Negative-control certificates complement proof-carrying positive witnesses; they certify clean controls under both operational and decision-table oracles.",
+  "negative_controls_certified": 136,
+  "ordinary_negative_controls": 136,
+  "paired_repair_controls": 418,
+  "paired_repair_controls_certified": 418,
+  "status": "pass",
+  "verified_control_certificates": 554
+}

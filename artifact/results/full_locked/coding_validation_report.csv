@@ -1,0 +1,24 @@
+category,check,status,observed,expected,severity
+cardinality,claim_rows,pass,45,45,blocking
+cardinality,rule_rows,pass,35,35,blocking
+cardinality,fixture_rows,pass,116,116,blocking
+cardinality,summary_rows,pass,116,116,blocking
+uniqueness,unique_claim_ids,pass,45,45,blocking
+uniqueness,unique_rule_ids,pass,35,35,blocking
+uniqueness,unique_fixture_ids,pass,116,116,blocking
+claims,required_claim_fields_present,pass,0,0,blocking
+rules,required_rule_fields_present,pass,0,0,blocking
+traceability,claim_rule_references_resolve,pass,0,0,blocking
+traceability,fixture_claim_references_resolve,pass,0,0,blocking
+traceability,fixture_relevant_claims_have_fixture_coverage,pass,0,0,blocking
+denominator,positive_fixture_count,pass,88,88,blocking
+denominator,negative_control_count,pass,28,28,blocking
+denominator,expected_issue_counts_match_metrics,pass,"{'csp_report_only_not_enforced': 6, 'csp_effective_script_allowance': 8, 'nonce_csp_static_render_incompatibility': 6, 'cors_intended_credentialed_share_blocked': 6, 'cors_reflected_origin_with_credentials': 6, 'hsts_header_not_honored_over_http': 6, 'hsts_policy_cleared_by_zero_max_age': 6, 'coep_require_corp_blocks_cross_origin_resource': 6, 'cross_origin_isolation_incomplete': 6, 'permissions_policy_feature_disabled': 6, 'none': 28, 'csp_conjunctive_policy_composition_blocks_required_script': 8, 'layered_header_override_drops_enforcement': 6, 'cors_dynamic_origin_missing_vary': 6, 'hsts_subdomain_scope_not_covered': 6}","{'coep_require_corp_blocks_cross_origin_resource': 6, 'cors_dynamic_origin_missing_vary': 6, 'cors_intended_credentialed_share_blocked': 6, 'cors_reflected_origin_with_credentials': 6, 'cross_origin_isolation_incomplete': 6, 'csp_conjunctive_policy_composition_blocks_required_script': 8, 'csp_effective_script_allowance': 8, 'csp_report_only_not_enforced': 6, 'hsts_header_not_honored_over_http': 6, 'hsts_policy_cleared_by_zero_max_age': 6, 'hsts_subdomain_scope_not_covered': 6, 'layered_header_override_drops_enforcement': 6, 'nonce_csp_static_render_incompatibility': 6, 'none': 28, 'permissions_policy_feature_disabled': 6}",blocking
+execution,all_expected_positive_findings_detected,pass,88,88,blocking
+execution,all_negative_controls_clean,pass,28,28,blocking
+execution,emitted_findings_equal_expected_positives,pass,88,88,blocking
+baselines,baseline_rows_present,pass,"['chromium_hstspreload', 'conservative_header_presence', 'csp_evaluator', 'documented_hsts_preload_criterion', 'mdn_http_observatory']","['chromium_hstspreload', 'conservative_header_presence', 'csp_evaluator', 'documented_hsts_preload_criterion', 'mdn_http_observatory']",blocking
+baselines,unavailable_external_baselines_explicitly_flagged,pass,"['chromium_hstspreload', 'csp_evaluator', 'mdn_http_observatory']","['chromium_hstspreload', 'csp_evaluator', 'mdn_http_observatory']",blocking
+ablation,ablation_components_cover_issue_classes,pass,"{'rows': 13, 'loss_sum': 88}","{'rows': '>=11', 'loss_sum': 88}",blocking
+robustness,robustness_variants_match_locked_expectations,pass,all_rows_clean,all_rows_clean,blocking
+scalability,replication_counts_monotone,pass,monotone,monotone,blocking

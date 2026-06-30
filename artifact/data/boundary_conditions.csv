@@ -1,0 +1,101 @@
+case_id,boundary_family,input_surface,reason,expected_action,denominator_role
+BC001,ambiguous_intent,csp_policy_commentary,source text states a goal but omits the enforcing directive,manual_review,out_of_scope
+BC002,ambiguous_intent,hsts_rollout_note,source says gradual rollout without a required max-age,manual_review,out_of_scope
+BC003,ambiguous_intent,framework_security_note,framework page recommends a policy family without a concrete header,manual_review,out_of_scope
+BC004,ambiguous_intent,legacy_migration_guide,migration guidance permits two incompatible interpretations,manual_review,out_of_scope
+BC005,ambiguous_intent,operator_exception_note,exception language depends on deployment context not present in the fixture,manual_review,out_of_scope
+BC006,ambiguous_intent,cross_origin_policy_note,source states a tradeoff rather than a normative requirement,manual_review,out_of_scope
+BC007,ambiguous_intent,report_only_guidance,report-only intent cannot be separated from enforcement intent,manual_review,out_of_scope
+BC008,ambiguous_intent,nonce_rotation_note,rotation frequency is described qualitatively only,manual_review,out_of_scope
+BC009,ambiguous_intent,upgrade_insecure_requests_note,source leaves fallback behavior to local risk policy,manual_review,out_of_scope
+BC010,unmodeled_directive,permissions_policy_camera,directive family is outside the 35 locked semantic rules,unsupported_scope,out_of_scope
+BC011,unmodeled_directive,permissions_policy_geolocation,directive family is outside the 35 locked semantic rules,unsupported_scope,out_of_scope
+BC012,unmodeled_directive,permissions_policy_microphone,directive family is outside the 35 locked semantic rules,unsupported_scope,out_of_scope
+BC013,unmodeled_directive,document_policy_sync_xhr,directive family is outside the locked browser-enforced policy subset,unsupported_scope,out_of_scope
+BC014,unmodeled_directive,origin_policy_manifest,policy surface is not modeled by the BEP-Deep oracle,unsupported_scope,out_of_scope
+BC015,unmodeled_directive,feature_policy_legacy_alias,legacy alias behavior is not part of the locked rule set,unsupported_scope,out_of_scope
+BC016,unmodeled_directive,coop_credentialless_variant,variant requires browser-version semantics outside the released kernel,unsupported_scope,out_of_scope
+BC017,unmodeled_directive,coep_report_only_variant,report-only variant is not in the locked enforcement semantics,unsupported_scope,out_of_scope
+BC018,unmodeled_directive,csp_trusted_types_policy_name,policy-name grammar is not in the released semantic rules,unsupported_scope,out_of_scope
+BC019,non_http_policy,service_worker_cache_rule,not an HTTP response policy header,unsupported_scope,out_of_scope
+BC020,non_http_policy,browser_extension_manifest,extension manifest policy is outside response-header enforcement,unsupported_scope,out_of_scope
+BC021,non_http_policy,nginx_location_block,server configuration is not itself the delivered browser policy,unsupported_scope,out_of_scope
+BC022,non_http_policy,apache_virtualhost_block,server configuration is not itself the delivered browser policy,unsupported_scope,out_of_scope
+BC023,non_http_policy,terraform_cdn_rule,infrastructure rule does not expose the final browser-observed header,unsupported_scope,out_of_scope
+BC024,non_http_policy,kubernetes_ingress_annotation,orchestrator annotation is not the final policy surface,unsupported_scope,out_of_scope
+BC025,non_http_policy,html_meta_policy,meta-delivered policy has different delivery semantics from locked headers,unsupported_scope,out_of_scope
+BC026,non_http_policy,javascript_header_mutation,client-side mutation is not an HTTP response policy header,unsupported_scope,out_of_scope
+BC027,malformed_header,csp_unclosed_quote,header cannot be parsed under the released grammar,invalid_input,out_of_scope
+BC028,malformed_header,csp_invalid_utf8_octet,header contains invalid byte sequence,invalid_input,out_of_scope
+BC029,malformed_header,hsts_non_numeric_max_age,required numeric field is not parseable,invalid_input,out_of_scope
+BC030,malformed_header,duplicate_header_conflict,header merge order is unavailable to the released fixture,invalid_input,out_of_scope
+BC031,malformed_header,embedded_crlf,header contains transport-level injection artifact,invalid_input,out_of_scope
+BC032,malformed_header,oversized_header_truncation,truncation point depends on server and intermediary behavior,invalid_input,out_of_scope
+BC033,malformed_header,csp_empty_directive_name,syntax error prevents semantic obligation assignment,invalid_input,out_of_scope
+BC034,malformed_header,non_ascii_directive_token,token normalization is outside the released parser contract,invalid_input,out_of_scope
+BC035,runtime_mutation,nonce_generated_after_template,nonce value exists only at runtime,not_evaluated,out_of_scope
+BC036,runtime_mutation,per_request_policy_branch,policy branch depends on request attributes absent from fixture,not_evaluated,out_of_scope
+BC037,runtime_mutation,ab_test_security_header,policy changes by experiment bucket not represented in source claim,not_evaluated,out_of_scope
+BC038,runtime_mutation,cdn_edge_rewrite,edge layer may rewrite header after application generation,not_evaluated,out_of_scope
+BC039,runtime_mutation,middleware_order_dependency,final header depends on framework middleware order outside fixture,not_evaluated,out_of_scope
+BC040,runtime_mutation,user_agent_conditioned_header,policy changes by user agent and requires browser population data,not_evaluated,out_of_scope
+BC041,runtime_mutation,tenant_specific_policy,policy depends on tenant configuration not in public source,not_evaluated,out_of_scope
+BC042,runtime_mutation,feature_flag_policy,policy depends on private feature flag state,not_evaluated,out_of_scope
+BC043,browser_divergence,experimental_csp_directive,behavior depends on browser experiment flags,unsupported_scope,out_of_scope
+BC044,browser_divergence,deprecated_xss_protection,legacy browser behavior is intentionally outside the locked kernel,unsupported_scope,out_of_scope
+BC045,browser_divergence,preload_list_update_lag,preload behavior depends on external list update timing,unsupported_scope,out_of_scope
+BC046,browser_divergence,schemeful_same_site_edge,behavior depends on browser release-specific interpretation,unsupported_scope,out_of_scope
+BC047,browser_divergence,opaque_origin_navigation,requires full browser navigation semantics outside fixture model,unsupported_scope,out_of_scope
+BC048,browser_divergence,extension_modified_policy,extension intervention changes the browser-observed policy,unsupported_scope,out_of_scope
+BC049,browser_divergence,enterprise_policy_override,enterprise browser policy can override response semantics,unsupported_scope,out_of_scope
+BC050,browser_divergence,private_network_access_preflight,preflight behavior is outside the locked response-header obligations,unsupported_scope,out_of_scope
+BC051,source_conflict,two_specs_conflicting_terms,two public sources use conflicting normative terms for the same policy surface,manual_review,out_of_scope
+BC052,source_conflict,framework_doc_vs_browser_doc,framework documentation and browser documentation imply different enforcement boundaries,manual_review,out_of_scope
+BC053,source_conflict,security_guide_vs_api_reference,security guide intent is broader than the API reference obligation,manual_review,out_of_scope
+BC054,source_conflict,deprecated_doc_still_indexed,deprecated public source is still discoverable and conflicts with current guidance,manual_review,out_of_scope
+BC055,source_conflict,example_code_contradicts_text,example code weakens a requirement stated in prose,manual_review,out_of_scope
+BC056,source_conflict,vendor_note_conflicts_with_standard,vendor implementation note diverges from standard-language obligation,manual_review,out_of_scope
+BC057,source_conflict,library_default_conflicts_with_doc,library default behavior conflicts with documented recommended setting,manual_review,out_of_scope
+BC058,source_conflict,security_exception_unbounded,exception text lacks conditions that would make the obligation decidable,manual_review,out_of_scope
+BC059,source_conflict,localization_changes_normative_word,translated documentation changes a normative modal verb,manual_review,out_of_scope
+BC060,source_conflict,versioned_docs_overlap,two versioned documentation pages both appear applicable,manual_review,out_of_scope
+BC061,partial_policy_information,missing_final_header_value,source names the header but not its delivered value,not_evaluated,out_of_scope
+BC062,partial_policy_information,missing_path_scope,policy obligation depends on URL path scope absent from fixture,not_evaluated,out_of_scope
+BC063,partial_policy_information,missing_origin_context,origin tuple needed for semantic judgment is not available,not_evaluated,out_of_scope
+BC064,partial_policy_information,missing_redirect_chain,final policy depends on redirect chain not represented in released input,not_evaluated,out_of_scope
+BC065,partial_policy_information,missing_response_status,policy behavior depends on response status outside fixture,not_evaluated,out_of_scope
+BC066,partial_policy_information,missing_mime_context,semantic effect depends on MIME type absent from fixture,not_evaluated,out_of_scope
+BC067,partial_policy_information,missing_subresource_type,subresource category is required but not released,not_evaluated,out_of_scope
+BC068,partial_policy_information,missing_embedding_context,embedding frame context is absent,not_evaluated,out_of_scope
+BC069,partial_policy_information,missing_worker_context,worker or document context is absent,not_evaluated,out_of_scope
+BC070,partial_policy_information,missing_report_endpoint,reporting endpoint semantics are referenced but not included,not_evaluated,out_of_scope
+BC071,multiheader_interaction_unmodeled,csp_and_permissions_policy_overlap,interaction between modeled and unmodeled headers is not in the released kernel,unsupported_scope,out_of_scope
+BC072,multiheader_interaction_unmodeled,hsts_and_alt_svc_interaction,transport policy interaction depends on browser connection state,unsupported_scope,out_of_scope
+BC073,multiheader_interaction_unmodeled,coop_coep_corp_three_way,three-header interaction exceeds the locked rule arity,unsupported_scope,out_of_scope
+BC074,multiheader_interaction_unmodeled,cache_control_policy_replay,cache replay can change observed policy timing,unsupported_scope,out_of_scope
+BC075,multiheader_interaction_unmodeled,csp_sandbox_and_iframe_attr,HTML attribute and header interaction is outside response-header fixture scope,unsupported_scope,out_of_scope
+BC076,multiheader_interaction_unmodeled,referrer_policy_and_csp_navigation,combined navigation semantics exceed locked obligations,unsupported_scope,out_of_scope
+BC077,multiheader_interaction_unmodeled,cors_and_corp_preflight,preflight-dependent interaction is outside the released response model,unsupported_scope,out_of_scope
+BC078,multiheader_interaction_unmodeled,origin_agent_cluster_combo,cluster behavior is outside modeled policy obligations,unsupported_scope,out_of_scope
+BC079,multiheader_interaction_unmodeled,credentialless_and_cookie_policy,credential behavior requires cookie state outside fixture,unsupported_scope,out_of_scope
+BC080,multiheader_interaction_unmodeled,reporting_endpoints_and_nel,reporting pipeline is outside the locked security-effect semantics,unsupported_scope,out_of_scope
+BC081,deployment_chain_unknown,reverse_proxy_injection,reverse proxy may inject or override policy after application source,not_evaluated,out_of_scope
+BC082,deployment_chain_unknown,cdn_header_normalization,CDN normalization rules are unavailable,not_evaluated,out_of_scope
+BC083,deployment_chain_unknown,load_balancer_canary,canary pool may emit a different policy,not_evaluated,out_of_scope
+BC084,deployment_chain_unknown,edge_worker_override,edge worker policy generation is not included,not_evaluated,out_of_scope
+BC085,deployment_chain_unknown,serverless_platform_default,platform default header is not visible in repository source,not_evaluated,out_of_scope
+BC086,deployment_chain_unknown,container_sidecar_header,sidecar may mutate response headers,not_evaluated,out_of_scope
+BC087,deployment_chain_unknown,service_mesh_policy,service mesh may enforce or rewrite policy outside application code,not_evaluated,out_of_scope
+BC088,deployment_chain_unknown,staging_production_drift,source is for staging but claim concerns production policy,not_evaluated,out_of_scope
+BC089,deployment_chain_unknown,tenant_override_table,tenant override data is private and absent,not_evaluated,out_of_scope
+BC090,deployment_chain_unknown,secret_backed_policy_template,policy template depends on secret configuration not released,not_evaluated,out_of_scope
+BC091,external_state_dependency,preload_list_membership,semantic outcome depends on external preload-list state,unsupported_scope,out_of_scope
+BC092,external_state_dependency,certificate_transparency_state,security effect depends on external certificate log state,unsupported_scope,out_of_scope
+BC093,external_state_dependency,dns_https_record_state,policy behavior depends on DNS HTTPS/SVCB records,unsupported_scope,out_of_scope
+BC094,external_state_dependency,browser_safe_browsing_state,security effect depends on external browser service state,unsupported_scope,out_of_scope
+BC095,external_state_dependency,enterprise_policy_registry,policy behavior depends on machine-level enterprise settings,unsupported_scope,out_of_scope
+BC096,external_state_dependency,extension_install_set,policy behavior depends on installed extensions,unsupported_scope,out_of_scope
+BC097,external_state_dependency,partitioned_storage_state,behavior depends on browser storage partition state,unsupported_scope,out_of_scope
+BC098,external_state_dependency,prior_navigation_history,policy interpretation depends on prior navigation context,unsupported_scope,out_of_scope
+BC099,external_state_dependency,network_isolation_key,behavior depends on browser network isolation state,unsupported_scope,out_of_scope
+BC100,external_state_dependency,third_party_service_policy,policy depends on third-party service configuration not in source,unsupported_scope,out_of_scope

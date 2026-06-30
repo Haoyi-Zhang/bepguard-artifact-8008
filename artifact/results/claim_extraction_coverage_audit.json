@@ -1,0 +1,27 @@
+{
+  "admitted_claims": 45,
+  "claim_coverage_status": "pass",
+  "interpretation": "Makes the 45-claim denominator explicit and avoids implying broad claim-extraction recall over all browser code or documentation.",
+  "policy_families": {
+    "COEP/CORP/CORS": 2,
+    "COEP/framework": 1,
+    "COOP": 2,
+    "CORS": 4,
+    "CORS/cache": 1,
+    "CORS/framework": 3,
+    "CSP": 7,
+    "CSP/framework": 10,
+    "HSTS": 3,
+    "HSTS/framework": 3,
+    "HSTS/preload": 1,
+    "Layered policy composition": 2,
+    "Permissions-Policy": 2,
+    "baseline": 4
+  },
+  "problem_count": 0,
+  "problems": [],
+  "public_sources": 15,
+  "scope_statement": "the artifact claims a conservative admitted-source denominator, not recall over every possible browser-policy sentence in upstream ecosystems",
+  "semantic_rules": 35,
+  "status": "pass"
+}

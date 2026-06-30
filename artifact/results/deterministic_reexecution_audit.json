@@ -1,0 +1,9 @@
+{
+  "commands_reexecuted": 5,
+  "interpretation": "Five evidence-facing gates are executed twice into temporary directories. Return codes and output/stdout/stderr digests must match exactly, guarding against accidental nondeterminism in lightweight reproduction gates.",
+  "matching_digests": 5,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "total_subprocess_runs": 10
+}

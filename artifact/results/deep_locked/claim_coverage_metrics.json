@@ -1,0 +1,11 @@
+{
+  "admitted_claims": 45,
+  "baseline_scope_claims": 4,
+  "claims_covered": 45,
+  "context_surface_claims": 15,
+  "failures": [],
+  "fixture_backed_claims": 26,
+  "interpretation": "Admitted-claim closure audit: every public claim is either fixture-backed, context-surface evidence, or baseline-scope evidence.",
+  "orphan_claims": 0,
+  "status": "pass"
+}

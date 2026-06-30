@@ -1,0 +1,14 @@
+{
+  "internal_header_presence_control": {
+    "applicable_pairs": 116,
+    "baseline_only_flags_on_negative_controls": 0,
+    "disagreements": 64,
+    "semantic_positive_missed_by_baseline": 64
+  },
+  "internal_hsts_preload_documented_criterion": {
+    "applicable_pairs": 16,
+    "baseline_only_flags_on_negative_controls": 2,
+    "disagreements": 2,
+    "semantic_positive_missed_by_baseline": 0
+  }
+}

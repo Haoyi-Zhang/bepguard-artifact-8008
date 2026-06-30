@@ -1,0 +1,18 @@
+{
+  "current_claims": {
+    "amendment_range": "A001-A099",
+    "counterfactual_roundtrips": "546",
+    "oracle_equivalence_cases": "5,152",
+    "reproduction_commands": "101",
+    "rule_trace_obligations": "280",
+    "specbench_cases": "4,180",
+    "third_oracle_cases": "5,152",
+    "validation_layers": "111"
+  },
+  "files_checked": 4,
+  "interpretation": "Release prose drift audit: evidence-facing prose must not contain stale validation-layer, amendment-range, or reproduction-ladder counts after a hardening round; required current claims must be visible in the paper and artifact-facing instructions.",
+  "problem_count": 0,
+  "problems": [],
+  "schema": "BEPGuardReleaseClaimDrift/v1",
+  "status": "pass"
+}

@@ -1,0 +1,31 @@
+{
+  "file_reports": [
+    {
+      "forbidden_label_accesses": [],
+      "path": "artifact/scripts/bep_semantics.py",
+      "problem_count": 0
+    },
+    {
+      "forbidden_label_accesses": [],
+      "path": "artifact/bepguard/declarative_oracle.py",
+      "problem_count": 0
+    }
+  ],
+  "forbidden_keys_guarded": [
+    "certificate_id",
+    "expected_issue",
+    "fixture_hash",
+    "fixture_role",
+    "locked_status",
+    "mutation_operator",
+    "mutation_parent",
+    "paired_positive_fixture_id",
+    "public_source_id",
+    "source_claim_ids"
+  ],
+  "interpretation": "Static label-flow separation audit: core semantic decision procedures may inspect headers, layers, contexts, and intent classes, but not benchmark labels, roles, source IDs, fixture hashes, or certificates. This prevents ground-truth labels from entering the oracle path.",
+  "problem_count": 0,
+  "problems": [],
+  "pure_decision_files_checked": 2,
+  "status": "pass"
+}

@@ -1,0 +1,74 @@
+{
+  "commands_passing": 8,
+  "commands_reexecuted": 8,
+  "interpretation": "Representative evidence-facing gates are re-executed to temporary outputs and required to pass without modifying the release ledger, demonstrating idempotence of lightweight checks.",
+  "problem_count": 0,
+  "problems": [],
+  "replay_rows": [
+    {
+      "canonical_sha256": "a42fc7f81757c49dc8616d2525e1f47d49a52cf3e9cbf9a1c863ac7580cad4fc",
+      "gate": "package_identity",
+      "problem_count": 0,
+      "replay_sha256": "a42fc7f81757c49dc8616d2525e1f47d49a52cf3e9cbf9a1c863ac7580cad4fc",
+      "returncode": 0,
+      "status": "pass"
+    },
+    {
+      "canonical_sha256": "b3d079b2d48801e50d7feefed5b34831b1327b8da0e69ce6761324461b04b3df",
+      "gate": "documentation_consistency",
+      "problem_count": 0,
+      "replay_sha256": "b3d079b2d48801e50d7feefed5b34831b1327b8da0e69ce6761324461b04b3df",
+      "returncode": 0,
+      "status": "pass"
+    },
+    {
+      "canonical_sha256": "0870adb0b0a4a710841f6c08244277f4471d9a1c3f20d253453c3313d28c5c9a",
+      "gate": "decision_purity",
+      "problem_count": 0,
+      "replay_sha256": "0870adb0b0a4a710841f6c08244277f4471d9a1c3f20d253453c3313d28c5c9a",
+      "returncode": 0,
+      "status": "pass"
+    },
+    {
+      "canonical_sha256": "5e8ace5fe2979080f2e69207f33bfc5746e1c982e07ac2f8f194844099915e96",
+      "gate": "paper_claim_consistency",
+      "problem_count": 0,
+      "replay_sha256": "5e8ace5fe2979080f2e69207f33bfc5746e1c982e07ac2f8f194844099915e96",
+      "returncode": 0,
+      "status": "pass"
+    },
+    {
+      "canonical_sha256": "528dbaf170acc6185d9232f0c8fdd66c63bb220c16c81a74a96aa9bbfcfa2c37",
+      "gate": "runtime_boundary",
+      "problem_count": 0,
+      "replay_sha256": "528dbaf170acc6185d9232f0c8fdd66c63bb220c16c81a74a96aa9bbfcfa2c37",
+      "returncode": 0,
+      "status": "pass"
+    },
+    {
+      "canonical_sha256": "4c4ede4b23a87de5be2af6cf8d17503c38e0d3db7ea39f606c4dfc78b658bd80",
+      "gate": "pdf_reference_boundary",
+      "problem_count": 0,
+      "replay_sha256": "4c4ede4b23a87de5be2af6cf8d17503c38e0d3db7ea39f606c4dfc78b658bd80",
+      "returncode": 0,
+      "status": "pass"
+    },
+    {
+      "canonical_sha256": "c889f16767c9fae2282838649ece672e301960fa9df1d0972f34f71b79dce21d",
+      "gate": "claim_impact",
+      "problem_count": 0,
+      "replay_sha256": "c889f16767c9fae2282838649ece672e301960fa9df1d0972f34f71b79dce21d",
+      "returncode": 0,
+      "status": "pass"
+    },
+    {
+      "canonical_sha256": "ac44c39e889cf665dd3566f2c795a173ed5d54c7da959d78d3495eae0a8b4c73",
+      "gate": "witness_hash_chain",
+      "problem_count": 0,
+      "replay_sha256": "ac44c39e889cf665dd3566f2c795a173ed5d54c7da959d78d3495eae0a8b4c73",
+      "returncode": 0,
+      "status": "pass"
+    }
+  ],
+  "status": "pass"
+}

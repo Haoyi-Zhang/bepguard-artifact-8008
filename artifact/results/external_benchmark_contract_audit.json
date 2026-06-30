@@ -1,0 +1,30 @@
+{
+  "canonical_statuses": [
+    "available",
+    "error",
+    "excluded",
+    "not_applicable",
+    "unavailable",
+    "unsupported"
+  ],
+  "checks": [
+    "external_package_manifest",
+    "baseline_matrix",
+    "baseline_wrapper_protocol",
+    "fixture_probe_json",
+    "full_external_comparator_run"
+  ],
+  "external_baselines": [
+    "chromium_hstspreload",
+    "csp_evaluator",
+    "mdn_http_observatory",
+    "mdn_http_observatory_corp",
+    "mdn_http_observatory_cors",
+    "mdn_http_observatory_csp",
+    "webhint_strict_transport_security"
+  ],
+  "interpretation": "External benchmark/baseline adapter contract audit. It checks package pinning, canonical status vocabulary, no internal substitution, local-only wrapper scope, and the materialized full external comparator run for BEP-Deep.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

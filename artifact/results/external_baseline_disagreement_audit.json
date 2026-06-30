@@ -1,0 +1,58 @@
+{
+  "baseline_role": "contrastive public-package evidence; disagreements are exposed in a matrix and adjudicated against source-grounded obligations rather than hidden or assumed away",
+  "baselines": [
+    "csp_evaluator",
+    "mdn_http_observatory_corp",
+    "mdn_http_observatory_cors",
+    "mdn_http_observatory_csp",
+    "webhint_strict_transport_security"
+  ],
+  "external_rows": 4118,
+  "interpretation": "Materializes the public-comparator agreement/disagreement matrix so baseline-only and BEPGuard-only cases are visible to assessors.",
+  "problem_count": 0,
+  "problems": [],
+  "sampled_disagreements": 96,
+  "status": "pass",
+  "summary_rows": [
+    {
+      "baseline": "csp_evaluator",
+      "baseline_only": "132",
+      "bep_only": "0",
+      "both_flag": "98",
+      "neither_flag": "0",
+      "total": "230"
+    },
+    {
+      "baseline": "mdn_http_observatory_corp",
+      "baseline_only": "0",
+      "bep_only": "418",
+      "both_flag": "0",
+      "neither_flag": "554",
+      "total": "972"
+    },
+    {
+      "baseline": "mdn_http_observatory_cors",
+      "baseline_only": "80",
+      "bep_only": "382",
+      "both_flag": "36",
+      "neither_flag": "474",
+      "total": "972"
+    },
+    {
+      "baseline": "mdn_http_observatory_csp",
+      "baseline_only": "504",
+      "bep_only": "28",
+      "both_flag": "390",
+      "neither_flag": "50",
+      "total": "972"
+    },
+    {
+      "baseline": "webhint_strict_transport_security",
+      "baseline_only": "438",
+      "bep_only": "33",
+      "both_flag": "385",
+      "neither_flag": "116",
+      "total": "972"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "cache_hits": [],
+  "cache_packaged": false,
+  "comparator_families": [
+    "csp_evaluator",
+    "mdn_http_observatory_corp",
+    "mdn_http_observatory_cors",
+    "mdn_http_observatory_csp",
+    "webhint_strict_transport_security"
+  ],
+  "fixtures_evaluated": 972,
+  "interpretation": "Strict provenance audit for the materialized full public-package comparator execution; it verifies rows, package locks, caller-supplied package-workdir status, and absence of packaged dependency caches or transient probe files.",
+  "manifest_rows": 3,
+  "node_modules_packaged": false,
+  "node_workdir_packaged": false,
+  "packages_locked": 3,
+  "problem_count": 0,
+  "problems": [],
+  "rows_checked": 4118,
+  "status": "pass",
+  "transient_hits": []
+}

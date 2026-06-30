@@ -1,0 +1,22 @@
+{
+  "error_rows": 0,
+  "fixtures_evaluated": 972,
+  "interpretation": "Audit over materialized external comparator executions. Pass means the released baseline comparison contains public-package outputs from the supplied package work directory for every BEP-Deep fixture under the executable comparator tasks.",
+  "problem_count": 0,
+  "problems": [],
+  "result_sha256": "76f308a6322041cc8ff6c4eddd28bca4ebcf586e30586a7f52811e064af0573f",
+  "rows_by_baseline": {
+    "csp_evaluator": 230,
+    "mdn_http_observatory_corp": 972,
+    "mdn_http_observatory_cors": 972,
+    "mdn_http_observatory_csp": 972,
+    "webhint_strict_transport_security": 972
+  },
+  "rows_by_status": {
+    "available": 4118
+  },
+  "rows_total": 4118,
+  "schema": "BEPGuardExternalBaselineFullRunAudit/v1",
+  "status": "pass",
+  "unavailable_rows": 0
+}

@@ -1,0 +1,8 @@
+{
+  "files_scanned": 623,
+  "interpretation": "Scans for stale/transient filename residues and required release-hygiene outputs after multi-round hardening.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "suspect_files": []
+}

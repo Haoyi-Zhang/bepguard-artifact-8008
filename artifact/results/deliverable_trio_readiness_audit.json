@@ -1,0 +1,13 @@
+{
+  "artifact_link_source_files": 8,
+  "interpretation": "Checks that the three evidence-facing deliverables are ready: main paper, supplement, and the artifact tree to be uploaded as the repository link.",
+  "main_pages": 12,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "supplement_pages": 8,
+  "top_level_entries": [
+    "artifact",
+    "paper"
+  ]
+}

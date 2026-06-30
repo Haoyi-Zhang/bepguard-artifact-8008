@@ -1,0 +1,188 @@
+{
+  "ablations": [
+    {
+      "ablation": "full_model",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "none",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_delivery_disposition",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_CSP_REPORT_ONLY",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_csp_source_and_fallback",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_CSP_SCRIPT",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_rendering_context",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_CSP_NONCE_STATIC",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_cors_request_context",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_CORS_CREDENTIALS;GF_CORS_REFLECT",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_browser_state_transition",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_HSTS_STATE",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_cross_policy_edge",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_COEP_CORP;GF_COOP_COEP_PERMISSIONS",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_permissions_policy_rule",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_PERMISSIONS_POLICY",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "single_policy_only",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "GF_COEP_CORP;GF_COOP_COEP_PERMISSIONS;GF_CSP_NONCE_STATIC",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "yes",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    },
+    {
+      "ablation": "no_minimizer",
+      "detected_expected_witnesses": 88,
+      "detection_delta_vs_full": 0,
+      "dropped_generation_rules": "none",
+      "interpretation": "locked static component-removal ablation over generation-rule provenance",
+      "minimization_available": "no",
+      "missed_expected_witnesses": 0,
+      "positive_denominator": 88
+    }
+  ],
+  "baseline_disagreement": {
+    "internal_header_presence_control": {
+      "applicable_pairs": 116,
+      "baseline_only_flags_on_negative_controls": 0,
+      "disagreements": 64,
+      "semantic_positive_missed_by_baseline": 64
+    },
+    "internal_hsts_preload_documented_criterion": {
+      "applicable_pairs": 16,
+      "baseline_only_flags_on_negative_controls": 2,
+      "disagreements": 2,
+      "semantic_positive_missed_by_baseline": 0
+    }
+  },
+  "robustness": [
+    {
+      "expected_findings_detected": 88,
+      "expected_positive_fixtures": 88,
+      "fixtures": 116,
+      "negative_controls": 28,
+      "negative_controls_clean": 28,
+      "robustness_transform": "header_name_lowercase"
+    },
+    {
+      "expected_findings_detected": 88,
+      "expected_positive_fixtures": 88,
+      "fixtures": 116,
+      "negative_controls": 28,
+      "negative_controls_clean": 28,
+      "robustness_transform": "header_order_reversed"
+    },
+    {
+      "expected_findings_detected": 88,
+      "expected_positive_fixtures": 88,
+      "fixtures": 116,
+      "negative_controls": 28,
+      "negative_controls_clean": 28,
+      "robustness_transform": "directive_whitespace"
+    }
+  ],
+  "scalability": [
+    {
+      "findings": 88,
+      "fixtures": 116,
+      "oracle_evaluations": 116,
+      "replication_factor": 1,
+      "replication_label": "x1"
+    },
+    {
+      "findings": 176,
+      "fixtures": 232,
+      "oracle_evaluations": 232,
+      "replication_factor": 2,
+      "replication_label": "x2"
+    },
+    {
+      "findings": 352,
+      "fixtures": 464,
+      "oracle_evaluations": 464,
+      "replication_factor": 4,
+      "replication_label": "x4"
+    },
+    {
+      "findings": 704,
+      "fixtures": 928,
+      "oracle_evaluations": 928,
+      "replication_factor": 8,
+      "replication_label": "x8"
+    },
+    {
+      "findings": 1408,
+      "fixtures": 1856,
+      "oracle_evaluations": 1856,
+      "replication_factor": 16,
+      "replication_label": "x16"
+    },
+    {
+      "findings": 2816,
+      "fixtures": 3712,
+      "oracle_evaluations": 3712,
+      "replication_factor": 32,
+      "replication_label": "x32"
+    }
+  ]
+}

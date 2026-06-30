@@ -1,0 +1,9 @@
+{
+  "checksum_rows": 608,
+  "interpretation": "Checks that the release artifact capsule exposes evidence-facing entry files and that materialized indices are reachable.",
+  "problem_count": 0,
+  "problems": [],
+  "required_files_checked": 10,
+  "result_index_rows": 270,
+  "status": "pass"
+}

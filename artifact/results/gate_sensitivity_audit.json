@@ -1,0 +1,90 @@
+{
+  "interpretation": "In-memory seeded corruptions of critical materialized outputs are rejected by the same invariants used in release validation; this guards against a rubber-stamp validation summary.",
+  "problem_count": 0,
+  "problems": [],
+  "scenarios": [
+    {
+      "object": "deep_metrics",
+      "scenario": "deep_positive_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "deep_metrics",
+      "scenario": "deep_negative_clean_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "release",
+      "scenario": "release_layer_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "specbench",
+      "scenario": "specbench_case_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "evidence_cards",
+      "scenario": "evidence_card_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "package_identity",
+      "scenario": "package_version",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "runtime",
+      "scenario": "runtime_gpu_boundary",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "external_provenance",
+      "scenario": "external_cache_boundary",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "paper_claims",
+      "scenario": "paper_claim_problem_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "decision_purity",
+      "scenario": "decision_purity_problem_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "claim_impact",
+      "scenario": "claim_impact_claim_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "claim_impact",
+      "scenario": "claim_impact_specbench_pressure",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "witness_hash_chain",
+      "scenario": "witness_chain_count",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "witness_hash_chain",
+      "scenario": "witness_chain_uniqueness",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "release",
+      "scenario": "documentation_status",
+      "seeded_failure_rejected": true
+    },
+    {
+      "object": "runtime",
+      "scenario": "runtime_network_boundary",
+      "seeded_failure_rejected": true
+    }
+  ],
+  "seeded_failure_scenarios": 16,
+  "seeded_failures_rejected": 16,
+  "status": "pass"
+}

@@ -1,0 +1,27 @@
+{
+  "blind_modes": 5,
+  "blind_replays": 4860,
+  "by_mode": {
+    "family_blind": 972,
+    "fully_blind": 972,
+    "hash_blind": 972,
+    "role_blind": 972,
+    "source_blind": 972
+  },
+  "claims_observed": 26,
+  "families_replayed": 16,
+  "fixtures_replayed": 972,
+  "interpretation": "Identifier-blind replay erases source IDs, labels, fixture roles, families, hashes, and variants before re-executing the semantic oracle. Passing replays show that semantic judgments are driven by headers, layers, intent class, and context rather than locked benchmark identifiers.",
+  "positive_issue_classes_replayed": 25,
+  "preserved_by_mode": {
+    "family_blind": 972,
+    "fully_blind": 972,
+    "hash_blind": 972,
+    "role_blind": 972,
+    "source_blind": 972
+  },
+  "preserved_replays": 4860,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

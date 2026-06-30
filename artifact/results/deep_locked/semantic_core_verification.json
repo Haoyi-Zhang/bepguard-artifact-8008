@@ -1,0 +1,22 @@
+{
+  "checks_by_invariant": {
+    "I10_permissions_disable": 4,
+    "I11_permissions_overallow": 4,
+    "I12_ordered_layer_composition": 3,
+    "I13_unknown_is_not_positive": 1,
+    "I1_report_only_nonblocking": 4,
+    "I2_csp_fallback_priority": 6,
+    "I3_csp_conjunctive_nonexpansion": 75,
+    "I4_cors_credentialed_shareability": 32,
+    "I5_cors_duplicate_acao_rejected": 1,
+    "I6_cors_dynamic_origin_vary": 4,
+    "I7_hsts_transport_and_state": 10,
+    "I8_hsts_preload_criterion": 5,
+    "I9_coep_corp_cors_embedding": 16
+  },
+  "failed_invariants": [],
+  "failures": 0,
+  "interpretation": "Finite-state proof-obligation checks for the encoded BEP-IR fragments; not a proof of the full web platform.",
+  "invariants": 13,
+  "states_checked": 165
+}

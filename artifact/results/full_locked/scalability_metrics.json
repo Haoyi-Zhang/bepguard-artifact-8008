@@ -1,0 +1,44 @@
+[
+  {
+    "findings": 88,
+    "fixtures": 116,
+    "oracle_evaluations": 116,
+    "replication_factor": 1,
+    "replication_label": "x1"
+  },
+  {
+    "findings": 176,
+    "fixtures": 232,
+    "oracle_evaluations": 232,
+    "replication_factor": 2,
+    "replication_label": "x2"
+  },
+  {
+    "findings": 352,
+    "fixtures": 464,
+    "oracle_evaluations": 464,
+    "replication_factor": 4,
+    "replication_label": "x4"
+  },
+  {
+    "findings": 704,
+    "fixtures": 928,
+    "oracle_evaluations": 928,
+    "replication_factor": 8,
+    "replication_label": "x8"
+  },
+  {
+    "findings": 1408,
+    "fixtures": 1856,
+    "oracle_evaluations": 1856,
+    "replication_factor": 16,
+    "replication_label": "x16"
+  },
+  {
+    "findings": 2816,
+    "fixtures": 3712,
+    "oracle_evaluations": 3712,
+    "replication_factor": 32,
+    "replication_label": "x32"
+  }
+]

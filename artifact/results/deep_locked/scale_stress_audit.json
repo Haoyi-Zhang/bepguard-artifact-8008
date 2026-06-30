@@ -1,0 +1,15 @@
+{
+  "base_fixtures": 972,
+  "expected_stress_cases": 48600,
+  "interpretation": "CPU-native scale-stress replay applies deterministic representation-preserving variants to every BEP-Deep fixture and re-executes the semantic oracle. It records count closure, not wall-clock measurements, to keep the release deterministic.",
+  "multiplier": 50,
+  "problem_count": 0,
+  "problems": [],
+  "roles": {
+    "negative_control": 6800,
+    "paired_repair_negative_control": 20900,
+    "positive": 20900
+  },
+  "status": "pass",
+  "stress_cases": 48600
+}

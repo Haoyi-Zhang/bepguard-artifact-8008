@@ -1,0 +1,27 @@
+{
+  "baseline_scope_claims": 4,
+  "claims_checked": 45,
+  "claims_with_locked_fixture_support": 26,
+  "claims_with_positive_witness_cards": 26,
+  "executable_fixture_backed_claims": 26,
+  "interpretation": "Admitted source claims are partitioned into executable fixture-backed claims, source-context claims, and baseline-scope claims. The audit prevents context evidence from masquerading as unimplemented future work or as emitted drift findings.",
+  "problem_count": 0,
+  "problems": [],
+  "role_counts": {
+    "baseline": 4,
+    "negative_control": 3,
+    "positive": 12,
+    "positive_and_negative": 11,
+    "source_context": 15
+  },
+  "source_context_claims": 15,
+  "source_span_roles": {
+    "baseline": 4,
+    "negative_control": 3,
+    "positive": 12,
+    "positive_and_negative": 11,
+    "source_context": 15
+  },
+  "status": "pass",
+  "unresolved_future_work_placeholders": 0
+}

@@ -1,0 +1,8 @@
+{
+  "interpretation": "Semantic mutation adequacy for encoded BEP-IR hinges; not a completeness proof for the web platform.",
+  "killed_mutants": 28,
+  "mutants_killed_by_negative_controls": 6,
+  "mutants_killed_by_paired_repair_controls": 6,
+  "semantic_mutants": 28,
+  "surviving_mutants": []
+}

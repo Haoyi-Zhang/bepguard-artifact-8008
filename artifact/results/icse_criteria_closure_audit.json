@@ -1,0 +1,40 @@
+{
+  "criteria_checked": 5,
+  "evidence_bindings": 13,
+  "interpretation": "Maps ICSE review criteria to assessor-visible paper language and materialized passing evidence channels.",
+  "problem_count": 0,
+  "problems": [],
+  "rows": [
+    {
+      "criterion": "novelty",
+      "evidence_files": 2,
+      "missing_tokens": [],
+      "paper_tokens": 4
+    },
+    {
+      "criterion": "rigor",
+      "evidence_files": 3,
+      "missing_tokens": [],
+      "paper_tokens": 4
+    },
+    {
+      "criterion": "relevance",
+      "evidence_files": 2,
+      "missing_tokens": [],
+      "paper_tokens": 4
+    },
+    {
+      "criterion": "verifiability_transparency",
+      "evidence_files": 3,
+      "missing_tokens": [],
+      "paper_tokens": 4
+    },
+    {
+      "criterion": "presentation",
+      "evidence_files": 3,
+      "missing_tokens": [],
+      "paper_tokens": 4
+    }
+  ],
+  "status": "pass"
+}

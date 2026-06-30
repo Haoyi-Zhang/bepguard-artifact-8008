@@ -1,0 +1,67 @@
+{
+  "adversarial_validation_cases_passed": 4306,
+  "axis_value_counts": {
+    "composition": {
+      "layers": 128,
+      "multi_header": 304,
+      "single_surface": 540
+    },
+    "credentials": {
+      "include": 200,
+      "none": 700,
+      "omit": 72
+    },
+    "delivery": {
+      "enforced_csp": 184,
+      "meta_csp": 6,
+      "non_csp": 752,
+      "report_only_csp": 30
+    },
+    "rendering": {
+      "dynamic": 24,
+      "none": 924,
+      "static": 24
+    },
+    "request_mode": {
+      "cors": 8,
+      "no-cors": 72,
+      "none": 892
+    },
+    "resource_relation": {
+      "has_request_origin": 40,
+      "has_resource_origin": 568,
+      "none": 364
+    },
+    "stateful": {
+      "hsts_state": 208,
+      "stateless": 764
+    },
+    "transport": {
+      "http": 24,
+      "https": 948
+    }
+  },
+  "family_counts": {
+    "COEP/CORP/CORS": 64,
+    "COOP/COEP/Permissions-Policy": 56,
+    "CORP": 16,
+    "CORS": 92,
+    "CORS/cache": 68,
+    "CORS/framework": 48,
+    "CSP": 128,
+    "CSP/composition": 16,
+    "CSP/framework": 48,
+    "CSP/framing": 28,
+    "HSTS": 124,
+    "HSTS/framework": 56,
+    "HSTS/preload": 16,
+    "HSTS/subdomains": 12,
+    "Layered policy composition": 128,
+    "Permissions-Policy": 72
+  },
+  "interpretation": "Boundary-coverage audit over modeled semantic families; not live-web representativeness.",
+  "issue_classes": 25,
+  "issue_classes_with_complete_ladder": 25,
+  "policy_families": 16,
+  "semantic_mutants_killed": 28
+}

@@ -1,0 +1,7 @@
+{
+  "all_issues_removed": 88,
+  "interpretation": "Deterministic issue-specific repairs under encoded semantics; not proof of deployability in arbitrary applications.",
+  "positive_fixtures": 88,
+  "target_issue_removed": 88,
+  "unrepaired": []
+}

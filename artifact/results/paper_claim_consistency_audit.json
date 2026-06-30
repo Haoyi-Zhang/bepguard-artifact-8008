@@ -1,0 +1,64 @@
+{
+  "checks": [
+    {
+      "claim": "BEP-Deep fixtures",
+      "expected": 972,
+      "observed": 972,
+      "ok": true
+    },
+    {
+      "claim": "expected positives",
+      "expected": 418,
+      "observed": 418,
+      "ok": true
+    },
+    {
+      "claim": "negative controls",
+      "expected": 554,
+      "observed": 554,
+      "ok": true
+    },
+    {
+      "claim": "mutation farm",
+      "expected": 600,
+      "observed": 600,
+      "ok": true
+    },
+    {
+      "claim": "theory states",
+      "expected": 33513,
+      "observed": 33513,
+      "ok": true
+    },
+    {
+      "claim": "specbench cases",
+      "expected": 4180,
+      "observed": 4180,
+      "ok": true
+    },
+    {
+      "claim": "shadow cases",
+      "expected": 9720,
+      "observed": 9720,
+      "ok": true
+    },
+    {
+      "claim": "scale cases",
+      "expected": 48600,
+      "observed": 48600,
+      "ok": true
+    },
+    {
+      "claim": "validation layers",
+      "expected": 111,
+      "observed": 111,
+      "ok": true
+    }
+  ],
+  "claims_checked": 9,
+  "interpretation": "Audits that paper-visible headline numerical claims match the materialized release-validation counts and that selected forbidden overclaim phrases are absent.",
+  "problem_count": 0,
+  "problems": [],
+  "schema": "BEPGuardPaperClaimConsistency/v1",
+  "status": "pass"
+}

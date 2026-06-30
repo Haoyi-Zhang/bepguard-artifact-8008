@@ -1,0 +1,117 @@
+fixture_id,family,applicable,expected_issue,has_hsts,max_age,include_subdomains,preload_token,criterion_pass
+LF_CSP_RO_01,CSP,False,csp_report_only_not_enforced,False,,False,False,False
+LF_CSP_RO_02,CSP,False,csp_report_only_not_enforced,False,,False,False,False
+LF_CSP_RO_03,CSP,False,csp_report_only_not_enforced,False,,False,False,False
+LF_CSP_RO_04,CSP,False,csp_report_only_not_enforced,False,,False,False,False
+LF_CSP_RO_05,CSP,False,csp_report_only_not_enforced,False,,False,False,False
+LF_CSP_RO_06,CSP,False,csp_report_only_not_enforced,False,,False,False,False
+LF_CSP_FB_01,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_FB_02,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_FB_03,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_FB_04,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_FB_05,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_FB_06,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_FB_07,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_FB_08,CSP,False,csp_effective_script_allowance,False,,False,False,False
+LF_CSP_NONCE_01,CSP/framework,False,nonce_csp_static_render_incompatibility,False,,False,False,False
+LF_CSP_NONCE_02,CSP/framework,False,nonce_csp_static_render_incompatibility,False,,False,False,False
+LF_CSP_NONCE_03,CSP/framework,False,nonce_csp_static_render_incompatibility,False,,False,False,False
+LF_CSP_NONCE_04,CSP/framework,False,nonce_csp_static_render_incompatibility,False,,False,False,False
+LF_CSP_NONCE_05,CSP/framework,False,nonce_csp_static_render_incompatibility,False,,False,False,False
+LF_CSP_NONCE_06,CSP/framework,False,nonce_csp_static_render_incompatibility,False,,False,False,False
+LF_CORS_WC_01,CORS,False,cors_intended_credentialed_share_blocked,False,,False,False,False
+LF_CORS_WC_02,CORS,False,cors_intended_credentialed_share_blocked,False,,False,False,False
+LF_CORS_WC_03,CORS,False,cors_intended_credentialed_share_blocked,False,,False,False,False
+LF_CORS_WC_04,CORS,False,cors_intended_credentialed_share_blocked,False,,False,False,False
+LF_CORS_WC_05,CORS,False,cors_intended_credentialed_share_blocked,False,,False,False,False
+LF_CORS_WC_06,CORS,False,cors_intended_credentialed_share_blocked,False,,False,False,False
+LF_CORS_REFLECT_01,CORS/framework,False,cors_reflected_origin_with_credentials,False,,False,False,False
+LF_CORS_REFLECT_02,CORS/framework,False,cors_reflected_origin_with_credentials,False,,False,False,False
+LF_CORS_REFLECT_03,CORS/framework,False,cors_reflected_origin_with_credentials,False,,False,False,False
+LF_CORS_REFLECT_04,CORS/framework,False,cors_reflected_origin_with_credentials,False,,False,False,False
+LF_CORS_REFLECT_05,CORS/framework,False,cors_reflected_origin_with_credentials,False,,False,False,False
+LF_CORS_REFLECT_06,CORS/framework,False,cors_reflected_origin_with_credentials,False,,False,False,False
+LF_HSTS_HTTP_01,HSTS,True,hsts_header_not_honored_over_http,True,31536000,True,False,False
+LF_HSTS_HTTP_02,HSTS,True,hsts_header_not_honored_over_http,True,31536000,True,False,False
+LF_HSTS_HTTP_03,HSTS,True,hsts_header_not_honored_over_http,True,31536000,True,False,False
+LF_HSTS_HTTP_04,HSTS,True,hsts_header_not_honored_over_http,True,31536000,True,False,False
+LF_HSTS_HTTP_05,HSTS,True,hsts_header_not_honored_over_http,True,31536000,True,False,False
+LF_HSTS_HTTP_06,HSTS,True,hsts_header_not_honored_over_http,True,31536000,True,False,False
+LF_HSTS_ZERO_01,HSTS,True,hsts_policy_cleared_by_zero_max_age,True,0,True,False,False
+LF_HSTS_ZERO_02,HSTS,True,hsts_policy_cleared_by_zero_max_age,True,0,True,False,False
+LF_HSTS_ZERO_03,HSTS,True,hsts_policy_cleared_by_zero_max_age,True,0,True,False,False
+LF_HSTS_ZERO_04,HSTS,True,hsts_policy_cleared_by_zero_max_age,True,0,True,False,False
+LF_HSTS_ZERO_05,HSTS,True,hsts_policy_cleared_by_zero_max_age,True,0,True,False,False
+LF_HSTS_ZERO_06,HSTS,True,hsts_policy_cleared_by_zero_max_age,True,0,True,False,False
+LF_COEP_01,COEP/CORP/CORS,False,coep_require_corp_blocks_cross_origin_resource,False,,False,False,False
+LF_COEP_02,COEP/CORP/CORS,False,coep_require_corp_blocks_cross_origin_resource,False,,False,False,False
+LF_COEP_03,COEP/CORP/CORS,False,coep_require_corp_blocks_cross_origin_resource,False,,False,False,False
+LF_COEP_04,COEP/CORP/CORS,False,coep_require_corp_blocks_cross_origin_resource,False,,False,False,False
+LF_COEP_05,COEP/CORP/CORS,False,coep_require_corp_blocks_cross_origin_resource,False,,False,False,False
+LF_COEP_06,COEP/CORP/CORS,False,coep_require_corp_blocks_cross_origin_resource,False,,False,False,False
+LF_COOP_ISO_01,COOP/COEP/Permissions-Policy,False,cross_origin_isolation_incomplete,False,,False,False,False
+LF_COOP_ISO_02,COOP/COEP/Permissions-Policy,False,cross_origin_isolation_incomplete,False,,False,False,False
+LF_COOP_ISO_03,COOP/COEP/Permissions-Policy,False,cross_origin_isolation_incomplete,False,,False,False,False
+LF_COOP_ISO_04,COOP/COEP/Permissions-Policy,False,cross_origin_isolation_incomplete,False,,False,False,False
+LF_COOP_ISO_05,COOP/COEP/Permissions-Policy,False,cross_origin_isolation_incomplete,False,,False,False,False
+LF_COOP_ISO_06,COOP/COEP/Permissions-Policy,False,cross_origin_isolation_incomplete,False,,False,False,False
+LF_PERM_DISABLED_01,Permissions-Policy,False,permissions_policy_feature_disabled,False,,False,False,False
+LF_PERM_DISABLED_02,Permissions-Policy,False,permissions_policy_feature_disabled,False,,False,False,False
+LF_PERM_DISABLED_03,Permissions-Policy,False,permissions_policy_feature_disabled,False,,False,False,False
+LF_PERM_DISABLED_04,Permissions-Policy,False,permissions_policy_feature_disabled,False,,False,False,False
+LF_PERM_DISABLED_05,Permissions-Policy,False,permissions_policy_feature_disabled,False,,False,False,False
+LF_PERM_DISABLED_06,Permissions-Policy,False,permissions_policy_feature_disabled,False,,False,False,False
+LF_NC_CSP_SELF_01,CSP,False,none,False,,False,False,False
+LF_NC_CSP_SELF_02,CSP,False,none,False,,False,False,False
+LF_NC_CSP_OVERRIDE_01,CSP,False,none,False,,False,False,False
+LF_NC_CSP_OVERRIDE_02,CSP,False,none,False,,False,False,False
+LF_NC_CORS_SPECIFIC_01,CORS,False,none,False,,False,False,False
+LF_NC_CORS_SPECIFIC_02,CORS,False,none,False,,False,False,False
+LF_NC_CORS_WC_OMIT_01,CORS,False,none,False,,False,False,False
+LF_NC_CORS_WC_OMIT_02,CORS,False,none,False,,False,False,False
+LF_NC_HSTS_HTTPS_01,HSTS,True,none,True,31536000,True,False,False
+LF_NC_HSTS_HTTPS_02,HSTS,True,none,True,31536000,True,False,False
+LF_NC_HSTS_POSITIVE_01,HSTS,True,none,True,63072000,True,True,True
+LF_NC_HSTS_POSITIVE_02,HSTS,True,none,True,63072000,True,True,True
+LF_NC_COEP_CORP_01,COEP/CORP/CORS,False,none,False,,False,False,False
+LF_NC_COEP_CORP_02,COEP/CORP/CORS,False,none,False,,False,False,False
+LF_NC_COEP_CORS_01,COEP/CORP/CORS,False,none,False,,False,False,False
+LF_NC_COEP_CORS_02,COEP/CORP/CORS,False,none,False,,False,False,False
+LF_NC_COOP_ISO_01,COOP/COEP/Permissions-Policy,False,none,False,,False,False,False
+LF_NC_COOP_ISO_02,COOP/COEP/Permissions-Policy,False,none,False,,False,False,False
+LF_NC_PERM_SELF_01,Permissions-Policy,False,none,False,,False,False,False
+LF_NC_PERM_SELF_02,Permissions-Policy,False,none,False,,False,False,False
+LF_CSP_COMPOSE_01,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_CSP_COMPOSE_02,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_CSP_COMPOSE_03,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_CSP_COMPOSE_04,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_CSP_COMPOSE_05,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_CSP_COMPOSE_06,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_CSP_COMPOSE_07,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_CSP_COMPOSE_08,Layered policy composition,False,csp_conjunctive_policy_composition_blocks_required_script,False,,False,False,False
+LF_LAYER_DROP_01,Layered policy composition,False,layered_header_override_drops_enforcement,False,,False,False,False
+LF_LAYER_DROP_02,Layered policy composition,False,layered_header_override_drops_enforcement,False,,False,False,False
+LF_LAYER_DROP_03,Layered policy composition,False,layered_header_override_drops_enforcement,False,,False,False,False
+LF_LAYER_DROP_04,Layered policy composition,False,layered_header_override_drops_enforcement,False,,False,False,False
+LF_LAYER_DROP_05,Layered policy composition,False,layered_header_override_drops_enforcement,False,,False,False,False
+LF_LAYER_DROP_06,Layered policy composition,False,layered_header_override_drops_enforcement,False,,False,False,False
+LF_CORS_VARY_01,CORS/cache,False,cors_dynamic_origin_missing_vary,False,,False,False,False
+LF_CORS_VARY_02,CORS/cache,False,cors_dynamic_origin_missing_vary,False,,False,False,False
+LF_CORS_VARY_03,CORS/cache,False,cors_dynamic_origin_missing_vary,False,,False,False,False
+LF_CORS_VARY_04,CORS/cache,False,cors_dynamic_origin_missing_vary,False,,False,False,False
+LF_CORS_VARY_05,CORS/cache,False,cors_dynamic_origin_missing_vary,False,,False,False,False
+LF_CORS_VARY_06,CORS/cache,False,cors_dynamic_origin_missing_vary,False,,False,False,False
+LF_HSTS_SUBDOMAIN_01,HSTS/framework,False,hsts_subdomain_scope_not_covered,True,31536000,False,False,False
+LF_HSTS_SUBDOMAIN_02,HSTS/framework,False,hsts_subdomain_scope_not_covered,True,31536000,False,False,False
+LF_HSTS_SUBDOMAIN_03,HSTS/framework,False,hsts_subdomain_scope_not_covered,True,31536000,False,False,False
+LF_HSTS_SUBDOMAIN_04,HSTS/framework,False,hsts_subdomain_scope_not_covered,True,31536000,False,False,False
+LF_HSTS_SUBDOMAIN_05,HSTS/framework,False,hsts_subdomain_scope_not_covered,True,31536000,False,False,False
+LF_HSTS_SUBDOMAIN_06,HSTS/framework,False,hsts_subdomain_scope_not_covered,True,31536000,False,False,False
+LF_NC_CSP_COMPOSE_ALLOW_01,Layered policy composition,False,none,False,,False,False,False
+LF_NC_CSP_COMPOSE_ALLOW_02,Layered policy composition,False,none,False,,False,False,False
+LF_NC_LAYER_PRESERVE_01,Layered policy composition,False,none,False,,False,False,False
+LF_NC_LAYER_PRESERVE_02,Layered policy composition,False,none,False,,False,False,False
+LF_NC_CORS_VARY_01,CORS/cache,False,none,False,,False,False,False
+LF_NC_CORS_VARY_02,CORS/cache,False,none,False,,False,False,False
+LF_NC_HSTS_SUBDOMAIN_01,HSTS/framework,False,none,True,31536000,True,False,False
+LF_NC_HSTS_SUBDOMAIN_02,HSTS/framework,False,none,True,31536000,True,False,False

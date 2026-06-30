@@ -1,0 +1,22 @@
+{
+  "abstract": "Browser-enforced security policies such as CSP, CORS, HSTS, COOP, COEP, CORP, and Permissions-Policy are now central to web application security, yet software teams still lack a principled way to determine whether generated policy surfaces preserve the security intent expressed by public documentation, framework guidance, and deployment constraints. This paper introduces BEPGuard, a source-grounded semantic evidence infrastructure for studying policy intent drift in browser-enforced security policy engineering. BEPGuard turns public security-policy claims into browser-effective semantic obligations, materializes minimal proof-carrying conflict witnesses, pairs each witness with local repair controls, and independently rechecks judgments through decision-table oracles, finite-theory obligations, mutation adequacy, external public-package comparators, and adversarial stress workloads.\n\nWe evaluate BEPGuard on BEP-Deep, a benchmark of 972 source-grounded policy fixtures containing 418 expected drift positives and 554 negative controls, and on BEP-Max, a 4,306-case adversarial validation suite. BEPGuard detects all 418 expected positives while preserving all 554 negative controls, rechecks 4,870 certificate obligations, validates 30 finite semantic theorems over 33,513 states without counterexamples, kills 28 rule-level semantic mutants and 600 obligation-level mutants, and exercises 4,180 source-derived boundary cases, 9,720 shadow generalization replays, 48,600 scale-stress cases, and 4,118 public-package comparator invocations. The results show that policy intent drift can be studied as a reproducible software-engineering object: source-grounded, repair-paired, proof-carrying, independently checked, mutation-adequate, and supported by an anonymous deterministic artifact.",
+  "additional_area": "Testing and Analysis",
+  "anonymous_release_boundary": "The artifact excludes author-identifying material, conversation artifacts, machine-specific locations, live-web scans, private data, GPU requirements, and hosted inference services.",
+  "delivery_surfaces": [
+    "main paper PDF",
+    "supplement PDF",
+    "anonymous repository link"
+  ],
+  "primary_area": "Dependability and Security",
+  "selected_topics": [
+    "Dependability and Security::Design for dependability and security",
+    "Dependability and Security::Formal methods and model checking (excluding solutions focusing solely on hardware)",
+    "Dependability and Security::Confidentiality, integrity, privacy, and fairness",
+    "Dependability and Security::Vulnerability detection to enhance software security",
+    "Architecture and Design::Architecture quality attributes, such as security, privacy, performance, reliability",
+    "Requirements and Modeling::Requirements traceability and dependencies",
+    "Requirements and Modeling::Systems and software traceability"
+  ],
+  "status": "locked_for_abstract_registration_alignment",
+  "title": "BEPGuard: Proof-Carrying Evidence for Policy Intent Drift in Browser-Enforced Security Policy Engineering"
+}

@@ -1,0 +1,3294 @@
+[
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_report_only_not_enforced",
+    "fixture_hash": "0ac1134b3629e934",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'; report-uri /csp"
+      }
+    ],
+    "id": "LF_CSP_RO_01__repair",
+    "intent": {
+      "claim": "Block untrusted third-party script execution.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_01",
+    "source_claim_ids": [
+      "CL_CSP_01"
+    ],
+    "variant": "report_only_only"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://cdn.bad",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_report_only_not_enforced",
+    "fixture_hash": "707492803f77e489",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'; report-uri /csp"
+      }
+    ],
+    "id": "LF_CSP_RO_02__repair",
+    "intent": {
+      "claim": "Block untrusted third-party script execution.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_01",
+    "source_claim_ids": [
+      "CL_CSP_01"
+    ],
+    "variant": "report_only_only"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://tracker.invalid",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_report_only_not_enforced",
+    "fixture_hash": "bcdcbbe08c729236",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'; report-uri /csp"
+      }
+    ],
+    "id": "LF_CSP_RO_03__repair",
+    "intent": {
+      "claim": "Block untrusted third-party script execution.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_01",
+    "source_claim_ids": [
+      "CL_CSP_01"
+    ],
+    "variant": "report_only_only"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://assets.other",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_report_only_not_enforced",
+    "fixture_hash": "b63ee98394081046",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'; report-uri /csp"
+      }
+    ],
+    "id": "LF_CSP_RO_04__repair",
+    "intent": {
+      "claim": "Block untrusted third-party script execution.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_01",
+    "source_claim_ids": [
+      "CL_CSP_01"
+    ],
+    "variant": "report_only_only"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://x.test",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_report_only_not_enforced",
+    "fixture_hash": "ba6d17e18eed56b3",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'; report-uri /csp"
+      }
+    ],
+    "id": "LF_CSP_RO_05__repair",
+    "intent": {
+      "claim": "Block untrusted third-party script execution.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_01",
+    "source_claim_ids": [
+      "CL_CSP_01"
+    ],
+    "variant": "report_only_only"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://untrusted.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_report_only_not_enforced",
+    "fixture_hash": "90060ddb151c7723",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'; report-uri /csp"
+      }
+    ],
+    "id": "LF_CSP_RO_06__repair",
+    "intent": {
+      "claim": "Block untrusted third-party script execution.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_01",
+    "source_claim_ids": [
+      "CL_CSP_01"
+    ],
+    "variant": "report_only_only"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "2e04a1f80f92ed8a",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_01__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "1baf223eeb276937",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_02__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "ab874052d60dcce6",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_03__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "6219748b90b7adcc",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_04__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "ffedf2696abd7d60",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_05__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "c512b40d6e81415e",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_06__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "a24f03991d223e7a",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_07__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_effective_script_allowance",
+    "fixture_hash": "b571f0ae3e4b00f2",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self'"
+      }
+    ],
+    "id": "LF_CSP_FB_08__repair",
+    "intent": {
+      "claim": "Restrict executable script to trusted origins.",
+      "class": "enforce_script_restriction"
+    },
+    "policy_family": "CSP",
+    "public_source_id": "CL_CSP_02",
+    "source_claim_ids": [
+      "CL_CSP_02",
+      "CL_CSP_04"
+    ],
+    "variant": "default_src_allows_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "rendering_variant": "dynamic_per_request",
+      "resource_kind": "script",
+      "resource_origin": "https://app.example",
+      "scheme": "https",
+      "static_render": false
+    },
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "fixture_hash": "561247f2538fd605",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+      }
+    ],
+    "id": "LF_CSP_NONCE_01__repair",
+    "intent": {
+      "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+      "class": "nonce_based_strict_csp"
+    },
+    "policy_family": "CSP/framework",
+    "public_source_id": "CL_CSP_06",
+    "source_claim_ids": [
+      "CL_CSP_06",
+      "CL_NEXT_01",
+      "CL_NEXT_02"
+    ],
+    "variant": "static_export"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "rendering_variant": "dynamic_per_request",
+      "resource_kind": "script",
+      "resource_origin": "https://app.example",
+      "scheme": "https",
+      "static_render": false
+    },
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "fixture_hash": "efdede003e50d712",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+      }
+    ],
+    "id": "LF_CSP_NONCE_02__repair",
+    "intent": {
+      "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+      "class": "nonce_based_strict_csp"
+    },
+    "policy_family": "CSP/framework",
+    "public_source_id": "CL_CSP_06",
+    "source_claim_ids": [
+      "CL_CSP_06",
+      "CL_NEXT_01",
+      "CL_NEXT_02"
+    ],
+    "variant": "static_optimization"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "rendering_variant": "dynamic_per_request",
+      "resource_kind": "script",
+      "resource_origin": "https://app.example",
+      "scheme": "https",
+      "static_render": false
+    },
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "fixture_hash": "f2b0e9dba0829e4f",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+      }
+    ],
+    "id": "LF_CSP_NONCE_03__repair",
+    "intent": {
+      "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+      "class": "nonce_based_strict_csp"
+    },
+    "policy_family": "CSP/framework",
+    "public_source_id": "CL_CSP_06",
+    "source_claim_ids": [
+      "CL_CSP_06",
+      "CL_NEXT_01",
+      "CL_NEXT_02"
+    ],
+    "variant": "ISR"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "rendering_variant": "dynamic_per_request",
+      "resource_kind": "script",
+      "resource_origin": "https://app.example",
+      "scheme": "https",
+      "static_render": false
+    },
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "fixture_hash": "761f542609a96d48",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+      }
+    ],
+    "id": "LF_CSP_NONCE_04__repair",
+    "intent": {
+      "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+      "class": "nonce_based_strict_csp"
+    },
+    "policy_family": "CSP/framework",
+    "public_source_id": "CL_CSP_06",
+    "source_claim_ids": [
+      "CL_CSP_06",
+      "CL_NEXT_01",
+      "CL_NEXT_02"
+    ],
+    "variant": "CDN_cached_static"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "rendering_variant": "dynamic_per_request",
+      "resource_kind": "script",
+      "resource_origin": "https://app.example",
+      "scheme": "https",
+      "static_render": false
+    },
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "fixture_hash": "635f8041803ecc68",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+      }
+    ],
+    "id": "LF_CSP_NONCE_05__repair",
+    "intent": {
+      "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+      "class": "nonce_based_strict_csp"
+    },
+    "policy_family": "CSP/framework",
+    "public_source_id": "CL_CSP_06",
+    "source_claim_ids": [
+      "CL_CSP_06",
+      "CL_NEXT_01",
+      "CL_NEXT_02"
+    ],
+    "variant": "partial_prerendering"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "rendering_variant": "dynamic_per_request",
+      "resource_kind": "script",
+      "resource_origin": "https://app.example",
+      "scheme": "https",
+      "static_render": false
+    },
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "fixture_hash": "18439d5c08445e80",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Content-Security-Policy",
+        "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+      }
+    ],
+    "id": "LF_CSP_NONCE_06__repair",
+    "intent": {
+      "claim": "Use nonce-based strict CSP while preserving static rendering or static caching.",
+      "class": "nonce_based_strict_csp"
+    },
+    "policy_family": "CSP/framework",
+    "public_source_id": "CL_CSP_06",
+    "source_claim_ids": [
+      "CL_CSP_06",
+      "CL_NEXT_01",
+      "CL_NEXT_02"
+    ],
+    "variant": "build_time_render"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://frontend.example",
+      "request_origin": "https://frontend.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "fixture_hash": "9b62d6714a679697",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://frontend.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_WC_01__repair",
+    "intent": {
+      "claim": "Allow the credentialed frontend request to read the API response.",
+      "class": "allow_credentialed_cors"
+    },
+    "policy_family": "CORS",
+    "public_source_id": "CL_CORS_01",
+    "source_claim_ids": [
+      "CL_CORS_01"
+    ],
+    "variant": "wildcard_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://console.example",
+      "request_origin": "https://console.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "fixture_hash": "cd24c2db73d55046",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://console.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_WC_02__repair",
+    "intent": {
+      "claim": "Allow the credentialed frontend request to read the API response.",
+      "class": "allow_credentialed_cors"
+    },
+    "policy_family": "CORS",
+    "public_source_id": "CL_CORS_01",
+    "source_claim_ids": [
+      "CL_CORS_01"
+    ],
+    "variant": "wildcard_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://admin.example",
+      "request_origin": "https://admin.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "fixture_hash": "d9b3e86d56db0d76",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://admin.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_WC_03__repair",
+    "intent": {
+      "claim": "Allow the credentialed frontend request to read the API response.",
+      "class": "allow_credentialed_cors"
+    },
+    "policy_family": "CORS",
+    "public_source_id": "CL_CORS_01",
+    "source_claim_ids": [
+      "CL_CORS_01"
+    ],
+    "variant": "wildcard_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://partner.example",
+      "request_origin": "https://partner.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "fixture_hash": "5c6635c2f4da0912",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://partner.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_WC_04__repair",
+    "intent": {
+      "claim": "Allow the credentialed frontend request to read the API response.",
+      "class": "allow_credentialed_cors"
+    },
+    "policy_family": "CORS",
+    "public_source_id": "CL_CORS_01",
+    "source_claim_ids": [
+      "CL_CORS_01"
+    ],
+    "variant": "wildcard_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://app.test",
+      "request_origin": "https://app.test",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "fixture_hash": "75d4bf38792b68e6",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://app.test"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_WC_05__repair",
+    "intent": {
+      "claim": "Allow the credentialed frontend request to read the API response.",
+      "class": "allow_credentialed_cors"
+    },
+    "policy_family": "CORS",
+    "public_source_id": "CL_CORS_01",
+    "source_claim_ids": [
+      "CL_CORS_01"
+    ],
+    "variant": "wildcard_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://tenant.example",
+      "request_origin": "https://tenant.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "fixture_hash": "06975fff0784316a",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://tenant.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_WC_06__repair",
+    "intent": {
+      "claim": "Allow the credentialed frontend request to read the API response.",
+      "class": "allow_credentialed_cors"
+    },
+    "policy_family": "CORS",
+    "public_source_id": "CL_CORS_01",
+    "source_claim_ids": [
+      "CL_CORS_01"
+    ],
+    "variant": "wildcard_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://attacker.example",
+      "request_origin": "https://attacker.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "fixture_hash": "fc428cbe435a6e6d",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://trusted.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_REFLECT_01__repair",
+    "intent": {
+      "claim": "Do not expose credentialed API responses to arbitrary origins.",
+      "class": "deny_public_credentialed_cors"
+    },
+    "policy_family": "CORS/framework",
+    "public_source_id": "CL_EXPRESS_01",
+    "source_claim_ids": [
+      "CL_EXPRESS_01",
+      "CL_EXPRESS_02"
+    ],
+    "variant": "reflected_origin_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://evil.example",
+      "request_origin": "https://evil.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "fixture_hash": "bd187cc58f5315d0",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://trusted.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_REFLECT_02__repair",
+    "intent": {
+      "claim": "Do not expose credentialed API responses to arbitrary origins.",
+      "class": "deny_public_credentialed_cors"
+    },
+    "policy_family": "CORS/framework",
+    "public_source_id": "CL_EXPRESS_01",
+    "source_claim_ids": [
+      "CL_EXPRESS_01",
+      "CL_EXPRESS_02"
+    ],
+    "variant": "reflected_origin_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://untrusted.example",
+      "request_origin": "https://untrusted.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "fixture_hash": "16b60d00c2108eb6",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://trusted.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_REFLECT_03__repair",
+    "intent": {
+      "claim": "Do not expose credentialed API responses to arbitrary origins.",
+      "class": "deny_public_credentialed_cors"
+    },
+    "policy_family": "CORS/framework",
+    "public_source_id": "CL_EXPRESS_01",
+    "source_claim_ids": [
+      "CL_EXPRESS_01",
+      "CL_EXPRESS_02"
+    ],
+    "variant": "reflected_origin_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://random.test",
+      "request_origin": "https://random.test",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "fixture_hash": "4052f70f6de7876f",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://trusted.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_REFLECT_04__repair",
+    "intent": {
+      "claim": "Do not expose credentialed API responses to arbitrary origins.",
+      "class": "deny_public_credentialed_cors"
+    },
+    "policy_family": "CORS/framework",
+    "public_source_id": "CL_EXPRESS_01",
+    "source_claim_ids": [
+      "CL_EXPRESS_01",
+      "CL_EXPRESS_02"
+    ],
+    "variant": "reflected_origin_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://tenant.bad",
+      "request_origin": "https://tenant.bad",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "fixture_hash": "bd4646f74e7f3a06",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://trusted.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_REFLECT_05__repair",
+    "intent": {
+      "claim": "Do not expose credentialed API responses to arbitrary origins.",
+      "class": "deny_public_credentialed_cors"
+    },
+    "policy_family": "CORS/framework",
+    "public_source_id": "CL_EXPRESS_01",
+    "source_claim_ids": [
+      "CL_EXPRESS_01",
+      "CL_EXPRESS_02"
+    ],
+    "variant": "reflected_origin_credentials"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://origin.invalid",
+      "request_origin": "https://origin.invalid",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "fixture_hash": "74d4f393a143c435",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://trusted.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ],
+    "id": "LF_CORS_REFLECT_06__repair",
+    "intent": {
+      "claim": "Do not expose credentialed API responses to arbitrary origins.",
+      "class": "deny_public_credentialed_cors"
+    },
+    "policy_family": "CORS/framework",
+    "public_source_id": "CL_EXPRESS_01",
+    "source_claim_ids": [
+      "CL_EXPRESS_01",
+      "CL_EXPRESS_02"
+    ],
+    "variant": "reflected_origin_credentials"
+  },
+  {
+    "context": {
+      "document_origin": "http://app.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "fixture_hash": "0d4cf8d40ad8d46c",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_HTTP_01__repair",
+    "intent": {
+      "claim": "Establish HSTS state for future visits.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_01",
+    "source_claim_ids": [
+      "CL_HSTS_01"
+    ],
+    "variant": "insecure_transport"
+  },
+  {
+    "context": {
+      "document_origin": "http://secure.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "fixture_hash": "eec637909a63cb4f",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_HTTP_02__repair",
+    "intent": {
+      "claim": "Establish HSTS state for future visits.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_01",
+    "source_claim_ids": [
+      "CL_HSTS_01"
+    ],
+    "variant": "insecure_transport"
+  },
+  {
+    "context": {
+      "document_origin": "http://login.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "fixture_hash": "10a98234073b83b3",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_HTTP_03__repair",
+    "intent": {
+      "claim": "Establish HSTS state for future visits.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_01",
+    "source_claim_ids": [
+      "CL_HSTS_01"
+    ],
+    "variant": "insecure_transport"
+  },
+  {
+    "context": {
+      "document_origin": "http://admin.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "fixture_hash": "e49bbe191d91138d",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_HTTP_04__repair",
+    "intent": {
+      "claim": "Establish HSTS state for future visits.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_01",
+    "source_claim_ids": [
+      "CL_HSTS_01"
+    ],
+    "variant": "insecure_transport"
+  },
+  {
+    "context": {
+      "document_origin": "http://tenant.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "fixture_hash": "e1af647da8c270de",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_HTTP_05__repair",
+    "intent": {
+      "claim": "Establish HSTS state for future visits.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_01",
+    "source_claim_ids": [
+      "CL_HSTS_01"
+    ],
+    "variant": "insecure_transport"
+  },
+  {
+    "context": {
+      "document_origin": "http://service.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "fixture_hash": "5f983052bf309032",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_HTTP_06__repair",
+    "intent": {
+      "claim": "Establish HSTS state for future visits.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_01",
+    "source_claim_ids": [
+      "CL_HSTS_01"
+    ],
+    "variant": "insecure_transport"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "fixture_hash": "c1a18556079aede0",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_ZERO_01__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_02",
+    "source_claim_ids": [
+      "CL_HSTS_02"
+    ],
+    "variant": "zero_max_age"
+  },
+  {
+    "context": {
+      "document_origin": "https://secure.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "fixture_hash": "cd99469ea9252d48",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_ZERO_02__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_02",
+    "source_claim_ids": [
+      "CL_HSTS_02"
+    ],
+    "variant": "zero_max_age"
+  },
+  {
+    "context": {
+      "document_origin": "https://login.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "fixture_hash": "0746d91af860fb5d",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_ZERO_03__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_02",
+    "source_claim_ids": [
+      "CL_HSTS_02"
+    ],
+    "variant": "zero_max_age"
+  },
+  {
+    "context": {
+      "document_origin": "https://admin.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "fixture_hash": "ea29d2751ad9f0b3",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_ZERO_04__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_02",
+    "source_claim_ids": [
+      "CL_HSTS_02"
+    ],
+    "variant": "zero_max_age"
+  },
+  {
+    "context": {
+      "document_origin": "https://tenant.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "fixture_hash": "7671de0440e17dba",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_ZERO_05__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_02",
+    "source_claim_ids": [
+      "CL_HSTS_02"
+    ],
+    "variant": "zero_max_age"
+  },
+  {
+    "context": {
+      "document_origin": "https://service.example",
+      "scheme": "https"
+    },
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "fixture_hash": "d5a5d533f8260d98",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_ZERO_06__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active.",
+      "class": "enforce_https_only"
+    },
+    "policy_family": "HSTS",
+    "public_source_id": "CL_HSTS_02",
+    "source_claim_ids": [
+      "CL_HSTS_02"
+    ],
+    "variant": "zero_max_age"
+  },
+  {
+    "context": {
+      "credentials_mode": "omit",
+      "document_origin": "https://app.example",
+      "request_mode": "no-cors",
+      "resource_origin": "https://cdn.other",
+      "scheme": "https"
+    },
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "fixture_hash": "23bb8da1945e4d40",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      },
+      {
+        "name": "Cross-Origin-Resource-Policy",
+        "value": "cross-origin"
+      }
+    ],
+    "id": "LF_COEP_01__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+      "class": "cross_origin_isolation_without_embed_breakage"
+    },
+    "policy_family": "COEP/CORP/CORS",
+    "public_source_id": "CL_COEP_01",
+    "source_claim_ids": [
+      "CL_COEP_01"
+    ],
+    "variant": "no_cors_missing_corp"
+  },
+  {
+    "context": {
+      "credentials_mode": "omit",
+      "document_origin": "https://app.example",
+      "request_mode": "no-cors",
+      "resource_origin": "https://images.partner",
+      "scheme": "https"
+    },
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "fixture_hash": "dfa05f259a27f5e1",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      },
+      {
+        "name": "Cross-Origin-Resource-Policy",
+        "value": "cross-origin"
+      }
+    ],
+    "id": "LF_COEP_02__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+      "class": "cross_origin_isolation_without_embed_breakage"
+    },
+    "policy_family": "COEP/CORP/CORS",
+    "public_source_id": "CL_COEP_01",
+    "source_claim_ids": [
+      "CL_COEP_01"
+    ],
+    "variant": "no_cors_missing_corp"
+  },
+  {
+    "context": {
+      "credentials_mode": "omit",
+      "document_origin": "https://app.example",
+      "request_mode": "no-cors",
+      "resource_origin": "https://fonts.third",
+      "scheme": "https"
+    },
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "fixture_hash": "f6fd123fcbc1c694",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      },
+      {
+        "name": "Cross-Origin-Resource-Policy",
+        "value": "cross-origin"
+      }
+    ],
+    "id": "LF_COEP_03__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+      "class": "cross_origin_isolation_without_embed_breakage"
+    },
+    "policy_family": "COEP/CORP/CORS",
+    "public_source_id": "CL_COEP_01",
+    "source_claim_ids": [
+      "CL_COEP_01"
+    ],
+    "variant": "no_cors_missing_corp"
+  },
+  {
+    "context": {
+      "credentials_mode": "omit",
+      "document_origin": "https://app.example",
+      "request_mode": "no-cors",
+      "resource_origin": "https://video.other",
+      "scheme": "https"
+    },
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "fixture_hash": "0a4eca9baf55b4d9",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      },
+      {
+        "name": "Cross-Origin-Resource-Policy",
+        "value": "cross-origin"
+      }
+    ],
+    "id": "LF_COEP_04__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+      "class": "cross_origin_isolation_without_embed_breakage"
+    },
+    "policy_family": "COEP/CORP/CORS",
+    "public_source_id": "CL_COEP_01",
+    "source_claim_ids": [
+      "CL_COEP_01"
+    ],
+    "variant": "no_cors_missing_corp"
+  },
+  {
+    "context": {
+      "credentials_mode": "omit",
+      "document_origin": "https://app.example",
+      "request_mode": "no-cors",
+      "resource_origin": "https://assets.invalid",
+      "scheme": "https"
+    },
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "fixture_hash": "a4c7c7ce7e2cc5ec",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      },
+      {
+        "name": "Cross-Origin-Resource-Policy",
+        "value": "cross-origin"
+      }
+    ],
+    "id": "LF_COEP_05__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+      "class": "cross_origin_isolation_without_embed_breakage"
+    },
+    "policy_family": "COEP/CORP/CORS",
+    "public_source_id": "CL_COEP_01",
+    "source_claim_ids": [
+      "CL_COEP_01"
+    ],
+    "variant": "no_cors_missing_corp"
+  },
+  {
+    "context": {
+      "credentials_mode": "omit",
+      "document_origin": "https://app.example",
+      "request_mode": "no-cors",
+      "resource_origin": "https://cdn2.example.net",
+      "scheme": "https"
+    },
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "fixture_hash": "bb009ac117914f3d",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      },
+      {
+        "name": "Cross-Origin-Resource-Policy",
+        "value": "cross-origin"
+      }
+    ],
+    "id": "LF_COEP_06__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation without blocking a required third-party no-cors asset.",
+      "class": "cross_origin_isolation_without_embed_breakage"
+    },
+    "policy_family": "COEP/CORP/CORS",
+    "public_source_id": "CL_COEP_01",
+    "source_claim_ids": [
+      "CL_COEP_01"
+    ],
+    "variant": "no_cors_missing_corp"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "cross-origin-isolated",
+      "scheme": "https"
+    },
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "fixture_hash": "83d97b4674031bf3",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Opener-Policy",
+        "value": "same-origin"
+      },
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      }
+    ],
+    "id": "LF_COOP_ISO_01__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation for APIs that require it.",
+      "class": "enable_cross_origin_isolation"
+    },
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "public_source_id": "CL_COOP_01",
+    "source_claim_ids": [
+      "CL_COOP_01",
+      "CL_COOP_02",
+      "CL_PERM_02"
+    ],
+    "variant": "missing_or_blocking_isolation_header"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "cross-origin-isolated",
+      "scheme": "https"
+    },
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "fixture_hash": "adc65d8632e5375c",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Opener-Policy",
+        "value": "same-origin"
+      },
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      }
+    ],
+    "id": "LF_COOP_ISO_02__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation for APIs that require it.",
+      "class": "enable_cross_origin_isolation"
+    },
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "public_source_id": "CL_COOP_01",
+    "source_claim_ids": [
+      "CL_COOP_01",
+      "CL_COOP_02",
+      "CL_PERM_02"
+    ],
+    "variant": "missing_or_blocking_isolation_header"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "cross-origin-isolated",
+      "scheme": "https"
+    },
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "fixture_hash": "11392d662fe87d9e",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Opener-Policy",
+        "value": "same-origin"
+      },
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      }
+    ],
+    "id": "LF_COOP_ISO_03__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation for APIs that require it.",
+      "class": "enable_cross_origin_isolation"
+    },
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "public_source_id": "CL_COOP_01",
+    "source_claim_ids": [
+      "CL_COOP_01",
+      "CL_COOP_02",
+      "CL_PERM_02"
+    ],
+    "variant": "missing_or_blocking_isolation_header"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "cross-origin-isolated",
+      "scheme": "https"
+    },
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "fixture_hash": "1f231b1c84c38d42",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Opener-Policy",
+        "value": "same-origin"
+      },
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      }
+    ],
+    "id": "LF_COOP_ISO_04__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation for APIs that require it.",
+      "class": "enable_cross_origin_isolation"
+    },
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "public_source_id": "CL_COOP_01",
+    "source_claim_ids": [
+      "CL_COOP_01",
+      "CL_COOP_02",
+      "CL_PERM_02"
+    ],
+    "variant": "missing_or_blocking_isolation_header"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "cross-origin-isolated",
+      "scheme": "https"
+    },
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "fixture_hash": "acc5815384a0c3c5",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Opener-Policy",
+        "value": "same-origin"
+      },
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      }
+    ],
+    "id": "LF_COOP_ISO_05__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation for APIs that require it.",
+      "class": "enable_cross_origin_isolation"
+    },
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "public_source_id": "CL_COOP_01",
+    "source_claim_ids": [
+      "CL_COOP_01",
+      "CL_COOP_02",
+      "CL_PERM_02"
+    ],
+    "variant": "missing_or_blocking_isolation_header"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "cross-origin-isolated",
+      "scheme": "https"
+    },
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "fixture_hash": "a3f7ae62db6f35ca",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Cross-Origin-Opener-Policy",
+        "value": "same-origin"
+      },
+      {
+        "name": "Cross-Origin-Embedder-Policy",
+        "value": "require-corp"
+      }
+    ],
+    "id": "LF_COOP_ISO_06__repair",
+    "intent": {
+      "claim": "Enable cross-origin isolation for APIs that require it.",
+      "class": "enable_cross_origin_isolation"
+    },
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "public_source_id": "CL_COOP_01",
+    "source_claim_ids": [
+      "CL_COOP_01",
+      "CL_COOP_02",
+      "CL_PERM_02"
+    ],
+    "variant": "missing_or_blocking_isolation_header"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "geolocation",
+      "scheme": "https"
+    },
+    "expected_issue": "permissions_policy_feature_disabled",
+    "fixture_hash": "1b1548cdb3593c99",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_PERM_DISABLED_01__repair",
+    "intent": {
+      "claim": "Allow the application to use geolocation in the current document.",
+      "class": "allow_browser_feature"
+    },
+    "policy_family": "Permissions-Policy",
+    "public_source_id": "CL_PERM_01",
+    "source_claim_ids": [
+      "CL_PERM_01",
+      "CL_PERM_02"
+    ],
+    "variant": "empty_allowlist_disables"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "camera",
+      "scheme": "https"
+    },
+    "expected_issue": "permissions_policy_feature_disabled",
+    "fixture_hash": "d3a34f235b33defa",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_PERM_DISABLED_02__repair",
+    "intent": {
+      "claim": "Allow the application to use camera in the current document.",
+      "class": "allow_browser_feature"
+    },
+    "policy_family": "Permissions-Policy",
+    "public_source_id": "CL_PERM_01",
+    "source_claim_ids": [
+      "CL_PERM_01",
+      "CL_PERM_02"
+    ],
+    "variant": "empty_allowlist_disables"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "microphone",
+      "scheme": "https"
+    },
+    "expected_issue": "permissions_policy_feature_disabled",
+    "fixture_hash": "1deaf520d16f9600",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_PERM_DISABLED_03__repair",
+    "intent": {
+      "claim": "Allow the application to use microphone in the current document.",
+      "class": "allow_browser_feature"
+    },
+    "policy_family": "Permissions-Policy",
+    "public_source_id": "CL_PERM_01",
+    "source_claim_ids": [
+      "CL_PERM_01",
+      "CL_PERM_02"
+    ],
+    "variant": "empty_allowlist_disables"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "fullscreen",
+      "scheme": "https"
+    },
+    "expected_issue": "permissions_policy_feature_disabled",
+    "fixture_hash": "c793e0e09ce50c6f",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_PERM_DISABLED_04__repair",
+    "intent": {
+      "claim": "Allow the application to use fullscreen in the current document.",
+      "class": "allow_browser_feature"
+    },
+    "policy_family": "Permissions-Policy",
+    "public_source_id": "CL_PERM_01",
+    "source_claim_ids": [
+      "CL_PERM_01",
+      "CL_PERM_02"
+    ],
+    "variant": "empty_allowlist_disables"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "payment",
+      "scheme": "https"
+    },
+    "expected_issue": "permissions_policy_feature_disabled",
+    "fixture_hash": "3d9e678de655b48d",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_PERM_DISABLED_05__repair",
+    "intent": {
+      "claim": "Allow the application to use payment in the current document.",
+      "class": "allow_browser_feature"
+    },
+    "policy_family": "Permissions-Policy",
+    "public_source_id": "CL_PERM_01",
+    "source_claim_ids": [
+      "CL_PERM_01",
+      "CL_PERM_02"
+    ],
+    "variant": "empty_allowlist_disables"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "feature": "usb",
+      "scheme": "https"
+    },
+    "expected_issue": "permissions_policy_feature_disabled",
+    "fixture_hash": "79e076f7e9f68567",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_PERM_DISABLED_06__repair",
+    "intent": {
+      "claim": "Allow the application to use usb in the current document.",
+      "class": "allow_browser_feature"
+    },
+    "policy_family": "Permissions-Policy",
+    "public_source_id": "CL_PERM_01",
+    "source_claim_ids": [
+      "CL_PERM_01",
+      "CL_PERM_02"
+    ],
+    "variant": "empty_allowlist_disables"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://cdn.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "5a4fa8cea78dce5b",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_01__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://cdn.example; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://cdn.example; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://static.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "7353e7609d53ac28",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_02__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://static.example; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://static.example; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://assets.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "b50b3e8d1287f3ff",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_03__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://assets.example; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://assets.example; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://scripts.partner",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "d4bee478245429ea",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_04__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://scripts.partner; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://scripts.partner; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://widgets.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "cd77bad597b8d7f1",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_05__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://widgets.example; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://widgets.example; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://media.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "f7daecf0bce0fd26",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_06__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://media.example; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://media.example; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://cdn2.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "f7ed7fbdb380a30e",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_07__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://cdn2.example; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://cdn2.example; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "resource_kind": "script",
+      "resource_origin": "https://bundle.example",
+      "scheme": "https"
+    },
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "fixture_hash": "c439eb11429e192f",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_CSP_COMPOSE_08__repair",
+    "intent": {
+      "claim": "Allow a required script after combining framework and deployment CSP layers.",
+      "class": "allow_required_script_after_policy_composition"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://bundle.example; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "proxy_default",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self' https://bundle.example; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_CSP_08",
+    "source_claim_ids": [
+      "CL_CSP_08"
+    ],
+    "variant": "conjunctive_csp_blocks_required_script"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "expected_enforced_csp": true,
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "fixture_hash": "79d94393bdceb54d",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_LAYER_DROP_01__repair",
+    "intent": {
+      "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+      "class": "preserve_enforced_policy_across_layers"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "legacy_middleware",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy-Report-Only",
+            "value": "script-src 'self'; report-uri /csp"
+          }
+        ],
+        "layer": "legacy_middleware",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_LAYER_01",
+    "source_claim_ids": [
+      "CL_LAYER_01",
+      "CL_CSP_01"
+    ],
+    "variant": "legacy_middleware"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "expected_enforced_csp": true,
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "fixture_hash": "bbef36586b5efef0",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_LAYER_DROP_02__repair",
+    "intent": {
+      "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+      "class": "preserve_enforced_policy_across_layers"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "reverse_proxy",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy-Report-Only",
+            "value": "script-src 'self'; report-uri /csp"
+          }
+        ],
+        "layer": "reverse_proxy",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_LAYER_01",
+    "source_claim_ids": [
+      "CL_LAYER_01",
+      "CL_CSP_01"
+    ],
+    "variant": "reverse_proxy"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "expected_enforced_csp": true,
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "fixture_hash": "84f5ddbb1601158e",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_LAYER_DROP_03__repair",
+    "intent": {
+      "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+      "class": "preserve_enforced_policy_across_layers"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "edge_function",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy-Report-Only",
+            "value": "script-src 'self'; report-uri /csp"
+          }
+        ],
+        "layer": "edge_function",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_LAYER_01",
+    "source_claim_ids": [
+      "CL_LAYER_01",
+      "CL_CSP_01"
+    ],
+    "variant": "edge_function"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "expected_enforced_csp": true,
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "fixture_hash": "8c9ad6f87f868221",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_LAYER_DROP_04__repair",
+    "intent": {
+      "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+      "class": "preserve_enforced_policy_across_layers"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "route_override",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy-Report-Only",
+            "value": "script-src 'self'; report-uri /csp"
+          }
+        ],
+        "layer": "route_override",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_LAYER_01",
+    "source_claim_ids": [
+      "CL_LAYER_01",
+      "CL_CSP_01"
+    ],
+    "variant": "route_override"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "expected_enforced_csp": true,
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "fixture_hash": "06052ea6eb69bdfc",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_LAYER_DROP_05__repair",
+    "intent": {
+      "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+      "class": "preserve_enforced_policy_across_layers"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "compatibility_filter",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy-Report-Only",
+            "value": "script-src 'self'; report-uri /csp"
+          }
+        ],
+        "layer": "compatibility_filter",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_LAYER_01",
+    "source_claim_ids": [
+      "CL_LAYER_01",
+      "CL_CSP_01"
+    ],
+    "variant": "compatibility_filter"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "expected_enforced_csp": true,
+      "resource_kind": "script",
+      "resource_origin": "https://evil.example",
+      "scheme": "https"
+    },
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "fixture_hash": "5be7fec93b02d550",
+    "fixture_role": "positive",
+    "headers": [],
+    "id": "LF_LAYER_DROP_06__repair",
+    "intent": {
+      "claim": "Preserve enforced CSP after application and deployment layers compose the response.",
+      "class": "preserve_enforced_policy_across_layers"
+    },
+    "layers": [
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "framework",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "cdn_rule",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy-Report-Only",
+            "value": "script-src 'self'; report-uri /csp"
+          }
+        ],
+        "layer": "cdn_rule",
+        "op": "append"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": ""
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "remove"
+      },
+      {
+        "headers": [
+          {
+            "name": "Content-Security-Policy",
+            "value": "script-src 'self'; object-src 'none'"
+          }
+        ],
+        "layer": "repair_synthesizer",
+        "op": "append"
+      }
+    ],
+    "policy_family": "Layered policy composition",
+    "public_source_id": "CL_LAYER_01",
+    "source_claim_ids": [
+      "CL_LAYER_01",
+      "CL_CSP_01"
+    ],
+    "variant": "cdn_rule"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://tenant1.example",
+      "dynamic_origin": true,
+      "request_origin": "https://tenant1.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "fixture_hash": "db31959b8e4bee1b",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://tenant1.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      }
+    ],
+    "id": "LF_CORS_VARY_01__repair",
+    "intent": {
+      "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+      "class": "allow_credentialed_cors_cache_safe"
+    },
+    "policy_family": "CORS/cache",
+    "public_source_id": "CL_CORS_05",
+    "source_claim_ids": [
+      "CL_CORS_05"
+    ],
+    "variant": "dynamic_acao_without_vary"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://tenant2.example",
+      "dynamic_origin": true,
+      "request_origin": "https://tenant2.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "fixture_hash": "73c78c1bb04baf1f",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://tenant2.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      }
+    ],
+    "id": "LF_CORS_VARY_02__repair",
+    "intent": {
+      "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+      "class": "allow_credentialed_cors_cache_safe"
+    },
+    "policy_family": "CORS/cache",
+    "public_source_id": "CL_CORS_05",
+    "source_claim_ids": [
+      "CL_CORS_05"
+    ],
+    "variant": "dynamic_acao_without_vary"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://console.example",
+      "dynamic_origin": true,
+      "request_origin": "https://console.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "fixture_hash": "63fa90572c85e5f7",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://console.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      }
+    ],
+    "id": "LF_CORS_VARY_03__repair",
+    "intent": {
+      "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+      "class": "allow_credentialed_cors_cache_safe"
+    },
+    "policy_family": "CORS/cache",
+    "public_source_id": "CL_CORS_05",
+    "source_claim_ids": [
+      "CL_CORS_05"
+    ],
+    "variant": "dynamic_acao_without_vary"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://admin.example",
+      "dynamic_origin": true,
+      "request_origin": "https://admin.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "fixture_hash": "d638761fd5161013",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://admin.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      }
+    ],
+    "id": "LF_CORS_VARY_04__repair",
+    "intent": {
+      "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+      "class": "allow_credentialed_cors_cache_safe"
+    },
+    "policy_family": "CORS/cache",
+    "public_source_id": "CL_CORS_05",
+    "source_claim_ids": [
+      "CL_CORS_05"
+    ],
+    "variant": "dynamic_acao_without_vary"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://partner.example",
+      "dynamic_origin": true,
+      "request_origin": "https://partner.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "fixture_hash": "9ed5b3ffaa00b041",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://partner.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      }
+    ],
+    "id": "LF_CORS_VARY_05__repair",
+    "intent": {
+      "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+      "class": "allow_credentialed_cors_cache_safe"
+    },
+    "policy_family": "CORS/cache",
+    "public_source_id": "CL_CORS_05",
+    "source_claim_ids": [
+      "CL_CORS_05"
+    ],
+    "variant": "dynamic_acao_without_vary"
+  },
+  {
+    "context": {
+      "credentials_mode": "include",
+      "document_origin": "https://embedder.example",
+      "dynamic_origin": true,
+      "request_origin": "https://embedder.example",
+      "resource_origin": "https://api.example",
+      "scheme": "https"
+    },
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "fixture_hash": "b047d2da2394d370",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://embedder.example"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      }
+    ],
+    "id": "LF_CORS_VARY_06__repair",
+    "intent": {
+      "claim": "Allow credentialed dynamic-origin CORS without cross-origin cache confusion.",
+      "class": "allow_credentialed_cors_cache_safe"
+    },
+    "policy_family": "CORS/cache",
+    "public_source_id": "CL_CORS_05",
+    "source_claim_ids": [
+      "CL_CORS_05"
+    ],
+    "variant": "dynamic_acao_without_vary"
+  },
+  {
+    "context": {
+      "document_origin": "https://app.example",
+      "scheme": "https",
+      "subdomain_scope_required": true
+    },
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "fixture_hash": "e36e4c23621c3a2f",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_SUBDOMAIN_01__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+      "class": "enforce_https_only_subdomains"
+    },
+    "policy_family": "HSTS/framework",
+    "public_source_id": "CL_HSTS_04",
+    "source_claim_ids": [
+      "CL_HSTS_04"
+    ],
+    "variant": "missing_include_subdomains"
+  },
+  {
+    "context": {
+      "document_origin": "https://login.example",
+      "scheme": "https",
+      "subdomain_scope_required": true
+    },
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "fixture_hash": "b196c2e1fb2a2561",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_SUBDOMAIN_02__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+      "class": "enforce_https_only_subdomains"
+    },
+    "policy_family": "HSTS/framework",
+    "public_source_id": "CL_HSTS_04",
+    "source_claim_ids": [
+      "CL_HSTS_04"
+    ],
+    "variant": "missing_include_subdomains"
+  },
+  {
+    "context": {
+      "document_origin": "https://admin.example",
+      "scheme": "https",
+      "subdomain_scope_required": true
+    },
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "fixture_hash": "4367d82975c14a73",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_SUBDOMAIN_03__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+      "class": "enforce_https_only_subdomains"
+    },
+    "policy_family": "HSTS/framework",
+    "public_source_id": "CL_HSTS_04",
+    "source_claim_ids": [
+      "CL_HSTS_04"
+    ],
+    "variant": "missing_include_subdomains"
+  },
+  {
+    "context": {
+      "document_origin": "https://tenant.example",
+      "scheme": "https",
+      "subdomain_scope_required": true
+    },
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "fixture_hash": "ee06e849dd246b04",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_SUBDOMAIN_04__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+      "class": "enforce_https_only_subdomains"
+    },
+    "policy_family": "HSTS/framework",
+    "public_source_id": "CL_HSTS_04",
+    "source_claim_ids": [
+      "CL_HSTS_04"
+    ],
+    "variant": "missing_include_subdomains"
+  },
+  {
+    "context": {
+      "document_origin": "https://shop.example",
+      "scheme": "https",
+      "subdomain_scope_required": true
+    },
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "fixture_hash": "bebb5b34fdf54d90",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_SUBDOMAIN_05__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+      "class": "enforce_https_only_subdomains"
+    },
+    "policy_family": "HSTS/framework",
+    "public_source_id": "CL_HSTS_04",
+    "source_claim_ids": [
+      "CL_HSTS_04"
+    ],
+    "variant": "missing_include_subdomains"
+  },
+  {
+    "context": {
+      "document_origin": "https://pay.example",
+      "scheme": "https",
+      "subdomain_scope_required": true
+    },
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "fixture_hash": "5ec62cd563d048a5",
+    "fixture_role": "positive",
+    "headers": [
+      {
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains"
+      }
+    ],
+    "id": "LF_HSTS_SUBDOMAIN_06__repair",
+    "intent": {
+      "claim": "Keep HTTPS-only behavior active for the host and its subdomains.",
+      "class": "enforce_https_only_subdomains"
+    },
+    "policy_family": "HSTS/framework",
+    "public_source_id": "CL_HSTS_04",
+    "source_claim_ids": [
+      "CL_HSTS_04"
+    ],
+    "variant": "missing_include_subdomains"
+  }
+]

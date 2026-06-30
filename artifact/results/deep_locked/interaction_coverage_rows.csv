@@ -1,0 +1,14 @@
+signature,deep_positive,deep_negative_control,deep_paired_repair,specbench_cases,is_multi_policy
+COEP,28,0,0,174,false
+COEP+COOP,12,8,24,174,true
+COEP+COOP+Permissions-Policy,4,0,0,0,true
+COEP+CORP,0,8,24,87,true
+COEP+CORS,0,8,0,96,true
+COOP,4,0,0,87,false
+CORP,6,4,6,87,false
+CORS,90,28,90,993,false
+CSP,148,32,154,1218,false
+CSP+Content-Type,0,8,0,70,true
+CSP/framing,6,0,0,87,false
+HSTS,90,28,90,609,false
+Permissions-Policy,30,12,30,261,false

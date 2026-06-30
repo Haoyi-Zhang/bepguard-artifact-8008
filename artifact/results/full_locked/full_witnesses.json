@@ -1,0 +1,1928 @@
+[
+  {
+    "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+    "fixture_id": "LF_CSP_RO_01",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_report_only_not_enforced",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "resource_kind": "script",
+        "resource_origin": "https://evil.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "script-src 'self'; report-uri /csp"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+    "fixture_id": "LF_CSP_RO_02",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_report_only_not_enforced",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "resource_kind": "script",
+        "resource_origin": "https://cdn.bad"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "script-src 'self'; report-uri /csp"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+    "fixture_id": "LF_CSP_RO_03",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_report_only_not_enforced",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "resource_kind": "script",
+        "resource_origin": "https://tracker.invalid"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "script-src 'self'; report-uri /csp"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+    "fixture_id": "LF_CSP_RO_04",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_report_only_not_enforced",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "resource_kind": "script",
+        "resource_origin": "https://assets.other"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "script-src 'self'; report-uri /csp"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+    "fixture_id": "LF_CSP_RO_05",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_report_only_not_enforced",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "resource_kind": "script",
+        "resource_origin": "https://x.test"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "script-src 'self'; report-uri /csp"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Only report-only CSP is delivered, so the browser reports violations but does not enforce script blocking.",
+    "fixture_id": "LF_CSP_RO_06",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_report_only_not_enforced",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "resource_kind": "script",
+        "resource_origin": "https://untrusted.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy-Report-Only",
+          "value": "script-src 'self'; report-uri /csp"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_01",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "*"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src *; object-src 'none'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_02",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "https:"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src https:; object-src 'none'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_03",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "*"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src *; img-src 'self'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_04",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "https://evil.example"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src https://evil.example; object-src 'none'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_05",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "*"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src *; frame-ancestors 'none'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_06",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "https:",
+          "data:"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src https: data:; object-src 'none'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_07",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "*"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src *; base-uri 'self'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The effective script source list permits the probed third-party script under script-src or default-src fallback.",
+    "fixture_id": "LF_CSP_FB_08",
+    "intent_class": "enforce_script_restriction",
+    "issue": "csp_effective_script_allowance",
+    "policy_family": "CSP",
+    "severity": "high",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://evil.example"
+      },
+      "effective_sources": [
+        [
+          "http:",
+          "https:"
+        ]
+      ],
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "default-src http: https:; object-src 'none'"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+    "fixture_id": "LF_CSP_NONCE_01",
+    "intent_class": "nonce_based_strict_csp",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "policy_family": "CSP/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+        }
+      ],
+      "rendering": "static_export",
+      "required_value": "per-request nonce"
+    }
+  },
+  {
+    "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+    "fixture_id": "LF_CSP_NONCE_02",
+    "intent_class": "nonce_based_strict_csp",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "policy_family": "CSP/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+        }
+      ],
+      "rendering": "static_optimization",
+      "required_value": "per-request nonce"
+    }
+  },
+  {
+    "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+    "fixture_id": "LF_CSP_NONCE_03",
+    "intent_class": "nonce_based_strict_csp",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "policy_family": "CSP/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+        }
+      ],
+      "rendering": "ISR",
+      "required_value": "per-request nonce"
+    }
+  },
+  {
+    "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+    "fixture_id": "LF_CSP_NONCE_04",
+    "intent_class": "nonce_based_strict_csp",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "policy_family": "CSP/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+        }
+      ],
+      "rendering": "CDN_cached_static",
+      "required_value": "per-request nonce"
+    }
+  },
+  {
+    "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+    "fixture_id": "LF_CSP_NONCE_05",
+    "intent_class": "nonce_based_strict_csp",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "policy_family": "CSP/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+        }
+      ],
+      "rendering": "partial_prerendering",
+      "required_value": "per-request nonce"
+    }
+  },
+  {
+    "explanation": "A nonce-bearing CSP requires a per-request value, but the fixture context is statically rendered or statically cached.",
+    "fixture_id": "LF_CSP_NONCE_06",
+    "intent_class": "nonce_based_strict_csp",
+    "issue": "nonce_csp_static_render_incompatibility",
+    "policy_family": "CSP/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'"
+        }
+      ],
+      "rendering": "build_time_render",
+      "required_value": "per-request nonce"
+    }
+  },
+  {
+    "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+    "fixture_id": "LF_CORS_WC_01",
+    "intent_class": "allow_credentialed_cors",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "policy_family": "CORS",
+    "severity": "medium",
+    "witness": {
+      "credentials_mode": "include",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://frontend.example"
+    }
+  },
+  {
+    "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+    "fixture_id": "LF_CORS_WC_02",
+    "intent_class": "allow_credentialed_cors",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "policy_family": "CORS",
+    "severity": "medium",
+    "witness": {
+      "credentials_mode": "include",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://console.example"
+    }
+  },
+  {
+    "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+    "fixture_id": "LF_CORS_WC_03",
+    "intent_class": "allow_credentialed_cors",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "policy_family": "CORS",
+    "severity": "medium",
+    "witness": {
+      "credentials_mode": "include",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://admin.example"
+    }
+  },
+  {
+    "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+    "fixture_id": "LF_CORS_WC_04",
+    "intent_class": "allow_credentialed_cors",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "policy_family": "CORS",
+    "severity": "medium",
+    "witness": {
+      "credentials_mode": "include",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://partner.example"
+    }
+  },
+  {
+    "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+    "fixture_id": "LF_CORS_WC_05",
+    "intent_class": "allow_credentialed_cors",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "policy_family": "CORS",
+    "severity": "medium",
+    "witness": {
+      "credentials_mode": "include",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://app.test"
+    }
+  },
+  {
+    "explanation": "The response does not satisfy the CORS shareability conditions for a credentialed request.",
+    "fixture_id": "LF_CORS_WC_06",
+    "intent_class": "allow_credentialed_cors",
+    "issue": "cors_intended_credentialed_share_blocked",
+    "policy_family": "CORS",
+    "severity": "medium",
+    "witness": {
+      "credentials_mode": "include",
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://tenant.example"
+    }
+  },
+  {
+    "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+    "fixture_id": "LF_CORS_REFLECT_01",
+    "intent_class": "deny_public_credentialed_cors",
+    "issue": "cors_reflected_origin_with_credentials",
+    "policy_family": "CORS/framework",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://attacker.example"
+    }
+  },
+  {
+    "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+    "fixture_id": "LF_CORS_REFLECT_02",
+    "intent_class": "deny_public_credentialed_cors",
+    "issue": "cors_reflected_origin_with_credentials",
+    "policy_family": "CORS/framework",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://evil.example"
+    }
+  },
+  {
+    "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+    "fixture_id": "LF_CORS_REFLECT_03",
+    "intent_class": "deny_public_credentialed_cors",
+    "issue": "cors_reflected_origin_with_credentials",
+    "policy_family": "CORS/framework",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://untrusted.example"
+    }
+  },
+  {
+    "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+    "fixture_id": "LF_CORS_REFLECT_04",
+    "intent_class": "deny_public_credentialed_cors",
+    "issue": "cors_reflected_origin_with_credentials",
+    "policy_family": "CORS/framework",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://random.test"
+    }
+  },
+  {
+    "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+    "fixture_id": "LF_CORS_REFLECT_05",
+    "intent_class": "deny_public_credentialed_cors",
+    "issue": "cors_reflected_origin_with_credentials",
+    "policy_family": "CORS/framework",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://tenant.bad"
+    }
+  },
+  {
+    "explanation": "The policy reflects arbitrary request origins while enabling credentialed sharing.",
+    "fixture_id": "LF_CORS_REFLECT_06",
+    "intent_class": "deny_public_credentialed_cors",
+    "issue": "cors_reflected_origin_with_credentials",
+    "policy_family": "CORS/framework",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "$ORIGIN"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "request_origin": "https://origin.invalid"
+    }
+  },
+  {
+    "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+    "fixture_id": "LF_HSTS_HTTP_01",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_header_not_honored_over_http",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ],
+      "scheme": "http"
+    }
+  },
+  {
+    "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+    "fixture_id": "LF_HSTS_HTTP_02",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_header_not_honored_over_http",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ],
+      "scheme": "http"
+    }
+  },
+  {
+    "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+    "fixture_id": "LF_HSTS_HTTP_03",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_header_not_honored_over_http",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ],
+      "scheme": "http"
+    }
+  },
+  {
+    "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+    "fixture_id": "LF_HSTS_HTTP_04",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_header_not_honored_over_http",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ],
+      "scheme": "http"
+    }
+  },
+  {
+    "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+    "fixture_id": "LF_HSTS_HTTP_05",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_header_not_honored_over_http",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ],
+      "scheme": "http"
+    }
+  },
+  {
+    "explanation": "An HSTS header received over insecure transport is ignored by the user agent.",
+    "fixture_id": "LF_HSTS_HTTP_06",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_header_not_honored_over_http",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ],
+      "scheme": "http"
+    }
+  },
+  {
+    "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+    "fixture_id": "LF_HSTS_ZERO_01",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0; includeSubDomains"
+        }
+      ],
+      "transition": "delete-known-hsts-host"
+    }
+  },
+  {
+    "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+    "fixture_id": "LF_HSTS_ZERO_02",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0; includeSubDomains"
+        }
+      ],
+      "transition": "delete-known-hsts-host"
+    }
+  },
+  {
+    "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+    "fixture_id": "LF_HSTS_ZERO_03",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0; includeSubDomains"
+        }
+      ],
+      "transition": "delete-known-hsts-host"
+    }
+  },
+  {
+    "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+    "fixture_id": "LF_HSTS_ZERO_04",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0; includeSubDomains"
+        }
+      ],
+      "transition": "delete-known-hsts-host"
+    }
+  },
+  {
+    "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+    "fixture_id": "LF_HSTS_ZERO_05",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0; includeSubDomains"
+        }
+      ],
+      "transition": "delete-known-hsts-host"
+    }
+  },
+  {
+    "explanation": "An HSTS max-age of zero clears the user agent's known-HSTS-host state.",
+    "fixture_id": "LF_HSTS_ZERO_06",
+    "intent_class": "enforce_https_only",
+    "issue": "hsts_policy_cleared_by_zero_max_age",
+    "policy_family": "HSTS",
+    "severity": "high",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=0; includeSubDomains"
+        }
+      ],
+      "transition": "delete-known-hsts-host"
+    }
+  },
+  {
+    "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+    "fixture_id": "LF_COEP_01",
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "policy_family": "COEP/CORP/CORS",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "request_mode": "no-cors",
+      "resource_origin": "https://cdn.other"
+    }
+  },
+  {
+    "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+    "fixture_id": "LF_COEP_02",
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "policy_family": "COEP/CORP/CORS",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "request_mode": "no-cors",
+      "resource_origin": "https://images.partner"
+    }
+  },
+  {
+    "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+    "fixture_id": "LF_COEP_03",
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "policy_family": "COEP/CORP/CORS",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "request_mode": "no-cors",
+      "resource_origin": "https://fonts.third"
+    }
+  },
+  {
+    "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+    "fixture_id": "LF_COEP_04",
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "policy_family": "COEP/CORP/CORS",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "request_mode": "no-cors",
+      "resource_origin": "https://video.other"
+    }
+  },
+  {
+    "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+    "fixture_id": "LF_COEP_05",
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "policy_family": "COEP/CORP/CORS",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "request_mode": "no-cors",
+      "resource_origin": "https://assets.invalid"
+    }
+  },
+  {
+    "explanation": "COEP require-corp blocks the cross-origin no-cors resource because it has neither compatible CORP nor CORS authorization.",
+    "fixture_id": "LF_COEP_06",
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue": "coep_require_corp_blocks_cross_origin_resource",
+    "policy_family": "COEP/CORP/CORS",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Cross-Origin-Embedder-Policy",
+          "value": "require-corp"
+        }
+      ],
+      "request_mode": "no-cors",
+      "resource_origin": "https://cdn2.example.net"
+    }
+  },
+  {
+    "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+    "fixture_id": "LF_COOP_ISO_01",
+    "intent_class": "enable_cross_origin_isolation",
+    "issue": "cross_origin_isolation_incomplete",
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "coep": [
+        "require-corp"
+      ],
+      "coop": [],
+      "permissions_policy": []
+    }
+  },
+  {
+    "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+    "fixture_id": "LF_COOP_ISO_02",
+    "intent_class": "enable_cross_origin_isolation",
+    "issue": "cross_origin_isolation_incomplete",
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "coep": [
+        "require-corp"
+      ],
+      "coop": [
+        "unsafe-none"
+      ],
+      "permissions_policy": []
+    }
+  },
+  {
+    "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+    "fixture_id": "LF_COOP_ISO_03",
+    "intent_class": "enable_cross_origin_isolation",
+    "issue": "cross_origin_isolation_incomplete",
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "coep": [],
+      "coop": [
+        "same-origin"
+      ],
+      "permissions_policy": []
+    }
+  },
+  {
+    "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+    "fixture_id": "LF_COOP_ISO_04",
+    "intent_class": "enable_cross_origin_isolation",
+    "issue": "cross_origin_isolation_incomplete",
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "coep": [
+        "require-corp"
+      ],
+      "coop": [
+        "same-origin-allow-popups"
+      ],
+      "permissions_policy": []
+    }
+  },
+  {
+    "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+    "fixture_id": "LF_COOP_ISO_05",
+    "intent_class": "enable_cross_origin_isolation",
+    "issue": "cross_origin_isolation_incomplete",
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "coep": [
+        "unsafe-none"
+      ],
+      "coop": [
+        "same-origin"
+      ],
+      "permissions_policy": []
+    }
+  },
+  {
+    "explanation": "The headers do not jointly satisfy the modeled cross-origin-isolation preconditions.",
+    "fixture_id": "LF_COOP_ISO_06",
+    "intent_class": "enable_cross_origin_isolation",
+    "issue": "cross_origin_isolation_incomplete",
+    "policy_family": "COOP/COEP/Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "coep": [
+        "require-corp"
+      ],
+      "coop": [
+        "same-origin"
+      ],
+      "permissions_policy": [
+        "cross-origin-isolated=()"
+      ]
+    }
+  },
+  {
+    "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+    "fixture_id": "LF_PERM_DISABLED_01",
+    "intent_class": "allow_browser_feature",
+    "issue": "permissions_policy_feature_disabled",
+    "policy_family": "Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "feature": "geolocation",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "geolocation=()"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+    "fixture_id": "LF_PERM_DISABLED_02",
+    "intent_class": "allow_browser_feature",
+    "issue": "permissions_policy_feature_disabled",
+    "policy_family": "Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "feature": "camera",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "camera=()"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+    "fixture_id": "LF_PERM_DISABLED_03",
+    "intent_class": "allow_browser_feature",
+    "issue": "permissions_policy_feature_disabled",
+    "policy_family": "Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "feature": "microphone",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "microphone=()"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+    "fixture_id": "LF_PERM_DISABLED_04",
+    "intent_class": "allow_browser_feature",
+    "issue": "permissions_policy_feature_disabled",
+    "policy_family": "Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "feature": "fullscreen",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "fullscreen=()"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+    "fixture_id": "LF_PERM_DISABLED_05",
+    "intent_class": "allow_browser_feature",
+    "issue": "permissions_policy_feature_disabled",
+    "policy_family": "Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "feature": "payment",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "payment=()"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The Permissions-Policy entry uses an empty allowlist for a feature the intent says should be available.",
+    "fixture_id": "LF_PERM_DISABLED_06",
+    "intent_class": "allow_browser_feature",
+    "issue": "permissions_policy_feature_disabled",
+    "policy_family": "Permissions-Policy",
+    "severity": "medium",
+    "witness": {
+      "feature": "usb",
+      "headers": [
+        {
+          "name": "Permissions-Policy",
+          "value": "usb=()"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_01",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://cdn.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://cdn.example; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_02",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://static.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://static.example; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_03",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://assets.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://assets.example; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_04",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://scripts.partner"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://scripts.partner; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_05",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://widgets.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://widgets.example; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_06",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://media.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://media.example; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_07",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://cdn2.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://cdn2.example; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "Multiple enforced CSP policies compose conjunctively, so a required script allowed by one layer is blocked by another layer's policy.",
+    "fixture_id": "LF_CSP_COMPOSE_08",
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "policy_family": "Layered policy composition",
+    "severity": "medium",
+    "witness": {
+      "attempt": {
+        "document_origin": "https://app.example",
+        "resource_origin": "https://bundle.example"
+      },
+      "headers": [
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self' https://bundle.example; object-src 'none'"
+        },
+        {
+          "name": "Content-Security-Policy",
+          "value": "script-src 'self'; object-src 'none'"
+        }
+      ],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "proxy_default",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+    "fixture_id": "LF_LAYER_DROP_01",
+    "intent_class": "preserve_enforced_policy_across_layers",
+    "issue": "layered_header_override_drops_enforcement",
+    "policy_family": "Layered policy composition",
+    "severity": "high",
+    "witness": {
+      "headers": [],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "legacy_middleware",
+          "op": "remove"
+        },
+        {
+          "header": "Content-Security-Policy-Report-Only",
+          "layer_index": 2,
+          "layer_name": "legacy_middleware",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+    "fixture_id": "LF_LAYER_DROP_02",
+    "intent_class": "preserve_enforced_policy_across_layers",
+    "issue": "layered_header_override_drops_enforcement",
+    "policy_family": "Layered policy composition",
+    "severity": "high",
+    "witness": {
+      "headers": [],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "reverse_proxy",
+          "op": "remove"
+        },
+        {
+          "header": "Content-Security-Policy-Report-Only",
+          "layer_index": 2,
+          "layer_name": "reverse_proxy",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+    "fixture_id": "LF_LAYER_DROP_03",
+    "intent_class": "preserve_enforced_policy_across_layers",
+    "issue": "layered_header_override_drops_enforcement",
+    "policy_family": "Layered policy composition",
+    "severity": "high",
+    "witness": {
+      "headers": [],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "edge_function",
+          "op": "remove"
+        },
+        {
+          "header": "Content-Security-Policy-Report-Only",
+          "layer_index": 2,
+          "layer_name": "edge_function",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+    "fixture_id": "LF_LAYER_DROP_04",
+    "intent_class": "preserve_enforced_policy_across_layers",
+    "issue": "layered_header_override_drops_enforcement",
+    "policy_family": "Layered policy composition",
+    "severity": "high",
+    "witness": {
+      "headers": [],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "route_override",
+          "op": "remove"
+        },
+        {
+          "header": "Content-Security-Policy-Report-Only",
+          "layer_index": 2,
+          "layer_name": "route_override",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+    "fixture_id": "LF_LAYER_DROP_05",
+    "intent_class": "preserve_enforced_policy_across_layers",
+    "issue": "layered_header_override_drops_enforcement",
+    "policy_family": "Layered policy composition",
+    "severity": "high",
+    "witness": {
+      "headers": [],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "compatibility_filter",
+          "op": "remove"
+        },
+        {
+          "header": "Content-Security-Policy-Report-Only",
+          "layer_index": 2,
+          "layer_name": "compatibility_filter",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "The ordered policy-generation layers remove the enforced CSP required by the explicit intent.",
+    "fixture_id": "LF_LAYER_DROP_06",
+    "intent_class": "preserve_enforced_policy_across_layers",
+    "issue": "layered_header_override_drops_enforcement",
+    "policy_family": "Layered policy composition",
+    "severity": "high",
+    "witness": {
+      "headers": [],
+      "layer_trace": [
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 0,
+          "layer_name": "framework",
+          "op": "append"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "layer_index": 1,
+          "layer_name": "cdn_rule",
+          "op": "remove"
+        },
+        {
+          "header": "Content-Security-Policy-Report-Only",
+          "layer_index": 2,
+          "layer_name": "cdn_rule",
+          "op": "append"
+        }
+      ]
+    }
+  },
+  {
+    "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+    "fixture_id": "LF_CORS_VARY_01",
+    "intent_class": "allow_credentialed_cors_cache_safe",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "policy_family": "CORS/cache",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "https://tenant1.example"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "missing": "Vary: Origin",
+      "request_origin": "https://tenant1.example"
+    }
+  },
+  {
+    "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+    "fixture_id": "LF_CORS_VARY_02",
+    "intent_class": "allow_credentialed_cors_cache_safe",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "policy_family": "CORS/cache",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "https://tenant2.example"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "missing": "Vary: Origin",
+      "request_origin": "https://tenant2.example"
+    }
+  },
+  {
+    "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+    "fixture_id": "LF_CORS_VARY_03",
+    "intent_class": "allow_credentialed_cors_cache_safe",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "policy_family": "CORS/cache",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "https://console.example"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "missing": "Vary: Origin",
+      "request_origin": "https://console.example"
+    }
+  },
+  {
+    "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+    "fixture_id": "LF_CORS_VARY_04",
+    "intent_class": "allow_credentialed_cors_cache_safe",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "policy_family": "CORS/cache",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "https://admin.example"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "missing": "Vary: Origin",
+      "request_origin": "https://admin.example"
+    }
+  },
+  {
+    "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+    "fixture_id": "LF_CORS_VARY_05",
+    "intent_class": "allow_credentialed_cors_cache_safe",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "policy_family": "CORS/cache",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "https://partner.example"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "missing": "Vary: Origin",
+      "request_origin": "https://partner.example"
+    }
+  },
+  {
+    "explanation": "A dynamic credentialed CORS surface lacks Vary: Origin, so a shared cache may reuse the response outside the intended request-origin context.",
+    "fixture_id": "LF_CORS_VARY_06",
+    "intent_class": "allow_credentialed_cors_cache_safe",
+    "issue": "cors_dynamic_origin_missing_vary",
+    "policy_family": "CORS/cache",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Access-Control-Allow-Origin",
+          "value": "https://embedder.example"
+        },
+        {
+          "name": "Access-Control-Allow-Credentials",
+          "value": "true"
+        }
+      ],
+      "missing": "Vary: Origin",
+      "request_origin": "https://embedder.example"
+    }
+  },
+  {
+    "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_01",
+    "intent_class": "enforce_https_only_subdomains",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "policy_family": "HSTS/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "required_scope": "includeSubDomains"
+    }
+  },
+  {
+    "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_02",
+    "intent_class": "enforce_https_only_subdomains",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "policy_family": "HSTS/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "required_scope": "includeSubDomains"
+    }
+  },
+  {
+    "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_03",
+    "intent_class": "enforce_https_only_subdomains",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "policy_family": "HSTS/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "required_scope": "includeSubDomains"
+    }
+  },
+  {
+    "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_04",
+    "intent_class": "enforce_https_only_subdomains",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "policy_family": "HSTS/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "required_scope": "includeSubDomains"
+    }
+  },
+  {
+    "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_05",
+    "intent_class": "enforce_https_only_subdomains",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "policy_family": "HSTS/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "required_scope": "includeSubDomains"
+    }
+  },
+  {
+    "explanation": "The effective STS header establishes host state but omits includeSubDomains while the policy intent requires subdomain coverage.",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_06",
+    "intent_class": "enforce_https_only_subdomains",
+    "issue": "hsts_subdomain_scope_not_covered",
+    "policy_family": "HSTS/framework",
+    "severity": "medium",
+    "witness": {
+      "headers": [
+        {
+          "name": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        }
+      ],
+      "required_scope": "includeSubDomains"
+    }
+  }
+]

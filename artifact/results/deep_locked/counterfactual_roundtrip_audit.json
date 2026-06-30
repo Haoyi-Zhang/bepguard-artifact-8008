@@ -1,0 +1,28 @@
+{
+  "interpretation": "Counterfactual round-trip audit: clean controls are semantically replayed, activated across the intended boundary, then returned to the original clean point. This checks both directions of the causal boundary without reading benchmark labels as oracle input.",
+  "not_applicable_controls": 8,
+  "operators": {
+    "add_conjunctive_blocking_policy": 8,
+    "add_overblocking_csp": 4,
+    "credentialed_cors_origin_mismatch": 12,
+    "disable_required_feature": 8,
+    "drop_coep_half": 8,
+    "drop_include_subdomains": 8,
+    "drop_preload_token": 4,
+    "drop_vary_origin": 8,
+    "enforced_layer_to_report_only": 8,
+    "enforced_to_report_only": 16,
+    "frame_ancestors_report_only": 4,
+    "hsts_invalid_max_age": 16,
+    "paired_repair_reverse_activation": 418,
+    "remove_resource_opt_in": 16,
+    "weaken_corp_same_origin_to_same_site": 4,
+    "wildcard_denied_feature": 4
+  },
+  "problem_count": 0,
+  "problems": [],
+  "required_roundtrips": 546,
+  "roundtrips_preserved": 546,
+  "schema": "BEPGuardCounterfactualRoundtrip/v1",
+  "status": "pass"
+}

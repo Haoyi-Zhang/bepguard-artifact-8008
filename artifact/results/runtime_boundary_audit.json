@@ -1,0 +1,16 @@
+{
+  "bytes_checked": 60759435,
+  "commercial_api_required": false,
+  "disallowed_dirs": [],
+  "disallowed_files": [],
+  "files_checked": 599,
+  "gpu_required": false,
+  "interpretation": "The deterministic artifact path is CPU-native and local: no dependency cache directories, Python bytecode caches, LaTeX transient files, GPU requirements, commercial API credentials, or packaged git metadata are present in the release tree.",
+  "network_required_for_core_ladder": false,
+  "problem_count": 0,
+  "problems": [],
+  "python_version_declared": null,
+  "schema": "BEPGuardRuntimeBoundary/v1",
+  "status": "pass",
+  "volatile_token_hits": []
+}

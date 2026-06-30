@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Validation ladder and contrastive controls over BEP-Deep/BEP-Max. Each layer checks a different failure mode. Public-package comparator rows validate BEPGuard's semantic boundaries through precomputed contrastive evidence: disagreements reflect task-scope differences; labels come from source-grounded obligations, certificates, and independent oracles.}
+\label{tab:baseline}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}}
+\toprule
+Layer & Check & Result & Evidence role \\
+\midrule
+Header-presence control & Header exists but semantic obligation fails & 322 positives missed; 0 control false alarms & Shows why presence is not an intent-drift oracle \\
+HSTS-preload criterion control & Eligibility-style HSTS rule on HSTS subset & 54 TP; 62 task-scope FP; 0 FN & Separates preload eligibility from stateful intent drift \\
+Positive/negative certificate audits & Source, rule, witness, minimality, repair, and clean-side support & 418 / 418; 554 / 554 & Prevents unsupported positives and positive-only validation \\
+Independent oracles & Decision-table and declarative oracles over locked fixtures, SpecBench, and finite states & 972 / 972; 5,152 third-oracle cases; 0 / 351 mismatches & Tests oracle/workload coupling and label-free decision logic \\
+Directive and cross-policy contracts & CSP fallback, CORS/COEP, HSTS, COOP/COEP, and Permissions-Policy contracts & 6 / 6; 7 contracts over 111 states & Tests semantic hinges outside the fixture denominator \\
+Finite theorem kernel & Enumerated safety and specificity theorems over the encoded fragment & 30 theorems; 33,513 states & Makes the semantic core proof-like rather than table-only \\
+SpecBench, depth, and metamorphic checks & Source-derived boundary cases, per-issue closure, and property-preserving transformations & 4,180 cases; 200 issue-depth obligations; 9,720 shadow; 4,860 blind; 546 causal; 3,954 relation checks & Tests representation, issue-class, and source-boundary robustness \\
+Mutation adequacy & Rule-level and obligation-level semantic mutants & 28 / 28 plus 600 / 600 killed & Tests whether the workload distinguishes wrong semantics \\
+Materialized public-package comparator output & Unmodified CSP, MDN Observatory, and HSTS analyzers over BEP-Deep surfaces & 4,118 prior-run invocations; 0 unavailable/error in the materialized output; clean-package probes report availability separately & Shows scanner/task mismatch without treating public tools as wrong \\
+Evidence graph, leakage, and label-flow audit & Claim-to-certificate trace graph, anti-overfit scan, and core-oracle label-flow separation & 15,182 nodes; 23,925 edges; 9,586 disjointness rows; 45 claim-impact rows; 45 claim trace cards; 418 hash chains; 78 pure decision functions; 0 leaks; static code-health pass & Tests provenance closure and memorization resistance \\
+Identifier-blind and repair-delta replay & Metadata-erased semantic replay and blinded repaired-side controls & 4,860 blind replays; 2,916 neutral replays; 418 / 418 repairs; 418 evidence cards & Rejects fixture-label memorization; activation tests clean-control boundary sensitivity \\
+Reproduction and PDF audits & Local ladder, smoke execution, package hygiene, and rendered page/reference boundary & 101 commands; 6 smoke runs; 10 deterministic re-exec runs; 2,916 oracle-triangulation cells; 418 repair-locality checks; 16 interaction strata; 25 RQ-trace obligations; 72 refs; CPU-local boundary & Makes the release independently inspectable \\
+BEP-Max and repair frontier & Format-preserving variants, near repairs, and local repair neighborhoods & 4,306 / 4,306; 418 frontiers & Tests surface robustness and counterfactual repairability \\
+\bottomrule
+\end{tabular}
+\end{table*}

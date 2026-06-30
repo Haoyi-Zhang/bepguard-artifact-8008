@@ -1,0 +1,21 @@
+{
+  "documents_checked": 6,
+  "expected_counts": {
+    "body_pages": "1-10",
+    "corpus_stability_replays": 2916,
+    "declarative_oracle_cases": 5152,
+    "evidence_cards": 418,
+    "main_pages": 12,
+    "protocol_last": "A099",
+    "references": 72,
+    "references_only_pages": "11-12",
+    "reproduction_ladder_commands": 101,
+    "specbench_cases": 4180,
+    "validation_layers": 111,
+    "version": "0.24.0"
+  },
+  "interpretation": "Human-facing release text, paper sources, and package identity are checked against the current validation contract so stale review-round counts cannot survive into the artifact.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

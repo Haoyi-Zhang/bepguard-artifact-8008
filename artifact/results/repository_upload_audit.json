@@ -1,0 +1,9 @@
+{
+  "include_entries": 13,
+  "interpretation": "Checks that the artifact tree can be manually uploaded as the BEPGuard repository without dependency caches, git metadata, or transient files.",
+  "preupload_commands": 3,
+  "problem_count": 0,
+  "problems": [],
+  "required_include_entries": 13,
+  "status": "pass"
+}

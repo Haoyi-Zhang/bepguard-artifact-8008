@@ -1,0 +1,210 @@
+{
+  "baseline_confusion": {
+    "conservative_header_presence": {
+      "fn": 64,
+      "fp": 0,
+      "tn": 28,
+      "tp": 24
+    },
+    "documented_hsts_preload_criterion": {
+      "fn": 0,
+      "fp": 2,
+      "tn": 2,
+      "tp": 12
+    }
+  },
+  "external_baseline_availability": {
+    "packages": {
+      "chromium_hstspreload": {
+        "available": false,
+        "returncode": null
+      },
+      "csp_evaluator": {
+        "available": false,
+        "returncode": 2
+      },
+      "mdn_http_observatory": {
+        "available": false,
+        "note": "local CLI not found; npx intentionally not invoked in smoke tests",
+        "returncode": null
+      }
+    },
+    "tools_available": {
+      "go": true,
+      "hstspreload_header_helper": false,
+      "mdn-http-observatory-scan": false,
+      "node": true,
+      "npm": true,
+      "python3": true
+    }
+  },
+  "external_baseline_status_counts": {
+    "chromium_hstspreload": {
+      "not_applicable": 92,
+      "unavailable": 24
+    },
+    "csp_evaluator": {
+      "not_applicable": 92,
+      "unavailable": 24
+    },
+    "mdn_http_observatory": {
+      "unavailable": 1
+    }
+  },
+  "interpretation": "Expanded locked experiment over deterministic source-grounded fixtures; not a live-web prevalence study.",
+  "issue_counts": {
+    "coep_require_corp_blocks_cross_origin_resource": 6,
+    "cors_dynamic_origin_missing_vary": 6,
+    "cors_intended_credentialed_share_blocked": 6,
+    "cors_reflected_origin_with_credentials": 6,
+    "cross_origin_isolation_incomplete": 6,
+    "csp_conjunctive_policy_composition_blocks_required_script": 8,
+    "csp_effective_script_allowance": 8,
+    "csp_report_only_not_enforced": 6,
+    "hsts_header_not_honored_over_http": 6,
+    "hsts_policy_cleared_by_zero_max_age": 6,
+    "hsts_subdomain_scope_not_covered": 6,
+    "layered_header_override_drops_enforcement": 6,
+    "nonce_csp_static_render_incompatibility": 6,
+    "permissions_policy_feature_disabled": 6
+  },
+  "locked_denominator": {
+    "expected_issue_counts": {
+      "coep_require_corp_blocks_cross_origin_resource": 6,
+      "cors_dynamic_origin_missing_vary": 6,
+      "cors_intended_credentialed_share_blocked": 6,
+      "cors_reflected_origin_with_credentials": 6,
+      "cross_origin_isolation_incomplete": 6,
+      "csp_conjunctive_policy_composition_blocks_required_script": 8,
+      "csp_effective_script_allowance": 8,
+      "csp_report_only_not_enforced": 6,
+      "hsts_header_not_honored_over_http": 6,
+      "hsts_policy_cleared_by_zero_max_age": 6,
+      "hsts_subdomain_scope_not_covered": 6,
+      "layered_header_override_drops_enforcement": 6,
+      "nonce_csp_static_render_incompatibility": 6,
+      "none": 28,
+      "permissions_policy_feature_disabled": 6
+    },
+    "families": {
+      "COEP/CORP/CORS": 10,
+      "COOP/COEP/Permissions-Policy": 8,
+      "CORS": 10,
+      "CORS/cache": 8,
+      "CORS/framework": 6,
+      "CSP": 18,
+      "CSP/framework": 6,
+      "HSTS": 16,
+      "HSTS/framework": 8,
+      "Layered policy composition": 18,
+      "Permissions-Policy": 8
+    },
+    "fixtures": 116,
+    "negative_controls": 28,
+    "positive_fixtures": 88
+  },
+  "metamorphic_workload": null,
+  "minimization": {
+    "byte_reduction": 1989,
+    "minimized": 88,
+    "positive_fixtures": 88,
+    "total_header_bytes_after": 5301,
+    "total_header_bytes_before": 7290
+  },
+  "repair_synthesis": {
+    "all_issues_removed": 88,
+    "interpretation": "Deterministic issue-specific repairs under encoded semantics; not proof of deployability in arbitrary applications.",
+    "positive_fixtures": 88,
+    "target_issue_removed": 88,
+    "unrepaired": []
+  },
+  "semantic_execution": {
+    "execution_profile": "deterministic-counts-only",
+    "expected_findings_detected": 88,
+    "expected_positive_fixtures": 88,
+    "family_counts": {
+      "COEP/CORP/CORS": {
+        "detected": 6,
+        "fixtures": 10,
+        "negative_clean": 4,
+        "negative_controls": 4,
+        "positives": 6
+      },
+      "COOP/COEP/Permissions-Policy": {
+        "detected": 6,
+        "fixtures": 8,
+        "negative_clean": 2,
+        "negative_controls": 2,
+        "positives": 6
+      },
+      "CORS": {
+        "detected": 6,
+        "fixtures": 10,
+        "negative_clean": 4,
+        "negative_controls": 4,
+        "positives": 6
+      },
+      "CORS/cache": {
+        "detected": 6,
+        "fixtures": 8,
+        "negative_clean": 2,
+        "negative_controls": 2,
+        "positives": 6
+      },
+      "CORS/framework": {
+        "detected": 6,
+        "fixtures": 6,
+        "negative_clean": 0,
+        "negative_controls": 0,
+        "positives": 6
+      },
+      "CSP": {
+        "detected": 14,
+        "fixtures": 18,
+        "negative_clean": 4,
+        "negative_controls": 4,
+        "positives": 14
+      },
+      "CSP/framework": {
+        "detected": 6,
+        "fixtures": 6,
+        "negative_clean": 0,
+        "negative_controls": 0,
+        "positives": 6
+      },
+      "HSTS": {
+        "detected": 12,
+        "fixtures": 16,
+        "negative_clean": 4,
+        "negative_controls": 4,
+        "positives": 12
+      },
+      "HSTS/framework": {
+        "detected": 6,
+        "fixtures": 8,
+        "negative_clean": 2,
+        "negative_controls": 2,
+        "positives": 6
+      },
+      "Layered policy composition": {
+        "detected": 14,
+        "fixtures": 18,
+        "negative_clean": 4,
+        "negative_controls": 4,
+        "positives": 14
+      },
+      "Permissions-Policy": {
+        "detected": 6,
+        "fixtures": 8,
+        "negative_clean": 2,
+        "negative_controls": 2,
+        "positives": 6
+      }
+    },
+    "findings": 88,
+    "fixtures": 116,
+    "interpretation": "Locked local full-corpus oracle run; not a public-web prevalence claim.",
+    "negative_controls": 28,
+    "negative_controls_clean": 28
+  }
+}

@@ -1,0 +1,38 @@
+\definecolor{cmbInk}{RGB}{27,31,36}
+\definecolor{cmbBlue}{RGB}{43,82,125}
+\definecolor{cmbTeal}{RGB}{43,125,116}
+\definecolor{cmbGold}{RGB}{158,116,49}
+\definecolor{cmbRose}{RGB}{151,75,82}
+\definecolor{cmbMist}{RGB}{239,245,249}
+\definecolor{cmbMint}{RGB}{237,247,244}
+\definecolor{cmbWarm}{RGB}{248,244,235}
+\definecolor{cmbRule}{RGB}{196,202,205}
+\begin{tikzpicture}[
+  panel/.style={draw=#1, fill=#1!7, rounded corners=2.6pt, line width=.58pt,
+    align=center, minimum height=.86cm, minimum width=2.18cm,
+    inner xsep=2.4pt, inner ysep=2.0pt,
+    font=\rmfamily\fontsize{7.2}{7.8}\selectfont, text=cmbInk,
+    text height=1.35ex, text depth=.28ex},
+  tag/.style={font=\rmfamily\fontsize{6.55}{7.1}\selectfont, text=black!58,
+    align=center, inner sep=.45pt, text height=1.22ex, text depth=.24ex},
+  flow/.style={-{Latex[length=1.8mm]}, line width=.72pt, draw=black!48,
+    line cap=round, line join=round},
+  gate/.style={draw=cmbGold, fill=cmbWarm, rounded corners=2.2pt, line width=.55pt,
+    align=center, minimum height=.78cm, minimum width=3.18cm,
+    inner xsep=2.2pt, inner ysep=1.8pt,
+    font=\rmfamily\fontsize{7.0}{7.7}\selectfont, text=cmbInk,
+    text height=1.32ex, text depth=.28ex}
+]
+\node[panel=cmbBlue] (intent) {Explicit public\\intent claim};
+\node[panel=cmbTeal, right=.52cm of intent] (surface) {Generated policy\\surface};
+\node[panel=cmbBlue, right=.52cm of surface] (judgment) {Browser-effective\\judgment};
+\node[gate, below=.70cm of surface] (witness) {Minimal conflict witness\\plus repair-paired control};
+\node[tag, below=.12cm of intent] (claimtag) {expected action};
+\node[tag, below=.12cm of judgment] (judgetag) {observed action};
+\draw[flow] (intent) -- node[tag, above=.03cm] {lower} (surface);
+\draw[flow] (surface) -- node[tag, above=.03cm] {evaluate} (judgment);
+\draw[flow, draw=cmbRose] (claimtag.south) .. controls +(0,-.28) and +(-1.15,.22) .. (witness.west);
+\draw[flow, draw=cmbRose] (judgetag.south) .. controls +(0,-.28) and +(1.15,.22) .. (witness.east);
+\draw[line width=.62pt, draw=cmbRule] ($(witness.south west)+(0.14,-.10)$) -- ($(witness.south east)+(-0.14,-.10)$)
+  node[tag, midway, below=.02cm] {accepted only inside the covered context};
+\end{tikzpicture}

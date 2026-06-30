@@ -1,0 +1,27 @@
+{
+  "active_channels": 11,
+  "claims": 45,
+  "evidence_channels": {
+    "evidence_paths": 972,
+    "external_comparator_rows": 4118,
+    "mutation_farm": 600,
+    "negative_certificates": 554,
+    "positive_certificates": 418,
+    "repair_frontiers": 418,
+    "rules": 35,
+    "shadow_cases": 9720,
+    "source_claims": 45,
+    "specbench_cases": 4180,
+    "theory_states": 33513
+  },
+  "interpretation": "Redundancy audit over independent evidence channels. It does not add findings; it checks that accepted findings and controls are jointly supported by source spans, semantic rules, certificates, repairs, graph paths, SpecBench, theory, mutation, shadow transformations, and external comparator records.",
+  "issue_classes": 25,
+  "max_positive_examples_per_issue": 32,
+  "min_positive_examples_per_issue": 6,
+  "negative_controls": 554,
+  "positive_fixtures": 418,
+  "problem_count": 0,
+  "problems": [],
+  "rules": 35,
+  "status": "pass"
+}

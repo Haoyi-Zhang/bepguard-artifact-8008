@@ -1,0 +1,34 @@
+{
+  "contributions_checked": 4,
+  "evidence_files_checked": 9,
+  "interpretation": "Checks that each stated paper contribution is visible in the main text and backed by materialized passing evidence rather than only by repository prose.",
+  "problem_count": 0,
+  "problems": [],
+  "rows": [
+    {
+      "contribution_id": "C1",
+      "evidence_files_verified": 2,
+      "name": "BEP-IR and source-grounded lowering",
+      "paper_tokens_verified": 3
+    },
+    {
+      "contribution_id": "C2",
+      "evidence_files_verified": 2,
+      "name": "minimal proof-carrying semantic witnesses",
+      "paper_tokens_verified": 2
+    },
+    {
+      "contribution_id": "C3",
+      "evidence_files_verified": 2,
+      "name": "repair-paired counterfactual controls",
+      "paper_tokens_verified": 2
+    },
+    {
+      "contribution_id": "C4",
+      "evidence_files_verified": 3,
+      "name": "multi-oracle, mutation-adequate validation",
+      "paper_tokens_verified": 3
+    }
+  ],
+  "status": "pass"
+}

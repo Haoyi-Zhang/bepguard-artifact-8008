@@ -1,0 +1,968 @@
+[
+  {
+    "claim_id": "CL_CSP_01",
+    "claim_type": "normative",
+    "control_fixture_count": 64,
+    "evidence_cards": 60,
+    "fixture_count": 124,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [
+      "csp_frame_ancestors_meta_delivery_unsupported",
+      "csp_frame_ancestors_report_only_not_enforced",
+      "csp_report_only_not_enforced",
+      "layered_header_override_drops_enforcement"
+    ],
+    "policy_family": "CSP",
+    "positive_fixture_count": 60,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_REPORT_ONLY_MONITOR"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED \u00a73.2 lines 514-527",
+    "source_span_present": true,
+    "specbench_cases": 190,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CSP_02",
+    "claim_type": "normative",
+    "control_fixture_count": 32,
+    "evidence_cards": 32,
+    "fixture_count": 64,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [
+      "csp_effective_script_allowance"
+    ],
+    "policy_family": "CSP",
+    "positive_fixture_count": 32,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_DEFAULT_SRC_FALLBACK"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED \u00a76.1.3 lines 1414-1420",
+    "source_span_present": true,
+    "specbench_cases": 285,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CSP_03",
+    "claim_type": "normative",
+    "control_fixture_count": 26,
+    "evidence_cards": 6,
+    "fixture_count": 32,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [
+      "csp_multiple_policy_overblocks_trusted_script"
+    ],
+    "policy_family": "CSP",
+    "positive_fixture_count": 6,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_SCRIPT_SRC_OVERRIDES_DEFAULT"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED \u00a76.1.3 lines 1416-1420",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CSP_04",
+    "claim_type": "normative",
+    "control_fixture_count": 32,
+    "evidence_cards": 32,
+    "fixture_count": 64,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [
+      "csp_effective_script_allowance"
+    ],
+    "policy_family": "CSP",
+    "positive_fixture_count": 32,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_DEFAULT_SRC_FALLBACK"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED \u00a76.8.3 lines 2698-2709",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CSP_05",
+    "claim_type": "normative",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_META_REPORT_ONLY_UNSUPPORTED"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED \u00a73.3 lines 527-536",
+    "source_span_present": true,
+    "specbench_cases": 190,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_CSP_06",
+    "claim_type": "normative",
+    "control_fixture_count": 24,
+    "evidence_cards": 24,
+    "fixture_count": 48,
+    "intent_class": "nonce_based_strict_csp",
+    "issue_classes": [
+      "nonce_csp_static_render_incompatibility"
+    ],
+    "policy_family": "CSP",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_NONCE_UNIQUE_PER_TRANSMISSION"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED nonce guidance line 2771",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CSP_07",
+    "claim_type": "normative",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_MULTIPLE_POLICIES_RESTRICT"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED \u00a78.1 lines 2853-2863",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_CORS_01",
+    "claim_type": "normative",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "allow_credentialed_cors",
+    "issue_classes": [
+      "cors_intended_credentialed_share_blocked"
+    ],
+    "policy_family": "CORS",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CORS_WILDCARD_CREDENTIALS_NOT_SHAREABLE"
+    ],
+    "source_id": "S_FETCH_SPEC",
+    "source_span": "Fetch CORS table lines 1848-1857",
+    "source_span_present": true,
+    "specbench_cases": 285,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CORS_02",
+    "claim_type": "normative",
+    "control_fixture_count": 24,
+    "evidence_cards": 12,
+    "fixture_count": 36,
+    "intent_class": "allow_credentialed_cors",
+    "issue_classes": [
+      "cors_acac_case_sensitive_not_shareable",
+      "cors_duplicate_acao_not_shareable"
+    ],
+    "policy_family": "CORS",
+    "positive_fixture_count": 12,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE"
+    ],
+    "source_id": "S_FETCH_SPEC",
+    "source_span": "Fetch CORS table lines 1848-1857",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CORS_03",
+    "claim_type": "normative",
+    "control_fixture_count": 6,
+    "evidence_cards": 6,
+    "fixture_count": 12,
+    "intent_class": "allow_credentialed_cors",
+    "issue_classes": [
+      "cors_dynamic_origin_without_vary"
+    ],
+    "policy_family": "CORS",
+    "positive_fixture_count": 6,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE"
+    ],
+    "source_id": "S_FETCH_SPEC",
+    "source_span": "Fetch CORS table lines 1854-1856",
+    "source_span_present": true,
+    "specbench_cases": 285,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CORS_04",
+    "claim_type": "normative",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "allow_credentialed_cors",
+    "issue_classes": [],
+    "policy_family": "CORS",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CORS_DYNAMIC_ACAO_NEEDS_VARY"
+    ],
+    "source_id": "S_FETCH_SPEC",
+    "source_span": "Fetch CORS cache note lines 4838-4841",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_HSTS_01",
+    "claim_type": "normative",
+    "control_fixture_count": 38,
+    "evidence_cards": 30,
+    "fixture_count": 68,
+    "intent_class": "enforce_https_only",
+    "issue_classes": [
+      "hsts_header_not_honored_over_http",
+      "hsts_invalid_max_age_ignored"
+    ],
+    "policy_family": "HSTS",
+    "positive_fixture_count": 30,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HSTS_IGNORE_INSECURE_TRANSPORT"
+    ],
+    "source_id": "S_RFC6797",
+    "source_span": "RFC 6797 \u00a78.1 lines 1120-1123",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_HSTS_02",
+    "claim_type": "normative",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "enforce_https_only",
+    "issue_classes": [
+      "hsts_policy_cleared_by_zero_max_age"
+    ],
+    "policy_family": "HSTS",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HSTS_MAX_AGE_ZERO_CLEARS"
+    ],
+    "source_id": "S_RFC6797",
+    "source_span": "RFC 6797 \u00a76.1.1 lines 960-1004",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_HSTS_03",
+    "claim_type": "normative",
+    "control_fixture_count": 6,
+    "evidence_cards": 6,
+    "fixture_count": 12,
+    "intent_class": "enforce_https_only",
+    "issue_classes": [
+      "hsts_missing_include_subdomains"
+    ],
+    "policy_family": "HSTS",
+    "positive_fixture_count": 6,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HSTS_INVALID_HEADER_IGNORED"
+    ],
+    "source_id": "S_RFC6797",
+    "source_span": "RFC 6797 \u00a76.1 lines 925-930",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_COEP_01",
+    "claim_type": "developer_doc",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue_classes": [
+      "coep_require_corp_blocks_cross_origin_resource"
+    ],
+    "policy_family": "COEP/CORP/CORS",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_COEP_REQUIRE_CORP_NO_CORS"
+    ],
+    "source_id": "S_MDN_COEP",
+    "source_span": "MDN COEP lines 256-262",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_COEP_02",
+    "claim_type": "developer_doc",
+    "control_fixture_count": 18,
+    "evidence_cards": 6,
+    "fixture_count": 24,
+    "intent_class": "cross_origin_isolation_without_embed_breakage",
+    "issue_classes": [
+      "corp_same_site_allows_cross_origin_same_site"
+    ],
+    "policy_family": "COEP/CORP/CORS",
+    "positive_fixture_count": 6,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_COEP_CORS_MODE_COMPATIBLE"
+    ],
+    "source_id": "S_MDN_COEP",
+    "source_span": "MDN COEP lines 304-306",
+    "source_span_present": true,
+    "specbench_cases": 380,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_COOP_01",
+    "claim_type": "developer_doc",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "enable_cross_origin_isolation",
+    "issue_classes": [
+      "cross_origin_isolation_incomplete"
+    ],
+    "policy_family": "COOP",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_COOP_SAME_ORIGIN_FOR_ISOLATION"
+    ],
+    "source_id": "S_MDN_COOP",
+    "source_span": "MDN COOP lines 272-280",
+    "source_span_present": true,
+    "specbench_cases": 190,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_COOP_02",
+    "claim_type": "developer_doc",
+    "control_fixture_count": 24,
+    "evidence_cards": 24,
+    "fixture_count": 48,
+    "intent_class": "enable_cross_origin_isolation",
+    "issue_classes": [
+      "cross_origin_isolation_incomplete"
+    ],
+    "policy_family": "COOP",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_COOP_UNSAFE_NONE_DEFAULT"
+    ],
+    "source_id": "S_MDN_COOP",
+    "source_span": "MDN COOP lines 214-219",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_PERM_01",
+    "claim_type": "developer_doc",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "allow_browser_feature",
+    "issue_classes": [
+      "permissions_policy_feature_disabled"
+    ],
+    "policy_family": "Permissions-Policy",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_PERMISSIONS_POLICY_ALLOWLIST"
+    ],
+    "source_id": "S_MDN_PERMISSIONS",
+    "source_span": "MDN Permissions-Policy lines 217-255",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_PERM_02",
+    "claim_type": "developer_doc",
+    "control_fixture_count": 58,
+    "evidence_cards": 54,
+    "fixture_count": 112,
+    "intent_class": "allow_browser_feature",
+    "issue_classes": [
+      "cross_origin_isolation_incomplete",
+      "permissions_policy_feature_disabled",
+      "permissions_policy_feature_overallowed"
+    ],
+    "policy_family": "Permissions-Policy",
+    "positive_fixture_count": 54,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_PERMISSIONS_POLICY_EMPTY_DISABLES"
+    ],
+    "source_id": "S_MDN_PERMISSIONS",
+    "source_span": "MDN Permissions-Policy lines 240-245",
+    "source_span_present": true,
+    "specbench_cases": 190,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_NEXT_01",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 24,
+    "evidence_cards": 24,
+    "fixture_count": 48,
+    "intent_class": "nonce_based_strict_csp",
+    "issue_classes": [
+      "nonce_csp_static_render_incompatibility"
+    ],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_NEXT_NONCE_DYNAMIC_REQUIRED"
+    ],
+    "source_id": "S_NEXT_CSP_DOC",
+    "source_span": "Next.js CSP guide lines 673-680",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_NEXT_02",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 24,
+    "evidence_cards": 24,
+    "fixture_count": 48,
+    "intent_class": "nonce_based_strict_csp",
+    "issue_classes": [
+      "nonce_csp_static_render_incompatibility"
+    ],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_NEXT_NONCE_DYNAMIC_REQUIRED"
+    ],
+    "source_id": "S_NEXT_CSP_DOC",
+    "source_span": "Next.js CSP guide lines 675-680",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_HELMET_01",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HELMET_CSP_DEFAULT_MERGE"
+    ],
+    "source_id": "S_HELMET_DOC",
+    "source_span": "Helmet docs lines 43-51",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_HELMET_02",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HELMET_CSP_DEFAULT_MERGE"
+    ],
+    "source_id": "S_HELMET_DOC",
+    "source_span": "Helmet docs lines 80-110",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_HELMET_03",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HELMET_REPORT_ONLY"
+    ],
+    "source_id": "S_HELMET_DOC",
+    "source_span": "Helmet docs lines 112-124",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_HELMET_04",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enable_cross_origin_isolation",
+    "issue_classes": [],
+    "policy_family": "COEP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HELMET_COEP_NOT_DEFAULT"
+    ],
+    "source_id": "S_HELMET_DOC",
+    "source_span": "Helmet docs lines 150-160",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_HELMET_05",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "baseline_scope",
+    "issue_classes": [],
+    "policy_family": "baseline",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_BASELINE_CSP_EVALUATOR_SCOPE"
+    ],
+    "source_id": "S_HELMET_DOC",
+    "source_span": "Helmet docs line 139",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_DJANGO_01",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_https_only",
+    "issue_classes": [],
+    "policy_family": "HSTS/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_DJANGO_HSTS_HTTPS_ONLY"
+    ],
+    "source_id": "S_DJANGO_SECURITY",
+    "source_span": "Django docs lines 185-189",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_DJANGO_02",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_https_only",
+    "issue_classes": [],
+    "policy_family": "HSTS/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_DJANGO_HSTS_HTTPS_ONLY"
+    ],
+    "source_id": "S_DJANGO_SECURITY",
+    "source_span": "Django docs lines 199-200",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_SPRING_01",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_SPRING_CSP_CONTEXT_REQUIRED"
+    ],
+    "source_id": "S_SPRING_SECURITY_HEADERS",
+    "source_span": "Spring docs lines 784-787",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_SPRING_02",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_SPRING_CSP_CONTEXT_REQUIRED",
+      "R_CSP_REPORT_ONLY_MONITOR"
+    ],
+    "source_id": "S_SPRING_SECURITY_HEADERS",
+    "source_span": "Spring docs lines 849-887",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_RAILS_01",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_RAILS_REPORT_ONLY_MIGRATION"
+    ],
+    "source_id": "S_RAILS_SECURITY",
+    "source_span": "Rails guide lines 1166-1169",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_RAILS_02",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "enforce_script_restriction",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_RAILS_REPORT_ONLY_MIGRATION",
+      "R_CSP_REPORT_ONLY_MONITOR"
+    ],
+    "source_id": "S_RAILS_SECURITY",
+    "source_span": "Rails guide lines 1211-1223",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_RAILS_03",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "nonce_based_strict_csp",
+    "issue_classes": [],
+    "policy_family": "CSP/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_RAILS_NONCE_CACHE_TRADEOFF",
+      "R_CSP_NONCE_UNIQUE_PER_TRANSMISSION"
+    ],
+    "source_id": "S_RAILS_SECURITY",
+    "source_span": "Rails guide lines 1233-1278",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_EXPRESS_01",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 24,
+    "evidence_cards": 24,
+    "fixture_count": 48,
+    "intent_class": "deny_public_credentialed_cors",
+    "issue_classes": [
+      "cors_reflected_origin_with_credentials"
+    ],
+    "policy_family": "CORS/framework",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_EXPRESS_CORS_REFLECT_ORIGIN"
+    ],
+    "source_id": "S_EXPRESS_CORS",
+    "source_span": "Express cors docs lines 527-538",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_EXPRESS_02",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 24,
+    "evidence_cards": 24,
+    "fixture_count": 48,
+    "intent_class": "deny_public_credentialed_cors",
+    "issue_classes": [
+      "cors_reflected_origin_with_credentials"
+    ],
+    "policy_family": "CORS/framework",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_EXPRESS_CORS_REFLECT_ORIGIN"
+    ],
+    "source_id": "S_EXPRESS_CORS",
+    "source_span": "Express cors docs lines 484-493 and 537-538",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_EXPRESS_03",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "threat_boundary",
+    "issue_classes": [],
+    "policy_family": "CORS/framework",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_EXPRESS_CORS_NOT_AUTHORIZATION"
+    ],
+    "source_id": "S_EXPRESS_CORS",
+    "source_span": "Express cors docs lines 555-566",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_BASE_01",
+    "claim_type": "tool_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "baseline_scope",
+    "issue_classes": [],
+    "policy_family": "baseline",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_BASELINE_CSP_EVALUATOR_SCOPE"
+    ],
+    "source_id": "S_CSP_EVALUATOR",
+    "source_span": "CSP Evaluator README lines 307-310",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_BASE_02",
+    "claim_type": "tool_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "baseline_scope",
+    "issue_classes": [],
+    "policy_family": "baseline",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_BASELINE_OBSERVATORY_SCOPE"
+    ],
+    "source_id": "S_MDN_OBSERVATORY",
+    "source_span": "MDN Observatory README lines 310-312",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_BASE_03",
+    "claim_type": "tool_doc",
+    "control_fixture_count": 0,
+    "evidence_cards": 0,
+    "fixture_count": 0,
+    "intent_class": "baseline_scope",
+    "issue_classes": [],
+    "policy_family": "baseline",
+    "positive_fixture_count": 0,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_BASELINE_HSTSPRELOAD_SCOPE"
+    ],
+    "source_id": "S_HSTSPRELOAD",
+    "source_span": "pkg.go.dev lines 106-115",
+    "source_span_present": true,
+    "specbench_cases": 0,
+    "trace_status": "source_support_only"
+  },
+  {
+    "claim_id": "CL_CSP_08",
+    "claim_type": "normative",
+    "control_fixture_count": 40,
+    "evidence_cards": 32,
+    "fixture_count": 72,
+    "intent_class": "allow_required_script_after_policy_composition",
+    "issue_classes": [
+      "csp_conjunctive_policy_composition_blocks_required_script"
+    ],
+    "policy_family": "Layered policy composition",
+    "positive_fixture_count": 32,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CSP_CONJUNCTIVE_COMPOSITION",
+      "R_LAYERED_HEADER_SURFACE"
+    ],
+    "source_id": "S_CSP_SPEC",
+    "source_span": "CSP ED \u00a78.1 multiple policy behavior",
+    "source_span_present": true,
+    "specbench_cases": 190,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_LAYER_01",
+    "claim_type": "framework_doc",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "preserve_enforced_policy_across_layers",
+    "issue_classes": [
+      "layered_header_override_drops_enforcement"
+    ],
+    "policy_family": "Layered policy composition",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_LAYERED_HEADER_SURFACE",
+      "R_CSP_REPORT_ONLY_MONITOR"
+    ],
+    "source_id": "S_HELMET_DOC",
+    "source_span": "Helmet header-generation documentation and reportOnly examples",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_CORS_05",
+    "claim_type": "normative",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "allow_credentialed_cors_cache_safe",
+    "issue_classes": [
+      "cors_dynamic_origin_missing_vary"
+    ],
+    "policy_family": "CORS/cache",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_CORS_DYNAMIC_ORIGIN_VARY",
+      "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE"
+    ],
+    "source_id": "S_FETCH_SPEC",
+    "source_span": "Fetch Standard CORS cache guidance and dynamic ACAO behavior",
+    "source_span_present": true,
+    "specbench_cases": 95,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_HSTS_04",
+    "claim_type": "normative",
+    "control_fixture_count": 32,
+    "evidence_cards": 24,
+    "fixture_count": 56,
+    "intent_class": "enforce_https_only_subdomains",
+    "issue_classes": [
+      "hsts_subdomain_scope_not_covered"
+    ],
+    "policy_family": "HSTS/framework",
+    "positive_fixture_count": 24,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_HSTS_INCLUDE_SUBDOMAINS_SCOPE"
+    ],
+    "source_id": "S_RFC6797",
+    "source_span": "RFC 6797 includeSubDomains directive semantics",
+    "source_span_present": true,
+    "specbench_cases": 190,
+    "trace_status": "fixture_bearing"
+  },
+  {
+    "claim_id": "CL_HSTS_05",
+    "claim_type": "tool_doc",
+    "control_fixture_count": 10,
+    "evidence_cards": 6,
+    "fixture_count": 16,
+    "intent_class": "expect_hsts_preload",
+    "issue_classes": [
+      "hsts_preload_criteria_not_met"
+    ],
+    "policy_family": "HSTS/preload",
+    "positive_fixture_count": 6,
+    "rule_rows_present": true,
+    "semantic_rule_ids": [
+      "R_BASELINE_HSTSPRELOAD_SCOPE",
+      "R_HSTS_INCLUDE_SUBDOMAINS_SCOPE"
+    ],
+    "source_id": "S_HSTSPRELOAD",
+    "source_span": "pkg.go.dev exported eligibility helpers and hstspreload documentation",
+    "source_span_present": true,
+    "specbench_cases": 190,
+    "trace_status": "fixture_bearing"
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "caption_count": 6,
+  "figure_inputs": [
+    "figures/drift_model.tikz.tex",
+    "figures/method_pipeline.tex",
+    "figures/witness_distribution.tex"
+  ],
+  "figure_or_table_caption_pages": [
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10
+  ],
+  "interpretation": "Static and rendered-layout audit for LaTeX-native figures/tables: it checks resolved inputs, absence of raster figures, label uniqueness, TikZ node uniqueness, caption coverage, and rendered page boundaries.",
+  "label_count": 4,
+  "latex_native_figure_files": [
+    "figures/drift_model.tikz.tex",
+    "figures/method_pipeline.tex",
+    "figures/witness_distribution.tex"
+  ],
+  "page_metrics_excerpt": [
+    {
+      "has_figure_caption": false,
+      "has_table_caption": false,
+      "page": 1,
+      "text_blocks": 6,
+      "text_excerpt": "BEPGuard: Proof-Carrying Evidence for Policy Intent Drift in Browser-Enforced Security Policy Engineering Anonymous Author(s) Abstract\u2014Browser-enforced security"
+    },
+    {
+      "has_figure_caption": true,
+      "has_table_caption": true,
+      "page": 2,
+      "text_blocks": 14,
+      "text_excerpt": "Explicit public intent claim Generated policy surface Browser-effective judgment Minimal conflict witness plus repair-paired control expected action observed ac"
+    },
+    {
+      "has_figure_caption": true,
+      "has_table_caption": true,
+      "page": 3,
+      "text_blocks": 5,
+      "text_excerpt": "TABLE I MOTIVATING WITNESS FAMILIES AND THE SEMANTIC SURFACE THEY EXERCISE. Intent claim Generated surface Browser-effective contradiction Block untrusted scrip"
+    },
+    {
+      "has_figure_caption": true,
+      "has_table_caption": true,
+      "page": 4,
+      "text_blocks": 21,
+      "text_excerpt": "Public intent claim Generated policy surface BEP-IR object Effective judgement Minimal witness Repair-paired control source-span closure rule-source closure dec"
+    },
+    {
+      "has_figure_caption": false,
+      "has_table_caption": false,
+      "page": 5,
+      "text_blocks": 8,
+      "text_excerpt": "state/scope, embedder/resource relation, layer provenance, and feature target. Definition 2 (BEP-IR normalization). Normalization maps an observation o into a f"
+    },
+    {
+      "has_figure_caption": false,
+      "has_table_caption": false,
+      "page": 6,
+      "text_blocks": 11,
+      "text_excerpt": "Algorithm 1 Semantic conflict witness generation Require: admitted claims I, normalized policies P, contexts C, edges E Ensure: source-grounded witness set W 1:"
+    },
+    {
+      "has_figure_caption": true,
+      "has_table_caption": true,
+      "page": 7,
+      "text_blocks": 9,
+      "text_excerpt": "preserves the target issue and terminates in a payload with no single additional preserving deletion. Proof sketch. A deletion is committed only after re-runnin"
+    },
+    {
+      "has_figure_caption": true,
+      "has_table_caption": true,
+      "page": 8,
+      "text_blocks": 29,
+      "text_excerpt": "CSP-delivery CSP-source CSP-compose CSP-nonce CORS-share CORS-cache HSTS-state HSTS-scope COEP-CORP isolation Permissions 0 20 40 60 36 32 62 24 60 30 54 36 30 "
+    },
+    {
+      "has_figure_caption": false,
+      "has_table_caption": true,
+      "page": 9,
+      "text_blocks": 19,
+      "text_excerpt": "TABLE IV VALIDATION LADDER AND CONTRASTIVE CONTROLS OVER BEP-DEEP/BEP-MAX. EACH LAYER CHECKS A DIFFERENT FAILURE MODE. PUBLIC-PACKAGE COMPARATOR ROWS VALIDATE B"
+    },
+    {
+      "has_figure_caption": false,
+      "has_table_caption": true,
+      "page": 10,
+      "text_blocks": 10,
+      "text_excerpt": "TABLE V ABLATION LOSS BY SEMANTIC COMPONENT OVER BEP-DEEP POSITIVES. LARGER LOSS MEANS MORE POSITIVES DEPEND ON THE REMOVED COMPONENT; BOLD MARKS THE LARGEST LO"
+    },
+    {
+      "has_figure_caption": false,
+      "has_table_caption": false,
+      "page": 11,
+      "text_blocks": 3,
+      "text_excerpt": "REFERENCES [1] W. W. A. S. W. Group, \u201cContent security policy level 3,\u201d W3C Working Draft, 2026. [Online]. Available: https://www.w3.org/TR/CSP3/ [2] WHATWG, \u201cF"
+    },
+    {
+      "has_figure_caption": false,
+      "has_table_caption": false,
+      "page": 12,
+      "text_blocks": 1,
+      "text_excerpt": "[53] S. Calzavara, S. Roth, A. Rabitti, M. Backes, and B. Stock, \u201cA tale of two headers: A formal analysis of inconsistent click-jacking protection on the web,\u201d"
+    }
+  ],
+  "problem_count": 0,
+  "problems": [],
+  "raster_figure_files": [],
+  "rendered_pages": 12,
+  "status": "pass"
+}

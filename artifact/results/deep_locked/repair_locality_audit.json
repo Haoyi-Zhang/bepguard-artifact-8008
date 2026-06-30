@@ -1,0 +1,18 @@
+{
+  "blind_repairs_clean": 418,
+  "delta_surface_counts": {
+    "context": 48,
+    "header": 314,
+    "layer": 56
+  },
+  "intent_delta_repairs": 0,
+  "interpretation": "Paired repairs must preserve the intent and source-side claim while changing only generated-surface or context/layer variables needed to remove the target semantic issue. This audit rejects relabeling-only repairs.",
+  "local_repairs": 418,
+  "observable_surface_deltas": 418,
+  "positive_repair_pairs_checked": 418,
+  "problem_count": 0,
+  "problems": [],
+  "repairs_clearing_issue": 418,
+  "schema": "BEPGuardRepairLocality/v1",
+  "status": "pass"
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "ablation": "full_model",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "none",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_delivery_disposition",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_CSP_REPORT_ONLY",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_csp_source_and_fallback",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_CSP_SCRIPT",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_rendering_context",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_CSP_NONCE_STATIC",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_cors_request_context",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_CORS_CREDENTIALS;GF_CORS_REFLECT",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_browser_state_transition",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_HSTS_STATE",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_cross_policy_edge",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_COEP_CORP;GF_COOP_COEP_PERMISSIONS",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_permissions_policy_rule",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_PERMISSIONS_POLICY",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "single_policy_only",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "GF_COEP_CORP;GF_COOP_COEP_PERMISSIONS;GF_CSP_NONCE_STATIC",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "yes",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  },
+  {
+    "ablation": "no_minimizer",
+    "detected_expected_witnesses": 88,
+    "detection_delta_vs_full": 0,
+    "dropped_generation_rules": "none",
+    "interpretation": "locked static component-removal ablation over generation-rule provenance",
+    "minimization_available": "no",
+    "missed_expected_witnesses": 0,
+    "positive_denominator": 88
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "count_families_checked": 7,
+  "interpretation": "Checks that main paper, supplement, README, and reproduction text expose synchronized release counts.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "surfaces_checked": 4
+}

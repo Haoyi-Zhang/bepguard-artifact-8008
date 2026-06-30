@@ -1,0 +1,11 @@
+{
+  "contrastive_repair_pairs": 418,
+  "contrastive_repair_pairs_passed": 418,
+  "generated_adversarial_validation_cases": 4306,
+  "interpretation": "BEP-Max is an adversarial validation suite around the locked BEP-Deep denominator; it is not a prevalence sample.",
+  "locked_fixtures": 972,
+  "positive_preserving_near_repair_cases": 418,
+  "semantic_preserving_cases": 3888,
+  "validation_cases_passed": 4306,
+  "validation_failures": []
+}

@@ -1,0 +1,42 @@
+{
+  "artifact_name": "BEPGuard",
+  "artifact_revision_added_gates": [
+    "evidence_graph",
+    "anti_overfit_leakage",
+    "strict_reproducibility_smoke",
+    "specbench_stress_variants",
+    "counterfactual_roundtrip",
+    "oracle_explanation_equivalence",
+    "rule_trace_matrix",
+    "release_claim_drift",
+    "oracle_triangulation",
+    "static_code_health",
+    "repair_locality",
+    "rq_traceability"
+  ],
+  "artifact_version": "0.24.0",
+  "cli_entry_point": "bepguard",
+  "execution_profile": "cpu_native_standard_library",
+  "external_inference_api_required": false,
+  "gpu_required": false,
+  "interpretation": "Environment lock for deterministic local validation. Optional external baselines are recorded under a no-substitution contract and are not required for the core BEP-Deep/BEP-Max closure.",
+  "live_web_scanning_performed": false,
+  "network_required_for_core_validation": false,
+  "optional_external_baselines": [
+    "csp_evaluator@1.1.8",
+    "@mdn/mdn-http-observatory@1.6.2",
+    "github.com/chromium/hstspreload@v0.0.0-20250618200047-d624d7c87b33"
+  ],
+  "optional_python_packages": {
+    "PyMuPDF": {
+      "import_name": "fitz",
+      "purpose": "optional rendered-PDF boundary, density, and figure-layout audits",
+      "required_for_core_validation": false,
+      "validated_on_cloud": true,
+      "version": "1.26.7"
+    }
+  },
+  "private_data_required": false,
+  "python_minimum": "3.10",
+  "required_python_packages": []
+}

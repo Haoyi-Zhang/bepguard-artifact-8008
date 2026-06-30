@@ -1,0 +1,68 @@
+{
+  "expected_counts": {
+    "amendment_span": "A001-A099",
+    "declarative_oracle_cases": "5,152",
+    "package_version": "0.24.0",
+    "references": "72",
+    "reproduction_commands": "101",
+    "specbench_cases": "4,180",
+    "validation_layers": "111"
+  },
+  "files_checked": 10,
+  "interpretation": "Checks that evidence-facing text, tables, package identity, and reproduction metadata expose the current release counts and reject stale late-round counts.",
+  "problem_count": 0,
+  "problems": [],
+  "rows": [
+    {
+      "file": "paper/main.tex",
+      "problems": [],
+      "required_tokens": 3
+    },
+    {
+      "file": "paper/supplement.tex",
+      "problems": [],
+      "required_tokens": 3
+    },
+    {
+      "file": "paper/tables/result_overview.tex",
+      "problems": [],
+      "required_tokens": 1
+    },
+    {
+      "file": "paper/tables/baseline_comparison.tex",
+      "problems": [],
+      "required_tokens": 1
+    },
+    {
+      "file": "artifact/README.md",
+      "problems": [],
+      "required_tokens": 3
+    },
+    {
+      "file": "artifact/reproduction.md",
+      "problems": [],
+      "required_tokens": 3
+    },
+    {
+      "file": "artifact/protocol_lock.json",
+      "problems": [],
+      "required_tokens": 5
+    },
+    {
+      "file": "artifact/pyproject.toml",
+      "problems": [],
+      "required_tokens": 1
+    },
+    {
+      "file": "artifact/environment_lock.json",
+      "problems": [],
+      "required_tokens": 1
+    },
+    {
+      "file": "artifact/bepguard/__init__.py",
+      "problems": [],
+      "required_tokens": 1
+    }
+  ],
+  "status": "pass"
+}

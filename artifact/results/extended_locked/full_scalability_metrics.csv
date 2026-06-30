@@ -1,0 +1,7 @@
+multiplier,fixtures,findings,oracle_evaluations,replication_label
+1,554,418,554,x1
+2,1108,836,1108,x2
+4,2216,1672,2216,x4
+8,4432,3344,4432,x8
+16,8864,6688,8864,x16
+32,17728,13376,17728,x32

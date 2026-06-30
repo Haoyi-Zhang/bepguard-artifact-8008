@@ -1,0 +1,10 @@
+{
+  "captions_checked": 9,
+  "interpretation": "Checks that every release paper figure/table/algorithm label is referenced, all refs resolve, and release figures remain LaTeX-native.",
+  "latex_native_includegraphics": true,
+  "problem_count": 0,
+  "problems": [],
+  "references_checked": 9,
+  "status": "pass",
+  "tracked_labels": 9
+}

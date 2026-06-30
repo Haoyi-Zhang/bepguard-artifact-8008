@@ -1,0 +1,34 @@
+{
+  "auxiliary_source_ledger_rows": {
+    "artifact/data/source_acquisition_log.csv": 15,
+    "artifact/data/source_snapshot_ledger.csv": 15
+  },
+  "claim_rows": 45,
+  "data_coding_validation_rows": 45,
+  "interpretation": "Release validation-report consistency audit: coding reports, auxiliary source ledgers, and lineage result directories must be synchronized with the release admitted-source and BEP-Deep validation state.",
+  "lineage_scope_markers": {
+    "artifact/results/extended_locked/lineage_scope.json": {
+      "expected_positive_fixtures": 418,
+      "fixtures": 554,
+      "interpretation": "This directory records the intermediate BEP-Stress lineage run. It is retained for expansion provenance and is not the main paper denominator.",
+      "lineage_not_main_denominator": true,
+      "main_workload": "BEP-Deep",
+      "negative_control_fixtures": 136,
+      "scope": "bep-stress-lineage"
+    },
+    "artifact/results/full_locked/lineage_scope.json": {
+      "expected_positive_fixtures": 88,
+      "fixtures": 116,
+      "interpretation": "This directory records the reproducible seed-lineage run. It is retained for expansion provenance and is not the main paper denominator.",
+      "lineage_not_main_denominator": true,
+      "main_workload": "BEP-Deep",
+      "negative_control_fixtures": 28,
+      "scope": "seed-lineage"
+    }
+  },
+  "problem_count": 0,
+  "problems": [],
+  "release_coding_validation_rows": 45,
+  "source_snapshot_rows": 15,
+  "status": "pass"
+}

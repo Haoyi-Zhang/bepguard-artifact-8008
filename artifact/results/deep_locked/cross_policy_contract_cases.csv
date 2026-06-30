@@ -1,0 +1,112 @@
+contract,state,passed,expected,actual
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=True
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,after=>before,before=True;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,after=>before,before=False;after=False
+C1_csp_meet_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,after=>before,before=False;after=False
+C2_coep_requires_resource_opt_in,"{""extra"": []}",True,coep_require_corp_blocks_cross_origin_resource,coep_require_corp_blocks_cross_origin_resource
+C2_coep_requires_resource_opt_in,"{""extra"": [{""name"": ""Cross-Origin-Resource-Policy"", ""value"": ""same-origin""}]}",True,coep_require_corp_blocks_cross_origin_resource,coep_require_corp_blocks_cross_origin_resource
+C2_coep_requires_resource_opt_in,"{""extra"": [{""name"": ""Cross-Origin-Resource-Policy"", ""value"": ""same-site""}]}",True,coep_require_corp_blocks_cross_origin_resource,coep_require_corp_blocks_cross_origin_resource
+C2_coep_requires_resource_opt_in,"{""extra"": [{""name"": ""Cross-Origin-Resource-Policy"", ""value"": ""cross-origin""}]}",True,none,none
+C2_coep_requires_resource_opt_in,"{""extra"": [{""name"": ""Access-Control-Allow-Origin"", ""value"": ""https://app.example""}]}",True,coep_require_corp_blocks_cross_origin_resource,coep_require_corp_blocks_cross_origin_resource
+C3_isolation_requires_joint_headers,"{""coep"": null, ""coop"": null, ""permissions"": null}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": null, ""coop"": null, ""permissions"": ""cross-origin-isolated=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": null, ""coop"": null, ""permissions"": ""geolocation=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""require-corp"", ""coop"": null, ""permissions"": null}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""require-corp"", ""coop"": null, ""permissions"": ""cross-origin-isolated=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""require-corp"", ""coop"": null, ""permissions"": ""geolocation=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""credentialless"", ""coop"": null, ""permissions"": null}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""credentialless"", ""coop"": null, ""permissions"": ""cross-origin-isolated=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""credentialless"", ""coop"": null, ""permissions"": ""geolocation=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": null, ""coop"": ""same-origin"", ""permissions"": null}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": null, ""coop"": ""same-origin"", ""permissions"": ""cross-origin-isolated=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": null, ""coop"": ""same-origin"", ""permissions"": ""geolocation=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""require-corp"", ""coop"": ""same-origin"", ""permissions"": null}",True,True,ok=True;issues=none
+C3_isolation_requires_joint_headers,"{""coep"": ""require-corp"", ""coop"": ""same-origin"", ""permissions"": ""cross-origin-isolated=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""require-corp"", ""coop"": ""same-origin"", ""permissions"": ""geolocation=()""}",True,True,ok=True;issues=none
+C3_isolation_requires_joint_headers,"{""coep"": ""credentialless"", ""coop"": ""same-origin"", ""permissions"": null}",True,True,ok=True;issues=none
+C3_isolation_requires_joint_headers,"{""coep"": ""credentialless"", ""coop"": ""same-origin"", ""permissions"": ""cross-origin-isolated=()""}",True,False,ok=False;issues=cross_origin_isolation_incomplete
+C3_isolation_requires_joint_headers,"{""coep"": ""credentialless"", ""coop"": ""same-origin"", ""permissions"": ""geolocation=()""}",True,True,ok=True;issues=none
+C4_hsts_preload_stronger_than_state,"{""hsts"": ""max-age=31536000""}",True,preload=>valid_state,preload=False;valid_state=True
+C4b_valid_hsts_not_preload_equivalent,"{""hsts"": ""max-age=31536000""}",True,hsts_preload_criteria_not_met,hsts_preload_criteria_not_met
+C4_hsts_preload_stronger_than_state,"{""hsts"": ""max-age=31536000; includeSubDomains""}",True,preload=>valid_state,preload=False;valid_state=True
+C4b_valid_hsts_not_preload_equivalent,"{""hsts"": ""max-age=31536000; includeSubDomains""}",True,hsts_preload_criteria_not_met,hsts_preload_criteria_not_met
+C4_hsts_preload_stronger_than_state,"{""hsts"": ""max-age=31536000; includeSubDomains; preload""}",True,preload=>valid_state,preload=True;valid_state=True
+C4_hsts_preload_stronger_than_state,"{""hsts"": ""max-age=0; includeSubDomains; preload""}",True,preload=>valid_state,preload=False;valid_state=False
+C4_hsts_preload_stronger_than_state,"{""hsts"": ""max-age=abc; includeSubDomains; preload""}",True,preload=>valid_state,preload=False;valid_state=False
+C5_csp_cannot_authorize_credentialed_cors,"{""csp"": ""script-src *""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+C5_csp_cannot_authorize_credentialed_cors,"{""csp"": ""script-src https://api.example""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+C5_csp_cannot_authorize_credentialed_cors,"{""csp"": ""default-src *""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+C6_permissions_feature_specificity,"{""requested"": ""geolocation""}",True,True,disabled=True;issues=permissions_policy_feature_disabled
+C6_permissions_feature_specificity,"{""requested"": ""camera""}",True,False,disabled=False;issues=none
+C6_permissions_feature_specificity,"{""requested"": ""cross-origin-isolated""}",True,False,disabled=False;issues=none

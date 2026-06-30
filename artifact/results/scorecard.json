@@ -1,0 +1,53 @@
+{
+  "interpretation": "A conservative scorecard summarizing paper novelty/rigor/relevance, artifact reproducibility, anti-overfit evidence, paper surface, and reference integrity. It is not a claim of acceptance; it is a self-assessment gate.",
+  "points_earned": 100,
+  "points_total": 100,
+  "problem_count": 0,
+  "problems": [],
+  "rows": [
+    {
+      "component": "novelty",
+      "earned": 20,
+      "evidence": "artifact/results/icse_criteria_closure_audit.json",
+      "points": 20,
+      "status": "pass"
+    },
+    {
+      "component": "rigor",
+      "earned": 20,
+      "evidence": "artifact/results/threat_closure_audit.json",
+      "points": 20,
+      "status": "pass"
+    },
+    {
+      "component": "reproducibility",
+      "earned": 20,
+      "evidence": "artifact/results/deliverable_trio_readiness_audit.json",
+      "points": 20,
+      "status": "pass"
+    },
+    {
+      "component": "anti_overfit",
+      "earned": 15,
+      "evidence": "artifact/results/deep_locked/benchmark_fingerprint_disjointness_audit.json",
+      "points": 15,
+      "status": "pass"
+    },
+    {
+      "component": "paper_surface",
+      "earned": 15,
+      "evidence": "artifact/results/paper_rhetoric_audit.json",
+      "points": 15,
+      "status": "pass"
+    },
+    {
+      "component": "reference_integrity",
+      "earned": 10,
+      "evidence": "artifact/results/reference_role_balance_audit.json",
+      "points": 10,
+      "status": "pass"
+    }
+  ],
+  "status": "pass",
+  "strict_assessment_score": 100.0
+}

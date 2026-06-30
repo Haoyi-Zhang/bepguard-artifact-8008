@@ -1,0 +1,172 @@
+{
+  "bib_entries": 72,
+  "body_pages_checked": 10,
+  "cited_keys": 72,
+  "interpretation": "Rendered-PDF audit for page density and page-boundary discipline; it checks release PDF shape and reference-count target after LaTeX compilation.",
+  "main_pages": 12,
+  "min_body_ink_bottom_fraction": 0.9053,
+  "page_10_ink_bottom_fraction": 0.9076,
+  "page_metrics": [
+    {
+      "height": 1320,
+      "ink_bbox": [
+        80,
+        91,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 1,
+      "text_excerpt": "BEPGuard: Proof-Carrying Evidence for Policy Intent Drift in Browser-Enforced Security Policy Engineering Anonymous Auth",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        80,
+        84,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 2,
+      "text_excerpt": "Explicit public intent claim Generated policy surface Browser-effective judgment Minimal conflict witness plus repair-pa",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        81,
+        89,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 3,
+      "text_excerpt": "TABLE I MOTIVATING WITNESS FAMILIES AND THE SEMANTIC SURFACE THEY EXERCISE. Intent claim Generated surface Browser-effec",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        81,
+        84,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 4,
+      "text_excerpt": "Public intent claim Generated policy surface BEP-IR object Effective judgement Minimal witness Repair-paired control sou",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        81,
+        86,
+        939,
+        1199
+      ],
+      "ink_bottom_fraction": 0.9083,
+      "page": 5,
+      "text_excerpt": "state/scope, embedder/resource relation, layer provenance, and feature target. Definition 2 (BEP-IR normalization). Norm",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        81,
+        78,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 6,
+      "text_excerpt": "Algorithm 1 Semantic conflict witness generation Require: admitted claims I, normalized policies P, contexts C, edges E ",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        80,
+        86,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 7,
+      "text_excerpt": "preserves the target issue and terminates in a payload with no single additional preserving deletion. Proof sketch. A de",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        80,
+        84,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 8,
+      "text_excerpt": "CSP-delivery CSP-source CSP-compose CSP-nonce CORS-share CORS-cache HSTS-state HSTS-scope COEP-CORP isolation Permission",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        81,
+        89,
+        939,
+        1195
+      ],
+      "ink_bottom_fraction": 0.9053,
+      "page": 9,
+      "text_excerpt": "TABLE IV VALIDATION LADDER AND CONTRASTIVE CONTROLS OVER BEP-DEEP/BEP-MAX. EACH LAYER CHECKS A DIFFERENT FAILURE MODE. P",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        81,
+        86,
+        939,
+        1198
+      ],
+      "ink_bottom_fraction": 0.9076,
+      "page": 10,
+      "text_excerpt": "TABLE V ABLATION LOSS BY SEMANTIC COMPONENT OVER BEP-DEEP POSITIVES. LARGER LOSS MEANS MORE POSITIVES DEPEND ON THE REMO",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        82,
+        87,
+        939,
+        1197
+      ],
+      "ink_bottom_fraction": 0.9068,
+      "page": 11,
+      "text_excerpt": "REFERENCES [1] W. W. A. S. W. Group, \u201cContent security policy level 3,\u201d W3C Working Draft, 2026. [Online]. Available: ht",
+      "width": 1020
+    },
+    {
+      "height": 1320,
+      "ink_bbox": [
+        82,
+        88,
+        501,
+        1057
+      ],
+      "ink_bottom_fraction": 0.8008,
+      "page": 12,
+      "text_excerpt": "[53] S. Calzavara, S. Roth, A. Rabitti, M. Backes, and B. Stock, \u201cA tale of two headers: A formal analysis of inconsiste",
+      "width": 1020
+    }
+  ],
+  "problem_count": 0,
+  "problems": [],
+  "references_start_page": 11,
+  "render_dpi": 120,
+  "status": "pass"
+}

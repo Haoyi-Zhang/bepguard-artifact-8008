@@ -1,0 +1,19 @@
+{
+  "bepguard_modules_imported": 90,
+  "generated_tests_by_module": {
+    "tests.test_clean_artifact_hygiene": 2,
+    "tests.test_locked_fixtures_generated": 972,
+    "tests.test_unittest_bridge": 0,
+    "tests.test_witness_certificates_generated": 418
+  },
+  "generated_tests_executed": 1392,
+  "interpretation": "Executes generated fixture and certificate tests without requiring pytest. This validates that the assessor can run the test surface with the Python standard library plus the released artifact package.",
+  "problem_count": 0,
+  "problems": [],
+  "pytest_dependency_required": false,
+  "python_files_compiled": 246,
+  "schema": "BEPGuardDependencyFreeTestHarness/v1",
+  "skipped_pytest_style_test_count": 0,
+  "skipped_pytest_style_tests": [],
+  "status": "pass"
+}

@@ -1,0 +1,27 @@
+{
+  "baseline_claims_without_fixture_coverage": 4,
+  "claim_fixture_coverage_max_all_claims": 124,
+  "claim_fixture_coverage_min_all_claims": 0,
+  "claim_rows": 45,
+  "claims_needing_action": 0,
+  "date": "2026-06-20",
+  "fixture_backed_claims": 26,
+  "fixture_manifest_rows": 972,
+  "fixture_rows": 972,
+  "fixtures_needing_action": 0,
+  "interpretation": "Deterministic traceability audit for source-grounded fixture construction; no human inter-rater agreement or prevalence claim is implied.",
+  "rule_rows": 35,
+  "rules_needing_action": 0,
+  "source_context_claims_without_fixture_coverage": 15,
+  "source_snapshot_rows": 15,
+  "status": "pass",
+  "unique_id_violations": {
+    "claims": {},
+    "fixtures": {},
+    "rules": {}
+  },
+  "unresolved_planned_claims": 0,
+  "validated_claims": 45,
+  "validated_fixtures": 972,
+  "validated_rules": 35
+}

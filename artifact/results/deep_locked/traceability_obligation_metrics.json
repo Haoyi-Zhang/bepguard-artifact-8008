@@ -1,0 +1,17 @@
+{
+  "bep_max_cases_passed": 4306,
+  "boundary_ladder_issue_classes": 25,
+  "certificate_failures": 0,
+  "failures": [],
+  "finite_state_mismatches": 0,
+  "independent_oracle_agreements": 972,
+  "interpretation": "Obligation-closure audit: each issue class must have positive witnesses, proof-carrying certificates, paired repair controls, repair obligations, minimality evidence, and validation-ladder support.",
+  "issue_classes": 25,
+  "issue_classes_passing_obligation_closure": 25,
+  "negative_control_certificates": 554,
+  "negative_controls": 554,
+  "positive_witnesses": 418,
+  "proof_carrying_positive_certificates": 418,
+  "semantic_mutants_killed": 28,
+  "status": "pass"
+}

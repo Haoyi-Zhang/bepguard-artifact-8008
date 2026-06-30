@@ -1,0 +1,27 @@
+{
+  "entries_checked": 72,
+  "interpretation": "Checks BibTeX class/venue/DOI metadata for the release cited set and published-version upgrades; it does not add or remove citations.",
+  "problem_count": 0,
+  "problems": [],
+  "published_version_checks": [
+    {
+      "doi": "10.1007/978-3-031-54129-2_27",
+      "key": "golinelli_nonce_2023",
+      "type": "inproceedings",
+      "venue": "Computer Security. ESORICS 2023 International Workshops"
+    },
+    {
+      "doi": "10.1007/978-3-031-80020-7_5",
+      "key": "kishnani_secure_headers_2024",
+      "type": "inproceedings",
+      "venue": "Information Systems Security"
+    },
+    {
+      "doi": "10.1191/1478088706qp063oa",
+      "key": "braun_clarke_thematic_2006",
+      "type": "article",
+      "venue": "Qualitative Research in Psychology"
+    }
+  ],
+  "status": "pass"
+}

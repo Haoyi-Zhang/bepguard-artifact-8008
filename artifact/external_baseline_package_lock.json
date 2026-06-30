@@ -1,0 +1,40 @@
+{
+  "cache_packaged": false,
+  "interpretation": "Public comparator packages are installed outside the released artifact for execution; only version/lock metadata and materialized outputs are released so node_modules and package-manager caches are not shipped.",
+  "node_modules_packaged": false,
+  "node_workdir_packaged": false,
+  "package_json_sha256": "800cca232d3c3135c968c17a5d3f3d3c18ecd9fa7c53997402443ab0da925bbc",
+  "package_lock_sha256": "0da57e3f9b2d64ec0f0e28d86c4d8537de9313d51175212df6a1f9fa4d73c944",
+  "packages": [
+    {
+      "license": "Apache-2.0",
+      "name": "csp_evaluator",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/google/csp-evaluator.git"
+      },
+      "version": "1.1.8"
+    },
+    {
+      "license": "MPL-2.0",
+      "name": "@mdn/mdn-http-observatory",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mdn/mdn-http-observatory.git"
+      },
+      "version": "1.6.2"
+    },
+    {
+      "license": "Apache-2.0",
+      "name": "@hint/hint-strict-transport-security",
+      "repository": {
+        "directory": "packages/hint-strict-transport-security",
+        "type": "git",
+        "url": "https://github.com/webhintio/hint.git"
+      },
+      "version": "3.0.23"
+    }
+  ],
+  "schema": "BEPGuardExternalPackageLock/v1",
+  "status": "pass"
+}

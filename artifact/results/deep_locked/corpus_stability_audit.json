@@ -1,0 +1,12 @@
+{
+  "interpretation": "Every locked fixture was replayed under three policy-irrelevant representation perturbations.  The gate guards against accidental dependence on irrelevant headers, unused context metadata, or flat header ordering.",
+  "locked_fixtures_checked": 972,
+  "negative_controls_checked": 554,
+  "neutral_modes": 3,
+  "neutral_replays": 2916,
+  "positive_fixtures_checked": 418,
+  "preserved_replays": 2916,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

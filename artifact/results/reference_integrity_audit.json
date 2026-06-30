@@ -1,0 +1,14 @@
+{
+  "bib_entries": 72,
+  "cited_keys": 72,
+  "entries_with_reference_hygiene_warnings": [],
+  "interpretation": "Reference integrity audit: cited keys, BibTeX entries, ledger rows, verification statuses, and procedural notes must align.",
+  "ledger_extra_keys": [],
+  "ledger_keys": 72,
+  "ledger_missing_cited_keys": [],
+  "ledger_non_source_verified": [],
+  "missing_bib_entries": [],
+  "problem_count": 0,
+  "status": "pass",
+  "uncited_bib_entries": []
+}

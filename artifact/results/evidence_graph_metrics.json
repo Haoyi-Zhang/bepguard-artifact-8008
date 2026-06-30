@@ -1,0 +1,22 @@
+{
+  "baseline_probe_status_counts": {
+    "available": 4118
+  },
+  "claims": 45,
+  "edge_count": 23925,
+  "fixtures": 972,
+  "graph_hash": "acfbc139729450c27c66283b67124af841122e8d25dbe7b14a83558914859132",
+  "interpretation": "Evidence-graph closure verifies that every positive witness has a navigable claim/rule/fixture/witness/certificate/repair path and every negative control has a clean certificate path; auxiliary benchmark and baseline probes are linked without entering the locked denominator.",
+  "metamorphic_cases_linked": 3954,
+  "negative_control_paths_verified": 554,
+  "node_count": 15182,
+  "paired_repairs": 418,
+  "positive_certificates": 418,
+  "positive_paths_verified": 418,
+  "positive_witnesses": 418,
+  "problem_count": 0,
+  "rules": 35,
+  "source_spans": 45,
+  "specbench_cases_linked": 4180,
+  "status": "pass"
+}

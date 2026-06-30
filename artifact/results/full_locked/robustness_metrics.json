@@ -1,0 +1,26 @@
+[
+  {
+    "expected_findings_detected": 88,
+    "expected_positive_fixtures": 88,
+    "fixtures": 116,
+    "negative_controls": 28,
+    "negative_controls_clean": 28,
+    "robustness_transform": "header_name_lowercase"
+  },
+  {
+    "expected_findings_detected": 88,
+    "expected_positive_fixtures": 88,
+    "fixtures": 116,
+    "negative_controls": 28,
+    "negative_controls_clean": 28,
+    "robustness_transform": "header_order_reversed"
+  },
+  {
+    "expected_findings_detected": 88,
+    "expected_positive_fixtures": 88,
+    "fixtures": 116,
+    "negative_controls": 28,
+    "negative_controls_clean": 28,
+    "robustness_transform": "directive_whitespace"
+  }
+]

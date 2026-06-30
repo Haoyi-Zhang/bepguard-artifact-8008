@@ -1,0 +1,12 @@
+{
+  "body_pages": "1-10",
+  "interpretation": "Strict rendered-PDF boundary audit: page 10 must remain body text, page 11 must start with the references heading, and no body-like prose may precede references on page 11.",
+  "main_pages": 12,
+  "page_10_ink_bottom_fraction": 0.9076,
+  "page_11_prefix": "REFERENCES [1] W. W. A. S. W. Group, \u201cContent security policy level 3,\u201d W3C Working Draft, 2026. [Online]. Available: https://www.w3.org/TR/CSP3/ [2] WHATWG, \u201cFetch standard,\u201d WHAT",
+  "page_12_prefix": "[53] S. Calzavara, S. Roth, A. Rabitti, M. Backes, and B. Stock, \u201cA tale of two headers: A formal analysis of inconsistent click-jacking protection on the web,\u201d in USENIX Security,",
+  "problem_count": 0,
+  "problems": [],
+  "references_only_pages": "11-12",
+  "status": "pass"
+}

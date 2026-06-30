@@ -1,0 +1,75 @@
+{
+  "interpretation": "Recomputes selected lightweight audits twice in one process and compares canonical hashes, guarding against hidden nondeterminism in evidence-facing validation gates.",
+  "problem_count": 0,
+  "problems": [],
+  "replay_units": 8,
+  "rows": [
+    {
+      "deterministic": true,
+      "first_hash": "7adc674f3df646b34d2b77f80f17dc010191e26d74edc3b3d36095a78537f5bf",
+      "second_hash": "7adc674f3df646b34d2b77f80f17dc010191e26d74edc3b3d36095a78537f5bf",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "corpus_stability"
+    },
+    {
+      "deterministic": true,
+      "first_hash": "63ead531d99d28ec268b99b1838aa0bb826d7914407fcda11d7299f5fad0e2dc",
+      "second_hash": "63ead531d99d28ec268b99b1838aa0bb826d7914407fcda11d7299f5fad0e2dc",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "decision_purity"
+    },
+    {
+      "deterministic": true,
+      "first_hash": "77db0f029ea8f082750bda824d51af81d2eb3b651a623286b1e4bd24831ed3f5",
+      "second_hash": "77db0f029ea8f082750bda824d51af81d2eb3b651a623286b1e4bd24831ed3f5",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "documentation_consistency"
+    },
+    {
+      "deterministic": true,
+      "first_hash": "7571cc3e66180a6c74760fc98317bbd587589252dbba2517c4ae766ad2ad10af",
+      "second_hash": "7571cc3e66180a6c74760fc98317bbd587589252dbba2517c4ae766ad2ad10af",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "evidence_cards"
+    },
+    {
+      "deterministic": true,
+      "first_hash": "8420ac6611dd580290903ffa7befbf31d02bba28ada179ca38595a94525e8a1a",
+      "second_hash": "8420ac6611dd580290903ffa7befbf31d02bba28ada179ca38595a94525e8a1a",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "issue_evidence_depth"
+    },
+    {
+      "deterministic": true,
+      "first_hash": "8fb2a1d8e3a22a19ca66be76db860545f0f9c436a44f2decc5db272925b72e7d",
+      "second_hash": "8fb2a1d8e3a22a19ca66be76db860545f0f9c436a44f2decc5db272925b72e7d",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "package_identity"
+    },
+    {
+      "deterministic": true,
+      "first_hash": "3a26ee09d76b6889b8d577961d66aa8adbd68f8605285a8bc3844bfc64dc07cf",
+      "second_hash": "3a26ee09d76b6889b8d577961d66aa8adbd68f8605285a8bc3844bfc64dc07cf",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "claim_rule_coverage"
+    },
+    {
+      "deterministic": true,
+      "first_hash": "fa65db4fa9968a8633e1f525d951072bf517662fa6f413bae259ba8ec1762f7d",
+      "second_hash": "fa65db4fa9968a8633e1f525d951072bf517662fa6f413bae259ba8ec1762f7d",
+      "status_first": "pass",
+      "status_second": "pass",
+      "unit": "witness_repair_bijection"
+    }
+  ],
+  "schema": "BEPGuardTwoPassDeterministicReplay/v1",
+  "stable_replays": 8,
+  "status": "pass"
+}

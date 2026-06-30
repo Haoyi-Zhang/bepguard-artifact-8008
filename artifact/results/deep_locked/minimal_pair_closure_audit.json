@@ -1,0 +1,10 @@
+{
+  "interpretation": "Per-issue minimal-pair closure: each issue class must have positives, matched controls, certificates, repairs, source-derived boundary pressure, mutation pressure, causal activation, and representation-invariant replays.",
+  "issue_classes_checked": 25,
+  "minimal_pair_obligations": 225,
+  "minimum_obligations_present": 9,
+  "obligations_per_issue": 9,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

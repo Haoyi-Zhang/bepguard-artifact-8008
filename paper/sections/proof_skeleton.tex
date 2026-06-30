@@ -1,0 +1,20 @@
+\begin{theorem}[Deterministic effective judgment]
+For a fixed admitted observation and locked rule table, normalization followed by $\mathsf{Eff}$ returns a unique judgment or $\unknown$.
+\end{theorem}
+\begin{proof}[Proof sketch]
+Header canonicalization, family dispatch, directive lookup, context normalization, and unknown guarding are applied in a fixed order. Each encoded family then uses a finite ordered rule: CSP delivery and fallback, CORS credentialed shareability, HSTS transport/state transition, embedding compatibility, isolation preconditions, or Permissions-Policy allowlist evaluation. No step contains nondeterministic choice.
+\end{proof}
+
+\begin{theorem}[Witness soundness and negative-control preservation]
+Every emitted witness in the locked fragment is backed by an admitted claim and a non-unknown contradictory judgment; a negative control whose expected action agrees with $\mathsf{Eff}$ emits no positive witness.
+\end{theorem}
+\begin{proof}[Proof sketch]
+Algorithm~\ref{alg:witness} ranges only over admitted claims and scoped locked observations. It emits only after $\mathsf{Eff}$ returns a non-unknown judgment and the issue-class contradiction predicate is true. For a matching negative control, that predicate is false, so the emission branch is unreachable.
+\end{proof}
+
+\begin{theorem}[One-deletion minimizer preservation]
+For a fixed oracle, target issue, and deletion operator set, minimization preserves the target issue and terminates in a payload with no single additional preserving deletion.
+\end{theorem}
+\begin{proof}[Proof sketch]
+A deletion is committed only after re-running the same oracle and observing the same target issue. Each committed deletion decreases a finite payload measure. Termination follows by finiteness, and the release sweep rejects all remaining single deletions.
+\end{proof}

@@ -1,0 +1,50 @@
+{
+  "checksum_manifest_rows": 608,
+  "denominator_check": {
+    "denominator_summary_workload": "BEP-Deep",
+    "fixtures": 972,
+    "negative_controls_clean": 554,
+    "positives_detected": 418
+  },
+  "excluded_self_updating_files": [
+    "artifact/checksum_manifest.csv",
+    "artifact/results/anonymity_audit.json",
+    "artifact/results/bibliographic_metadata_audit.json",
+    "artifact/results/clean_package_check.json",
+    "artifact/results/latex_source_integrity_audit.json",
+    "artifact/results/materialization_lineage_audit.json",
+    "artifact/results/pdf_source_compile_audit.json",
+    "artifact/results/protocol_amendment_integrity_audit.json",
+    "artifact/results/protocol_rq_consistency_audit.json",
+    "artifact/results/reference_integrity_audit.json",
+    "artifact/results/release_consistency_audit.json",
+    "artifact/results/release_language_integrity_audit.json",
+    "artifact/results/result_index.csv",
+    "artifact/results/validation_report_consistency_audit.json",
+    "artifact/results/validation_summary.json"
+  ],
+  "forbidden_transient_files": [],
+  "interpretation": "Release consistency audit over package structure, JSON parsability, checksum/index freshness, self-updating audit-result exclusions, absence of stale seed/stress-result duplicates and release-denominator summary closure, semantic-recomputation closure, and release validation metrics.",
+  "json_files_checked": 211,
+  "problem_count": 0,
+  "problems": [],
+  "result_index_rows": 270,
+  "self_updating_audit_results": [
+    "artifact/results/anonymity_audit.json",
+    "artifact/results/bibliographic_metadata_audit.json",
+    "artifact/results/clean_package_check.json",
+    "artifact/results/latex_source_integrity_audit.json",
+    "artifact/results/materialization_lineage_audit.json",
+    "artifact/results/pdf_source_compile_audit.json",
+    "artifact/results/protocol_amendment_integrity_audit.json",
+    "artifact/results/protocol_rq_consistency_audit.json",
+    "artifact/results/reference_integrity_audit.json",
+    "artifact/results/release_consistency_audit.json",
+    "artifact/results/release_language_integrity_audit.json",
+    "artifact/results/validation_report_consistency_audit.json",
+    "artifact/results/validation_summary.json"
+  ],
+  "stale_root_seed_result_duplicates": [],
+  "status": "pass",
+  "volatile_result_field_hits": []
+}

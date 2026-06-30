@@ -1,0 +1,43 @@
+{
+  "bibtex_command": "bibtex.original",
+  "details": {
+    "main_steps": [
+      {
+        "returncode": 0,
+        "step": "main-pdflatex-1"
+      },
+      {
+        "returncode": 0,
+        "step": "main-bibtex"
+      },
+      {
+        "returncode": 0,
+        "step": "main-pdflatex-2"
+      },
+      {
+        "returncode": 0,
+        "step": "main-pdflatex-3"
+      }
+    ],
+    "supplement_steps": [
+      {
+        "returncode": 0,
+        "step": "supplement-pdflatex-1"
+      },
+      {
+        "returncode": 0,
+        "step": "supplement-pdflatex-2"
+      },
+      {
+        "returncode": 0,
+        "step": "supplement-pdflatex-3"
+      }
+    ]
+  },
+  "interpretation": "Compiles paper sources in an isolated temporary directory and checks BibTeX resolution, page counts, reference-page boundary, undefined references, and overfull boxes without adding build products to the release package.",
+  "main_pages": 12,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "supplement_pages": 8
+}

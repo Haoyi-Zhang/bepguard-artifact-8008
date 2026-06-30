@@ -1,0 +1,19 @@
+{
+  "checked_files": [
+    "artifact/source_manifest.csv",
+    "artifact/external_resources.csv",
+    "artifact/corpus_lock.csv",
+    "artifact/coding_protocol.md",
+    "artifact/baseline_wrapper_protocol.md",
+    "artifact/source_snapshot_manifest.csv",
+    "artifact/source_span_ledger.csv",
+    "artifact/data/source_snapshot_manifest.csv",
+    "artifact/data/source_acquisition_log.csv",
+    "artifact/data/source_snapshot_ledger.csv"
+  ],
+  "interpretation": "Checks release-facing metadata for unfinished pre-lock/candidate language and obsolete plan files. It does not alter locked labels, metrics, or results.",
+  "problem_count": 0,
+  "problems": [],
+  "provisional_language_hits": [],
+  "status": "pass"
+}

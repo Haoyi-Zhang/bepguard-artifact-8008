@@ -1,0 +1,11 @@
+ablation,dropped_generation_rules,positive_denominator,detected_expected_witnesses,missed_expected_witnesses,detection_delta_vs_full,minimization_available,interpretation
+full_model,none,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_delivery_disposition,GF_CSP_REPORT_ONLY,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_csp_source_and_fallback,GF_CSP_SCRIPT,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_rendering_context,GF_CSP_NONCE_STATIC,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_cors_request_context,GF_CORS_CREDENTIALS;GF_CORS_REFLECT,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_browser_state_transition,GF_HSTS_STATE,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_cross_policy_edge,GF_COEP_CORP;GF_COOP_COEP_PERMISSIONS,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_permissions_policy_rule,GF_PERMISSIONS_POLICY,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+single_policy_only,GF_COEP_CORP;GF_COOP_COEP_PERMISSIONS;GF_CSP_NONCE_STATIC,88,88,0,0,yes,locked static component-removal ablation over generation-rule provenance
+no_minimizer,none,88,88,0,0,no,locked static component-removal ablation over generation-rule provenance

@@ -1,0 +1,24 @@
+{
+  "checks_by_obligation": {
+    "fixture_exists": 418,
+    "independent_minimality_frontier": 418,
+    "minimized_witness_row_exists": 418,
+    "negative_control_has_source_claim": 136,
+    "negative_control_recomputed_clean": 136,
+    "paired_repair_clean": 418,
+    "paired_repair_exists": 418,
+    "rules_admitted": 418,
+    "source_claims_admitted": 418,
+    "source_claims_cover_fixture": 418,
+    "stored_minimality_flags": 418,
+    "target_issue_recomputed": 418,
+    "witness_row_exists": 418
+  },
+  "failures": [],
+  "failures_by_obligation": {},
+  "interpretation": "Independent proof-carrying witness and negative-control certificate recheck over released fixtures, witnesses, repairs, source claims, rules, and recomputed semantic judgments.",
+  "obligation_kinds": 13,
+  "obligations_checked": 4870,
+  "problem_count": 0,
+  "status": "pass"
+}

@@ -1,0 +1,16 @@
+check,status,observed,expected
+extended_fixture_count,pass,554,554
+unique_fixture_ids,pass,554,554
+manifest_rows,pass,554,554
+summary_rows,pass,554,554
+positive_count,pass,418,418
+negative_count,pass,136,136
+semantic_positive_detection,pass,418,418
+negative_controls_clean,pass,136,136
+all_rows_pass,pass,{'pass': 554},{'pass': 554}
+semantic_preserving_mutations,pass,348,348
+repair_target_removed,pass,418,418
+repair_all_issues_removed,pass,418,418
+exposure_graph_has_issue_nodes,pass,25,>=21
+exposure_graph_has_claim_paths,pass,26,>0
+baseline_disagreement_recorded,pass,"['internal_header_presence_control', 'internal_hsts_preload_documented_criterion']",internal_header_presence_control present

@@ -1,0 +1,28 @@
+{
+  "interpretation": "Checks that the 70-80 reference set is role-balanced, cited, verified, and tied to paper claims rather than serving as citation padding.",
+  "minimum_role_counts": {
+    "DOC": 8,
+    "FW": 5,
+    "METH": 4,
+    "RW": 10,
+    "SE": 6,
+    "SPEC": 6,
+    "TOOL": 3
+  },
+  "problem_count": 0,
+  "problems": [],
+  "references_checked": 72,
+  "role_counts": {
+    "DOC": 15,
+    "FW": 7,
+    "ICSE": 1,
+    "METH": 8,
+    "RW": 14,
+    "SE": 8,
+    "SEC": 1,
+    "SETEST": 4,
+    "SPEC": 9,
+    "TOOL": 5
+  },
+  "status": "pass"
+}

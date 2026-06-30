@@ -1,0 +1,11 @@
+{
+  "decision_table_locked_agreements": 972,
+  "declarative_cases_checked": 5152,
+  "generated_oracle_scope": "static generated tests check released fixture/certificate consistency; independent correctness evidence comes from decision-table, declarative, and triangulation audits",
+  "generated_oracle_tests": 1390,
+  "interpretation": "Separates internal generated-test consistency from independent oracle evidence and verifies that the label-free declarative oracle does not import the operational evaluator or generated static oracle table.",
+  "oracle_pairwise_agreements": 2916,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

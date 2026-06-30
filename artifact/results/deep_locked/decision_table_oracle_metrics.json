@@ -1,0 +1,9 @@
+{
+  "finite_state_oracle_mismatches": 0,
+  "finite_states_checked": 351,
+  "independent_decision_rules": 25,
+  "interpretation": "Independent decision-table oracle cross-check; it validates the encoded fragment and workload labels, not full browser conformance.",
+  "locked_fixture_agreements": 972,
+  "locked_fixture_mismatches": 0,
+  "locked_fixtures_checked": 972
+}

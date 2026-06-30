@@ -1,0 +1,118 @@
+{
+  "cases_checked": 6,
+  "decision_table_judgment_agreements": 6,
+  "decision_table_selection_agreements": 6,
+  "interpretation": "Checks a source-grounded semantic micro-obligation outside the locked denominator; it adds validation burden but does not change BEP-Deep labels, counts, or baselines.",
+  "operational_judgment_agreements": 6,
+  "operational_selection_agreements": 6,
+  "problem_count": 0,
+  "problems": [],
+  "rows": [
+    {
+      "case_id": "script_elem_overrides_script_src_allow",
+      "decision_table_allowed": true,
+      "decision_table_sources": [
+        "https://cdn.example"
+      ],
+      "expected_allowed": true,
+      "expected_sources": [
+        "https://cdn.example"
+      ],
+      "operational_allowed": true,
+      "operational_sources": [
+        "https://cdn.example"
+      ],
+      "policy": "script-src 'self'; script-src-elem https://cdn.example; default-src 'none'",
+      "rationale": "most-specific script-src-elem must override a stricter script-src for script element requests"
+    },
+    {
+      "case_id": "script_elem_overrides_script_src_block",
+      "decision_table_allowed": false,
+      "decision_table_sources": [
+        "'none'"
+      ],
+      "expected_allowed": false,
+      "expected_sources": [
+        "'none'"
+      ],
+      "operational_allowed": false,
+      "operational_sources": [
+        "'none'"
+      ],
+      "policy": "script-src-elem 'none'; script-src https://cdn.example; default-src *",
+      "rationale": "script-src must not mask a stricter script-src-elem directive"
+    },
+    {
+      "case_id": "script_src_before_default_allow",
+      "decision_table_allowed": true,
+      "decision_table_sources": [
+        "https://cdn.example"
+      ],
+      "expected_allowed": true,
+      "expected_sources": [
+        "https://cdn.example"
+      ],
+      "operational_allowed": true,
+      "operational_sources": [
+        "https://cdn.example"
+      ],
+      "policy": "script-src https://cdn.example; default-src 'none'",
+      "rationale": "script-src is selected when script-src-elem is absent"
+    },
+    {
+      "case_id": "script_src_before_default_block",
+      "decision_table_allowed": false,
+      "decision_table_sources": [
+        "'self'"
+      ],
+      "expected_allowed": false,
+      "expected_sources": [
+        "'self'"
+      ],
+      "operational_allowed": false,
+      "operational_sources": [
+        "'self'"
+      ],
+      "policy": "script-src 'self'; default-src https://cdn.example",
+      "rationale": "default-src must not mask an explicit script-src directive"
+    },
+    {
+      "case_id": "default_src_fallback_allow",
+      "decision_table_allowed": true,
+      "decision_table_sources": [
+        "https://cdn.example"
+      ],
+      "expected_allowed": true,
+      "expected_sources": [
+        "https://cdn.example"
+      ],
+      "operational_allowed": true,
+      "operational_sources": [
+        "https://cdn.example"
+      ],
+      "policy": "default-src https://cdn.example",
+      "rationale": "default-src applies when both script-specific directives are absent"
+    },
+    {
+      "case_id": "no_directive_allows_by_fragment_default",
+      "decision_table_allowed": true,
+      "decision_table_sources": [
+        "*"
+      ],
+      "expected_allowed": true,
+      "expected_sources": [
+        "*"
+      ],
+      "operational_allowed": true,
+      "operational_sources": [
+        "*"
+      ],
+      "policy": "",
+      "rationale": "the encoded fragment has no blocking script directive when no source list is present"
+    }
+  ],
+  "rule_id": "R_CSP_DEFAULT_SRC_FALLBACK",
+  "source_claim_id": "CL_CSP_04",
+  "source_span": "CSP3 \u00a76.8.3 script-src-elem fallback list",
+  "status": "pass"
+}

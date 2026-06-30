@@ -1,0 +1,21 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  ybar,
+  width=\columnwidth,
+  height=3.9cm,
+  ylabel={Witnesses},
+  symbolic x coords={CSP-delivery,CSP-source,CSP-compose,CSP-nonce,CORS-share,CORS-cache,HSTS-state,HSTS-scope,COEP-CORP,isolation,Permissions},
+  xtick=data,
+  x tick label style={rotate=55, anchor=east, font=\tiny},
+  ymin=0,
+  nodes near coords,
+  nodes near coords style={font=\tiny},
+]
+\addplot table[x=issue,y=count] {figures/issue_distribution.dat};
+\end{axis}
+\end{tikzpicture}
+\caption{Semantic conflict witness distribution across BEP-Deep issue families.}
+\label{fig:witness-distribution}
+\end{figure}

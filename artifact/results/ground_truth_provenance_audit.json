@@ -1,0 +1,16 @@
+{
+  "admitted_source_claims": 45,
+  "fixture_source_links_checked": 972,
+  "human_label_scope": "no human inter-rater agreement is claimed; the artifact exposes source-span and rule-obligation closure for deterministic assessor inspection",
+  "interpretation": "Closes the ground-truth-circularity objection by checking that admitted claims, rules, source spans, and BEP-Deep fixture labels trace to public source records and stable hashes rather than to an opaque evaluator output.",
+  "label_basis": "public source spans plus semantic rule obligations; the operational evaluator is not used as the source of admitted claims or fixture labels",
+  "locked_fixtures": 972,
+  "negative_controls": 554,
+  "positive_fixtures": 418,
+  "problem_count": 0,
+  "problems": [],
+  "public_sources": 15,
+  "semantic_rules": 35,
+  "source_span_rows": 45,
+  "status": "pass"
+}

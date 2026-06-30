@@ -1,0 +1,23 @@
+{
+  "amendment_policy": "Any change to release RQs, denominator, expected labels, metrics, negative controls, ablations, or baseline scope requires a recorded protocol amendment before execution.",
+  "date": "2026-06-20",
+  "frozen_rqs": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4",
+    "RQ5"
+  ],
+  "lineage_not_main_denominator": true,
+  "locked_inputs": {
+    "corpus_claims_csv": "fa565205553d459fa010a8e71be6032f5222f15fa29314b4746832b192b9e9c6",
+    "fixture_manifest_csv": "cadb7169f07bf507d1d1bbd122340273ed78e406bdea1cc0ee4dec2db8c6afbb",
+    "full_fixtures_json": "aedb0a80a62786fa8bc5efc99bbb7d2322812b0dc4c2a89ba787ea610934d999",
+    "locked_fixtures_json": "aedb0a80a62786fa8bc5efc99bbb7d2322812b0dc4c2a89ba787ea610934d999",
+    "locked_full_fixtures_json": "aedb0a80a62786fa8bc5efc99bbb7d2322812b0dc4c2a89ba787ea610934d999",
+    "rule_to_source_ledger_csv": "54b6291f93a6f9169273da9d8f684af6fed836023c380ee413ac3e03f3528e91"
+  },
+  "main_workload": "BEP-Deep",
+  "scope": "seed-lineage materialization; the release BEP-Deep protocol lock is recorded separately",
+  "status": "seed_lineage_materialized"
+}

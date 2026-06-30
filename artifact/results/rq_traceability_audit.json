@@ -1,0 +1,36 @@
+{
+  "interpretation": "Each research question is checked against assessor-visible main-paper text and materialized result objects, reducing the risk that artifact work remains invisible or that paper claims drift away from executable evidence.",
+  "problem_count": 0,
+  "problems": [],
+  "research_questions_checked": 5,
+  "rows": [
+    {
+      "artifact_results_verified": 2,
+      "paper_tokens_verified": 3,
+      "rq": "RQ1"
+    },
+    {
+      "artifact_results_verified": 2,
+      "paper_tokens_verified": 3,
+      "rq": "RQ2"
+    },
+    {
+      "artifact_results_verified": 2,
+      "paper_tokens_verified": 3,
+      "rq": "RQ3"
+    },
+    {
+      "artifact_results_verified": 2,
+      "paper_tokens_verified": 3,
+      "rq": "RQ4"
+    },
+    {
+      "artifact_results_verified": 2,
+      "paper_tokens_verified": 3,
+      "rq": "RQ5"
+    }
+  ],
+  "rq_trace_obligations": 25,
+  "schema": "BEPGuardRQTraceability/v1",
+  "status": "pass"
+}

@@ -1,0 +1,18 @@
+{
+  "identifier_blind_replays": 4860,
+  "interpretation": "Fingerprint disjointness checks that benchmark-adjacent validation objects use fresh identifiers and exposes exact canonical overlaps with the locked denominator. The check prevents hidden reuse of locked fixture ids while allowing documented source-derived boundary controls.",
+  "locked_fixtures": 972,
+  "problem_count": 0,
+  "problems": [],
+  "rows_checked": 9586,
+  "schema": "BEPGuardBenchmarkFingerprintDisjointness/v1",
+  "specbench_cases": 4180,
+  "specbench_exact_locked_collisions": 0,
+  "specbench_unique_fingerprints": 3738,
+  "status": "pass",
+  "suite_rows": {
+    "causal_activation": 546,
+    "identifier_blind": 4860,
+    "specbench": 4180
+  }
+}

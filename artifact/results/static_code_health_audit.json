@@ -1,0 +1,19 @@
+{
+  "forbidden_token_hits": 0,
+  "interpretation": "All Python entry points and BEPGuard modules are parsed and byte-compiled without executing live services. The audit also rejects local paths, merge-conflict markers, work-in-progress residue, bytecode caches, and author-identifying repository strings.",
+  "main_guarded_scripts": 142,
+  "package_modules_checked": 96,
+  "parse_errors": 0,
+  "problem_count": 0,
+  "problems": [],
+  "pyc_files": 0,
+  "pycache_directories": 0,
+  "python_classes_checked": 30,
+  "python_files_checked": 243,
+  "python_functions_checked": 2437,
+  "python_lines_checked": 31482,
+  "schema": "BEPGuardStaticCodeHealth/v1",
+  "script_files_checked": 147,
+  "shebang_scripts": 139,
+  "status": "pass"
+}

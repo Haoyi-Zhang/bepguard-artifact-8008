@@ -1,0 +1,9 @@
+{
+  "base_still_triggers_issue": 418,
+  "certified_witnesses": 418,
+  "exact_header_subset_failures": [],
+  "exact_header_subset_minimal": 418,
+  "interpretation": "Minimality certificates for returned minimized witnesses; exactness is over header subsets, while directive/token checks are one-deletion based.",
+  "one_deletion_failures": [],
+  "one_deletion_minimal": 418
+}

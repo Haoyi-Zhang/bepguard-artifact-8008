@@ -1,0 +1,11 @@
+{
+  "failures": [],
+  "interpretation": "Generated oracle tests over every locked fixture and every proof-carrying positive witness certificate; no pytest or external service dependency.",
+  "modules_loaded": [
+    "tests.test_locked_fixtures_generated",
+    "tests.test_witness_certificates_generated"
+  ],
+  "problem_count": 0,
+  "status": "pass",
+  "tests_run": 1390
+}

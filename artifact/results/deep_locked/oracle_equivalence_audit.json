@@ -1,0 +1,13 @@
+{
+  "bep_deep_cases": 972,
+  "cases_checked": 5152,
+  "interpretation": "Oracle explanation-equivalence audit: expected, operational, and label-free declarative issue signatures must agree on every locked and SpecBench case; locked positive cases must also match their proof-carrying certificate issue.",
+  "issue_signatures_checked": 26,
+  "mismatches": 0,
+  "positive_certificate_crosschecks": 418,
+  "problem_count": 0,
+  "problems": [],
+  "schema": "BEPGuardOracleExplanationEquivalence/v1",
+  "specbench_cases": 4180,
+  "status": "pass"
+}

@@ -1,0 +1,13 @@
+{
+  "environment_artifact_version": "0.24.0",
+  "external_inference_api_required": false,
+  "gpu_required": false,
+  "interpretation": "Checks that package identity, Python package version, and environment lock agree and preserve the deterministic CPU-native/no-private-data boundary.",
+  "network_required_for_core_validation": false,
+  "package_name": "BEPGuard",
+  "package_version": "0.24.0",
+  "private_data_required": false,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

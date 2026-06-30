@@ -1,0 +1,9 @@
+{
+  "expected_positive_fixtures": 88,
+  "fixtures": 116,
+  "interpretation": "This directory records the reproducible seed-lineage run. It is retained for expansion provenance and is not the main paper denominator.",
+  "lineage_not_main_denominator": true,
+  "main_workload": "BEP-Deep",
+  "negative_control_fixtures": 28,
+  "scope": "seed-lineage"
+}

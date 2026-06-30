@@ -1,0 +1,9 @@
+{
+  "base_stress_fixtures": 554,
+  "clean_controls": 418,
+  "deep_locked_fixtures": 972,
+  "failures": [],
+  "interpretation": "Paired repaired fixtures are negative controls, not new public-web observations.",
+  "paired_repair_negative_controls": 418,
+  "target_removed": 418
+}

@@ -1,0 +1,8 @@
+{
+  "evidence_bindings": 42,
+  "interpretation": "Maps strict-assessor objections to independently materialized validation evidence; every row must be backed by existing passing audit outputs.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "threats_checked": 14
+}

@@ -1,0 +1,252 @@
+{
+  "finite_states_accounted": 33513,
+  "interpretation": "Proof-card audit converts every finite theorem obligation into a compact auditable claim/proof-kind/state-count record and checks that the cards exactly account for the executable theorem kernel.",
+  "kernel_states": 33513,
+  "kernel_theorems": 30,
+  "problem_count": 0,
+  "problems": [],
+  "proof_cards": [
+    {
+      "auditable_replay": true,
+      "card_id": "PC001",
+      "claim": "Adding an enforced CSP policy cannot authorize a script edge that one enforced member blocks.",
+      "finite_states": 16000,
+      "obligation": "csp_policy_meet_nonexpansion",
+      "proof_kind": "finite-product enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC002",
+      "claim": "Enforced CSP-policy conjunction is commutative and idempotent over the encoded source-list fragment.",
+      "finite_states": 16800,
+      "obligation": "csp_meet_commutativity_idempotence",
+      "proof_kind": "finite algebraic enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC003",
+      "claim": "Adding a source expression to one source list cannot remove an allowed script edge before policy meet is applied.",
+      "finite_states": 120,
+      "obligation": "csp_source_list_extension_monotonicity",
+      "proof_kind": "finite source-list enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC004",
+      "claim": "Script-element source selection follows script-src-elem, then script-src, then default-src, then the uncovered default.",
+      "finite_states": 6,
+      "obligation": "csp_directive_specificity",
+      "proof_kind": "case enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC005",
+      "claim": "A report-only CSP surface yields monitoring conflict under an enforcement intent but no enforced block judgment.",
+      "finite_states": 6,
+      "obligation": "csp_report_only_monitor_only",
+      "proof_kind": "executable witness enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC006",
+      "claim": "Credentialed CORS shareability is exact-origin plus byte-case-sensitive ACAC, and wildcard excludes credentials.",
+      "finite_states": 40,
+      "obligation": "cors_credentialed_shareability_table",
+      "proof_kind": "truth-table enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC007",
+      "claim": "A response with multiple ACAO values is not shareable in the encoded CORS fragment.",
+      "finite_states": 64,
+      "obligation": "cors_duplicate_acao_rejection",
+      "proof_kind": "truth-table enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC008",
+      "claim": "Dynamic ACAO requires an Origin discriminator; unrelated Vary fields do not repair the cache obligation.",
+      "finite_states": 15,
+      "obligation": "cors_dynamic_origin_cache_partition",
+      "proof_kind": "truth-table enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC009",
+      "claim": "Only an Origin token, not a substring, repairs dynamic ACAO cache partitioning.",
+      "finite_states": 18,
+      "obligation": "cors_vary_origin_tokenization",
+      "proof_kind": "token enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC010",
+      "claim": "HSTS processing partitions into insecure-delivery ignore, invalid-header ignore, zero-age clear, and valid-state cases.",
+      "finite_states": 10,
+      "obligation": "hsts_state_transition_partition",
+      "proof_kind": "executable state partition"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC011",
+      "claim": "The documented preload-control predicate is exactly max-age>=31536000 plus includeSubDomains plus preload in the encoded fragment.",
+      "finite_states": 28,
+      "obligation": "hsts_preload_criterion_boundary",
+      "proof_kind": "boundary enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC012",
+      "claim": "CORS response headers alone do not repair a no-cors COEP resource edge; compatible CORP repairs the no-cors edge.",
+      "finite_states": 16,
+      "obligation": "coep_cors_mode_separation",
+      "proof_kind": "request-mode enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC013",
+      "claim": "Cross-origin isolation preconditions require the encoded COOP/COEP pair and are disabled by an explicit Permissions-Policy denial.",
+      "finite_states": 48,
+      "obligation": "coop_coep_isolation_partition",
+      "proof_kind": "finite product enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC014",
+      "claim": "CORP scope is ordered same-origin <= same-site <= cross-origin over the fixture origin approximation.",
+      "finite_states": 12,
+      "obligation": "corp_scope_lattice",
+      "proof_kind": "finite scope enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC015",
+      "claim": "CORP same-site delegates exactly to the fixture same-site approximation.",
+      "finite_states": 20,
+      "obligation": "corp_same_site_consistency",
+      "proof_kind": "origin-pair enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC016",
+      "claim": "Empty allowlists deny a feature and wildcard/explicit external entries over-allow a denied origin in the encoded fragment.",
+      "finite_states": 5,
+      "obligation": "permissions_allowlist_boundary",
+      "proof_kind": "allowlist enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC017",
+      "claim": "A Permissions-Policy directive affects only its named feature in the encoded fragment.",
+      "finite_states": 64,
+      "obligation": "permissions_feature_independence",
+      "proof_kind": "feature-product enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC018",
+      "claim": "Append preserves fields, set replaces same-name fields, and remove deletes same-name fields before semantic evaluation.",
+      "finite_states": 3,
+      "obligation": "ordered_generation_layer_contract",
+      "proof_kind": "operator enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC019",
+      "claim": "A release remove absorbs same-name fields, a release set replaces same-name fields, and unrelated fields are preserved.",
+      "finite_states": 27,
+      "obligation": "ordered_layer_remove_set_absorption",
+      "proof_kind": "operator-product enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC020",
+      "claim": "Known encoded fragments execute without exception under irrelevant context extensions.",
+      "finite_states": 15,
+      "obligation": "known_fragment_totality",
+      "proof_kind": "execution-totality enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC021",
+      "claim": "Header-name canonicalization is idempotent over encoded policy fields.",
+      "finite_states": 6,
+      "obligation": "header_name_canonicalization_idempotence",
+      "proof_kind": "header-product enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC022",
+      "claim": "Policy header lookup is case-insensitive while preserving values.",
+      "finite_states": 9,
+      "obligation": "header_lookup_case_insensitivity",
+      "proof_kind": "header-product enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC023",
+      "claim": "Encoded CSP source expressions have exact wildcard, none, self, scheme, host, and subdomain boundaries.",
+      "finite_states": 120,
+      "obligation": "csp_source_expression_boundaries",
+      "proof_kind": "source-expression product enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC024",
+      "claim": "Report-only CSP fields neither enforce nor weaken an enforced CSP field in the encoded script-load fragment.",
+      "finite_states": 12,
+      "obligation": "report_only_does_not_weaken_enforced_csp",
+      "proof_kind": "field-composition enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC025",
+      "claim": "Wildcard ACAO remains shareable for non-credentialed modeled requests regardless of ACAC noise.",
+      "finite_states": 8,
+      "obligation": "cors_wildcard_noncredentialed_shareability",
+      "proof_kind": "truth-table enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC026",
+      "claim": "Duplicate ACAO rejection is invariant to header order.",
+      "finite_states": 6,
+      "obligation": "cors_duplicate_acao_order_invariance",
+      "proof_kind": "permutation enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC027",
+      "claim": "The HSTS preload predicate is robust to directive case/spacing and rejects below-threshold age.",
+      "finite_states": 4,
+      "obligation": "hsts_parser_case_spacing_boundary",
+      "proof_kind": "parser-boundary enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC028",
+      "claim": "CORP cross-origin is the top element of the encoded CORP scope lattice.",
+      "finite_states": 12,
+      "obligation": "corp_cross_origin_top_allows_all",
+      "proof_kind": "origin-pair enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC029",
+      "claim": "Ordering independent Permissions-Policy directives does not change the queried feature judgment.",
+      "finite_states": 4,
+      "obligation": "permissions_directive_order_commutativity",
+      "proof_kind": "directive-order enumeration"
+    },
+    {
+      "auditable_replay": true,
+      "card_id": "PC030",
+      "claim": "Headers outside the encoded policy vocabulary do not affect known fragment judgments.",
+      "finite_states": 15,
+      "obligation": "unknown_header_noninterference",
+      "proof_kind": "noninterference enumeration"
+    }
+  ],
+  "proof_cards_checked": 30,
+  "status": "pass"
+}

@@ -1,0 +1,16 @@
+{
+  "checks_by_contract": {
+    "L1_csp_meet_nonexpansion": 9,
+    "L2_hsts_preload_implies_hsts_state_strength": 25,
+    "L3_coep_cors_authorization_is_mode_gated": 64,
+    "L4_csp_cannot_broaden_credentialed_cors": 9,
+    "L5_permissions_policy_is_feature_specific": 15,
+    "L6_decision_meet_laws": 64
+  },
+  "contracts": 6,
+  "failed_cases": [],
+  "failures": 0,
+  "interpretation": "Finite decision-lattice proof suite for encoded BEP-IR policy fragments; this is a formal artifact-level contract, not a full browser conformance theorem.",
+  "states_checked": 186,
+  "status": "pass"
+}

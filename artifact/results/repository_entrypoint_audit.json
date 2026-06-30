@@ -1,0 +1,8 @@
+{
+  "entrypoints_checked": 6,
+  "interpretation": "Checks that assessors can find a small set of stable entrypoints instead of reverse-engineering a large script tree.",
+  "problem_count": 0,
+  "problems": [],
+  "reproduction_commands_seen": 101,
+  "status": "pass"
+}

@@ -1,0 +1,76 @@
+{
+  "applicable_counts": {
+    "artifact/results/deep_locked/external_baseline_fixture_probe.json": {
+      "csp_evaluator": 230,
+      "mdn_http_observatory_corp": 972,
+      "mdn_http_observatory_cors": 972,
+      "mdn_http_observatory_csp": 972,
+      "webhint_strict_transport_security": 972
+    },
+    "artifact/results/extended_locked/external_baseline_fixture_probe.json": {
+      "chromium_hstspreload": 118,
+      "csp_evaluator": 116,
+      "mdn_http_observatory": 1
+    },
+    "artifact/results/full_locked/external_baseline_fixture_probe.json": {
+      "chromium_hstspreload": 24,
+      "csp_evaluator": 24,
+      "mdn_http_observatory": 1
+    }
+  },
+  "canonical_statuses": [
+    "available",
+    "error",
+    "excluded",
+    "not_applicable",
+    "unavailable",
+    "unsupported"
+  ],
+  "external_baselines": [
+    "chromium_hstspreload",
+    "csp_evaluator",
+    "mdn_http_observatory",
+    "mdn_http_observatory_corp",
+    "mdn_http_observatory_cors",
+    "mdn_http_observatory_csp",
+    "webhint_strict_transport_security"
+  ],
+  "files_checked": [
+    "artifact/results/full_locked/external_baseline_fixture_probe.json",
+    "artifact/results/extended_locked/external_baseline_fixture_probe.json",
+    "artifact/results/deep_locked/external_baseline_fixture_probe.json",
+    "artifact/results/full_locked/external_baseline_availability.json",
+    "artifact/results/extended_locked/external_baseline_availability.json",
+    "artifact/results/deep_locked/external_baseline_availability.json",
+    "artifact/results/full_locked/full_baseline_comparison.csv",
+    "artifact/results/extended_locked/full_baseline_comparison.csv",
+    "artifact/results/deep_locked/full_baseline_comparison.csv"
+  ],
+  "interpretation": "Checks that external baselines are wrapped under a canonical status contract, are probed at BEP-Deep scope, and are not replaced by project-internal logic when unavailable.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "status_counts": {
+    "artifact/results/deep_locked/external_baseline_fixture_probe.json": {
+      "csp_evaluator:available": 230,
+      "mdn_http_observatory_corp:available": 972,
+      "mdn_http_observatory_cors:available": 972,
+      "mdn_http_observatory_csp:available": 972,
+      "webhint_strict_transport_security:available": 972
+    },
+    "artifact/results/extended_locked/external_baseline_fixture_probe.json": {
+      "chromium_hstspreload:not_applicable": 436,
+      "chromium_hstspreload:unavailable": 118,
+      "csp_evaluator:not_applicable": 438,
+      "csp_evaluator:unavailable": 116,
+      "mdn_http_observatory:unavailable": 1
+    },
+    "artifact/results/full_locked/external_baseline_fixture_probe.json": {
+      "chromium_hstspreload:not_applicable": 92,
+      "chromium_hstspreload:unavailable": 24,
+      "csp_evaluator:not_applicable": 92,
+      "csp_evaluator:unavailable": 24,
+      "mdn_http_observatory:unavailable": 1
+    }
+  }
+}

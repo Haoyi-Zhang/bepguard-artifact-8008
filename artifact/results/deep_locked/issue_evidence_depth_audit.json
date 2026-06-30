@@ -1,0 +1,11 @@
+{
+  "interpretation": "Per-issue evidence-depth audit: every drift class must be supported by locked positives, intent-matched controls, certificate parity, repair parity, source-derived SpecBench pressure, mutation pressure, shadow replay, and identifier-blind replay. External comparator rows are reported as contrastive evidence, not required labels.",
+  "issue_classes_checked": 25,
+  "issue_evidence_obligations": 200,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "total_killed_mutants": 600,
+  "total_locked_positives": 418,
+  "total_specbench_positive_cases": 3420
+}

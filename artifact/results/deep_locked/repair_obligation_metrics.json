@@ -1,0 +1,11 @@
+{
+  "all_modeled_issues_removed": 418,
+  "change_scope_ok": 418,
+  "failures": [],
+  "intent_preserved": 418,
+  "interpretation": "Repair validation checks target removal, all-modeled-issue removal, intent/source preservation, and issue-specific change scope; it is not deployment advice.",
+  "parent_triggers_target": 418,
+  "repair_pairs_checked": 418,
+  "source_preserved": 418,
+  "target_removed": 418
+}

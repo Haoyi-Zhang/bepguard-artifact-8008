@@ -1,0 +1,42 @@
+{
+  "amendment": "AM-001",
+  "base_locked_fixtures": 116,
+  "expected_issue_counts": {
+    "coep_require_corp_blocks_cross_origin_resource": 24,
+    "corp_same_site_allows_cross_origin_same_site": 6,
+    "cors_acac_case_sensitive_not_shareable": 6,
+    "cors_duplicate_acao_not_shareable": 6,
+    "cors_dynamic_origin_missing_vary": 24,
+    "cors_dynamic_origin_without_vary": 6,
+    "cors_intended_credentialed_share_blocked": 24,
+    "cors_reflected_origin_with_credentials": 24,
+    "cross_origin_isolation_incomplete": 24,
+    "csp_conjunctive_policy_composition_blocks_required_script": 32,
+    "csp_effective_script_allowance": 32,
+    "csp_frame_ancestors_meta_delivery_unsupported": 6,
+    "csp_frame_ancestors_report_only_not_enforced": 6,
+    "csp_multiple_policy_overblocks_trusted_script": 6,
+    "csp_report_only_not_enforced": 24,
+    "hsts_header_not_honored_over_http": 24,
+    "hsts_invalid_max_age_ignored": 6,
+    "hsts_missing_include_subdomains": 6,
+    "hsts_policy_cleared_by_zero_max_age": 24,
+    "hsts_preload_criteria_not_met": 6,
+    "hsts_subdomain_scope_not_covered": 24,
+    "layered_header_override_drops_enforcement": 24,
+    "nonce_csp_static_render_incompatibility": 24,
+    "none": 136,
+    "permissions_policy_feature_disabled": 24,
+    "permissions_policy_feature_overallowed": 6
+  },
+  "expected_positive_fixtures": 418,
+  "extended_fixtures": 554,
+  "interpretation": "Protocol-amended deterministic stress workload; not a live-web prevalence sample.",
+  "mutation_operator_classes": {
+    "locked_seed": 116,
+    "negative_control": 24,
+    "new_semantic_edge": 66,
+    "semantic_preserving": 348
+  },
+  "negative_controls": 136
+}

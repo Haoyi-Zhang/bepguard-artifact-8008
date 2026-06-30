@@ -1,0 +1,28 @@
+{
+  "allowed_actions": [
+    "invalid_input",
+    "manual_review",
+    "not_evaluated",
+    "unsupported_scope"
+  ],
+  "boundary_case_ratio_to_locked_denominator": 0.1029,
+  "boundary_cases": 100,
+  "boundary_families": [
+    "ambiguous_intent",
+    "browser_divergence",
+    "deployment_chain_unknown",
+    "external_state_dependency",
+    "malformed_header",
+    "multiheader_interaction_unmodeled",
+    "non_http_policy",
+    "partial_policy_information",
+    "runtime_mutation",
+    "source_conflict",
+    "unmodeled_directive"
+  ],
+  "interpretation": "Explicit non-denominator boundary catalog. These cases are not hidden failures or additional positives/negatives; they document unsupported, ambiguous, malformed, runtime-dependent, or browser-divergent surfaces that BEPGuard should report as manual-review or out-of-scope.",
+  "locked_denominator_fixture_overlap": 0,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

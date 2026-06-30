@@ -1,0 +1,10 @@
+{
+  "forbidden_patterns_checked": 15,
+  "interpretation": "Checks the text extracted from the compiled PDFs for process traces, unresolved references, and required research-surface terms.",
+  "pdfs_checked": 2,
+  "problem_count": 0,
+  "problems": [],
+  "required_main_tokens": 4,
+  "status": "pass",
+  "visible_pages_estimated": 22
+}

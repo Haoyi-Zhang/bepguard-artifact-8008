@@ -1,0 +1,166 @@
+invariant,state,passed,expected,actual
+I1_report_only_nonblocking,"{""policy"": ""default-src 'self'""}",True,csp_report_only_not_enforced,csp_report_only_not_enforced
+I1_report_only_nonblocking,"{""policy"": ""script-src 'none'""}",True,csp_report_only_not_enforced,csp_report_only_not_enforced
+I1_report_only_nonblocking,"{""policy"": ""script-src https://trusted.example""}",True,csp_report_only_not_enforced,csp_report_only_not_enforced
+I1_report_only_nonblocking,"{""policy"": ""default-src *""}",True,csp_report_only_not_enforced,csp_report_only_not_enforced
+I2_csp_fallback_priority,"{""policy"": ""default-src 'self'"", ""resource"": ""https://cdn.example""}",True,False,False
+I2_csp_fallback_priority,"{""policy"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,True,True
+I2_csp_fallback_priority,"{""policy"": ""default-src *; script-src 'self'"", ""resource"": ""https://cdn.example""}",True,False,False
+I2_csp_fallback_priority,"{""policy"": ""default-src 'none'; script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,True,True
+I2_csp_fallback_priority,"{""policy"": ""script-src 'none'"", ""resource"": ""https://cdn.example""}",True,False,False
+I2_csp_fallback_priority,"{""policy"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,True,True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src *"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src https://cdn.example"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""script-src 'self'"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src 'none'"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=False;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src https://cdn.example"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""script-src 'self'"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src 'none'"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=False
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src *"", ""resource"": ""https://app.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src *"", ""resource"": ""https://cdn.example""}",True,both=>single,single=True;both=True
+I3_csp_conjunctive_nonexpansion,"{""p1"": ""default-src *"", ""p2"": ""default-src *"", ""resource"": ""https://evil.example""}",True,both=>single,single=True;both=True
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""*"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""*"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""*"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""*"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""*"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""*"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""*"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""*"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""$ORIGIN"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""$ORIGIN"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""$ORIGIN"", ""credentials"": ""include""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""$ORIGIN"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""$ORIGIN"", ""credentials"": ""include""}",True,cors_acac_case_sensitive_not_shareable,cors_acac_case_sensitive_not_shareable
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""$ORIGIN"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""$ORIGIN"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""$ORIGIN"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""https://api.example"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""https://api.example"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""https://api.example"", ""credentials"": ""include""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""https://api.example"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""https://api.example"", ""credentials"": ""include""}",True,cors_acac_case_sensitive_not_shareable,cors_acac_case_sensitive_not_shareable
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""https://api.example"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""https://api.example"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""https://api.example"", ""credentials"": ""omit""}",True,none,none
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""https://other.example"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": null, ""acao"": ""https://other.example"", ""credentials"": ""omit""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""https://other.example"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""true"", ""acao"": ""https://other.example"", ""credentials"": ""omit""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""https://other.example"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""True"", ""acao"": ""https://other.example"", ""credentials"": ""omit""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""https://other.example"", ""credentials"": ""include""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I4_cors_credentialed_shareability,"{""acac"": ""FALSE"", ""acao"": ""https://other.example"", ""credentials"": ""omit""}",True,cors_intended_credentialed_share_blocked,cors_intended_credentialed_share_blocked
+I5_cors_duplicate_acao_rejected,{},True,cors_duplicate_acao_not_shareable,cors_duplicate_acao_not_shareable
+I6_cors_dynamic_origin_vary,"{""vary"": null}",True,cors_dynamic_origin_missing_vary,cors_dynamic_origin_missing_vary
+I6_cors_dynamic_origin_vary,"{""vary"": ""Accept-Encoding""}",True,cors_dynamic_origin_missing_vary,cors_dynamic_origin_missing_vary
+I6_cors_dynamic_origin_vary,"{""vary"": ""Origin""}",True,none,none
+I6_cors_dynamic_origin_vary,"{""vary"": ""Accept-Encoding, Origin""}",True,none,none
+I7_hsts_transport_and_state,"{""scheme"": ""http"", ""value"": ""max-age=31536000""}",True,hsts_header_not_honored_over_http,hsts_header_not_honored_over_http
+I7_hsts_transport_and_state,"{""scheme"": ""http"", ""value"": ""max-age=0""}",True,hsts_header_not_honored_over_http,hsts_header_not_honored_over_http
+I7_hsts_transport_and_state,"{""scheme"": ""http"", ""value"": ""max-age=abc""}",True,hsts_header_not_honored_over_http,hsts_header_not_honored_over_http
+I7_hsts_transport_and_state,"{""scheme"": ""http"", ""value"": ""max-age=31536000; includeSubDomains""}",True,hsts_header_not_honored_over_http,hsts_header_not_honored_over_http
+I7_hsts_transport_and_state,"{""scheme"": ""http"", ""value"": ""max-age=31536000; includeSubDomains; preload""}",True,hsts_header_not_honored_over_http,hsts_header_not_honored_over_http
+I7_hsts_transport_and_state,"{""scheme"": ""https"", ""value"": ""max-age=31536000""}",True,none,none
+I7_hsts_transport_and_state,"{""scheme"": ""https"", ""value"": ""max-age=0""}",True,hsts_policy_cleared_by_zero_max_age,hsts_policy_cleared_by_zero_max_age
+I7_hsts_transport_and_state,"{""scheme"": ""https"", ""value"": ""max-age=abc""}",True,hsts_invalid_max_age_ignored,hsts_invalid_max_age_ignored
+I7_hsts_transport_and_state,"{""scheme"": ""https"", ""value"": ""max-age=31536000; includeSubDomains""}",True,none,none
+I7_hsts_transport_and_state,"{""scheme"": ""https"", ""value"": ""max-age=31536000; includeSubDomains; preload""}",True,none,none
+I8_hsts_preload_criterion,"{""value"": ""max-age=31536000""}",True,hsts_preload_criteria_not_met,hsts_preload_criteria_not_met
+I8_hsts_preload_criterion,"{""value"": ""max-age=0""}",True,hsts_preload_criteria_not_met,hsts_preload_criteria_not_met
+I8_hsts_preload_criterion,"{""value"": ""max-age=abc""}",True,hsts_preload_criteria_not_met,hsts_preload_criteria_not_met
+I8_hsts_preload_criterion,"{""value"": ""max-age=31536000; includeSubDomains""}",True,hsts_preload_criteria_not_met,hsts_preload_criteria_not_met
+I8_hsts_preload_criterion,"{""value"": ""max-age=31536000; includeSubDomains; preload""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": null, ""mode"": ""no-cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": null, ""mode"": ""cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": null, ""mode"": ""no-cors"", ""resource"": ""https://cdn.example""}",True,coep_require_corp_blocks_cross_origin_resource,coep_require_corp_blocks_cross_origin_resource
+I9_coep_corp_cors_embedding,"{""corp"": null, ""mode"": ""cors"", ""resource"": ""https://cdn.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""same-origin"", ""mode"": ""no-cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""same-origin"", ""mode"": ""cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""same-origin"", ""mode"": ""no-cors"", ""resource"": ""https://cdn.example""}",True,coep_require_corp_blocks_cross_origin_resource,coep_require_corp_blocks_cross_origin_resource
+I9_coep_corp_cors_embedding,"{""corp"": ""same-origin"", ""mode"": ""cors"", ""resource"": ""https://cdn.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""same-site"", ""mode"": ""no-cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""same-site"", ""mode"": ""cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""same-site"", ""mode"": ""no-cors"", ""resource"": ""https://cdn.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""same-site"", ""mode"": ""cors"", ""resource"": ""https://cdn.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""cross-origin"", ""mode"": ""no-cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""cross-origin"", ""mode"": ""cors"", ""resource"": ""https://app.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""cross-origin"", ""mode"": ""no-cors"", ""resource"": ""https://cdn.example""}",True,none,none
+I9_coep_corp_cors_embedding,"{""corp"": ""cross-origin"", ""mode"": ""cors"", ""resource"": ""https://cdn.example""}",True,none,none
+I10_permissions_disable,"{""value"": ""geolocation=()""}",True,permissions_policy_feature_disabled,permissions_policy_feature_disabled
+I11_permissions_overallow,"{""value"": ""geolocation=()""}",True,none,none
+I10_permissions_disable,"{""value"": ""geolocation=(self)""}",True,none,none
+I11_permissions_overallow,"{""value"": ""geolocation=(self)""}",True,none,none
+I10_permissions_disable,"{""value"": ""geolocation=(*)""}",True,none,none
+I11_permissions_overallow,"{""value"": ""geolocation=(*)""}",True,permissions_policy_feature_overallowed,permissions_policy_feature_overallowed
+I10_permissions_disable,"{""value"": ""camera=()""}",True,none,none
+I11_permissions_overallow,"{""value"": ""camera=()""}",True,none,none
+I12_ordered_layer_composition,"{""layers"": [{""headers"": [{""name"": ""Content-Security-Policy"", ""value"": ""script-src *""}], ""layer"": ""framework"", ""op"": ""append""}, {""headers"": [{""name"": ""Content-Security-Policy"", ""value"": """"}], ""layer"": ""proxy"", ""op"": ""remove""}]}",True,[],[]
+I12_ordered_layer_composition,"{""layers"": [{""headers"": [{""name"": ""Content-Security-Policy"", ""value"": ""script-src *""}], ""layer"": ""framework"", ""op"": ""append""}, {""headers"": [{""name"": ""Content-Security-Policy"", ""value"": ""script-src 'none'""}], ""layer"": ""route"", ""op"": ""append""}]}",True,"[""script-src *"", ""script-src 'none'""]","[""script-src *"", ""script-src 'none'""]"
+I12_ordered_layer_composition,"{""layers"": [{""headers"": [{""name"": ""Strict-Transport-Security"", ""value"": ""max-age=0""}], ""layer"": ""framework"", ""op"": ""append""}, {""headers"": [{""name"": ""Strict-Transport-Security"", ""value"": ""max-age=31536000""}], ""layer"": ""proxy"", ""op"": ""set""}]}",True,"[""max-age=31536000""]","[""max-age=31536000""]"
+I13_unknown_is_not_positive,{},True,none,none

@@ -1,0 +1,17 @@
+{
+  "edit_count_histogram": {
+    "1": 120,
+    "2": 266,
+    "3": 32
+  },
+  "interpretation": "Paired repairs are checked as local semantic deltas over headers, generated layers, and request context while preserving source claim and intent fields. Label-only or broad rewrites fail this gate.",
+  "max_edit_count": 3,
+  "mean_edit_count": 1.7895,
+  "problem_count": 0,
+  "problems": [],
+  "protected_source_and_intent_preserved": 418,
+  "repair_pairs_checked": 418,
+  "repairs_clean": 418,
+  "status": "pass",
+  "target_issues_removed": 418
+}

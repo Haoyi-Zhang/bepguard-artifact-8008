@@ -1,0 +1,43 @@
+{
+  "claim_cards": 45,
+  "digest_inputs": 6,
+  "evidence_cards": 418,
+  "interpretation": "Provides a stable digest over the core source-claim, evidence-card, repair, graph, and reference surfaces so late-stage edits cannot silently drift the evidence pack.",
+  "items": [
+    {
+      "bytes": 608,
+      "path": "artifact/results/deep_locked/source_claim_trace_audit.json",
+      "sha256": "06c02b5c9ce21621fa3cc8bf839b504cc899eb883ed95fb4d2c2af8733c4e4b0"
+    },
+    {
+      "bytes": 504843,
+      "path": "artifact/results/deep_locked/evidence_cards.json",
+      "sha256": "5e4de7db41c8d7d5293be6b015fcba5a657b39ca9b7afd420ee988457307b41a"
+    },
+    {
+      "bytes": 473,
+      "path": "artifact/results/deep_locked/repair_compactness_audit.json",
+      "sha256": "275e0ff52f9d14d905d857aa34cc4e268543eccba24826c6749b9f6b86d67a97"
+    },
+    {
+      "bytes": 841,
+      "path": "artifact/results/evidence_graph_metrics.json",
+      "sha256": "a3ac62dcd8f15eb5a821fde0cfbdcfbb63ab241a2f4b2d874f5d4a5c2845492a"
+    },
+    {
+      "bytes": 24537,
+      "path": "artifact/reference_ledger.csv",
+      "sha256": "6764220424a9779f61bc76cbc9e11aff6fc5ba8517f506265cb895b7e59e98e3"
+    },
+    {
+      "bytes": 20691,
+      "path": "paper/references.bib",
+      "sha256": "09508bd2aec0b1f39d1aa8b0ac26bf12f7d5b0f03901578957e4c45c0c8f8907"
+    }
+  ],
+  "problem_count": 0,
+  "problems": [],
+  "release_evidence_digest": "3c5e97498eb3106620f19da273e43c08ef6c58c750d193faea2034401d85b7ee",
+  "repair_pairs": 418,
+  "status": "pass"
+}

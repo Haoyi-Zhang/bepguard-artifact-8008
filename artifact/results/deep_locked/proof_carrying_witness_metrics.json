@@ -1,0 +1,11 @@
+{
+  "certificates_generated": 418,
+  "certificates_verified": 418,
+  "decision_table_backed": 418,
+  "failures": [],
+  "interpretation": "Proof-carrying witness certificates bind each positive witness to source claims, semantic rules, independent decision-table support, a paired repair negative control, minimality, and repair obligations.",
+  "minimality_backed": 418,
+  "paired_repair_backed": 418,
+  "positive_witnesses": 418,
+  "repair_obligation_backed": 418
+}

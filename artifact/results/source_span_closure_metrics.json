@@ -1,0 +1,33 @@
+{
+  "claim_types": {
+    "developer_doc": 6,
+    "framework_doc": 18,
+    "normative": 17,
+    "tool_doc": 4
+  },
+  "claims": 45,
+  "claims_resolving_to_snapshot_manifest": 45,
+  "claims_with_exactly_one_source_span_row": 45,
+  "duplicate_or_missing_span_claims": 0,
+  "interpretation": "Source-span closure links every admitted public claim to exactly one recorded source span and one source snapshot record; it is a traceability audit, not a public-web prevalence claim.",
+  "orphan_source_span_rows": 0,
+  "policy_families": {
+    "COEP/CORP/CORS": 2,
+    "COEP/framework": 1,
+    "COOP": 2,
+    "CORS": 4,
+    "CORS/cache": 1,
+    "CORS/framework": 3,
+    "CSP": 7,
+    "CSP/framework": 10,
+    "HSTS": 3,
+    "HSTS/framework": 3,
+    "HSTS/preload": 1,
+    "Layered policy composition": 2,
+    "Permissions-Policy": 2,
+    "baseline": 4
+  },
+  "source_manifest_rows": 15,
+  "source_span_rows": 45,
+  "status": "pass"
+}

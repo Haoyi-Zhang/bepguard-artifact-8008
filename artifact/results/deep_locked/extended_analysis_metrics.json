@@ -1,0 +1,134 @@
+{
+  "baseline_disagreement": {
+    "internal_header_presence_control": {
+      "applicable_pairs": 972,
+      "baseline_only_flags_on_negative_controls": 0,
+      "disagreements": 322,
+      "semantic_positive_missed_by_baseline": 322
+    },
+    "internal_hsts_preload_documented_criterion": {
+      "applicable_pairs": 124,
+      "baseline_only_flags_on_negative_controls": 62,
+      "disagreements": 62,
+      "semantic_positive_missed_by_baseline": 0
+    }
+  },
+  "expected_positive_fixtures": 418,
+  "family_status_counts": {
+    "COEP/CORP/CORS": {
+      "pass": 64
+    },
+    "COOP/COEP/Permissions-Policy": {
+      "pass": 56
+    },
+    "CORP": {
+      "pass": 16
+    },
+    "CORS": {
+      "pass": 92
+    },
+    "CORS/cache": {
+      "pass": 68
+    },
+    "CORS/framework": {
+      "pass": 48
+    },
+    "CSP": {
+      "pass": 128
+    },
+    "CSP/composition": {
+      "pass": 16
+    },
+    "CSP/framework": {
+      "pass": 48
+    },
+    "CSP/framing": {
+      "pass": 28
+    },
+    "HSTS": {
+      "pass": 124
+    },
+    "HSTS/framework": {
+      "pass": 56
+    },
+    "HSTS/preload": {
+      "pass": 16
+    },
+    "HSTS/subdomains": {
+      "pass": 12
+    },
+    "Layered policy composition": {
+      "pass": 128
+    },
+    "Permissions-Policy": {
+      "pass": 72
+    }
+  },
+  "fixtures": 972,
+  "interpretation": "Protocol-amended deterministic stress-workload analysis; not live-web prevalence.",
+  "issue_counts": {
+    "coep_require_corp_blocks_cross_origin_resource": 24,
+    "corp_same_site_allows_cross_origin_same_site": 6,
+    "cors_acac_case_sensitive_not_shareable": 6,
+    "cors_duplicate_acao_not_shareable": 6,
+    "cors_dynamic_origin_missing_vary": 24,
+    "cors_dynamic_origin_without_vary": 6,
+    "cors_intended_credentialed_share_blocked": 24,
+    "cors_reflected_origin_with_credentials": 24,
+    "cross_origin_isolation_incomplete": 24,
+    "csp_conjunctive_policy_composition_blocks_required_script": 32,
+    "csp_effective_script_allowance": 32,
+    "csp_frame_ancestors_meta_delivery_unsupported": 6,
+    "csp_frame_ancestors_report_only_not_enforced": 6,
+    "csp_multiple_policy_overblocks_trusted_script": 6,
+    "csp_report_only_not_enforced": 24,
+    "hsts_header_not_honored_over_http": 24,
+    "hsts_invalid_max_age_ignored": 6,
+    "hsts_missing_include_subdomains": 6,
+    "hsts_policy_cleared_by_zero_max_age": 24,
+    "hsts_preload_criteria_not_met": 6,
+    "hsts_subdomain_scope_not_covered": 24,
+    "layered_header_override_drops_enforcement": 24,
+    "nonce_csp_static_render_incompatibility": 24,
+    "permissions_policy_feature_disabled": 24,
+    "permissions_policy_feature_overallowed": 6
+  },
+  "mutation_operator_class_status_counts": {
+    "locked_seed": {
+      "pass": 116
+    },
+    "negative_control": {
+      "pass": 24
+    },
+    "new_semantic_edge": {
+      "pass": 66
+    },
+    "paired_repair_negative_control": {
+      "pass": 418
+    },
+    "semantic_preserving": {
+      "pass": 348
+    }
+  },
+  "negative_controls": 554,
+  "semantic_preserving_mutation_metrics": {
+    "directive_whitespace_expand": {
+      "fixtures": 116,
+      "label_preserved": 116,
+      "oracle_preserved": 116
+    },
+    "header_name_casefold": {
+      "fixtures": 116,
+      "label_preserved": 116,
+      "oracle_preserved": 116
+    },
+    "header_order_reverse": {
+      "fixtures": 116,
+      "label_preserved": 116,
+      "oracle_preserved": 116
+    }
+  },
+  "status_counts": {
+    "pass": 972
+  }
+}

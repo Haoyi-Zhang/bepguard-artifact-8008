@@ -1,0 +1,9 @@
+{
+  "interpretation": "Checks that the assessor quickstart exposes short, medium, and full deterministic review paths without requiring private or hosted services.",
+  "lanes_checked": 4,
+  "problem_count": 0,
+  "problems": [],
+  "quickstart_commands_checked": 8,
+  "reproduction_ladder_commands": 101,
+  "status": "pass"
+}

@@ -1,0 +1,41 @@
+{
+  "expected_rqs": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4",
+    "RQ5"
+  ],
+  "interpretation": "RQ-consistency audit: the protocol, main paper, and lineage lock must expose the same locked research questions so validation gates cannot drift from the reported claim structure.",
+  "main_tex_rqs": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4",
+    "RQ5"
+  ],
+  "problem_count": 0,
+  "problems": [],
+  "protocol_corpus_lock_rqs": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4",
+    "RQ5"
+  ],
+  "protocol_lock_rqs": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4",
+    "RQ5"
+  ],
+  "status": "pass",
+  "study_protocol_rqs": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4",
+    "RQ5"
+  ]
+}

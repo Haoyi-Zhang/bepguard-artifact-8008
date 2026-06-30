@@ -1,0 +1,9 @@
+{
+  "interpretation": "Checks the release evidence-facing delivery packet: main paper, supplement, and anonymous artifact source tree.",
+  "problem_count": 0,
+  "problems": [],
+  "required_artifact_files": 7,
+  "status": "pass",
+  "surfaces_checked": 3,
+  "validation_layers_seen": 111
+}

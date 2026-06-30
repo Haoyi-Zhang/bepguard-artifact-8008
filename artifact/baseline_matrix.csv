@@ -1,0 +1,26 @@
+baseline,fixture_id,status,returncode,stdout,stderr,notes
+csp_evaluator,F01_csp_report_only_only,unavailable,1,,baseline_not_available_or_failed,package may be absent; no fallback substituted
+chromium_hstspreload,F01_csp_report_only_only,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,F02_csp_default_src_wildcard_fallback,unavailable,1,,baseline_not_available_or_failed,package may be absent; no fallback substituted
+chromium_hstspreload,F02_csp_default_src_wildcard_fallback,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,F03_nextjs_nonce_on_static_render,unavailable,1,,baseline_not_available_or_failed,package may be absent; no fallback substituted
+chromium_hstspreload,F03_nextjs_nonce_on_static_render,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,F04_cors_wildcard_with_credentials,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,F04_cors_wildcard_with_credentials,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,F05_cors_reflected_origin_credentials,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,F05_cors_reflected_origin_credentials,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,F06_hsts_header_on_http_response,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,F06_hsts_header_on_http_response,unavailable,,,,compiled helper absent; build from pinned Go module for executable baseline
+csp_evaluator,F07_hsts_zero_max_age_clears,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,F07_hsts_zero_max_age_clears,unavailable,,,,compiled helper absent; build from pinned Go module for executable baseline
+csp_evaluator,F08_coep_blocks_cross_origin_no_cors_asset,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,F08_coep_blocks_cross_origin_no_cors_asset,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,N01_csp_self_blocks_third_party_script,unavailable,1,,baseline_not_available_or_failed,package may be absent; no fallback substituted
+chromium_hstspreload,N01_csp_self_blocks_third_party_script,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,N02_cors_specific_origin_credentials,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,N02_cors_specific_origin_credentials,not_applicable,,,,fixture has no HSTS header
+csp_evaluator,N03_hsts_https_positive,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,N03_hsts_https_positive,unavailable,,,,compiled helper absent; build from pinned Go module for executable baseline
+csp_evaluator,N04_coep_with_compatible_corp,not_applicable,,,,fixture has no CSP header
+chromium_hstspreload,N04_coep_with_compatible_corp,not_applicable,,,,fixture has no HSTS header
+mdn_http_observatory,localhost:8765,unavailable,1,,baseline_not_available_or_failed,package may be absent; no fallback substituted

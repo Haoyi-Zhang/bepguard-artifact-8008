@@ -1,0 +1,91 @@
+{
+  "command_ids": [
+    "typed_ir_schema",
+    "specbench",
+    "metamorphic_relations",
+    "certificate_recheck",
+    "evidence_graph",
+    "anti_overfit_leakage"
+  ],
+  "commands_executed": 6,
+  "executions": [
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_ir_schema.py"
+      ],
+      "id": "typed_ir_schema",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"fixtures\": 972, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_specbench.py"
+      ],
+      "id": "specbench",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cases\": 4180, \"problem_count\": 0, \"rules_covered\": 29, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_metamorphic_relations.py"
+      ],
+      "id": "metamorphic_relations",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"checks\": 3954, \"problem_count\": 0, \"relations\": 9, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/recheck_witness_certificates.py"
+      ],
+      "id": "certificate_recheck",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"obligations_checked\": 4870, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_graph.py"
+      ],
+      "id": "evidence_graph",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"edge_count\": 23925, \"node_count\": 15182, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_anti_overfit_leakage.py"
+      ],
+      "id": "anti_overfit_leakage",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"method_files_scanned\": 246, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    }
+  ],
+  "interpretation": "Strict smoke execution over representative deterministic gates; records return codes and output hashes without live services or volatile timing fields.",
+  "output_hashes": {
+    "artifact/results/anti_overfit_leakage_audit.json": "8207d49acbdb96ab25cce0201ce391210e7eb42b4021f65e3ead490a72407f82",
+    "artifact/results/deep_locked/certificate_recheck_audit.json": "323a6219790fbf6db17bd69b9e31188f09f5be29b9025f57f7ca8378c9d657ab",
+    "artifact/results/deep_locked/certificate_recheck_cases.csv": "b7a012939705e6cc3c0f272d3a483eb62a3cf3f4c9aff0c5d8baef08fb4f938c",
+    "artifact/results/deep_locked/metamorphic_relation_audit.json": "345b25f90e9beb5772207c762da3edc117a8b6877b02f83cc1f7b95f8336067a",
+    "artifact/results/deep_locked/metamorphic_relation_cases.csv": "a4a21c41df4ca89401dafbcdfd12fc92267bacd956be4f7f4628e0d98f441020",
+    "artifact/results/deep_locked/specbench_cases.json": "23da0bed6a32019373fe5d1a90cf06ed5e850f9452068c58e5e5d0083f32f36e",
+    "artifact/results/deep_locked/specbench_results.csv": "cb1f1c820ae6ca7cd191b3eaca29395ddfbd12b5aa6e76241a2c6d829abe508c",
+    "artifact/results/deep_locked/specbench_summary.json": "53841e7f10dab9fcb34a9e93c6c1ec22d0e481b7e5765be87e2e14305ff7799b",
+    "artifact/results/deep_locked/typed_ir_schema_audit.json": "5c10ea19a247253f367e1f3917314c0ff1078ab00c6d85c0da5babceaa2202d5",
+    "artifact/results/evidence_graph.json": "2d3d7f43ff0868c5e7c7e9afafcb16e3b06ffd2785495d38c76e359549b5fa49",
+    "artifact/results/evidence_graph_metrics.json": "a3ac62dcd8f15eb5a821fde0cfbdcfbb63ab241a2f4b2d874f5d4a5c2845492a",
+    "artifact/results/evidence_graph_paths.csv": "9cf0e4d569a8c5cfa9169c56296b0dba05ed19bae0e4365f4d04f1577f5aa8d7"
+  },
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

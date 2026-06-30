@@ -1,0 +1,24 @@
+{
+  "interpretation": "Repository-grade audit over code parsability, deterministic structure, trace/local-path hygiene, reproduction entry points, and ledger closure. The score is a repository-readiness summary, not a paper result.",
+  "problem_count": 0,
+  "problems": [],
+  "python_classes": 30,
+  "python_entry_points": 147,
+  "python_files": 246,
+  "python_files_with_module_docstring": 246,
+  "python_functions": 2444,
+  "python_lines": 31683,
+  "required_files": [
+    "artifact/README.md",
+    "artifact/reproduction.md",
+    "artifact/reproduction_ladder.json",
+    "artifact/LICENSE",
+    "artifact/checksum_manifest.csv",
+    "artifact/results/result_index.csv",
+    "artifact/environment_lock.json",
+    "artifact/requirements.txt",
+    "artifact/pyproject.toml"
+  ],
+  "score": 100,
+  "status": "pass"
+}

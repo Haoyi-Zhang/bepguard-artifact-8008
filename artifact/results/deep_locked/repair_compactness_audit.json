@@ -1,0 +1,16 @@
+{
+  "compact_repairs": 418,
+  "edit_distance_histogram": {
+    "1": 96,
+    "2": 266,
+    "3": 32,
+    "4": 24
+  },
+  "interpretation": "Every paired repair preserves source, intent, and policy family; clears the modeled issue; and differs from the positive by a compact semantic edit distance of 1..4 units.",
+  "max_semantic_edit_distance": 4,
+  "min_semantic_edit_distance": 1,
+  "problem_count": 0,
+  "problems": [],
+  "repair_pairs_checked": 418,
+  "status": "pass"
+}

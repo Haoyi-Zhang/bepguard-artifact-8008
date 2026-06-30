@@ -1,0 +1,16 @@
+[project]
+name = "BEPGuard"
+version = "0.24.0"
+description = "Deterministic artifact support library for browser-enforced policy intent drift"
+requires-python = ">=3.10"
+dependencies = []
+license = {text = "MIT"}
+
+[tool.bepguard]
+core_validation = "standard-library-only"
+live_web_scanning = false
+external_inference_api = false
+private_data = false
+
+[project.scripts]
+bepguard = "bepguard.cli:main"

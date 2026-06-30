@@ -1,0 +1,357 @@
+{
+  "coverage_rows": [
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CSP_REPORT_ONLY_MONITOR",
+      "specbench_aliases": [
+        "R_CSP_REPORT_ONLY_MONITOR"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CSP_DEFAULT_SRC_FALLBACK",
+      "specbench_aliases": [
+        "R_CSP_DEFAULT_SRC_FALLBACK"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CSP_SCRIPT_SRC_OVERRIDES_DEFAULT",
+      "specbench_aliases": [
+        "R_CSP_SCRIPT_SRC_OVERRIDES_DEFAULT"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_delivery_surface_boundary",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CSP_META_REPORT_ONLY_UNSUPPORTED",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_framework_context_precondition",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CSP_NONCE_UNIQUE_PER_TRANSMISSION",
+      "specbench_aliases": [
+        "R_CSP_NONCE_PER_REQUEST"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_policy_meet",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CSP_MULTIPLE_POLICIES_RESTRICT",
+      "specbench_aliases": [
+        "R_CSP_MULTIPLE_POLICY_INTERSECTION"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CORS_WILDCARD_CREDENTIALS_NOT_SHAREABLE",
+      "specbench_aliases": [
+        "R_CORS_CREDENTIALS_WILDCARD"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE",
+      "specbench_aliases": [
+        "R_CORS_ACAC_CASE_SENSITIVE",
+        "R_CORS_CREDENTIALS_EXACT_ORIGIN"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_cache_context",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CORS_DYNAMIC_ACAO_NEEDS_VARY",
+      "specbench_aliases": [
+        "R_CORS_DYNAMIC_ORIGIN_VARY"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_HSTS_IGNORE_INSECURE_TRANSPORT",
+      "specbench_aliases": [
+        "R_HSTS_HTTPS_ONLY_PROCESSING"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_HSTS_MAX_AGE_ZERO_CLEARS",
+      "specbench_aliases": [
+        "R_HSTS_ZERO_MAX_AGE_CLEARS"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_syntax_boundary",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_HSTS_INVALID_HEADER_IGNORED",
+      "specbench_aliases": [
+        "R_HSTS_MAX_AGE_PARSE"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_COEP_REQUIRE_CORP_NO_CORS",
+      "specbench_aliases": [
+        "R_COEP_REQUIRE_CORP_NO_CORS"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_COEP_CORS_MODE_COMPATIBLE",
+      "specbench_aliases": [
+        "R_COEP_CORS_MODED_OPT_IN"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_COOP_SAME_ORIGIN_FOR_ISOLATION",
+      "specbench_aliases": [
+        "R_COOP_COEP_ISOLATION_JOINT"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_COOP_UNSAFE_NONE_DEFAULT",
+      "specbench_aliases": [
+        "R_COOP_COEP_ISOLATION_JOINT"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_PERMISSIONS_POLICY_ALLOWLIST",
+      "specbench_aliases": [
+        "R_PERMISSIONS_POLICY_FEATURE_SPECIFIC"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_PERMISSIONS_POLICY_EMPTY_DISABLES",
+      "specbench_aliases": [
+        "R_PERMISSIONS_POLICY_EMPTY_ALLOWLIST"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_NEXT_NONCE_DYNAMIC_REQUIRED",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_generation_layer_contract",
+      "fixture_issue_class": "layered_policy_composition",
+      "fixture_issue_count": 0,
+      "rule_id": "R_HELMET_CSP_DEFAULT_MERGE",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_report_only_generation",
+      "fixture_issue_class": "csp_report_only_not_enforced",
+      "fixture_issue_count": 24,
+      "rule_id": "R_HELMET_REPORT_ONLY",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_default_absence_boundary",
+      "fixture_issue_class": "cross_origin_isolation_incomplete",
+      "fixture_issue_count": 24,
+      "rule_id": "R_HELMET_COEP_NOT_DEFAULT",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_deployment_context_precondition",
+      "fixture_issue_class": "hsts_header_not_honored_over_http",
+      "fixture_issue_count": 24,
+      "rule_id": "R_DJANGO_HSTS_HTTPS_ONLY",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_framework_context_boundary",
+      "fixture_issue_class": "csp_report_only_not_enforced",
+      "fixture_issue_count": 24,
+      "rule_id": "R_SPRING_CSP_CONTEXT_REQUIRED",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_report_only_migration",
+      "fixture_issue_class": "csp_report_only_not_enforced",
+      "fixture_issue_count": 24,
+      "rule_id": "R_RAILS_REPORT_ONLY_MIGRATION",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_nonce_cache_precondition",
+      "fixture_issue_class": "nonce_csp_static_render_incompatibility",
+      "fixture_issue_count": 24,
+      "rule_id": "R_RAILS_NONCE_CACHE_TRADEOFF",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_reflected_origin_symbol",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_EXPRESS_CORS_REFLECT_ORIGIN",
+      "specbench_aliases": [
+        "R_CORS_REFLECTED_ORIGIN_CREDENTIALS"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded_threat_boundary",
+      "fixture_issue_class": "cors_reflected_origin_with_credentials",
+      "fixture_issue_count": 24,
+      "rule_id": "R_EXPRESS_CORS_NOT_AUTHORIZATION",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "baseline-scope-contract",
+      "encoded_status": "baseline_scope_record",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_BASELINE_CSP_EVALUATOR_SCOPE",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "baseline-scope-contract",
+      "encoded_status": "baseline_scope_record",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_BASELINE_OBSERVATORY_SCOPE",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "baseline-scope-contract",
+      "encoded_status": "baseline_scope_record",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_BASELINE_HSTSPRELOAD_SCOPE",
+      "specbench_aliases": []
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CSP_CONJUNCTIVE_COMPOSITION",
+      "specbench_aliases": [
+        "R_CSP_MULTIPLE_POLICY_INTERSECTION"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_LAYERED_HEADER_SURFACE",
+      "specbench_aliases": [
+        "R_CSP_MULTIPLE_POLICY_INTERSECTION"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_CORS_DYNAMIC_ORIGIN_VARY",
+      "specbench_aliases": [
+        "R_CORS_DYNAMIC_ORIGIN_VARY"
+      ]
+    },
+    {
+      "coverage_class": "claim-ledger",
+      "encoded_status": "encoded",
+      "fixture_issue_class": "",
+      "fixture_issue_count": 0,
+      "rule_id": "R_HSTS_INCLUDE_SUBDOMAINS_SCOPE",
+      "specbench_aliases": [
+        "R_HSTS_INCLUDE_SUBDOMAINS_SCOPE",
+        "R_HSTS_PRELOAD_CRITERION"
+      ]
+    }
+  ],
+  "interpretation": "Rule maturity closure: no release denominator rule may remain as a future-plan marker; every non-baseline rule is linked to claim, fixture, SpecBench, or explicit framework-boundary coverage.",
+  "ledger_aliases_checked": 5,
+  "positive_issue_classes_observed": 25,
+  "problem_count": 0,
+  "problems": [],
+  "rules_checked": 35,
+  "rules_with_planned_status": 0,
+  "specbench_rule_aliases_observed": 29,
+  "status": "pass",
+  "status_counts": {
+    "baseline_scope_record": 3,
+    "encoded": 18,
+    "encoded_cache_context": 1,
+    "encoded_default_absence_boundary": 1,
+    "encoded_delivery_surface_boundary": 1,
+    "encoded_deployment_context_precondition": 1,
+    "encoded_framework_context_boundary": 1,
+    "encoded_framework_context_precondition": 1,
+    "encoded_generation_layer_contract": 1,
+    "encoded_nonce_cache_precondition": 1,
+    "encoded_policy_meet": 1,
+    "encoded_reflected_origin_symbol": 1,
+    "encoded_report_only_generation": 1,
+    "encoded_report_only_migration": 1,
+    "encoded_syntax_boundary": 1,
+    "encoded_threat_boundary": 1
+  }
+}

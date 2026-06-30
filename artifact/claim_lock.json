@@ -1,0 +1,44 @@
+{
+  "active_denominator": "BEP-Deep: 972 fixtures, 418 positives, 554 negative controls (including 418 paired repair controls)",
+  "bep_max_validation": "A010 BEP-Max adversarial validation keeps the locked BEP-Deep denominator unchanged and checks 4306 generated cases, 418 contrastive repair pairs, 418 local repair frontiers, certificate/repair edges in the exposure graph, and complete validation ladders for all 25 issue classes; it is a validation burden, not a relabeling or prevalence expansion.",
+  "forbidden_claims": [
+    "Do not claim live-web prevalence or deployed-site vulnerability rates.",
+    "Do not claim complete browser conformance or full browser-security soundness.",
+    "Do not claim human developer intent beyond explicit source text.",
+    "Do not claim external baselines ran when wrappers record unavailable or unsupported status.",
+    "Do not rank scanners as universally better or worse outside the declared semantic task."
+  ],
+  "latex_source_integrity": "A012 adds a source-level LaTeX integrity check: exactly one approved IEEEtran documentclass, exactly one end-of-document marker, no active prose after that marker, and no paper-source traces of internal process artifacts. It changes only source hygiene and paper presentation, not labels or results.",
+  "locked_experiment_directory": "artifact/results/deep_locked",
+  "paper_thesis": "Browser-enforced security policies can drift from explicit developer-facing intent because delivery disposition, fallback/default behavior, request/cache/rendering context, browser state, ordered policy layers, and cross-policy composition determine the browser-effective judgement. BEP-Deep evaluates that drift with source-grounded fixtures, repair-paired negative controls, an independent decision-table oracle, semantic mutation adequacy, exact witness minimality, and a typed effective-exposure graph.",
+  "positive_claims": [
+    {
+      "claim": "Policy intent drift is a cross-layer semantic relation among explicit public intent, generated policy surface, and browser-effective judgement.",
+      "evidence": "formal core + 45 source-grounded claims + 45 source-span closure rows + 35 rules + 116 base fixtures + 972 BEP-Deep fixtures",
+      "id": "C1"
+    },
+    {
+      "claim": "Minimal semantic conflict witnesses are a reusable debugging and evaluation object for browser-policy engineering.",
+      "evidence": "418 positive witnesses; 418 exact header-subset minimality certificates; 418 validated counterfactual repairs; 418 paired repair negative controls; independent decision-table agreement over 972 fixtures",
+      "id": "C2"
+    },
+    {
+      "claim": "Checklist/header-presence and single-policy baselines miss classes that depend on delivery disposition, fallback/default behavior, request/rendering context, browser state, and cross-policy composition.",
+      "evidence": "322 semantic positives missed by the header-presence control; 28/28 semantic mutants killed; ablation losses over 13 semantic components; effective-exposure graph paths",
+      "id": "C3"
+    },
+    {
+      "claim": "The approach is CPU-native and reproducible with public specifications, documentation, and deterministic fixtures.",
+      "evidence": "BEP-Deep protocol amendments A006-A011, source snapshots, checksums, deterministic scripts, source-span closure, clean package",
+      "id": "C4"
+    },
+    {
+      "claim": "BEP-Max strengthens oracle/workload independence by surrounding BEP-Deep with adversarial validation cases, contrastive repair pairs, local repair-frontier checks, and issue-class validation ladders.",
+      "evidence": "4306/4306 adversarial validation cases pass; 418/418 contrastive repair pairs pass; 418/418 local repair frontiers certified; 25/25 issue classes have complete validation ladders.",
+      "id": "C5"
+    }
+  ],
+  "post_lock_amendment": "Any denominator, metric, label, baseline, ablation, RQ, oracle-validation, or mutation-adequacy change requires a protocol_amendments.csv entry and cannot be silently folded into locked results.",
+  "post_lock_change_policy": "Any denominator, metric, label, baseline, ablation, RQ, oracle-validation, or mutation-adequacy change requires a protocol_amendments.csv entry and cannot be silently folded into locked results.",
+  "validation_report_closure": "Release-level validation reports and auxiliary source ledgers must resolve to the same 45 admitted claims and 15 admitted sources as the source-span and fixture validation gates."
+}

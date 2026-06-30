@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Ablation loss by semantic component over BEP-Deep positives. Larger loss means more positives depend on the removed component; bold marks the largest loss and underline marks the second largest.}
+\label{tab:ablation}
+\begin{tabular}{lrr}
+\toprule
+Removed component & Dep. positives & Loss \\
+\midrule
+Layered composition & \textbf{62} & \textbf{62} \\
+CORS request context & \underline{60} & \underline{60} \\
+HSTS state transition & 54 & 54 \\
+HSTS scope/preload context & 36 & 36 \\
+CSP fallback/source list & 32 & 32 \\
+CORS cache context & 30 & 30 \\
+Permissions allowlist & 30 & 30 \\
+CSP delivery disposition & 24 & 24 \\
+Nonce/rendering context & 24 & 24 \\
+COEP/CORP/CORS embedding & 24 & 24 \\
+COOP/COEP isolation edge & 24 & 24 \\
+CSP framing delivery & 12 & 12 \\
+CORP scope semantics & 6 & 6 \\
+\bottomrule
+\end{tabular}
+\end{table}

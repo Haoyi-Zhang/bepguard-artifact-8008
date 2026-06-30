@@ -1,0 +1,17 @@
+{
+  "claim_to_issue_paths": 26,
+  "effective_exposure_graph_edges": 7100,
+  "effective_exposure_graph_nodes": 4123,
+  "expected_findings_detected": 418,
+  "expected_positive_fixtures": 418,
+  "fixtures": 554,
+  "interpretation": "deterministic source-grounded stress workload; not public-web prevalence",
+  "issue_node_count": 25,
+  "negative_controls": 136,
+  "negative_controls_clean": 136,
+  "repairs_all_issues_removed": 418,
+  "repairs_target_issue_removed": 418,
+  "semantic_preserving_stable": 348,
+  "semantic_preserving_variants": 348,
+  "workload": "BEP-Stress"
+}

@@ -1,0 +1,17 @@
+{
+  "expected_matches": 972,
+  "fixtures_checked": 972,
+  "interpretation": "Every BEP-Deep fixture is checked across operational semantics, decision-table oracle, and declarative oracle.  The audit records pairwise oracle agreement and agreement with the locked expected issue without reading fixture labels inside the oracle implementations.",
+  "negative_controls_checked": 554,
+  "oracles": [
+    "operational",
+    "decision_table",
+    "declarative"
+  ],
+  "pairwise_agreement_cells": 2916,
+  "pairwise_agreements": 2916,
+  "positive_fixtures_checked": 418,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

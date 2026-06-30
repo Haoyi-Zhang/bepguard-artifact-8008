@@ -1,0 +1,10 @@
+{
+  "fixtures_checked": 972,
+  "folds": 5,
+  "interpretation": "Deterministic hash-fold stratification audit; not used for training, but guards against workload concentration across issue classes, policy families, and source claims.",
+  "maximum_fold_fixtures": 200,
+  "minimum_fold_fixtures": 187,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

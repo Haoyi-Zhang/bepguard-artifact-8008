@@ -1,0 +1,21 @@
+{
+  "details": [
+    {
+      "documentclass_count": 1,
+      "end_document_count": 1,
+      "source": "paper/main.tex",
+      "source_hygiene_hits": [],
+      "tail_after_end_document": false
+    },
+    {
+      "documentclass_count": 1,
+      "end_document_count": 1,
+      "source": "paper/supplement.tex",
+      "source_hygiene_hits": [],
+      "tail_after_end_document": false
+    }
+  ],
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

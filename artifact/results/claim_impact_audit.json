@@ -1,0 +1,17 @@
+{
+  "baseline_claims_without_denominator_support": 4,
+  "claims_checked": 45,
+  "claims_with_locked_fixtures": 26,
+  "claims_with_source_span": 45,
+  "claims_with_specbench_pressure": 28,
+  "evidence_card_claim_links": 618,
+  "interpretation": "Every admitted claim is checked for source-span closure, rule linkage, locked-denominator support, SpecBench validation pressure, and evidence-card/repair impact where applicable.",
+  "issue_classes_reached_by_evidence_cards": 25,
+  "paired_repair_claim_links": 618,
+  "problem_count": 0,
+  "problems": [],
+  "rules_referenced": 35,
+  "source_context_claims_without_denominator_support": 15,
+  "status": "pass",
+  "unresolved_future_work_roles": 0
+}

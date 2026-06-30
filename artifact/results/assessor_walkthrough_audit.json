@@ -1,0 +1,7 @@
+{
+  "documents_checked": 6,
+  "interpretation": "Checks that assessor-facing walkthrough and objection-closure documents expose the commands, result locations, and limitations needed for a short artifact review window.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

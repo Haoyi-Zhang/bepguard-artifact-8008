@@ -1,0 +1,13 @@
+{
+  "declarative_oracle_specbench_cases": 4180,
+  "heldout_cases": 4180,
+  "interpretation": "Closes the syntactic-variant-only objection by verifying a non-denominator SpecBench suite with fresh SB_* case ids, public source links, and declarative-oracle coverage.",
+  "locked_fixture_overlap": 0,
+  "problem_count": 0,
+  "problems": [],
+  "role": "true non-denominator source-derived boundary suite; scale-stress and identifier-blind replays remain robustness checks, not the sole generalization evidence",
+  "rules_covered": 29,
+  "source_claims_covered": 28,
+  "source_linked_cases": 4180,
+  "status": "pass"
+}

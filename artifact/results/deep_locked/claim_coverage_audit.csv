@@ -1,0 +1,46 @@
+claim_id,policy_family,claim_type,semantic_rule_ids,coverage_role,fixture_count,positive_fixture_count,control_fixture_count,rules_known,coverage_explanation,coverage_status
+CL_CSP_01,CSP,normative,R_CSP_REPORT_ONLY_MONITOR,fixture_backed,124,60,64,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CSP_02,CSP,normative,R_CSP_DEFAULT_SRC_FALLBACK,fixture_backed,64,32,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CSP_03,CSP,normative,R_CSP_SCRIPT_SRC_OVERRIDES_DEFAULT,fixture_backed,32,6,26,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CSP_04,CSP,normative,R_CSP_DEFAULT_SRC_FALLBACK,fixture_backed,64,32,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CSP_05,CSP,normative,R_CSP_META_REPORT_ONLY_UNSUPPORTED,context_surface,0,0,0,yes,supports CSP frame-ancestors meta-delivery rule,covered
+CL_CSP_06,CSP,normative,R_CSP_NONCE_UNIQUE_PER_TRANSMISSION,fixture_backed,48,24,24,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CSP_07,CSP,normative,R_CSP_MULTIPLE_POLICIES_RESTRICT,context_surface,0,0,0,yes,supports multiple-policy composition rule,covered
+CL_CORS_01,CORS,normative,R_CORS_WILDCARD_CREDENTIALS_NOT_SHAREABLE,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CORS_02,CORS,normative,R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE,fixture_backed,36,12,24,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CORS_03,CORS,normative,R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE,fixture_backed,12,6,6,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CORS_04,CORS,normative,R_CORS_DYNAMIC_ACAO_NEEDS_VARY,context_surface,0,0,0,yes,supports dynamic-origin cache/Vary rule,covered
+CL_HSTS_01,HSTS,normative,R_HSTS_IGNORE_INSECURE_TRANSPORT,fixture_backed,68,30,38,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_HSTS_02,HSTS,normative,R_HSTS_MAX_AGE_ZERO_CLEARS,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_HSTS_03,HSTS,normative,R_HSTS_INVALID_HEADER_IGNORED,fixture_backed,12,6,6,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_COEP_01,COEP/CORP/CORS,developer_doc,R_COEP_REQUIRE_CORP_NO_CORS,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_COEP_02,COEP/CORP/CORS,developer_doc,R_COEP_CORS_MODE_COMPATIBLE,fixture_backed,24,6,18,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_COOP_01,COOP,developer_doc,R_COOP_SAME_ORIGIN_FOR_ISOLATION,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_COOP_02,COOP,developer_doc,R_COOP_UNSAFE_NONE_DEFAULT,fixture_backed,48,24,24,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_PERM_01,Permissions-Policy,developer_doc,R_PERMISSIONS_POLICY_ALLOWLIST,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_PERM_02,Permissions-Policy,developer_doc,R_PERMISSIONS_POLICY_EMPTY_DISABLES,fixture_backed,112,54,58,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_NEXT_01,CSP/framework,framework_doc,R_NEXT_NONCE_DYNAMIC_REQUIRED,fixture_backed,48,24,24,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_NEXT_02,CSP/framework,framework_doc,R_NEXT_NONCE_DYNAMIC_REQUIRED,fixture_backed,48,24,24,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_HELMET_01,CSP/framework,framework_doc,R_HELMET_CSP_DEFAULT_MERGE,context_surface,0,0,0,yes,supports framework CSP default-generation surface,covered
+CL_HELMET_02,CSP/framework,framework_doc,R_HELMET_CSP_DEFAULT_MERGE,context_surface,0,0,0,yes,supports framework CSP merge surface,covered
+CL_HELMET_03,CSP/framework,framework_doc,R_HELMET_REPORT_ONLY,context_surface,0,0,0,yes,supports framework report-only CSP generation surface,covered
+CL_HELMET_04,COEP/framework,framework_doc,R_HELMET_COEP_NOT_DEFAULT,context_surface,0,0,0,yes,supports framework COEP default-generation surface,covered
+CL_HELMET_05,baseline,framework_doc,R_BASELINE_CSP_EVALUATOR_SCOPE,baseline_scope,0,0,0,yes,supports CSP baseline-scope boundary,covered
+CL_DJANGO_01,HSTS/framework,framework_doc,R_DJANGO_HSTS_HTTPS_ONLY,context_surface,0,0,0,yes,supports framework HSTS HTTPS-only generation surface,covered
+CL_DJANGO_02,HSTS/framework,framework_doc,R_DJANGO_HSTS_HTTPS_ONLY,context_surface,0,0,0,yes,supports proxy/TLS-termination HSTS context surface,covered
+CL_SPRING_01,CSP/framework,framework_doc,R_SPRING_CSP_CONTEXT_REQUIRED,context_surface,0,0,0,yes,supports framework CSP opt-in/default context surface,covered
+CL_SPRING_02,CSP/framework,framework_doc,R_SPRING_CSP_CONTEXT_REQUIRED;R_CSP_REPORT_ONLY_MONITOR,context_surface,0,0,0,yes,supports framework enforced/report-only CSP context surface,covered
+CL_RAILS_01,CSP/framework,framework_doc,R_RAILS_REPORT_ONLY_MIGRATION,context_surface,0,0,0,yes,supports framework CSP DSL generation surface,covered
+CL_RAILS_02,CSP/framework,framework_doc,R_RAILS_REPORT_ONLY_MIGRATION;R_CSP_REPORT_ONLY_MONITOR,context_surface,0,0,0,yes,supports framework report-only migration surface,covered
+CL_RAILS_03,CSP/framework,framework_doc,R_RAILS_NONCE_CACHE_TRADEOFF;R_CSP_NONCE_UNIQUE_PER_TRANSMISSION,context_surface,0,0,0,yes,supports nonce/cache rendering tradeoff surface,covered
+CL_EXPRESS_01,CORS/framework,framework_doc,R_EXPRESS_CORS_REFLECT_ORIGIN,fixture_backed,48,24,24,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_EXPRESS_02,CORS/framework,framework_doc,R_EXPRESS_CORS_REFLECT_ORIGIN,fixture_backed,48,24,24,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_EXPRESS_03,CORS/framework,framework_doc,R_EXPRESS_CORS_NOT_AUTHORIZATION,context_surface,0,0,0,yes,supports CORS-as-sharing-not-authorization context surface,covered
+CL_BASE_01,baseline,tool_doc,R_BASELINE_CSP_EVALUATOR_SCOPE,baseline_scope,0,0,0,yes,supports CSP Evaluator baseline scope,covered
+CL_BASE_02,baseline,tool_doc,R_BASELINE_OBSERVATORY_SCOPE,baseline_scope,0,0,0,yes,supports MDN Observatory baseline scope,covered
+CL_BASE_03,baseline,tool_doc,R_BASELINE_HSTSPRELOAD_SCOPE,baseline_scope,0,0,0,yes,supports hstspreload baseline scope,covered
+CL_CSP_08,Layered policy composition,normative,R_CSP_CONJUNCTIVE_COMPOSITION;R_LAYERED_HEADER_SURFACE,fixture_backed,72,32,40,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_LAYER_01,Layered policy composition,framework_doc,R_LAYERED_HEADER_SURFACE;R_CSP_REPORT_ONLY_MONITOR,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_CORS_05,CORS/cache,normative,R_CORS_DYNAMIC_ORIGIN_VARY;R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_HSTS_04,HSTS/framework,normative,R_HSTS_INCLUDE_SUBDOMAINS_SCOPE,fixture_backed,56,24,32,yes,directly linked from locked BEP-Deep fixtures,covered
+CL_HSTS_05,HSTS/preload,tool_doc,R_BASELINE_HSTSPRELOAD_SCOPE;R_HSTS_INCLUDE_SUBDOMAINS_SCOPE,fixture_backed,16,6,10,yes,directly linked from locked BEP-Deep fixtures,covered

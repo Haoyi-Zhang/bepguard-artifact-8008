@@ -1,0 +1,11 @@
+{
+  "chains_with_certificate": 418,
+  "chains_with_paired_repair": 418,
+  "expected_positive_witness_chains": 418,
+  "interpretation": "Canonical hash chains bind each positive fixture to its witness, proof certificate, paired repair control, evidence card, source claims, and rule identifiers.",
+  "positive_witness_chains": 418,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "unique_chain_hashes": 418
+}

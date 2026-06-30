@@ -1,0 +1,10 @@
+{
+  "absolute_patterns_checked": 6,
+  "context_patterns_checked": 14,
+  "interpretation": "Checks that the release paper and artifact describe source-grounded semantic evidence without overclaiming live-web prevalence, exploitability, human-subject evidence, or full browser conformance.",
+  "problem_count": 0,
+  "problems": [],
+  "required_scope_tokens": 6,
+  "status": "pass",
+  "surfaces_checked": 5
+}

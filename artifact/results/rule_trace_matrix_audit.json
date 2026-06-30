@@ -1,0 +1,13 @@
+{
+  "cross_policy_contracts": null,
+  "interpretation": "Rule trace-matrix audit: every encoded semantic rule must resolve to admitted sources, appear consistently in data/method ledgers, carry a source span/proof obligation/hash, and be connected to an executable validation channel.",
+  "problem_count": 0,
+  "problems": [],
+  "rule_maturity_status": "pass",
+  "rules_checked": 35,
+  "rules_with_specbench_cases": 13,
+  "schema": "BEPGuardRuleTraceMatrix/v1",
+  "status": "pass",
+  "theory_theorems": 30,
+  "trace_obligations": 280
+}

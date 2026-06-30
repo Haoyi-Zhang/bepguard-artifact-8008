@@ -1,0 +1,8 @@
+{
+  "candidate_repairs_tested": 1230,
+  "failures": [],
+  "frontier_certified": 418,
+  "interpretation": "Local repair-frontier certification over issue-specific neighborhoods; not a global optimal-repair theorem.",
+  "mean_candidate_repairs_per_witness": 2.943,
+  "positive_witnesses": 418
+}

@@ -1,0 +1,37 @@
+{
+  "repository_name": "BEPGuard",
+  "manual_upload_root": "artifact/",
+  "include": [
+    "README.md",
+    "LICENSE",
+    "pyproject.toml",
+    "requirements.txt",
+    "environment_lock.json",
+    "reproduction.md",
+    "quickstart.md",
+    "triage_index.json",
+    "data/",
+    "bepguard/",
+    "scripts/",
+    "tests/",
+    "results/"
+  ],
+  "exclude": [
+    ".git/",
+    "__pycache__/",
+    "node_modules/",
+    ".pytest_cache/",
+    "*.pyc",
+    "*.aux",
+    "*.log",
+    "*.bbl",
+    "*.blg"
+  ],
+  "required_before_upload": [
+    "python scripts/run_validation.py",
+    "python scripts/check_artifact_clean.py --root ..",
+    "python scripts/audit_anonymity.py --root .."
+  ],
+  "current_validation_layers": 111,
+  "current_reproduction_ladder_commands": 101
+}

@@ -1,0 +1,26 @@
+issue,policy_families,source_claims,positives,witnesses,positive_certificates,paired_repair_controls,ordinary_negative_family_controls,repair_obligation_rows,minimality_certified,status
+coep_require_corp_blocks_cross_origin_resource,COEP/CORP/CORS,CL_COEP_01,24,24,24,24,16,24,24,pass
+corp_same_site_allows_cross_origin_same_site,CORP,CL_COEP_02,6,6,6,6,4,6,6,pass
+cors_acac_case_sensitive_not_shareable,CORS,CL_CORS_02,6,6,6,6,20,6,6,pass
+cors_duplicate_acao_not_shareable,CORS,CL_CORS_02,6,6,6,6,20,6,6,pass
+cors_dynamic_origin_missing_vary,CORS/cache,CL_CORS_05,24,24,24,24,8,24,24,pass
+cors_dynamic_origin_without_vary,CORS/cache,CL_CORS_03,6,6,6,6,8,6,6,pass
+cors_intended_credentialed_share_blocked,CORS,CL_CORS_01,24,24,24,24,20,24,24,pass
+cors_reflected_origin_with_credentials,CORS/framework,CL_EXPRESS_01;CL_EXPRESS_02,24,24,24,24,0,24,24,pass
+cross_origin_isolation_incomplete,COOP/COEP/Permissions-Policy,CL_COOP_01;CL_COOP_02;CL_PERM_02,24,24,24,24,8,24,24,pass
+csp_conjunctive_policy_composition_blocks_required_script,Layered policy composition,CL_CSP_08,32,32,32,32,16,32,32,pass
+csp_effective_script_allowance,CSP,CL_CSP_02;CL_CSP_04,32,32,32,32,16,32,32,pass
+csp_frame_ancestors_meta_delivery_unsupported,CSP/framing,CL_CSP_01,6,6,6,6,4,6,6,pass
+csp_frame_ancestors_report_only_not_enforced,CSP/framing,CL_CSP_01,6,6,6,6,4,6,6,pass
+csp_multiple_policy_overblocks_trusted_script,CSP/composition,CL_CSP_03,6,6,6,6,4,6,6,pass
+csp_report_only_not_enforced,CSP,CL_CSP_01,24,24,24,24,16,24,24,pass
+hsts_header_not_honored_over_http,HSTS,CL_HSTS_01,24,24,24,24,16,24,24,pass
+hsts_invalid_max_age_ignored,HSTS,CL_HSTS_01,6,6,6,6,16,6,6,pass
+hsts_missing_include_subdomains,HSTS/subdomains,CL_HSTS_03,6,6,6,6,0,6,6,pass
+hsts_policy_cleared_by_zero_max_age,HSTS,CL_HSTS_02,24,24,24,24,16,24,24,pass
+hsts_preload_criteria_not_met,HSTS/preload,CL_HSTS_05,6,6,6,6,4,6,6,pass
+hsts_subdomain_scope_not_covered,HSTS/framework,CL_HSTS_04,24,24,24,24,8,24,24,pass
+layered_header_override_drops_enforcement,Layered policy composition,CL_CSP_01;CL_LAYER_01,24,24,24,24,16,24,24,pass
+nonce_csp_static_render_incompatibility,CSP/framework,CL_CSP_06;CL_NEXT_01;CL_NEXT_02,24,24,24,24,0,24,24,pass
+permissions_policy_feature_disabled,Permissions-Policy,CL_PERM_01;CL_PERM_02,24,24,24,24,12,24,24,pass
+permissions_policy_feature_overallowed,Permissions-Policy,CL_PERM_02,6,6,6,6,12,6,6,pass

@@ -1,0 +1,1268 @@
+{
+  "command_ids": [
+    "anonymity",
+    "anti_overfit_leakage",
+    "artifact_manifest_reachability",
+    "baseline_contract",
+    "benchmark_fingerprint_disjointness",
+    "bibliographic_metadata",
+    "causal_counterfactual_activation",
+    "certificate_recheck",
+    "claim_impact",
+    "claim_trace_saturation",
+    "contribution_trace",
+    "corpus_stability",
+    "counterfactual_roundtrip",
+    "cross_policy_contracts",
+    "decision_purity",
+    "decision_table_oracle",
+    "declarative_oracle",
+    "deliverable_trio_readiness",
+    "delivery_capsule",
+    "delivery_packet",
+    "deterministic_reexecution",
+    "directive_fallback_conformance",
+    "documentation_consistency",
+    "evidence_cards",
+    "evidence_digest",
+    "evidence_graph",
+    "evidence_path_multiplicity",
+    "evidence_redundancy",
+    "external_baseline_full_run",
+    "external_benchmark_contract",
+    "external_contrast_specificity",
+    "external_provenance",
+    "figure_layout",
+    "figure_reference_closure",
+    "fold_stratification",
+    "gate_sensitivity",
+    "generated_oracle_tests",
+    "icse_criteria_closure",
+    "idempotence_replay",
+    "identifier_blind_replay",
+    "interaction_coverage",
+    "issue_evidence_depth",
+    "label_flow",
+    "latex_source_integrity",
+    "metamorphic_relations",
+    "minimal_pair_closure",
+    "mutation_farm",
+    "negative_control_certificates",
+    "oracle_explanation_equivalence",
+    "oracle_structural_independence",
+    "oracle_triangulation",
+    "overclaim_boundary",
+    "package_identity",
+    "paper_argument_surface",
+    "paper_claim_consistency",
+    "paper_metadata_alignment",
+    "paper_rhetoric",
+    "pdf_reference_boundary",
+    "pdf_source_compile",
+    "pdf_text_surface",
+    "pdf_visual_density",
+    "positive_certificates",
+    "process_trace_hygiene",
+    "protocol_amendment_integrity",
+    "public_provenance",
+    "quickstart_readiness",
+    "reference_integrity",
+    "reference_role_balance",
+    "release_claim_drift",
+    "release_hygiene",
+    "release_language_integrity",
+    "release_validation_release",
+    "repair_compactness",
+    "repair_delta_replay",
+    "repair_locality",
+    "repository_entrypoint",
+    "repository_quality",
+    "repository_upload",
+    "rq_traceability",
+    "rule_maturity",
+    "rule_trace_matrix",
+    "runtime_boundary",
+    "scale_stress",
+    "scorecard",
+    "semantic_lattice_proofs",
+    "semantic_mutation_adequacy",
+    "semantic_recomputation",
+    "shadow_generalization",
+    "specbench",
+    "stale_numeric_surface",
+    "static_code_health",
+    "strict_reproducibility_smoke",
+    "supplement_alignment",
+    "theory_kernel",
+    "theory_proof_cards",
+    "threat_closure",
+    "triage_index",
+    "typed_ir_schema",
+    "validation_orchestration",
+    "validation_report_consistency",
+    "witness_hash_chain"
+  ],
+  "commands_declared": 101,
+  "commands_executed": 101,
+  "executions": [
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_ir_schema.py"
+      ],
+      "id": "typed_ir_schema",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"fixtures\": 972, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_lattice_proofs.py"
+      ],
+      "id": "semantic_lattice_proofs",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"contracts\": 6, \"failures\": 0, \"states_checked\": 186, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_specbench.py"
+      ],
+      "id": "specbench",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cases\": 4180, \"problem_count\": 0, \"rules_covered\": 29, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_metamorphic_relations.py"
+      ],
+      "id": "metamorphic_relations",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"checks\": 3954, \"problem_count\": 0, \"relations\": 9, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/recheck_witness_certificates.py"
+      ],
+      "id": "certificate_recheck",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"obligations_checked\": 4870, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_benchmark_contracts.py"
+      ],
+      "id": "external_benchmark_contract",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_baseline_full.py"
+      ],
+      "id": "external_baseline_full_run",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"rows_total\": 4118, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_generated_oracle_tests.py"
+      ],
+      "id": "generated_oracle_tests",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"tests_run\": 1390}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repository_quality.py"
+      ],
+      "id": "repository_quality",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"python_lines\": 31482, \"score\": 100, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_cross_policy_contracts.py"
+      ],
+      "id": "cross_policy_contracts",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"checks_by_contract\": {\"C1_csp_meet_nonexpansion\": 75, \"C2_coep_requires_resource_opt_in\": 5, \"C3_isolation_requires_joint_headers\": 18, \"C4_hsts_preload_stronger_than_state\": 5, \"C4b_valid_hsts_not_preload_equivalent\": 2, \"C5_csp_cannot_authorize_credentialed_cors\": 3, \"C6_permissions_feature_specificity\": 3}, \"contracts\": 7, \"failed_contracts\": [], \"failures\": 0, \"interpretation\": \"Executable cross-policy proof obligations for the encoded BEP-IR fragments; not a complete browser conformance theorem.\", \"states_checked\": 111, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_baseline_contract.py"
+      ],
+      "id": "baseline_contract",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"files_checked\": 9, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_directive_fallback_conformance.py"
+      ],
+      "id": "directive_fallback_conformance",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cases_checked\": 6, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/decision_table_oracle.py"
+      ],
+      "id": "decision_table_oracle",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"finite_state_oracle_mismatches\": 0, \"finite_states_checked\": 351, \"independent_decision_rules\": 25, \"interpretation\": \"Independent decision-table oracle cross-check; it validates the encoded fragment and workload labels, not full browser conformance.\", \"locked_fixture_agreements\": 972, \"locked_fixture_mismatches\": 0, \"locked_fixtures_checked\": 972}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/mutation_adequacy_audit.py"
+      ],
+      "id": "semantic_mutation_adequacy",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"interpretation\": \"Semantic mutation adequacy for encoded BEP-IR hinges; not a completeness proof for the web platform.\", \"killed_mutants\": 28, \"mutants_killed_by_negative_controls\": 6, \"mutants_killed_by_paired_repair_controls\": 6, \"semantic_mutants\": 28, \"surviving_mutants\": []}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/certify_proof_carrying_witnesses.py"
+      ],
+      "id": "positive_certificates",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"certificates_generated\": 418, \"certificates_verified\": 418, \"decision_table_backed\": 418, \"failures\": [], \"interpretation\": \"Proof-carrying witness certificates bind each positive witness to source claims, semantic rules, independent decision-table support, a paired repair negative control, minimality, and repair obligations.\", \"minimality_backed\": 418, \"paired_repair_backed\": 418, \"positive_witnesses\": 418, \"repair_obligation_backed\": 418}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/certify_control_witnesses.py"
+      ],
+      "id": "negative_control_certificates",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"all_control_certificates\": 554, \"status\": \"pass\", \"verified_control_certificates\": 554}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_semantic_recomputation.py"
+      ],
+      "id": "semantic_recomputation",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"bep_max_passed\": 4306, \"deep_clean_negative_controls\": 554, \"deep_detected_positives\": 418, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_reference_integrity.py"
+      ],
+      "id": "reference_integrity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cited_keys\": 72, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_anonymity.py"
+      ],
+      "id": "anonymity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_latex_source_integrity.py"
+      ],
+      "id": "latex_source_integrity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_source_compile.py"
+      ],
+      "id": "pdf_source_compile",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"main_pages\": 12, \"problem_count\": 0, \"status\": \"pass\", \"supplement_pages\": 8}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_release_language_integrity.py"
+      ],
+      "id": "release_language_integrity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"hits\": 0, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_protocol_amendment_integrity.py"
+      ],
+      "id": "protocol_amendment_integrity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"amendments\": 99, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_validation_report_consistency.py"
+      ],
+      "id": "validation_report_consistency",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"release_coding_validation_rows\": 45, \"source_snapshot_rows\": 15, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_bibliographic_metadata.py"
+      ],
+      "id": "bibliographic_metadata",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"entries_checked\": 72, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_validation_orchestration.py"
+      ],
+      "id": "validation_orchestration",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"nested_subprocesses\": 0, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_graph.py"
+      ],
+      "id": "evidence_graph",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"edge_count\": 23925, \"node_count\": 15182, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_anti_overfit_leakage.py"
+      ],
+      "id": "anti_overfit_leakage",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"method_files_scanned\": 243, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/verify_theory_kernel.py"
+      ],
+      "id": "theory_kernel",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"finite_states_checked\": 33513, \"problem_count\": 0, \"status\": \"pass\", \"theorems_checked\": 30}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_mutation_farm.py"
+      ],
+      "id": "mutation_farm",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"killed_mutants\": 600, \"mutants\": 600, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_rule_maturity.py"
+      ],
+      "id": "rule_maturity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"rules_checked\": 35, \"rules_with_planned_status\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_visual_density.py"
+      ],
+      "id": "pdf_visual_density",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"bib_entries\": 72, \"main_pages\": 12, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_strict_reproducibility_smoke.py"
+      ],
+      "id": "strict_reproducibility_smoke",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"commands_executed\": 6, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_shadow_generalization.py"
+      ],
+      "id": "shadow_generalization",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"required_preserved\": 9720, \"required_shadow_cases\": 9720, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_provenance.py"
+      ],
+      "id": "external_provenance",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"packages_locked\": 3, \"problem_count\": 0, \"rows_checked\": 4118, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_scale_stress.py"
+      ],
+      "id": "scale_stress",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"stress_cases\": 48600}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_redundancy.py"
+      ],
+      "id": "evidence_redundancy",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"active_channels\": 11, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_figure_layout.py"
+      ],
+      "id": "figure_layout",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"caption_count\": 6, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_identifier_blind_replay.py"
+      ],
+      "id": "identifier_blind_replay",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"blind_replays\": 4860, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repair_delta_replay.py"
+      ],
+      "id": "repair_delta_replay",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"positive_repairs_checked\": 418, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_theory_proof_cards.py"
+      ],
+      "id": "theory_proof_cards",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"proof_cards_checked\": 30, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_causal_counterfactual_activation.py"
+      ],
+      "id": "causal_counterfactual_activation",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"required_activations\": 546, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_external_contrast_specificity.py"
+      ],
+      "id": "external_contrast_specificity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"rows_total\": 4118, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_benchmark_fingerprint_disjointness.py"
+      ],
+      "id": "benchmark_fingerprint_disjointness",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"rows_checked\": 9586, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_claim_consistency.py"
+      ],
+      "id": "paper_claim_consistency",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"claims_checked\": 9, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_runtime_boundary.py"
+      ],
+      "id": "runtime_boundary",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"files_checked\": 599, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_relational_oracle.py"
+      ],
+      "id": "declarative_oracle",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cases_checked\": 5152, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_label_flow.py"
+      ],
+      "id": "label_flow",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"files\": 2, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_issue_evidence_depth.py"
+      ],
+      "id": "issue_evidence_depth",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"issue_classes\": 25, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_reference_boundary.py"
+      ],
+      "id": "pdf_reference_boundary",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"page11\": \"REFERENCES [1] W. W. A. S. W. Group, \\u201cCo\", \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_corpus_stability.py"
+      ],
+      "id": "corpus_stability",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"neutral_replays\": 2916, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_cards.py"
+      ],
+      "id": "evidence_cards",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"evidence_cards\": 418, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_decision_purity.py"
+      ],
+      "id": "decision_purity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"pure_decision_functions_checked\": 78, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_package_identity.py"
+      ],
+      "id": "package_identity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"package_version\": \"0.24.0\", \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_counterfactual_roundtrip.py"
+      ],
+      "id": "counterfactual_roundtrip",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"required_roundtrips\": 546, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_oracle_equivalence.py"
+      ],
+      "id": "oracle_explanation_equivalence",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cases_checked\": 5152, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_rule_trace_matrix.py"
+      ],
+      "id": "rule_trace_matrix",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"rules_checked\": 35, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_oracle_triangulation.py"
+      ],
+      "id": "oracle_triangulation",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"pairwise_cells\": 2916, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_static_code_health.py"
+      ],
+      "id": "static_code_health",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"python_files_checked\": 243, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repair_locality.py"
+      ],
+      "id": "repair_locality",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"repair_pairs_checked\": 418, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_rq_traceability.py"
+      ],
+      "id": "rq_traceability",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"rq_trace_obligations\": 25, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_release_claim_drift.py"
+      ],
+      "id": "release_claim_drift",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"files_checked\": 4, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_documentation_consistency.py"
+      ],
+      "id": "documentation_consistency",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"documents_checked\": 6, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_claim_impact.py"
+      ],
+      "id": "claim_impact",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"claims_checked\": 45, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_witness_hash_chain.py"
+      ],
+      "id": "witness_hash_chain",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"positive_witness_chains\": 418, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_gate_sensitivity.py"
+      ],
+      "id": "gate_sensitivity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"seeded_failure_scenarios\": 16, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_idempotence_replay.py"
+      ],
+      "id": "idempotence_replay",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"commands_reexecuted\": 8, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_claim_trace_saturation.py"
+      ],
+      "id": "claim_trace_saturation",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"claim_cards\": 45, \"claims_checked\": 45, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repair_compactness.py"
+      ],
+      "id": "repair_compactness",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"max_semantic_edit_distance\": 4, \"problem_count\": 0, \"repair_pairs_checked\": 418, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_deterministic_reexecution.py"
+      ],
+      "id": "deterministic_reexecution",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"commands_reexecuted\": 5, \"problem_count\": 0, \"status\": \"pass\", \"total_subprocess_runs\": 10}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_interaction_coverage.py"
+      ],
+      "id": "interaction_coverage",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"multi_policy_signatures\": 5, \"policy_family_strata\": 16, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_process_trace_hygiene.py"
+      ],
+      "id": "process_trace_hygiene",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"files_checked\": 604, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_threat_closure.py"
+      ],
+      "id": "threat_closure",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"threats_checked\": 14}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_path_multiplicity.py"
+      ],
+      "id": "evidence_path_multiplicity",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cards_checked\": 418, \"minimum_channels_present\": 8, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_minimal_pair_closure.py"
+      ],
+      "id": "minimal_pair_closure",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"issue_classes_checked\": 25, \"minimal_pair_obligations\": 225, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_fold_stratification.py"
+      ],
+      "id": "fold_stratification",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"fixtures_checked\": 972, \"folds\": 5, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_delivery_capsule.py"
+      ],
+      "id": "delivery_capsule",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"required_capsule_files\": 16, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_argument_surface.py"
+      ],
+      "id": "paper_argument_surface",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"sections\": 8, \"status\": \"pass\", \"subsections\": 0}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_release_hygiene.py"
+      ],
+      "id": "release_hygiene",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"files_scanned\": 614, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_stale_numeric_surface.py"
+      ],
+      "id": "stale_numeric_surface",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"files_checked\": 10, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_icse_criteria_closure.py"
+      ],
+      "id": "icse_criteria_closure",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"criteria_checked\": 5, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_contribution_trace.py"
+      ],
+      "id": "contribution_trace",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"contributions_checked\": 4, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_reference_role_balance.py"
+      ],
+      "id": "reference_role_balance",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"references_checked\": 72, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_oracle_structural_independence.py"
+      ],
+      "id": "oracle_structural_independence",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"oracle_files_checked\": 3, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_deliverable_trio_readiness.py"
+      ],
+      "id": "deliverable_trio_readiness",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"main_pages\": 12, \"problem_count\": 0, \"status\": \"pass\", \"supplement_pages\": 8}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_rhetoric.py"
+      ],
+      "id": "paper_rhetoric",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"sections\": 8, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repository_entrypoints.py"
+      ],
+      "id": "repository_entrypoint",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"entrypoints_checked\": 6, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_scorecard.py"
+      ],
+      "id": "scorecard",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"strict_assessment_score\": 100.0}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/run_validation.py"
+      ],
+      "id": "release_validation_release",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"validation_layers_checked\": 111}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_paper_metadata_alignment.py"
+      ],
+      "id": "paper_metadata_alignment",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"topics_checked\": 7}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_quickstart_readiness.py"
+      ],
+      "id": "quickstart_readiness",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"lanes_checked\": 4, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_figure_reference_closure.py"
+      ],
+      "id": "figure_reference_closure",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"tracked_labels\": 9}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_supplement_alignment.py"
+      ],
+      "id": "supplement_alignment",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"surfaces_checked\": 4}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_artifact_manifest_reachability.py"
+      ],
+      "id": "artifact_manifest_reachability",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"required_files_checked\": 10, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_evidence_digest.py"
+      ],
+      "id": "evidence_digest",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"digest_inputs\": 6, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_triage_index.py"
+      ],
+      "id": "triage_index",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"entries_checked\": 8, \"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_delivery_packet.py"
+      ],
+      "id": "delivery_packet",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\", \"surfaces_checked\": 3}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_overclaim_boundary.py"
+      ],
+      "id": "overclaim_boundary",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_pdf_text_surface.py"
+      ],
+      "id": "pdf_text_surface",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_public_provenance.py"
+      ],
+      "id": "public_provenance",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "artifact/scripts/audit_repository_upload.py"
+      ],
+      "id": "repository_upload",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"problem_count\": 0, \"status\": \"pass\"}\n"
+    }
+  ],
+  "interpretation": "Inspection-facing deterministic reproduction ladder over local closure gates; no live web scanning, hosted scanner calls, private accounts, GPUs, or external inference APIs.",
+  "mode": "execute",
+  "output_hashes": {
+    "artifact/external_baseline_package_lock.json": "79240176071b61cf0472d882e591bce719af88936a9a2a38094c7af68110ecf4",
+    "artifact/results/anonymity_audit.json": "cd23d749b354692e04e907981bf4a06b2c9c28d1950d07ab7c0429cd23fa5245",
+    "artifact/results/anti_overfit_leakage_audit.json": "3ff19f077d74d3fde43a7db2f2ddf568fcd3958ec9604a26f932c39fa364e536",
+    "artifact/results/artifact_manifest_reachability_audit.json": "16df8df40d792b32df4a5f4ca3efa92cbf0c532c5b51733d0d22c3539b58980d",
+    "artifact/results/baseline_contract_audit.json": "d236982dab85d0e152f84662ea188fa3bbac2a50a0a17dad6f30b818749fd56f",
+    "artifact/results/bibliographic_metadata_audit.json": "88291d7f21f0dbdc41b22789cfe13e31e0f30b687cadc4ed96536c32b5da045b",
+    "artifact/results/claim_impact_audit.json": "c889f16767c9fae2282838649ece672e301960fa9df1d0972f34f71b79dce21d",
+    "artifact/results/contribution_trace_audit.json": "c01a3927d8f5bf2cd8aecd07531d30b723d393f08745ab37721df029a5572e08",
+    "artifact/results/decision_purity_audit.json": "0870adb0b0a4a710841f6c08244277f4471d9a1c3f20d253453c3313d28c5c9a",
+    "artifact/results/deep_locked/benchmark_fingerprint_disjointness_audit.json": "002b96361b315a752e023e7cdce41647f786620e9dea7ae56ad890f0136e91bd",
+    "artifact/results/deep_locked/benchmark_fingerprint_disjointness_rows.csv": "691ce934d0867d65000ae55845ebf2ba5676d58a6bba5101d7c171b90b6f05cc",
+    "artifact/results/deep_locked/causal_counterfactual_activation_audit.json": "8a70092c46ae54d43fa4bb03a9ee56a0a57d42571ce41be2984d8c1fd29f604f",
+    "artifact/results/deep_locked/causal_counterfactual_activation_rows.csv": "ec22c7dd9bba82d2d0df82ced3a6ef67d03f1bfba4c7df83ee31f8bbf85e605a",
+    "artifact/results/deep_locked/certificate_recheck_audit.json": "323a6219790fbf6db17bd69b9e31188f09f5be29b9025f57f7ca8378c9d657ab",
+    "artifact/results/deep_locked/certificate_recheck_cases.csv": "b7a012939705e6cc3c0f272d3a483eb62a3cf3f4c9aff0c5d8baef08fb4f938c",
+    "artifact/results/deep_locked/claim_impact_matrix.csv": "648b47c5a4812db85e4f9d33ba218624a3434c954d879e6aaa1a6e7aa148c021",
+    "artifact/results/deep_locked/control_certificate_audit.csv": "b794f9d984b5f6d70d999574345fa5167b871abf834013187340d75aa9c19185",
+    "artifact/results/deep_locked/control_certificate_metrics.json": "88dfaeb2fd3fd956d2267686726bfe8cd977f781375dd5070ca971b87dd0dc2a",
+    "artifact/results/deep_locked/corpus_stability_audit.json": "bfb0a7d8a85a7de1b4a0d572627b03f189a2f5e18857633b5bc625a7b83fff39",
+    "artifact/results/deep_locked/corpus_stability_rows.csv": "4c14de3cdd63721f9f0733ecdadaf7009ee08f829a3f0ec283b27b5fc17f1188",
+    "artifact/results/deep_locked/counterfactual_roundtrip_audit.json": "37a8fd9e03425f3ce6d854aa2fe49ab96dccef2303ef2e6c987189368f4d0bc8",
+    "artifact/results/deep_locked/counterfactual_roundtrip_rows.csv": "3ff5371b88aa41a9b9f4780e0d1ee38929be5430603d1f9f2b0d648c9afc6990",
+    "artifact/results/deep_locked/cross_policy_contract_cases.csv": "be9da4d4e824cd13145f3cbecb1d0f8b1a020ad6a25bf9482c6a5e632583ef3a",
+    "artifact/results/deep_locked/cross_policy_contracts.json": "ccc087bf1e3529ac167e99739f69ea29b38bfd090cf3a4bce4ab9e13b702fe81",
+    "artifact/results/deep_locked/decision_table_oracle_audit.csv": "807bdf535be866b619028b2cf3a3a63c3f19154eb89b6446a286a06612e06cf5",
+    "artifact/results/deep_locked/decision_table_oracle_metrics.json": "39f3daef4484f082ea971e22c2a979495e3696ccf6e9baea4d00893e321559ac",
+    "artifact/results/deep_locked/declarative_oracle_audit.json": "bf3cf7bbff451998ab63c6c54415e9f43637b5599a7151c0d0d0333c11bc97a8",
+    "artifact/results/deep_locked/declarative_oracle_rows.csv": "4745821d407652cfcff4a95bbee725932990cb87bd99f6e58ddb56df493443b9",
+    "artifact/results/deep_locked/directive_fallback_conformance.json": "0bda0ede657ff2370d902d7ca5c04539715851b22ecfa401e4e6e9704e62b4a4",
+    "artifact/results/deep_locked/evidence_cards.json": "5e4de7db41c8d7d5293be6b015fcba5a657b39ca9b7afd420ee988457307b41a",
+    "artifact/results/deep_locked/external_baseline_full_run.json": "d268b14cc11c46e079e7e869d326920f62caf71c45b38df5c11b6024ad3d53d5",
+    "artifact/results/deep_locked/external_contrast_specificity_rows.csv": "571172e676aae9716895ecc5661813e586851188a9cca70272b8008dfe84e3f5",
+    "artifact/results/deep_locked/fold_stratification_audit.json": "feb6d08b2628bdb9cbb303748dae7c3db9961289e4c5556674f3529aecc31281",
+    "artifact/results/deep_locked/fold_stratification_rows.csv": "46ec35f4bbbb8319464a5855ed58fe006387de92a3949ee50972c3bba7556dcd",
+    "artifact/results/deep_locked/identifier_blind_replay_audit.json": "eb954c6c0a04768c6e523de8b7aaf663b25f0bca4c44472c40da162f3b5d87f5",
+    "artifact/results/deep_locked/identifier_blind_replay_rows.csv": "c64fe489a3cf3470d72bdcd7c2598102eb09aadfce2f24df864b228b612e4d00",
+    "artifact/results/deep_locked/interaction_coverage_audit.json": "6381963c72e6428d110eedf4c7fd7926f1046289a1b5bca8465897e402a92122",
+    "artifact/results/deep_locked/interaction_coverage_rows.csv": "e55b9ad4c90cad3fb5e2f99c8361bda676ecc64203da42001b6c5816a8e64bc3",
+    "artifact/results/deep_locked/issue_evidence_depth_audit.json": "0e4e8d9e6deceb4522a09c31f3e8f07f62645fe211b5f80b5a15cc31403e5c11",
+    "artifact/results/deep_locked/issue_evidence_depth_rows.csv": "860605e5813710dfc4f72253ab17d9cfb8bd0e3bb52f66cb48a05a008e0bc679",
+    "artifact/results/deep_locked/metamorphic_relation_audit.json": "345b25f90e9beb5772207c762da3edc117a8b6877b02f83cc1f7b95f8336067a",
+    "artifact/results/deep_locked/metamorphic_relation_cases.csv": "a4a21c41df4ca89401dafbcdfd12fc92267bacd956be4f7f4628e0d98f441020",
+    "artifact/results/deep_locked/minimal_pair_closure_audit.json": "069e074dec06a69303d24b4992b09339f53da886b0d4a62b7609a5fd8729d23d",
+    "artifact/results/deep_locked/minimal_pair_closure_rows.csv": "0c75bea36f91740fbcdb784f774a7ca5302f549776b9ca7c594aebd84de777a8",
+    "artifact/results/deep_locked/mutation_farm_cases.csv": "01809ebf566834a883811cfe07a5d03d03f9c69c727071375f2b2a39e47b6fca",
+    "artifact/results/deep_locked/mutation_farm_summary.json": "1681af48ccf76498a50a335d115bd208dba58e241c08c6981b8c3e6ee5df57a6",
+    "artifact/results/deep_locked/oracle_equivalence_audit.json": "434fd9b4eb3085cf7f57e6df494c39b2b75d0980e74d5add30fb2024f09f3aec",
+    "artifact/results/deep_locked/oracle_equivalence_rows.csv": "700c46996a443bd3f01bdb60ba7c3a36523a908e8de11745237813a03ee0484b",
+    "artifact/results/deep_locked/oracle_triangulation_audit.json": "ce84196719b6b20fa3a8168a2e380d64df36c9072337f9a07ee610ca2bd74c90",
+    "artifact/results/deep_locked/oracle_triangulation_rows.csv": "161a753cb1fe42feccf40db04c06dc8d8a7a2683d6b506ae86a08a3252e84361",
+    "artifact/results/deep_locked/proof_carrying_witness_audit.csv": "19998e606191c3a7e48d4efb71fdc3e41338e63d8cbd99d72712e610ce6d95c4",
+    "artifact/results/deep_locked/proof_carrying_witness_certificates.json": "21e3bde2f5108f5dd163a7c70110bdce1f0c480326ba867bc34a2a1389e689f4",
+    "artifact/results/deep_locked/proof_carrying_witness_metrics.json": "ee1a2aa28b435be639f048f9f94fcbeb3496929af805bb7d2e746f6f4a45db4f",
+    "artifact/results/deep_locked/repair_compactness_audit.json": "275e0ff52f9d14d905d857aa34cc4e268543eccba24826c6749b9f6b86d67a97",
+    "artifact/results/deep_locked/repair_compactness_rows.csv": "33eac801ce17982520b6568111c70a694a043a0426ae6ee558b8b2e7eb6355d4",
+    "artifact/results/deep_locked/repair_delta_replay_audit.json": "47eead5818712eec09fe50f354b27c58adec410113dd054739a0b063098854fd",
+    "artifact/results/deep_locked/repair_delta_replay_rows.csv": "6802d3afc425d57dc83d7edb498cecf265d21e30544f75724b556f2c2872a19e",
+    "artifact/results/deep_locked/repair_locality_audit.json": "539e7c416af0bbb1574c5593d1b86a769923a1f16a3c2037ada56577a8ef2c2f",
+    "artifact/results/deep_locked/scale_stress_audit.json": "a5c90099655a96c468990f0469e3311f4e2f40b34b20cbe9b34e27ac9dd99d20",
+    "artifact/results/deep_locked/semantic_lattice_proof_cases.csv": "46465e8b18f840460baa4d8992866b1a5d81812aa5e9d4c3aa1a88c73f69fe20",
+    "artifact/results/deep_locked/semantic_lattice_proofs.json": "0fea926522796de109dc6aa33380fe88f0229e22f3f2a2bade495d01d41d7863",
+    "artifact/results/deep_locked/semantic_mutation_adequacy.csv": "8dc0534970cf7f15812e7a649271e2859a27dc30e2652e656512ca79ac877a42",
+    "artifact/results/deep_locked/semantic_mutation_adequacy.json": "edb39957432043a4fead273f8d6665712cca22147d7374ea3b154c44aeb6e558",
+    "artifact/results/deep_locked/shadow_generalization_audit.json": "bf901871ac338cb62dada9998523cec77e4cc3de283237f9751f3921099e1d86",
+    "artifact/results/deep_locked/shadow_generalization_rows.csv": "2246b317a55a552f274c1c6b41fa162504703e0ef3dc35093fe7d263d3c65ed5",
+    "artifact/results/deep_locked/source_claim_trace_audit.json": "06c02b5c9ce21621fa3cc8bf839b504cc899eb883ed95fb4d2c2af8733c4e4b0",
+    "artifact/results/deep_locked/source_claim_trace_cards.json": "f9bd45d8e603198a26681f1b3931e1742e4e2392d6517e3f57d2ece4b8dd4daf",
+    "artifact/results/deep_locked/specbench_cases.json": "23da0bed6a32019373fe5d1a90cf06ed5e850f9452068c58e5e5d0083f32f36e",
+    "artifact/results/deep_locked/specbench_results.csv": "cb1f1c820ae6ca7cd191b3eaca29395ddfbd12b5aa6e76241a2c6d829abe508c",
+    "artifact/results/deep_locked/specbench_summary.json": "53841e7f10dab9fcb34a9e93c6c1ec22d0e481b7e5765be87e2e14305ff7799b",
+    "artifact/results/deep_locked/theory_kernel_audit.json": "98bdcb7ac0b380dfc8f60367c873a56b572ca2db223313847e15d9803942c474",
+    "artifact/results/deep_locked/theory_proof_cards.json": "72714a3fd01895a43bc210fd3efd37acf7b03122b31aadb78cd030fb5414444d",
+    "artifact/results/deep_locked/typed_ir_schema_audit.json": "5c10ea19a247253f367e1f3917314c0ff1078ab00c6d85c0da5babceaa2202d5",
+    "artifact/results/deep_locked/witness_hash_chains.csv": "4c0a138a76ed810005a083bb2a93719dcd2613082eea825b0303a61dfaf922c0",
+    "artifact/results/deliverable_trio_readiness_audit.json": "667b7dd6dca42e244ebdbd0699bcbba000ecaee9b48758e5f0bd530de4aac295",
+    "artifact/results/delivery_capsule_audit.json": "97b3c7dfa0245ee001c5cec3576d2787bd2b1a8ea6336f4eef97ab0134e01d28",
+    "artifact/results/delivery_packet_audit.json": "07b63388affaf66af4a4369469c9fdcdbe8c62a09f11b8853f4368f0b9bb8448",
+    "artifact/results/deterministic_reexecution_audit.json": "05681aec477e780e8447e0947ef7cdeb0f51fda5bcca9ccbcfc3916494dac2a8",
+    "artifact/results/deterministic_reexecution_rows.csv": "530c8d9c6cf4c70a6c1776737878d4d45e522f3658f66bc7778bb65d060b041c",
+    "artifact/results/documentation_consistency_audit.json": "b3d079b2d48801e50d7feefed5b34831b1327b8da0e69ce6761324461b04b3df",
+    "artifact/results/evidence_cards_audit.json": "bccce33c315ebd519195e9d94f9b593ab2cb8d125955f97c6f0a6ee33996b2d7",
+    "artifact/results/evidence_digest_audit.json": "7afeb50c0dc2a37a447c2f46c179427725a1fce4b60febfa7733cad4f2aee4b6",
+    "artifact/results/evidence_graph.json": "2d3d7f43ff0868c5e7c7e9afafcb16e3b06ffd2785495d38c76e359549b5fa49",
+    "artifact/results/evidence_graph_metrics.json": "a3ac62dcd8f15eb5a821fde0cfbdcfbb63ab241a2f4b2d874f5d4a5c2845492a",
+    "artifact/results/evidence_graph_paths.csv": "9cf0e4d569a8c5cfa9169c56296b0dba05ed19bae0e4365f4d04f1577f5aa8d7",
+    "artifact/results/evidence_path_multiplicity_audit.json": "9a0991a97570e7b9e1808cdc673a19e91c237e77b4be856f9fe8a93746f3f5a2",
+    "artifact/results/evidence_path_multiplicity_rows.csv": "40db2abea7fa5d4c8b031925d5c46e91de766a0ed9b43d11a60ac35c03c123d4",
+    "artifact/results/evidence_redundancy_audit.json": "c2fd20ec7efb53ee32e3a239b83d8dafe9a0d3313f9ec6abb9c0b057481daa2e",
+    "artifact/results/external_baseline_full_run_audit.json": "58d2dbe68b03c246b8b52703159e5637382deb4f33fe88c0906507a207d57542",
+    "artifact/results/external_benchmark_contract_audit.json": "e78da9cc32f653365a6286cecfda87bc3eee1dcadb7fce3d8d9d607acc5effcd",
+    "artifact/results/external_contrast_specificity_audit.json": "1db103cf3efb11aac17cee3525a45004d9ec213ea46237d8816bbf347c3df274",
+    "artifact/results/external_provenance_audit.json": "afae59208d6836849cd0ea845dbbbfce7406659e83af58a934fed9cef4e2ccd6",
+    "artifact/results/figure_layout_audit.json": "2c772dc76ebe04936847e4f221f3b4593c8aa82a144e0a97d488ae578ecb2a31",
+    "artifact/results/figure_reference_closure_audit.json": "03f191e26c6bce43050cf43c65e5692d82e799ba25bf0f95a530dc374c344aaa",
+    "artifact/results/gate_sensitivity_audit.json": "48c485ec12508c8d1a6bfe91165370cc83b7fb1e574d49482df8e49201768ad5",
+    "artifact/results/generated_oracle_tests.json": "3ef8b2f87770d92470a00b8ec78469f999626a0b82bfcf2d6a510ed06a7d4bf7",
+    "artifact/results/icse_criteria_closure_audit.json": "571998407df2608a789c22d64a1beb1e72690afbd42bc05def4ece6d3a58e925",
+    "artifact/results/idempotence_replay_audit.json": "2e96850547834ce270fec8d4f2cc3b72e9bec19ffd15df34fc8e6e24fe87d2ae",
+    "artifact/results/label_flow_audit.json": "d3159ef6a207849b6608c61ddd7ad287062b6ba5967aa629abbfd3f3f7a67ad0",
+    "artifact/results/latex_source_integrity_audit.json": "2a04759cf1314af4f9f6236ea66835457645a0217d3dd481d8d71e3ec7d7806e",
+    "artifact/results/oracle_structural_independence_audit.json": "ae66cd9b700c16cb4ae05ce55e75a5339a1ee1e1e62248780478a06fcdac72ae",
+    "artifact/results/overclaim_boundary_audit.json": "388212057953152eb67c26f52f6721d87ac635b2a4fc2ca2f85bc177252c047e",
+    "artifact/results/package_identity_audit.json": "a42fc7f81757c49dc8616d2525e1f47d49a52cf3e9cbf9a1c863ac7580cad4fc",
+    "artifact/results/paper_argument_surface_audit.json": "c454ec0a36ba400afa52cf0f9c638fa45e2e5e2dacaa26136c8b6ceb5fb33945",
+    "artifact/results/paper_claim_consistency_audit.json": "5e8ace5fe2979080f2e69207f33bfc5746e1c982e07ac2f8f194844099915e96",
+    "artifact/results/paper_metadata_alignment_audit.json": "74b78bd3cc7af8a925b0b943dbb5e07e827d347def743db024f9b43311af5fbe",
+    "artifact/results/paper_rhetoric_audit.json": "66cb2fa60d87851b498ed4f89679bb6ce1e931d91166b54e58bf1b86d7510392",
+    "artifact/results/pdf_reference_boundary_audit.json": "4c4ede4b23a87de5be2af6cf8d17503c38e0d3db7ea39f606c4dfc78b658bd80",
+    "artifact/results/pdf_source_compile_audit.json": "7018e94b02993a9a0624b7c2439c6bb653ac568e32ff23e73f8145ca3899c211",
+    "artifact/results/pdf_text_surface_audit.json": "f6b4462e1b29fcfc1bde19d6eb19a4fa581a9efc8b1b9ddcc52bcaf23b108f97",
+    "artifact/results/pdf_visual_density_audit.json": "da5843ecf11751e6876193d207fa542a73a3263f06b9e6eda2180e37a4081941",
+    "artifact/results/process_trace_hygiene_audit.json": "aa51fd3ad24b4842de0415743d011bf8e6cd95d81d6e4eb562635b61b4ce2b58",
+    "artifact/results/protocol_amendment_integrity_audit.json": "76853586703f0aabf56f7704843b1c3bdf653dac7cd907790c4be28b98b8c207",
+    "artifact/results/public_provenance_audit.json": "6528a4ddae1c85b42da6413f404d6d0ea1dc4c7bc3fda1fb7f9d610b61481df8",
+    "artifact/results/quickstart_readiness_audit.json": "f09088d3243cd6fbc1cc23d633a86ce39491a835109566a6558ee112c442a001",
+    "artifact/results/reference_integrity_audit.json": "07b43e53309bba1ba53d19ee8ca249ca8efba20fffe01a5a9f913a0e8b2f9c99",
+    "artifact/results/reference_ledger_status.json": "ace934f703cda2ad2f82d5c8d6b377814e121d72688fe626cc54015c1c0597f7",
+    "artifact/results/reference_role_balance_audit.json": "b5012a6fefbe546aaf6c0479c24b015fa47925e58b6ad49a303c3196a61b1f80",
+    "artifact/results/release_claim_drift_audit.json": "a017b007752d01c05909a1e81374b9c47d668ae089ae3e801516fec3f4f4c90a",
+    "artifact/results/release_hygiene_audit.json": "56e62626ad705cdc31b9fa0cbfb0cbc09ac592d7ffbea214c2279be84af0307a",
+    "artifact/results/release_language_integrity_audit.json": "139c9ad391b5908bd151ba3b33d8345b46108f7d2f94d5b672ec9ed02e9ec6a1",
+    "artifact/results/repository_entrypoint_audit.json": "28037fc176e2f48304f4ddade81f0387bb753f7f69b8ab33d85b254c55572644",
+    "artifact/results/repository_quality_audit.json": "c072379f3c87697ea50fefb50509b47829a07ebc80554b18241bda24f7787437",
+    "artifact/results/repository_upload_audit.json": "40fa9eb001b7746e0413cfaf1e8cc9243013c8b4a2865bcd92171272bd7c9bfc",
+    "artifact/results/rq_traceability_audit.json": "0c63768617678d4d0087f28d7f09b230a8f0a65b5b00e65479e2731a96d1128a",
+    "artifact/results/rule_maturity_audit.json": "2d4d221c171c12a566ce17f52af07428343a9ce5caf5ecafd45b395a976861a8",
+    "artifact/results/rule_trace_matrix_audit.json": "82f0326cf5215e92e4fd1e0dd63e2355d908df0a1b37576667466a896348d107",
+    "artifact/results/rule_trace_matrix_rows.csv": "7f9782721343f7f1fd2af62dbe02006ee3e15c16db96978d2d59e828005f49d4",
+    "artifact/results/runtime_boundary_audit.json": "528dbaf170acc6185d9232f0c8fdd66c63bb220c16c81a74a96aa9bbfcfa2c37",
+    "artifact/results/scorecard.json": "1ab4a43e722a34ab0a84a44a7917be38ac32890f4e9a3d790ed0b3c52e4b0457",
+    "artifact/results/semantic_recomputation_audit.json": "81c45bc83980d04ecc7a79ca026da3b9610850ef12e9a0c4e5cafd903c5cf821",
+    "artifact/results/stale_numeric_surface_audit.json": "6550eaeb7be44179bed4a875fec775d108e31cb587e9509832ac385030a93f06",
+    "artifact/results/static_code_health_audit.json": "dea91aad4892c43ed050b93dc35aa0068c2248e0a8689251325ad24b6064478f",
+    "artifact/results/strict_reproducibility_smoke.json": "38e9f49b529ee0dd7f328e01b9e87c6f2d51f0371e8646d64791bf6de13855ec",
+    "artifact/results/supplement_alignment_audit.json": "5d6eb783ea2bbec09d52806005aa87a93991f7adc00275076a982b0ae0b744b1",
+    "artifact/results/threat_closure_audit.json": "c26874ef879493184f5e83036678567fed939dc2af53f9895373f9492905904c",
+    "artifact/results/threat_closure_rows.csv": "f6040dfdc4e6c87bcbc7d71f9d61cb292239ce226e1afc3a8243f01ce20d06d8",
+    "artifact/results/triage_index_audit.json": "9170c173e2d1c370991bfdb8d4ab8cb78667f96b4d7618752e1bcd8983f8e1b2",
+    "artifact/results/validation_orchestration_audit.json": "d17619a57cf37216966fc37e3f11710489b0e2485d990fa0242e3e815a31dda8",
+    "artifact/results/validation_report_consistency_audit.json": "d88e36d69762ef4d33246c71cbf0db28627238954d809681ea781ca0b1d8aea3",
+    "artifact/results/validation_summary.json": "8d99e592c81b88fa3a6b3c540d2afb583a51f745c271563c997cfd0ca5ad0624",
+    "artifact/results/witness_hash_chain_audit.json": "ac44c39e889cf665dd3566f2c795a173ed5d54c7da959d78d3495eae0a8b4c73"
+  },
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

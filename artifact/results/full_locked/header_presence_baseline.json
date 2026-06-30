@@ -1,0 +1,978 @@
+[
+  {
+    "baseline_labels": [
+      "missing_enforced_csp"
+    ],
+    "expected_issue": "csp_report_only_not_enforced",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_RO_01",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "missing_enforced_csp"
+    ],
+    "expected_issue": "csp_report_only_not_enforced",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_RO_02",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "missing_enforced_csp"
+    ],
+    "expected_issue": "csp_report_only_not_enforced",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_RO_03",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "missing_enforced_csp"
+    ],
+    "expected_issue": "csp_report_only_not_enforced",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_RO_04",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "missing_enforced_csp"
+    ],
+    "expected_issue": "csp_report_only_not_enforced",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_RO_05",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "missing_enforced_csp"
+    ],
+    "expected_issue": "csp_report_only_not_enforced",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_RO_06",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_07",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_effective_script_allowance",
+    "family": "CSP",
+    "fixture_id": "LF_CSP_FB_08",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "family": "CSP/framework",
+    "fixture_id": "LF_CSP_NONCE_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "family": "CSP/framework",
+    "fixture_id": "LF_CSP_NONCE_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "family": "CSP/framework",
+    "fixture_id": "LF_CSP_NONCE_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "family": "CSP/framework",
+    "fixture_id": "LF_CSP_NONCE_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "family": "CSP/framework",
+    "fixture_id": "LF_CSP_NONCE_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "nonce_csp_static_render_incompatibility",
+    "family": "CSP/framework",
+    "fixture_id": "LF_CSP_NONCE_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "cors_wildcard_with_credentials_marker"
+    ],
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "family": "CORS",
+    "fixture_id": "LF_CORS_WC_01",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "cors_wildcard_with_credentials_marker"
+    ],
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "family": "CORS",
+    "fixture_id": "LF_CORS_WC_02",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "cors_wildcard_with_credentials_marker"
+    ],
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "family": "CORS",
+    "fixture_id": "LF_CORS_WC_03",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "cors_wildcard_with_credentials_marker"
+    ],
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "family": "CORS",
+    "fixture_id": "LF_CORS_WC_04",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "cors_wildcard_with_credentials_marker"
+    ],
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "family": "CORS",
+    "fixture_id": "LF_CORS_WC_05",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "cors_wildcard_with_credentials_marker"
+    ],
+    "expected_issue": "cors_intended_credentialed_share_blocked",
+    "family": "CORS",
+    "fixture_id": "LF_CORS_WC_06",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "family": "CORS/framework",
+    "fixture_id": "LF_CORS_REFLECT_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "family": "CORS/framework",
+    "fixture_id": "LF_CORS_REFLECT_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "family": "CORS/framework",
+    "fixture_id": "LF_CORS_REFLECT_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "family": "CORS/framework",
+    "fixture_id": "LF_CORS_REFLECT_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "family": "CORS/framework",
+    "fixture_id": "LF_CORS_REFLECT_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_reflected_origin_with_credentials",
+    "family": "CORS/framework",
+    "fixture_id": "LF_CORS_REFLECT_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_HTTP_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_HTTP_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_HTTP_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_HTTP_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_HTTP_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_header_not_honored_over_http",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_HTTP_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "hsts_zero_max_age_marker"
+    ],
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_ZERO_01",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "hsts_zero_max_age_marker"
+    ],
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_ZERO_02",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "hsts_zero_max_age_marker"
+    ],
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_ZERO_03",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "hsts_zero_max_age_marker"
+    ],
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_ZERO_04",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "hsts_zero_max_age_marker"
+    ],
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_ZERO_05",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "hsts_zero_max_age_marker"
+    ],
+    "expected_issue": "hsts_policy_cleared_by_zero_max_age",
+    "family": "HSTS",
+    "fixture_id": "LF_HSTS_ZERO_06",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "coep_without_local_corp_or_cors_marker"
+    ],
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_COEP_01",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "coep_without_local_corp_or_cors_marker"
+    ],
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_COEP_02",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "coep_without_local_corp_or_cors_marker"
+    ],
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_COEP_03",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "coep_without_local_corp_or_cors_marker"
+    ],
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_COEP_04",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "coep_without_local_corp_or_cors_marker"
+    ],
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_COEP_05",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [
+      "coep_without_local_corp_or_cors_marker"
+    ],
+    "expected_issue": "coep_require_corp_blocks_cross_origin_resource",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_COEP_06",
+    "flagged": true,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_COOP_ISO_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_COOP_ISO_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_COOP_ISO_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_COOP_ISO_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_COOP_ISO_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cross_origin_isolation_incomplete",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_COOP_ISO_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "permissions_policy_feature_disabled",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_PERM_DISABLED_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "permissions_policy_feature_disabled",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_PERM_DISABLED_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "permissions_policy_feature_disabled",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_PERM_DISABLED_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "permissions_policy_feature_disabled",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_PERM_DISABLED_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "permissions_policy_feature_disabled",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_PERM_DISABLED_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "permissions_policy_feature_disabled",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_PERM_DISABLED_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CSP",
+    "fixture_id": "LF_NC_CSP_SELF_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CSP",
+    "fixture_id": "LF_NC_CSP_SELF_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CSP",
+    "fixture_id": "LF_NC_CSP_OVERRIDE_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CSP",
+    "fixture_id": "LF_NC_CSP_OVERRIDE_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CORS",
+    "fixture_id": "LF_NC_CORS_SPECIFIC_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CORS",
+    "fixture_id": "LF_NC_CORS_SPECIFIC_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CORS",
+    "fixture_id": "LF_NC_CORS_WC_OMIT_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CORS",
+    "fixture_id": "LF_NC_CORS_WC_OMIT_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "HSTS",
+    "fixture_id": "LF_NC_HSTS_HTTPS_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "HSTS",
+    "fixture_id": "LF_NC_HSTS_HTTPS_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "HSTS",
+    "fixture_id": "LF_NC_HSTS_POSITIVE_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "HSTS",
+    "fixture_id": "LF_NC_HSTS_POSITIVE_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_NC_COEP_CORP_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_NC_COEP_CORP_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_NC_COEP_CORS_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "COEP/CORP/CORS",
+    "fixture_id": "LF_NC_COEP_CORS_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_NC_COOP_ISO_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "COOP/COEP/Permissions-Policy",
+    "fixture_id": "LF_NC_COOP_ISO_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_NC_PERM_SELF_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "Permissions-Policy",
+    "fixture_id": "LF_NC_PERM_SELF_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_07",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "csp_conjunctive_policy_composition_blocks_required_script",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_CSP_COMPOSE_08",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_LAYER_DROP_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_LAYER_DROP_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_LAYER_DROP_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_LAYER_DROP_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_LAYER_DROP_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "layered_header_override_drops_enforcement",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_LAYER_DROP_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "family": "CORS/cache",
+    "fixture_id": "LF_CORS_VARY_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "family": "CORS/cache",
+    "fixture_id": "LF_CORS_VARY_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "family": "CORS/cache",
+    "fixture_id": "LF_CORS_VARY_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "family": "CORS/cache",
+    "fixture_id": "LF_CORS_VARY_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "family": "CORS/cache",
+    "fixture_id": "LF_CORS_VARY_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "cors_dynamic_origin_missing_vary",
+    "family": "CORS/cache",
+    "fixture_id": "LF_CORS_VARY_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_01",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_02",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_03",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_04",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_05",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "hsts_subdomain_scope_not_covered",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_HSTS_SUBDOMAIN_06",
+    "flagged": false,
+    "semantic_positive": true
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_NC_CSP_COMPOSE_ALLOW_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_NC_CSP_COMPOSE_ALLOW_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_NC_LAYER_PRESERVE_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "Layered policy composition",
+    "fixture_id": "LF_NC_LAYER_PRESERVE_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CORS/cache",
+    "fixture_id": "LF_NC_CORS_VARY_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "CORS/cache",
+    "fixture_id": "LF_NC_CORS_VARY_02",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_NC_HSTS_SUBDOMAIN_01",
+    "flagged": false,
+    "semantic_positive": false
+  },
+  {
+    "baseline_labels": [],
+    "expected_issue": "none",
+    "family": "HSTS/framework",
+    "fixture_id": "LF_NC_HSTS_SUBDOMAIN_02",
+    "flagged": false,
+    "semantic_positive": false
+  }
+]

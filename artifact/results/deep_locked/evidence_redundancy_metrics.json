@@ -1,0 +1,27 @@
+{
+  "admitted_claims": 45,
+  "admitted_claims_by_source_type": {
+    "baseline_tool_documentation": 4,
+    "developer_documentation": 6,
+    "framework_documentation": 18,
+    "specification": 17
+  },
+  "claims": 45,
+  "interpretation": "Source redundancy audit over public evidence ledgers; rule soundness still depends on encoded fragment assumptions.",
+  "rule_source_type_incidence": {
+    "baseline_tool_documentation": 3,
+    "developer_documentation": 6,
+    "framework_documentation": 13,
+    "specification": 15
+  },
+  "rules": 35,
+  "rules_with_missing_source_ids": [],
+  "rules_with_normative_spec_source": 15,
+  "rules_without_normative_spec_source": 20,
+  "source_types_by_claim": {
+    "baseline_tool_documentation": 4,
+    "developer_documentation": 6,
+    "framework_documentation": 18,
+    "specification": 17
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "files_checked": 613,
+  "forbidden_patterns": 8,
+  "hits": [],
+  "interpretation": "Strict scan for paper delivery-process traces, local paths, tool traces, account identifiers, and secret-token-shaped strings in the anonymous release tree.",
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass"
+}

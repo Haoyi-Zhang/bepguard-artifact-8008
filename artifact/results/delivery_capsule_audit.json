@@ -1,0 +1,11 @@
+{
+  "interpretation": "Checks that the delivery capsule exposes exactly the anonymous paper, supplement, code/artifact, reproduction instructions, manifests, and validation summaries without dependency caches or temporary files.",
+  "problem_count": 0,
+  "problems": [],
+  "required_capsule_files": 16,
+  "status": "pass",
+  "top_level_entries": [
+    "artifact",
+    "paper"
+  ]
+}

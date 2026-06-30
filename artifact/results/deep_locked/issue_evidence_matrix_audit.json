@@ -1,0 +1,24 @@
+{
+  "channels_per_issue": 12,
+  "complete_issue_classes": 25,
+  "evidence_channels": [
+    "locked_positive",
+    "intent_matched_control",
+    "positive_certificate",
+    "paired_repair",
+    "specbench_pressure",
+    "mutation_pressure",
+    "shadow_replay",
+    "blind_replay",
+    "stability_replay",
+    "causal_activation",
+    "declarative_oracle_agreement",
+    "evidence_card"
+  ],
+  "interpretation": "Per-issue evidence matrix requiring every drift class to be supported by independent locked, control, certificate, repair, boundary-benchmark, mutation, shadow/blind/stability, causal, declarative-oracle, and evidence-card channels.",
+  "issue_classes_checked": 25,
+  "problem_count": 0,
+  "problems": [],
+  "status": "pass",
+  "triangulation_cells": 300
+}

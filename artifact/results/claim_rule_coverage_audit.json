@@ -1,0 +1,1194 @@
+{
+  "claim_profiles": [
+    {
+      "claim_id": "CL_CSP_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 8,
+        "paired_repair_negative_control": 96,
+        "positive": 96
+      },
+      "policy_family": "CSP",
+      "rules": [
+        "R_CSP_REPORT_ONLY_MONITOR"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CSP_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 64,
+        "positive": 64
+      },
+      "policy_family": "CSP",
+      "rules": [
+        "R_CSP_DEFAULT_SRC_FALLBACK"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 190
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CSP_03",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 40,
+        "paired_repair_negative_control": 12,
+        "positive": 12
+      },
+      "policy_family": "CSP",
+      "rules": [
+        "R_CSP_SCRIPT_SRC_OVERRIDES_DEFAULT"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CSP_04",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 32,
+        "positive": 32
+      },
+      "policy_family": "CSP",
+      "rules": [
+        "R_CSP_DEFAULT_SRC_FALLBACK"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CSP_05",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP",
+      "rules": [
+        "R_CSP_META_REPORT_ONLY_UNSUPPORTED"
+      ],
+      "specbench_roles": {
+        "positive": 190
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CSP_06",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "CSP",
+      "rules": [
+        "R_CSP_NONCE_UNIQUE_PER_TRANSMISSION"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CSP_07",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP",
+      "rules": [
+        "R_CSP_MULTIPLE_POLICIES_RESTRICT"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_CORS_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "CORS",
+      "rules": [
+        "R_CORS_WILDCARD_CREDENTIALS_NOT_SHAREABLE"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 190
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CORS_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 24,
+        "paired_repair_negative_control": 24,
+        "positive": 24
+      },
+      "policy_family": "CORS",
+      "rules": [
+        "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CORS_03",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 12,
+        "positive": 12
+      },
+      "policy_family": "CORS",
+      "rules": [
+        "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 190
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CORS_04",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CORS",
+      "rules": [
+        "R_CORS_DYNAMIC_ACAO_NEEDS_VARY"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_HSTS_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 60,
+        "positive": 60
+      },
+      "policy_family": "HSTS",
+      "rules": [
+        "R_HSTS_IGNORE_INSECURE_TRANSPORT"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_HSTS_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "HSTS",
+      "rules": [
+        "R_HSTS_MAX_AGE_ZERO_CLEARS"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_HSTS_03",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 12,
+        "positive": 12
+      },
+      "policy_family": "HSTS",
+      "rules": [
+        "R_HSTS_INVALID_HEADER_IGNORED"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_COEP_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "COEP/CORP/CORS",
+      "rules": [
+        "R_COEP_REQUIRE_CORP_NO_CORS"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_COEP_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 24,
+        "paired_repair_negative_control": 12,
+        "positive": 12
+      },
+      "policy_family": "COEP/CORP/CORS",
+      "rules": [
+        "R_COEP_CORS_MODE_COMPATIBLE"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 285
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_COOP_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "COOP",
+      "rules": [
+        "R_COOP_SAME_ORIGIN_FOR_ISOLATION"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_COOP_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 24,
+        "positive": 24
+      },
+      "policy_family": "COOP",
+      "rules": [
+        "R_COOP_UNSAFE_NONE_DEFAULT"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_PERM_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "Permissions-Policy",
+      "rules": [
+        "R_PERMISSIONS_POLICY_ALLOWLIST"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_PERM_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 8,
+        "paired_repair_negative_control": 60,
+        "positive": 60
+      },
+      "policy_family": "Permissions-Policy",
+      "rules": [
+        "R_PERMISSIONS_POLICY_EMPTY_DISABLES"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_NEXT_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 24,
+        "positive": 24
+      },
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_NEXT_NONCE_DYNAMIC_REQUIRED"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_NEXT_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 24,
+        "positive": 24
+      },
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_NEXT_NONCE_DYNAMIC_REQUIRED"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_HELMET_01",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_HELMET_CSP_DEFAULT_MERGE"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_HELMET_02",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_HELMET_CSP_DEFAULT_MERGE"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_HELMET_03",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_HELMET_REPORT_ONLY"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_HELMET_04",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "COEP/framework",
+      "rules": [
+        "R_HELMET_COEP_NOT_DEFAULT"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_HELMET_05",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "baseline",
+      "rules": [
+        "R_BASELINE_CSP_EVALUATOR_SCOPE"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_DJANGO_01",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "HSTS/framework",
+      "rules": [
+        "R_DJANGO_HSTS_HTTPS_ONLY"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_DJANGO_02",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "HSTS/framework",
+      "rules": [
+        "R_DJANGO_HSTS_HTTPS_ONLY"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_SPRING_01",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_SPRING_CSP_CONTEXT_REQUIRED"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_SPRING_02",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_SPRING_CSP_CONTEXT_REQUIRED",
+        "R_CSP_REPORT_ONLY_MONITOR"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_RAILS_01",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_RAILS_REPORT_ONLY_MIGRATION"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_RAILS_02",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_RAILS_REPORT_ONLY_MIGRATION",
+        "R_CSP_REPORT_ONLY_MONITOR"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_RAILS_03",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CSP/framework",
+      "rules": [
+        "R_RAILS_NONCE_CACHE_TRADEOFF",
+        "R_CSP_NONCE_UNIQUE_PER_TRANSMISSION"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_EXPRESS_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "CORS/framework",
+      "rules": [
+        "R_EXPRESS_CORS_REFLECT_ORIGIN"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_EXPRESS_02",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "paired_repair_negative_control": 24,
+        "positive": 24
+      },
+      "policy_family": "CORS/framework",
+      "rules": [
+        "R_EXPRESS_CORS_REFLECT_ORIGIN"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_EXPRESS_03",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "CORS/framework",
+      "rules": [
+        "R_EXPRESS_CORS_NOT_AUTHORIZATION"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_BASE_01",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "baseline",
+      "rules": [
+        "R_BASELINE_CSP_EVALUATOR_SCOPE"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_BASE_02",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "baseline",
+      "rules": [
+        "R_BASELINE_OBSERVATORY_SCOPE"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_BASE_03",
+      "direct_benchmark_path": false,
+      "exercised": true,
+      "has_evidence_card": false,
+      "locked_fixture_roles": {},
+      "policy_family": "baseline",
+      "rules": [
+        "R_BASELINE_HSTSPRELOAD_SCOPE"
+      ],
+      "specbench_roles": {},
+      "support_rule_path": true
+    },
+    {
+      "claim_id": "CL_CSP_08",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 64,
+        "positive": 64
+      },
+      "policy_family": "Layered policy composition",
+      "rules": [
+        "R_CSP_CONJUNCTIVE_COMPOSITION",
+        "R_LAYERED_HEADER_SURFACE"
+      ],
+      "specbench_roles": {
+        "positive": 190
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_LAYER_01",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "Layered policy composition",
+      "rules": [
+        "R_LAYERED_HEADER_SURFACE",
+        "R_CSP_REPORT_ONLY_MONITOR"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_CORS_05",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "CORS/cache",
+      "rules": [
+        "R_CORS_DYNAMIC_ORIGIN_VARY",
+        "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE"
+      ],
+      "specbench_roles": {
+        "positive": 95
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_HSTS_04",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 16,
+        "paired_repair_negative_control": 48,
+        "positive": 48
+      },
+      "policy_family": "HSTS/framework",
+      "rules": [
+        "R_HSTS_INCLUDE_SUBDOMAINS_SCOPE"
+      ],
+      "specbench_roles": {
+        "positive": 190
+      },
+      "support_rule_path": false
+    },
+    {
+      "claim_id": "CL_HSTS_05",
+      "direct_benchmark_path": true,
+      "exercised": true,
+      "has_evidence_card": true,
+      "locked_fixture_roles": {
+        "negative_control": 8,
+        "paired_repair_negative_control": 12,
+        "positive": 12
+      },
+      "policy_family": "HSTS/preload",
+      "rules": [
+        "R_BASELINE_HSTSPRELOAD_SCOPE",
+        "R_HSTS_INCLUDE_SUBDOMAINS_SCOPE"
+      ],
+      "specbench_roles": {
+        "negative_control": 95,
+        "positive": 95
+      },
+      "support_rule_path": false
+    }
+  ],
+  "claim_rule_edges": 52,
+  "claims_checked": 45,
+  "claims_with_admission_path": 45,
+  "claims_with_direct_benchmark_path": 28,
+  "claims_with_support_rule_path": 17,
+  "interpretation": "Checks that each admitted public claim has a source span, admitted semantic rules, and either a direct benchmark/evidence path or a classified generation/baseline support-rule path; every encoded or scope-record rule must be justified by at least one admitted public claim.",
+  "orphan_rules": [],
+  "policy_families": {
+    "COEP/CORP/CORS": 2,
+    "COEP/framework": 1,
+    "COOP": 2,
+    "CORS": 4,
+    "CORS/cache": 1,
+    "CORS/framework": 3,
+    "CSP": 7,
+    "CSP/framework": 10,
+    "HSTS": 3,
+    "HSTS/framework": 3,
+    "HSTS/preload": 1,
+    "Layered policy composition": 2,
+    "Permissions-Policy": 2,
+    "baseline": 4
+  },
+  "problem_count": 0,
+  "problems": [],
+  "rule_profiles": [
+    {
+      "claims": [
+        "CL_CSP_01",
+        "CL_LAYER_01",
+        "CL_RAILS_02",
+        "CL_SPRING_02"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CSP",
+      "rule_id": "R_CSP_REPORT_ONLY_MONITOR",
+      "source_ids": [
+        "S_CSP_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CSP_02",
+        "CL_CSP_04"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CSP",
+      "rule_id": "R_CSP_DEFAULT_SRC_FALLBACK",
+      "source_ids": [
+        "S_CSP_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CSP_03"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CSP",
+      "rule_id": "R_CSP_SCRIPT_SRC_OVERRIDES_DEFAULT",
+      "source_ids": [
+        "S_CSP_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CSP_05"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CSP",
+      "rule_id": "R_CSP_META_REPORT_ONLY_UNSUPPORTED",
+      "source_ids": [
+        "S_CSP_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CSP_06",
+        "CL_RAILS_03"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CSP",
+      "rule_id": "R_CSP_NONCE_UNIQUE_PER_TRANSMISSION",
+      "source_ids": [
+        "S_CSP_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CSP_07"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CSP",
+      "rule_id": "R_CSP_MULTIPLE_POLICIES_RESTRICT",
+      "source_ids": [
+        "S_CSP_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CORS_01"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CORS",
+      "rule_id": "R_CORS_WILDCARD_CREDENTIALS_NOT_SHAREABLE",
+      "source_ids": [
+        "S_FETCH_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CORS_02",
+        "CL_CORS_03",
+        "CL_CORS_05"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CORS",
+      "rule_id": "R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE",
+      "source_ids": [
+        "S_FETCH_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CORS_04"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CORS",
+      "rule_id": "R_CORS_DYNAMIC_ACAO_NEEDS_VARY",
+      "source_ids": [
+        "S_FETCH_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_HSTS_01"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "HSTS",
+      "rule_id": "R_HSTS_IGNORE_INSECURE_TRANSPORT",
+      "source_ids": [
+        "S_RFC6797"
+      ]
+    },
+    {
+      "claims": [
+        "CL_HSTS_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "HSTS",
+      "rule_id": "R_HSTS_MAX_AGE_ZERO_CLEARS",
+      "source_ids": [
+        "S_RFC6797"
+      ]
+    },
+    {
+      "claims": [
+        "CL_HSTS_03"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "HSTS",
+      "rule_id": "R_HSTS_INVALID_HEADER_IGNORED",
+      "source_ids": [
+        "S_RFC6797"
+      ]
+    },
+    {
+      "claims": [
+        "CL_COEP_01"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "COEP/CORP/CORS",
+      "rule_id": "R_COEP_REQUIRE_CORP_NO_CORS",
+      "source_ids": [
+        "S_MDN_COEP"
+      ]
+    },
+    {
+      "claims": [
+        "CL_COEP_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "COEP/CORP/CORS",
+      "rule_id": "R_COEP_CORS_MODE_COMPATIBLE",
+      "source_ids": [
+        "S_MDN_COEP"
+      ]
+    },
+    {
+      "claims": [
+        "CL_COOP_01"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "COOP",
+      "rule_id": "R_COOP_SAME_ORIGIN_FOR_ISOLATION",
+      "source_ids": [
+        "S_MDN_COOP"
+      ]
+    },
+    {
+      "claims": [
+        "CL_COOP_02"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "COOP",
+      "rule_id": "R_COOP_UNSAFE_NONE_DEFAULT",
+      "source_ids": [
+        "S_MDN_COOP"
+      ]
+    },
+    {
+      "claims": [
+        "CL_PERM_01"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "Permissions-Policy",
+      "rule_id": "R_PERMISSIONS_POLICY_ALLOWLIST",
+      "source_ids": [
+        "S_MDN_PERMISSIONS"
+      ]
+    },
+    {
+      "claims": [
+        "CL_PERM_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "Permissions-Policy",
+      "rule_id": "R_PERMISSIONS_POLICY_EMPTY_DISABLES",
+      "source_ids": [
+        "S_MDN_PERMISSIONS"
+      ]
+    },
+    {
+      "claims": [
+        "CL_NEXT_01",
+        "CL_NEXT_02"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CSP/framework",
+      "rule_id": "R_NEXT_NONCE_DYNAMIC_REQUIRED",
+      "source_ids": [
+        "S_NEXT_CSP_DOC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_HELMET_01",
+        "CL_HELMET_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CSP/framework",
+      "rule_id": "R_HELMET_CSP_DEFAULT_MERGE",
+      "source_ids": [
+        "S_HELMET_DOC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_HELMET_03"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CSP/framework",
+      "rule_id": "R_HELMET_REPORT_ONLY",
+      "source_ids": [
+        "S_HELMET_DOC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_HELMET_04"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "COEP/framework",
+      "rule_id": "R_HELMET_COEP_NOT_DEFAULT",
+      "source_ids": [
+        "S_HELMET_DOC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_DJANGO_01",
+        "CL_DJANGO_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "HSTS/framework",
+      "rule_id": "R_DJANGO_HSTS_HTTPS_ONLY",
+      "source_ids": [
+        "S_DJANGO_SECURITY"
+      ]
+    },
+    {
+      "claims": [
+        "CL_SPRING_01",
+        "CL_SPRING_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CSP/framework",
+      "rule_id": "R_SPRING_CSP_CONTEXT_REQUIRED",
+      "source_ids": [
+        "S_SPRING_SECURITY_HEADERS"
+      ]
+    },
+    {
+      "claims": [
+        "CL_RAILS_01",
+        "CL_RAILS_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CSP/framework",
+      "rule_id": "R_RAILS_REPORT_ONLY_MIGRATION",
+      "source_ids": [
+        "S_RAILS_SECURITY"
+      ]
+    },
+    {
+      "claims": [
+        "CL_RAILS_03"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CSP/framework",
+      "rule_id": "R_RAILS_NONCE_CACHE_TRADEOFF",
+      "source_ids": [
+        "S_RAILS_SECURITY"
+      ]
+    },
+    {
+      "claims": [
+        "CL_EXPRESS_01",
+        "CL_EXPRESS_02"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CORS/framework",
+      "rule_id": "R_EXPRESS_CORS_REFLECT_ORIGIN",
+      "source_ids": [
+        "S_EXPRESS_CORS"
+      ]
+    },
+    {
+      "claims": [
+        "CL_EXPRESS_03"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "CORS/framework",
+      "rule_id": "R_EXPRESS_CORS_NOT_AUTHORIZATION",
+      "source_ids": [
+        "S_EXPRESS_CORS"
+      ]
+    },
+    {
+      "claims": [
+        "CL_BASE_01",
+        "CL_HELMET_05"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "baseline",
+      "rule_id": "R_BASELINE_CSP_EVALUATOR_SCOPE",
+      "source_ids": [
+        "S_CSP_EVALUATOR"
+      ]
+    },
+    {
+      "claims": [
+        "CL_BASE_02"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "baseline",
+      "rule_id": "R_BASELINE_OBSERVATORY_SCOPE",
+      "source_ids": [
+        "S_MDN_OBSERVATORY"
+      ]
+    },
+    {
+      "claims": [
+        "CL_BASE_03",
+        "CL_HSTS_05"
+      ],
+      "has_specbench_case": false,
+      "policy_family": "baseline",
+      "rule_id": "R_BASELINE_HSTSPRELOAD_SCOPE",
+      "source_ids": [
+        "S_HSTSPRELOAD"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CSP_08"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "Layered policy composition",
+      "rule_id": "R_CSP_CONJUNCTIVE_COMPOSITION",
+      "source_ids": [
+        "S_CSP_SPEC"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CSP_08",
+        "CL_LAYER_01"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "Layered policy composition",
+      "rule_id": "R_LAYERED_HEADER_SURFACE",
+      "source_ids": [
+        "S_HELMET_DOC",
+        "S_DJANGO_SECURITY",
+        "S_SPRING_SECURITY_HEADERS",
+        "S_RAILS_SECURITY"
+      ]
+    },
+    {
+      "claims": [
+        "CL_CORS_05"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "CORS/cache",
+      "rule_id": "R_CORS_DYNAMIC_ORIGIN_VARY",
+      "source_ids": [
+        "S_FETCH_SPEC",
+        "S_EXPRESS_CORS"
+      ]
+    },
+    {
+      "claims": [
+        "CL_HSTS_04",
+        "CL_HSTS_05"
+      ],
+      "has_specbench_case": true,
+      "policy_family": "HSTS/framework",
+      "rule_id": "R_HSTS_INCLUDE_SUBDOMAINS_SCOPE",
+      "source_ids": [
+        "S_RFC6797",
+        "S_DJANGO_SECURITY",
+        "S_SPRING_SECURITY_HEADERS"
+      ]
+    }
+  ],
+  "rules_checked": 35,
+  "rules_with_claims": 35,
+  "rules_with_specbench_cases": 13,
+  "schema": "BEPGuardClaimRuleCoverage/v1",
+  "status": "pass"
+}

@@ -1,0 +1,41 @@
+{
+  "by_transform": {
+    "alpha_context_only": 972,
+    "alpha_full": 972,
+    "browser_context_noop": 972,
+    "cache_metadata_noop": 972,
+    "context_noise": 972,
+    "header_lowercase": 972,
+    "header_mixedcase": 972,
+    "header_reverse": 972,
+    "header_sort": 972,
+    "irrelevant_metadata": 972,
+    "observability_noop": 972,
+    "transport_metadata_noop": 972
+  },
+  "failures": [],
+  "fixtures_transformed": 972,
+  "interpretation": "Required transformations are semantics-preserving representation changes over every locked BEP-Deep fixture. Optional alpha-renaming rows expose genuine origin-string dependencies and are reported, not required, so the audit cannot hide overfitting by deleting semantic dependencies.",
+  "optional_dependency_cases": 18,
+  "optional_preserved": 1926,
+  "optional_shadow_cases": 1944,
+  "optional_transforms": 2,
+  "problem_count": 0,
+  "required_by_transform": {
+    "browser_context_noop": 972,
+    "cache_metadata_noop": 972,
+    "context_noise": 972,
+    "header_lowercase": 972,
+    "header_mixedcase": 972,
+    "header_reverse": 972,
+    "header_sort": 972,
+    "irrelevant_metadata": 972,
+    "observability_noop": 972,
+    "transport_metadata_noop": 972
+  },
+  "required_preserved": 9720,
+  "required_shadow_cases": 9720,
+  "required_transforms": 10,
+  "shadow_cases_total": 11664,
+  "status": "pass"
+}

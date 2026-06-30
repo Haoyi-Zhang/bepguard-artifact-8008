@@ -1,0 +1,67 @@
+{
+  "baselines": [
+    {
+      "baseline": "csp_evaluator",
+      "negative_flagged_rows": 132,
+      "negative_rows": 132,
+      "positive_flagged_rows": 98,
+      "positive_rows": 98,
+      "raw_negative_flag_rate": 1.0,
+      "raw_positive_flag_rate": 1.0,
+      "rows": 230
+    },
+    {
+      "baseline": "mdn_http_observatory_corp",
+      "negative_flagged_rows": 0,
+      "negative_rows": 554,
+      "positive_flagged_rows": 0,
+      "positive_rows": 418,
+      "raw_negative_flag_rate": 0.0,
+      "raw_positive_flag_rate": 0.0,
+      "rows": 972
+    },
+    {
+      "baseline": "mdn_http_observatory_cors",
+      "negative_flagged_rows": 80,
+      "negative_rows": 554,
+      "positive_flagged_rows": 36,
+      "positive_rows": 418,
+      "raw_negative_flag_rate": 0.144404,
+      "raw_positive_flag_rate": 0.086124,
+      "rows": 972
+    },
+    {
+      "baseline": "mdn_http_observatory_csp",
+      "negative_flagged_rows": 504,
+      "negative_rows": 554,
+      "positive_flagged_rows": 390,
+      "positive_rows": 418,
+      "raw_negative_flag_rate": 0.909747,
+      "raw_positive_flag_rate": 0.933014,
+      "rows": 972
+    },
+    {
+      "baseline": "webhint_strict_transport_security",
+      "negative_flagged_rows": 438,
+      "negative_rows": 554,
+      "positive_flagged_rows": 385,
+      "positive_rows": 418,
+      "raw_negative_flag_rate": 0.790614,
+      "raw_positive_flag_rate": 0.921053,
+      "rows": 972
+    }
+  ],
+  "controls_all_comparators_clear": 0,
+  "controls_with_any_comparator_flag": 554,
+  "fixtures_with_comparator_rows": 972,
+  "interpretation": "Raw public-package comparator flags are complete and useful contrastive evidence, but they are not intent-drift labels: in the materialized run at least one public comparator flags every positive and every clean control. This demonstrates why BEPGuard reports source-grounded semantic witnesses rather than scanner flags.",
+  "positives_all_comparators_clear": 0,
+  "positives_with_any_comparator_flag": 418,
+  "problem_count": 0,
+  "problems": [],
+  "rows_total": 4118,
+  "schema": "BEPGuardExternalContrastSpecificity/v1",
+  "semantic_controls": 554,
+  "semantic_positives": 418,
+  "status": "pass"
+}

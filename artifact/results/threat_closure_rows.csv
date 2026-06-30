@@ -1,0 +1,15 @@
+threat_id,assessor_attack,evidence_files,evidence_status,status
+T01,oracle/workload coupling,artifact/results/deep_locked/decision_table_oracle_metrics.json;artifact/results/deep_locked/declarative_oracle_audit.json;artifact/results/deep_locked/oracle_triangulation_audit.json,pass;pass;pass,pass
+T02,label or metadata leakage,artifact/results/label_flow_audit.json;artifact/results/decision_purity_audit.json;artifact/results/deep_locked/identifier_blind_replay_audit.json,pass;pass;pass,pass
+T03,benchmark memorization,artifact/results/anti_overfit_leakage_audit.json;artifact/results/deep_locked/benchmark_fingerprint_disjointness_audit.json;artifact/results/deep_locked/shadow_generalization_audit.json,pass;pass;pass,pass
+T04,insufficient boundary pressure,artifact/results/deep_locked/specbench_summary.json;artifact/results/deep_locked/issue_evidence_depth_audit.json;artifact/results/deep_locked/corpus_stability_audit.json,pass;pass;pass,pass
+T05,weak theory depth,artifact/results/deep_locked/theory_kernel_audit.json;artifact/results/deep_locked/theory_proof_cards.json;artifact/results/deep_locked/semantic_lattice_proofs.json,pass;pass;pass,pass
+T06,mutation adequacy gap,artifact/results/deep_locked/semantic_mutation_adequacy.json;artifact/results/deep_locked/mutation_farm_summary.json;artifact/results/gate_sensitivity_audit.json,pass;pass;pass,pass
+T07,repair relabeling,artifact/results/deep_locked/repair_delta_replay_audit.json;artifact/results/deep_locked/repair_compactness_audit.json;artifact/results/deep_locked/repair_locality_audit.json,pass;pass;pass,pass
+T08,source-grounding gap,artifact/results/deep_locked/source_claim_trace_audit.json;artifact/results/claim_impact_audit.json;artifact/results/source_span_closure_metrics.json,pass;pass;pass,pass
+T09,external baseline substitution,artifact/results/external_baseline_full_run_audit.json;artifact/results/external_contrast_specificity_audit.json;artifact/results/external_provenance_audit.json,pass;pass;pass,pass
+T10,runtime/cache dependency,artifact/results/runtime_boundary_audit.json;artifact/results/clean_package_check.json;artifact/results/package_identity_audit.json,pass;pass;pass,pass
+T11,paper-result drift,artifact/results/paper_claim_consistency_audit.json;artifact/results/release_claim_drift_audit.json;artifact/results/pdf_reference_boundary_audit.json,pass;pass;pass,pass
+T12,artifact nondeterminism,artifact/results/deterministic_reexecution_audit.json;artifact/results/idempotence_replay_audit.json;artifact/results/reproducibility_ladder_audit.json,pass;pass;pass,pass
+T13,evidence reconstruction burden,artifact/results/evidence_graph_metrics.json;artifact/results/evidence_cards_audit.json;artifact/results/deep_locked/source_claim_trace_audit.json,pass;pass;pass,pass
+T14,policy-interaction narrowness,artifact/results/deep_locked/interaction_coverage_audit.json;artifact/results/deep_locked/cross_policy_contracts.json;artifact/results/deep_locked/scale_stress_audit.json,pass;pass;pass,pass

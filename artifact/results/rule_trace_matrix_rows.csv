@@ -1,0 +1,36 @@
+rule_id,policy_family,source_ids,specbench_cases,encoded_status,source_ids_resolved,source_manifest_links_rule,source_span_present,proof_obligation_present,rule_hash_valid,method_data_ledger_consistent,validation_channel_present,status
+R_CSP_REPORT_ONLY_MONITOR,CSP,S_CSP_SPEC,190,True,True,True,True,True,True,True,True,pass
+R_CSP_DEFAULT_SRC_FALLBACK,CSP,S_CSP_SPEC,380,True,True,True,True,True,True,True,True,pass
+R_CSP_SCRIPT_SRC_OVERRIDES_DEFAULT,CSP,S_CSP_SPEC,95,True,True,True,True,True,True,True,True,pass
+R_CSP_META_REPORT_ONLY_UNSUPPORTED,CSP,S_CSP_SPEC,190,True,True,True,True,True,True,True,True,pass
+R_CSP_NONCE_UNIQUE_PER_TRANSMISSION,CSP,S_CSP_SPEC,0,True,True,True,True,True,True,True,True,pass
+R_CSP_MULTIPLE_POLICIES_RESTRICT,CSP,S_CSP_SPEC,0,True,True,True,True,True,True,True,True,pass
+R_CORS_WILDCARD_CREDENTIALS_NOT_SHAREABLE,CORS,S_FETCH_SPEC,0,True,True,True,True,True,True,True,True,pass
+R_CORS_SPECIFIC_ORIGIN_CREDENTIALS_SHAREABLE,CORS,S_FETCH_SPEC,95,True,True,True,True,True,True,True,True,pass
+R_CORS_DYNAMIC_ACAO_NEEDS_VARY,CORS,S_FETCH_SPEC,0,True,True,True,True,True,True,True,True,pass
+R_HSTS_IGNORE_INSECURE_TRANSPORT,HSTS,S_RFC6797,0,True,True,True,True,True,True,True,True,pass
+R_HSTS_MAX_AGE_ZERO_CLEARS,HSTS,S_RFC6797,0,True,True,True,True,True,True,True,True,pass
+R_HSTS_INVALID_HEADER_IGNORED,HSTS,S_RFC6797,0,True,True,True,True,True,True,True,True,pass
+R_COEP_REQUIRE_CORP_NO_CORS,COEP/CORP/CORS,S_MDN_COEP,285,True,True,True,True,True,True,True,True,pass
+R_COEP_CORS_MODE_COMPATIBLE,COEP/CORP/CORS,S_MDN_COEP,0,True,True,True,True,True,True,True,True,pass
+R_COOP_SAME_ORIGIN_FOR_ISOLATION,COOP,S_MDN_COOP,0,True,True,True,True,True,True,True,True,pass
+R_COOP_UNSAFE_NONE_DEFAULT,COOP,S_MDN_COOP,95,True,True,True,True,True,True,True,True,pass
+R_PERMISSIONS_POLICY_ALLOWLIST,Permissions-Policy,S_MDN_PERMISSIONS,0,True,True,True,True,True,True,True,True,pass
+R_PERMISSIONS_POLICY_EMPTY_DISABLES,Permissions-Policy,S_MDN_PERMISSIONS,0,True,True,True,True,True,True,True,True,pass
+R_NEXT_NONCE_DYNAMIC_REQUIRED,CSP/framework,S_NEXT_CSP_DOC,190,True,True,True,True,True,True,True,True,pass
+R_HELMET_CSP_DEFAULT_MERGE,CSP/framework,S_HELMET_DOC,0,True,True,True,True,True,True,True,True,pass
+R_HELMET_REPORT_ONLY,CSP/framework,S_HELMET_DOC,0,True,True,True,True,True,True,True,True,pass
+R_HELMET_COEP_NOT_DEFAULT,COEP/framework,S_HELMET_DOC,0,True,True,True,True,True,True,True,True,pass
+R_DJANGO_HSTS_HTTPS_ONLY,HSTS/framework,S_DJANGO_SECURITY,0,True,True,True,True,True,True,True,True,pass
+R_SPRING_CSP_CONTEXT_REQUIRED,CSP/framework,S_SPRING_SECURITY_HEADERS,0,True,True,True,True,True,True,True,True,pass
+R_RAILS_REPORT_ONLY_MIGRATION,CSP/framework,S_RAILS_SECURITY,0,True,True,True,True,True,True,True,True,pass
+R_RAILS_NONCE_CACHE_TRADEOFF,CSP/framework,S_RAILS_SECURITY,0,True,True,True,True,True,True,True,True,pass
+R_EXPRESS_CORS_REFLECT_ORIGIN,CORS/framework,S_EXPRESS_CORS,190,True,True,True,True,True,True,True,True,pass
+R_EXPRESS_CORS_NOT_AUTHORIZATION,CORS/framework,S_EXPRESS_CORS,0,True,True,True,True,True,True,True,True,pass
+R_BASELINE_CSP_EVALUATOR_SCOPE,baseline,S_CSP_EVALUATOR,0,True,True,True,True,True,True,True,True,pass
+R_BASELINE_OBSERVATORY_SCOPE,baseline,S_MDN_OBSERVATORY,0,True,True,True,True,True,True,True,True,pass
+R_BASELINE_HSTSPRELOAD_SCOPE,baseline,S_HSTSPRELOAD,0,True,True,True,True,True,True,True,True,pass
+R_CSP_CONJUNCTIVE_COMPOSITION,Layered policy composition,S_CSP_SPEC,95,True,True,True,True,True,True,True,True,pass
+R_LAYERED_HEADER_SURFACE,Layered policy composition,S_HELMET_DOC;S_DJANGO_SECURITY;S_SPRING_SECURITY_HEADERS;S_RAILS_SECURITY,95,True,True,True,True,True,True,True,True,pass
+R_CORS_DYNAMIC_ORIGIN_VARY,CORS/cache,S_FETCH_SPEC;S_EXPRESS_CORS,380,True,True,True,True,True,True,True,True,pass
+R_HSTS_INCLUDE_SUBDOMAINS_SCOPE,HSTS/framework,S_RFC6797;S_DJANGO_SECURITY;S_SPRING_SECURITY_HEADERS,190,True,True,True,True,True,True,True,True,pass

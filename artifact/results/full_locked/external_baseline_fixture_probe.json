@@ -1,0 +1,2126 @@
+{
+  "availability": {
+    "packages": {
+      "chromium_hstspreload": {
+        "available": false,
+        "returncode": null
+      },
+      "csp_evaluator": {
+        "available": false,
+        "returncode": 2
+      },
+      "mdn_http_observatory": {
+        "available": false,
+        "note": "local CLI not found; npx intentionally not invoked in smoke tests",
+        "returncode": null
+      }
+    },
+    "tools_available": {
+      "go": true,
+      "hstspreload_header_helper": false,
+      "mdn-http-observatory-scan": false,
+      "node": true,
+      "npm": true,
+      "python3": true
+    }
+  },
+  "results": [
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_RO_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_RO_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_RO_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_RO_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_RO_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_RO_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_RO_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_RO_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_RO_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_RO_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_RO_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_RO_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_07",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_07",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_FB_08",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_FB_08",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_NONCE_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_NONCE_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_NONCE_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_NONCE_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_NONCE_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_NONCE_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_NONCE_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_NONCE_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_NONCE_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_NONCE_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_NONCE_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_NONCE_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_WC_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_WC_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_WC_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_WC_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_WC_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_WC_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_WC_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_WC_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_WC_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_WC_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_WC_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_WC_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_REFLECT_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_REFLECT_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_REFLECT_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_REFLECT_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_REFLECT_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_REFLECT_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_REFLECT_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_REFLECT_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_REFLECT_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_REFLECT_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_REFLECT_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_REFLECT_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_HTTP_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_HTTP_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_HTTP_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_HTTP_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_HTTP_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_HTTP_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_HTTP_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_HTTP_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_HTTP_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_HTTP_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_HTTP_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_HTTP_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_ZERO_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_ZERO_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_ZERO_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_ZERO_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_ZERO_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_ZERO_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_ZERO_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_ZERO_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_ZERO_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_ZERO_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_ZERO_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_ZERO_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COEP_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COEP_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COEP_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COEP_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COEP_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COEP_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COEP_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COEP_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COEP_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COEP_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COEP_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COEP_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COOP_ISO_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COOP_ISO_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COOP_ISO_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COOP_ISO_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COOP_ISO_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COOP_ISO_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COOP_ISO_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COOP_ISO_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COOP_ISO_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COOP_ISO_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_COOP_ISO_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_COOP_ISO_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_PERM_DISABLED_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_PERM_DISABLED_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_PERM_DISABLED_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_PERM_DISABLED_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_PERM_DISABLED_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_PERM_DISABLED_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_PERM_DISABLED_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_PERM_DISABLED_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_PERM_DISABLED_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_PERM_DISABLED_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_PERM_DISABLED_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_PERM_DISABLED_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CSP_SELF_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CSP_SELF_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CSP_SELF_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CSP_SELF_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CSP_OVERRIDE_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CSP_OVERRIDE_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CSP_OVERRIDE_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CSP_OVERRIDE_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CORS_SPECIFIC_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CORS_SPECIFIC_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CORS_SPECIFIC_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CORS_SPECIFIC_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CORS_WC_OMIT_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CORS_WC_OMIT_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CORS_WC_OMIT_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CORS_WC_OMIT_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_HSTS_HTTPS_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_HSTS_HTTPS_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_HSTS_HTTPS_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_HSTS_HTTPS_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_HSTS_POSITIVE_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_HSTS_POSITIVE_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_HSTS_POSITIVE_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_HSTS_POSITIVE_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_COEP_CORP_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_COEP_CORP_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_COEP_CORP_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_COEP_CORP_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_COEP_CORS_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_COEP_CORS_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_COEP_CORS_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_COEP_CORS_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_COOP_ISO_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_COOP_ISO_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_COOP_ISO_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_COOP_ISO_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_PERM_SELF_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_PERM_SELF_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_PERM_SELF_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_PERM_SELF_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_07",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_07",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CSP_COMPOSE_08",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CSP_COMPOSE_08",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_LAYER_DROP_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_LAYER_DROP_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_LAYER_DROP_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_LAYER_DROP_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_LAYER_DROP_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_LAYER_DROP_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_LAYER_DROP_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_LAYER_DROP_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_LAYER_DROP_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_LAYER_DROP_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_LAYER_DROP_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_LAYER_DROP_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_VARY_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_VARY_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_VARY_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_VARY_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_VARY_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_VARY_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_VARY_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_VARY_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_VARY_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_VARY_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_CORS_VARY_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_CORS_VARY_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_03",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_03",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_04",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_04",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_05",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_05",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_06",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_HSTS_SUBDOMAIN_06",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CSP_COMPOSE_ALLOW_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CSP_COMPOSE_ALLOW_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CSP_COMPOSE_ALLOW_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CSP_COMPOSE_ALLOW_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_LAYER_PRESERVE_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_LAYER_PRESERVE_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_LAYER_PRESERVE_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_LAYER_PRESERVE_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CORS_VARY_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CORS_VARY_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_CORS_VARY_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_CORS_VARY_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_HSTS_SUBDOMAIN_01",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_HSTS_SUBDOMAIN_01",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "csp_evaluator",
+      "fixture_id": "LF_NC_HSTS_SUBDOMAIN_02",
+      "notes": "availability probe failed; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "not_applicable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "chromium_hstspreload",
+      "fixture_id": "LF_NC_HSTS_SUBDOMAIN_02",
+      "notes": "compiled helper absent; fixture-level baseline invocation not executed because the external baseline is unavailable; no fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "baseline": "mdn_http_observatory",
+      "fixture_id": "localhost:8765",
+      "notes": "local CLI unavailable; no local scan attempted and no project fallback substituted",
+      "returncode": null,
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": ""
+    }
+  ]
+}

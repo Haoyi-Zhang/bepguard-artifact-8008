@@ -1,0 +1,11 @@
+{
+  "cases_checked": 5152,
+  "interpretation": "Third-oracle agreement audit: a declarative, label-free clause oracle is compared with the operational oracle and expected locked/specbench outcomes. The declarative oracle itself does not read fixture labels or identifiers.",
+  "issue_classes_checked": 25,
+  "locked_fixtures_checked": 972,
+  "mismatches": 0,
+  "problem_count": 0,
+  "problems": [],
+  "specbench_cases_checked": 4180,
+  "status": "pass"
+}

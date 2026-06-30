@@ -1,0 +1,12 @@
+{
+  "additional_area": "Testing and Analysis",
+  "interpretation": "Checks that the aligned title/abstract/topic capsule is aligned with the main paper and remains anonymous.",
+  "primary_area": "Dependability and Security",
+  "problem_count": 0,
+  "problems": [],
+  "required_terms_checked": 10,
+  "required_topics_checked": 4,
+  "status": "pass",
+  "title_checked": true,
+  "topics_checked": 7
+}

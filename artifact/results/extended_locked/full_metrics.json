@@ -1,0 +1,124 @@
+{
+  "execution_profile": "deterministic-counts-only",
+  "expected_findings_detected": 418,
+  "expected_positive_fixtures": 418,
+  "family_counts": {
+    "COEP/CORP/CORS": {
+      "detected": 24,
+      "fixtures": 40,
+      "negative_clean": 16,
+      "negative_controls": 16,
+      "positives": 24
+    },
+    "COOP/COEP/Permissions-Policy": {
+      "detected": 24,
+      "fixtures": 32,
+      "negative_clean": 8,
+      "negative_controls": 8,
+      "positives": 24
+    },
+    "CORP": {
+      "detected": 6,
+      "fixtures": 10,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 6
+    },
+    "CORS": {
+      "detected": 36,
+      "fixtures": 56,
+      "negative_clean": 20,
+      "negative_controls": 20,
+      "positives": 36
+    },
+    "CORS/cache": {
+      "detected": 30,
+      "fixtures": 38,
+      "negative_clean": 8,
+      "negative_controls": 8,
+      "positives": 30
+    },
+    "CORS/framework": {
+      "detected": 24,
+      "fixtures": 24,
+      "negative_clean": 0,
+      "negative_controls": 0,
+      "positives": 24
+    },
+    "CSP": {
+      "detected": 56,
+      "fixtures": 72,
+      "negative_clean": 16,
+      "negative_controls": 16,
+      "positives": 56
+    },
+    "CSP/composition": {
+      "detected": 6,
+      "fixtures": 10,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 6
+    },
+    "CSP/framework": {
+      "detected": 24,
+      "fixtures": 24,
+      "negative_clean": 0,
+      "negative_controls": 0,
+      "positives": 24
+    },
+    "CSP/framing": {
+      "detected": 12,
+      "fixtures": 16,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 12
+    },
+    "HSTS": {
+      "detected": 54,
+      "fixtures": 70,
+      "negative_clean": 16,
+      "negative_controls": 16,
+      "positives": 54
+    },
+    "HSTS/framework": {
+      "detected": 24,
+      "fixtures": 32,
+      "negative_clean": 8,
+      "negative_controls": 8,
+      "positives": 24
+    },
+    "HSTS/preload": {
+      "detected": 6,
+      "fixtures": 10,
+      "negative_clean": 4,
+      "negative_controls": 4,
+      "positives": 6
+    },
+    "HSTS/subdomains": {
+      "detected": 6,
+      "fixtures": 6,
+      "negative_clean": 0,
+      "negative_controls": 0,
+      "positives": 6
+    },
+    "Layered policy composition": {
+      "detected": 56,
+      "fixtures": 72,
+      "negative_clean": 16,
+      "negative_controls": 16,
+      "positives": 56
+    },
+    "Permissions-Policy": {
+      "detected": 30,
+      "fixtures": 42,
+      "negative_clean": 12,
+      "negative_controls": 12,
+      "positives": 30
+    }
+  },
+  "findings": 418,
+  "fixtures": 554,
+  "interpretation": "Locked local full-corpus oracle run; not a public-web prevalence claim.",
+  "negative_controls": 136,
+  "negative_controls_clean": 136
+}

@@ -1,0 +1,6 @@
+# Core BEPGuard validation uses the Python standard library.
+# PyMuPDF is optional for the rendered-PDF visual-density audit; if omitted,
+# the already-materialized density audit remains available for independent audit.
+PyMuPDF==1.26.7
+# Optional external baseline packages are documented in external_package_manifest.csv
+# and are not vendored or required for deterministic semantic validation.

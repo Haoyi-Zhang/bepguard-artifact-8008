@@ -1,0 +1,29 @@
+{
+  "interpretation": "The audit exposes workload breadth across policy-family strata and multi-policy header signatures so assessors can see cross-policy coverage rather than only aggregate fixture counts.",
+  "locked_fixtures_checked": 972,
+  "multi_policy_signatures": 5,
+  "policy_family_strata": 16,
+  "policy_signatures": 13,
+  "problem_count": 0,
+  "problems": [],
+  "specbench_cases_considered": 4180,
+  "status": "pass",
+  "strata_histogram": {
+    "COEP/CORP/CORS": 64,
+    "COOP/COEP/Permissions-Policy": 56,
+    "CORP": 16,
+    "CORS": 92,
+    "CORS/cache": 68,
+    "CORS/framework": 48,
+    "CSP": 128,
+    "CSP/composition": 16,
+    "CSP/framework": 48,
+    "CSP/framing": 28,
+    "HSTS": 124,
+    "HSTS/framework": 56,
+    "HSTS/preload": 16,
+    "HSTS/subdomains": 12,
+    "Layered policy composition": 128,
+    "Permissions-Policy": 72
+  }
+}

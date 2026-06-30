@@ -1,0 +1,30 @@
+{
+  "activated_controls": 546,
+  "clean_controls_seen": 554,
+  "intent_classes": 19,
+  "interpretation": "Causal activation starts from clean controls, applies a small targeted semantic edit, and requires the same oracle to cross the boundary and emit the expected issue. Paired repairs are checked by reversing to their paired positive; clean controls whose intent has no positive branch in the locked oracle are recorded as not-applicable rather than relabeled.",
+  "not_applicable_controls": 8,
+  "operators": {
+    "add_conjunctive_blocking_policy": 8,
+    "add_overblocking_csp": 4,
+    "credentialed_cors_origin_mismatch": 12,
+    "disable_required_feature": 8,
+    "drop_coep_half": 8,
+    "drop_include_subdomains": 8,
+    "drop_preload_token": 4,
+    "drop_vary_origin": 8,
+    "enforced_layer_to_report_only": 8,
+    "enforced_to_report_only": 16,
+    "frame_ancestors_report_only": 4,
+    "hsts_invalid_max_age": 16,
+    "paired_repair_reverse_activation": 418,
+    "remove_resource_opt_in": 16,
+    "weaken_corp_same_origin_to_same_site": 4,
+    "wildcard_denied_feature": 4
+  },
+  "problem_count": 0,
+  "problems": [],
+  "required_activations": 546,
+  "schema": "BEPGuardCausalCounterfactualActivation/v1",
+  "status": "pass"
+}

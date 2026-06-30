@@ -1,0 +1,14 @@
+{
+  "blocking_failures": 0,
+  "claim_audit_decisions": {
+    "accept": 45
+  },
+  "claims": 45,
+  "fixtures": 116,
+  "negative_controls": 28,
+  "note": "Seed-lineage consistency summary aligned with release admitted claim table; main validation uses BEP-Deep denominator.",
+  "positive_fixtures": 88,
+  "rules": 35,
+  "status": "pass",
+  "warning_failures": 0
+}

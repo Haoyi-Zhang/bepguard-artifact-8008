@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "bep_max_cases": true,
+    "corpus_validation_pass": true,
+    "decision_table_agreement": true,
+    "deep_fixture_count": true,
+    "deep_negative_clean": true,
+    "deep_positive_detection": true,
+    "mutation_adequacy": true,
+    "proof_certificates": true,
+    "repair_frontiers": true
+  },
+  "status": "pass"
+}

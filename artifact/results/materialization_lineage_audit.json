@@ -1,0 +1,17 @@
+{
+  "interpretation": "Materialization-lineage audit: seed materialization is retained for lineage, while the release BEP-Deep denominator remains the main workload and duplicate rule ledgers are kept synchronized.",
+  "main_fixtures": 972,
+  "main_workload": "BEP-Deep",
+  "problem_count": 0,
+  "problems": [],
+  "protocol_corpus_lock_status": "seed_lineage_materialized",
+  "rule_ledger_aliases_checked": [
+    "artifact/rule_source_ledger.csv",
+    "artifact/data/rule_source_ledger.csv",
+    "artifact/data/rule_to_source_ledger.csv",
+    "artifact/method/rule_to_source_ledger.csv",
+    "artifact/method/source_rule_ledger.csv"
+  ],
+  "seed_lineage_fixtures": 116,
+  "status": "pass"
+}

@@ -1,0 +1,6 @@
+baseline,applicable_fixtures,ran_or_flagged,not_applicable,unavailable,tp,fp,tn,fn,notes
+conservative_header_presence,554,96,0,0,96,0,136,322,"Internal negative-control baseline; checks presence/obvious markers, not effective browser semantics."
+documented_hsts_preload_criterion,70,62,484,0,54,8,8,0,Local documented criterion baseline for HSTS preload-style headers; not Chromium helper execution.
+chromium_hstspreload,118,0,436,118,,,,,not_applicable=436; unavailable=118; external wrapper output not remapped into semantic TP/FP without a declared oracle mapping.
+csp_evaluator,116,0,438,116,,,,,not_applicable=438; unavailable=116; external wrapper output not remapped into semantic TP/FP without a declared oracle mapping.
+mdn_http_observatory,1,0,0,1,,,,,unavailable=1; external wrapper output not remapped into semantic TP/FP without a declared oracle mapping.

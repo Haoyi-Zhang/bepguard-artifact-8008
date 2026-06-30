@@ -1,0 +1,60 @@
+{
+  "hash_distinct": true,
+  "interpretation": "Checks that the operational, decision-table, and declarative oracle surfaces are separate source files with distinct hashes and that the declarative oracle is structurally independent from the implementation oracles.",
+  "oracle_files_checked": 3,
+  "problem_count": 0,
+  "problems": [],
+  "rows": [
+    {
+      "imports": [
+        "__future__",
+        "sys",
+        "dataclasses",
+        "typing",
+        "urllib.parse",
+        "json",
+        "re"
+      ],
+      "metadata_terms_seen": [
+        "id",
+        "variant"
+      ],
+      "oracle": "operational",
+      "path": "artifact/scripts/bep_semantics.py",
+      "sha256": "a9ebb276c5a68656651b6c0240708379123cbd73d6550f5b8a61d597453e7090"
+    },
+    {
+      "imports": [
+        "__future__",
+        "sys",
+        "argparse",
+        "csv",
+        "json",
+        "itertools",
+        "re",
+        "pathlib",
+        "urllib.parse",
+        "typing",
+        "bep_semantics"
+      ],
+      "metadata_terms_seen": [],
+      "oracle": "decision_table",
+      "path": "artifact/scripts/decision_table_oracle.py",
+      "sha256": "34c1b0b9e4470f6b6b91f5f36a4f2ac0510910db764931a8d47d4869e4af6d5a"
+    },
+    {
+      "imports": [
+        "__future__",
+        "re",
+        "sys",
+        "typing",
+        "urllib.parse"
+      ],
+      "metadata_terms_seen": [],
+      "oracle": "declarative",
+      "path": "artifact/bepguard/declarative_oracle.py",
+      "sha256": "f540950f3c11fda645bccf431c89f17ba0296551651da25579c6dbfccf1de263"
+    }
+  ],
+  "status": "pass"
+}

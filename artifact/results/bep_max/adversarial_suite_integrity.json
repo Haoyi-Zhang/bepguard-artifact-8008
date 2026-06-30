@@ -1,0 +1,23 @@
+{
+  "duplicate_ids": [],
+  "fresh_fixture_hashes": 4306,
+  "hash_mismatches": [],
+  "interpretation": "BEP-Max integrity audit over generated validation cases; checks freshness of content hashes, source links, label preservation, and dual-oracle agreement.",
+  "label_consistent_cases": 4306,
+  "label_failures": [],
+  "metric_count_failures": [],
+  "operational_and_decision_oracle_passed": 4306,
+  "oracle_failures": [],
+  "source_failures": [],
+  "status": "pass",
+  "suite_cases": 4306,
+  "unique_case_ids": 4306,
+  "valid_source_links": 4306,
+  "variant_counts": {
+    "positive_preserving_near_repair": 418,
+    "semantic_preserving_header_case": 972,
+    "semantic_preserving_header_order": 972,
+    "semantic_preserving_irrelevant_surface": 972,
+    "semantic_preserving_policy_whitespace": 972
+  }
+}

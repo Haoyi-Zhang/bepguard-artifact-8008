@@ -1,0 +1,27 @@
+claim_node,issue_node,path_length,path
+claim:CL_CSP_01,issue:csp_frame_ancestors_meta_delivery_unsupported,2,claim:CL_CSP_01 -> certificate:PCW-7a252e2f3f8f2b17264f -> issue:csp_frame_ancestors_meta_delivery_unsupported
+claim:CL_CSP_02,issue:csp_effective_script_allowance,2,claim:CL_CSP_02 -> certificate:PCW-ab63aa498cd22383f948 -> issue:csp_effective_script_allowance
+claim:CL_CSP_04,issue:csp_effective_script_allowance,2,claim:CL_CSP_04 -> certificate:PCW-ab63aa498cd22383f948 -> issue:csp_effective_script_allowance
+claim:CL_CSP_06,issue:nonce_csp_static_render_incompatibility,2,claim:CL_CSP_06 -> certificate:PCW-bbac7f636d51e8f474d2 -> issue:nonce_csp_static_render_incompatibility
+claim:CL_NEXT_01,issue:nonce_csp_static_render_incompatibility,2,claim:CL_NEXT_01 -> certificate:PCW-bbac7f636d51e8f474d2 -> issue:nonce_csp_static_render_incompatibility
+claim:CL_NEXT_02,issue:nonce_csp_static_render_incompatibility,2,claim:CL_NEXT_02 -> certificate:PCW-bbac7f636d51e8f474d2 -> issue:nonce_csp_static_render_incompatibility
+claim:CL_CORS_01,issue:cors_intended_credentialed_share_blocked,2,claim:CL_CORS_01 -> certificate:PCW-012a9804a0eaf4a93d3c -> issue:cors_intended_credentialed_share_blocked
+claim:CL_EXPRESS_01,issue:cors_reflected_origin_with_credentials,2,claim:CL_EXPRESS_01 -> certificate:PCW-2edce48aec8f0ab10dfb -> issue:cors_reflected_origin_with_credentials
+claim:CL_EXPRESS_02,issue:cors_reflected_origin_with_credentials,2,claim:CL_EXPRESS_02 -> certificate:PCW-2edce48aec8f0ab10dfb -> issue:cors_reflected_origin_with_credentials
+claim:CL_HSTS_01,issue:hsts_invalid_max_age_ignored,2,claim:CL_HSTS_01 -> certificate:PCW-044a8c815b030ef3b67d -> issue:hsts_invalid_max_age_ignored
+claim:CL_HSTS_02,issue:hsts_policy_cleared_by_zero_max_age,2,claim:CL_HSTS_02 -> certificate:PCW-fb7137e8b1b5e43a186e -> issue:hsts_policy_cleared_by_zero_max_age
+claim:CL_COEP_01,issue:coep_require_corp_blocks_cross_origin_resource,2,claim:CL_COEP_01 -> certificate:PCW-050b88384c0553e44944 -> issue:coep_require_corp_blocks_cross_origin_resource
+claim:CL_COOP_01,issue:cross_origin_isolation_incomplete,2,claim:CL_COOP_01 -> certificate:PCW-b31b2c486394bd9a0a6d -> issue:cross_origin_isolation_incomplete
+claim:CL_COOP_02,issue:cross_origin_isolation_incomplete,2,claim:CL_COOP_02 -> certificate:PCW-b31b2c486394bd9a0a6d -> issue:cross_origin_isolation_incomplete
+claim:CL_PERM_02,issue:permissions_policy_feature_overallowed,2,claim:CL_PERM_02 -> certificate:PCW-4a0bc765c858bdd3533b -> issue:permissions_policy_feature_overallowed
+claim:CL_PERM_01,issue:permissions_policy_feature_disabled,2,claim:CL_PERM_01 -> certificate:PCW-9815765ef74afbb10d25 -> issue:permissions_policy_feature_disabled
+claim:CL_CSP_03,issue:csp_multiple_policy_overblocks_trusted_script,2,claim:CL_CSP_03 -> certificate:PCW-14c4f9af56cb2c87e919 -> issue:csp_multiple_policy_overblocks_trusted_script
+claim:CL_CORS_02,issue:cors_acac_case_sensitive_not_shareable,2,claim:CL_CORS_02 -> certificate:PCW-ff940f4cdb49df2e5517 -> issue:cors_acac_case_sensitive_not_shareable
+claim:CL_COEP_02,issue:corp_same_site_allows_cross_origin_same_site,2,claim:CL_COEP_02 -> certificate:PCW-febe60641b7729979cf9 -> issue:corp_same_site_allows_cross_origin_same_site
+claim:CL_CSP_08,issue:csp_conjunctive_policy_composition_blocks_required_script,2,claim:CL_CSP_08 -> certificate:PCW-3702f2cfcf3e3cfd1d0b -> issue:csp_conjunctive_policy_composition_blocks_required_script
+claim:CL_LAYER_01,issue:layered_header_override_drops_enforcement,2,claim:CL_LAYER_01 -> certificate:PCW-bd298261fb7827ff0298 -> issue:layered_header_override_drops_enforcement
+claim:CL_CORS_05,issue:cors_dynamic_origin_missing_vary,2,claim:CL_CORS_05 -> certificate:PCW-11a569c3249ea436cbc6 -> issue:cors_dynamic_origin_missing_vary
+claim:CL_HSTS_04,issue:hsts_subdomain_scope_not_covered,2,claim:CL_HSTS_04 -> certificate:PCW-5a84843c80a139249897 -> issue:hsts_subdomain_scope_not_covered
+claim:CL_CORS_03,issue:cors_dynamic_origin_without_vary,2,claim:CL_CORS_03 -> certificate:PCW-69b513d03e84ac8b227b -> issue:cors_dynamic_origin_without_vary
+claim:CL_HSTS_03,issue:hsts_missing_include_subdomains,2,claim:CL_HSTS_03 -> certificate:PCW-47773c82ce261c5cdfb2 -> issue:hsts_missing_include_subdomains
+claim:CL_HSTS_05,issue:hsts_preload_criteria_not_met,2,claim:CL_HSTS_05 -> certificate:PCW-d47aa2134eb6b4b99e5d -> issue:hsts_preload_criteria_not_met

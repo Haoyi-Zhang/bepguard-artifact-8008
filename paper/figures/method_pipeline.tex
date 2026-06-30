@@ -1,0 +1,46 @@
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  stage/.style={draw, rounded corners, align=center, font=\footnotesize, minimum height=0.72cm, text width=1.95cm, fill=black!3},
+  gate/.style={draw, rounded corners, align=center, font=\scriptsize, minimum height=0.58cm, text width=1.75cm, fill=black!1},
+  arrow/.style={-{Latex[length=2mm]}, thick},
+  thinarr/.style={-{Latex[length=1.6mm]}, semithick}
+]
+  \node[stage] (claim) {Public\\intent claim};
+  \node[stage, right=0.42cm of claim] (surface) {Generated\\policy surface};
+  \node[stage, right=0.42cm of surface] (ir) {\bep\ object};
+  \node[stage, right=0.42cm of ir] (judge) {Effective\\judgement};
+  \node[stage, right=0.42cm of judge] (wit) {Minimal\\witness};
+  \node[stage, right=0.42cm of wit] (repair) {Repair-paired\\control};
+
+  \node[gate, below=0.58cm of claim] (source) {source-span\\closure};
+  \node[gate, below=0.58cm of surface] (rules) {rule-source\\closure};
+  \node[gate, below=0.58cm of ir] (dt) {decision-table\\oracle};
+  \node[gate, below=0.58cm of judge] (mut) {mutation\\adequacy};
+  \node[gate, below=0.58cm of wit] (cert) {proof-carrying\\certificate};
+  \node[gate, below=0.58cm of repair] (frontier) {local repair\\frontier};
+
+  \draw[arrow] (claim) -- (surface);
+  \draw[arrow] (surface) -- (ir);
+  \draw[arrow] (ir) -- (judge);
+  \draw[arrow] (judge) -- (wit);
+  \draw[arrow] (wit) -- (repair);
+
+  \draw[thinarr] (claim) -- (source);
+  \draw[thinarr] (surface) -- (rules);
+  \draw[thinarr] (ir) -- (dt);
+  \draw[thinarr] (judge) -- (mut);
+  \draw[thinarr] (wit) -- (cert);
+  \draw[thinarr] (repair) -- (frontier);
+
+  \draw[thinarr] (source) -- (rules);
+  \draw[thinarr] (rules) -- (dt);
+  \draw[thinarr] (dt) -- (mut);
+  \draw[thinarr] (mut) -- (cert);
+  \draw[thinarr] (cert) -- (frontier);
+
+  \node[draw, rounded corners, fit=(source)(frontier), inner sep=0.14cm, label={[font=\scriptsize]below:validation ladder}] {};
+\end{tikzpicture}
+\caption{BEP-Deep evaluates a policy claim as a traceable obligation. The top row is the semantic path from source claim to repair-paired control; the lower row is the validation ladder that checks source closure, rule closure, independent oracle agreement, theory/mutation adequacy, shadow generalization, external provenance, proof-carrying witnesses, and repair-frontier certificates.}
+\label{fig:method-pipeline}
+\end{figure*}
